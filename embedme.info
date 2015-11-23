@@ -5,7 +5,6 @@ core = 7.x
 engine = phptemplate
 
 stylesheets[all][] = css/ai.css
-stylesheets[all][] = css/other.css
 scripts[] = js/ai.js
 scripts[] = js/require.js
 scripts[] = js/bootstrap.js
