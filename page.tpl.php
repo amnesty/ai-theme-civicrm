@@ -160,24 +160,29 @@
         </form>
     </div>
 </header>
-<div id="skip-link">
-    <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
-</div>
-<div id="page">
-    <div id="content" class="clearfix">
-        <?php if ($messages): ?>
-        <div id="messages">
-            <div id="console" class="section clearfix">
-                <?php print $messages; ?>
+
+<!-- Bootstrap Grid -->
+<div class="container-fluid">
+    <div id="skip-link">
+        <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
+    </div>
+    <div id="page">
+        <div id="content" class="clearfix">
+            <?php if ($messages): ?>
+            <div id="messages">
+                <div id="console" class="section clearfix">
+                    <?php print $messages; ?>
+                </div>
             </div>
+            <?php endif; ?>
+            <div id="content-area"><?php print render($page['content']); ?></div>
         </div>
-        <?php endif; ?>
-        <div id="content-area"><?php print render($page['content']); ?></div>
     </div>
 </div>
+
 <footer class="footer print-hidden">
     <div class="footer__container">
-        <div class="grid">
+        <!--div class="grid">
             <div class="footer__col--1/3 print-hidden" data-footer-group="">
                 <ul class="footer-list">
                     <li class="footer-list__item">
@@ -253,7 +258,7 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div-->
         <div class="grid footer__bottom">
             <div class="footer__col--right">
                 <ul class="social-list print-hidden">
