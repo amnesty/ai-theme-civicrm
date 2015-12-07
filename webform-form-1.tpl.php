@@ -34,25 +34,31 @@
 <!-- Bootstrap Grid -->
 <div class="container--wide">
     <div class="grid">
-<?php
-  // Print out the progress bar at the top of the page
-  print drupal_render($form['progressbar']);
+        <div class="content-form clearfix">
+           <p class="text-intro">En Amnistía Internacional <span>renunciamos a los fondos de gobiernos y partidos políticos</span> por una simple razón: nuestra independencia está por encima de todo. <span>Nos financiamos gracias a las aportaciones de personas como tú, que deciden apoyarnos económicamente porque quieren un mundo más justo.</span></p>
+           <div class="box-form-es">
+                <p>Los campos marcados con * son obligatorios.</p>
+                    <?php
+                      // Print out the progress bar at the top of the page
+                      print drupal_render($form['progressbar']);
 
-  // Print out the preview message if on the preview page.
-  if (isset($form['preview_message'])) {
-    print '<div class="messages warning">';
-    print drupal_render($form['preview_message']);
-    print '</div>';
-  }
+                      // Print out the preview message if on the preview page.
+                      if (isset($form['preview_message'])) {
+                        print '<div class="messages warning">';
+                        print drupal_render($form['preview_message']);
+                        print '</div>';
+                      }
 
-  // Print out the main part of the form.
-  // Feel free to break this up and move the pieces within the array.
-  print drupal_render($form['submitted']);
+                      // Print out the main part of the form.
+                      // Feel free to break this up and move the pieces within the array.
+                      print drupal_render($form['submitted']);
 
-  // Always print out the entire $form. This renders the remaining pieces of the
-  // form that haven't yet been rendered above (buttons, hidden elements, etc).
-  print drupal_render_children($form);
-?>
+                      // Always print out the entire $form. This renders the remaining pieces of the
+                      // form that haven't yet been rendered above (buttons, hidden elements, etc).
+                      print drupal_render_children($form);
+                    ?>
+                </div>
+            </div>
     </div>
 </div>
 
