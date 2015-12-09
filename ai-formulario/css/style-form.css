@@ -20,12 +20,6 @@ header, hgroup, nav, section {
     display : block;
 }
 
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
 html {
     font-size: 62.5%;
     word-wrap:break-word;
@@ -35,6 +29,29 @@ body {
     color: #000000;
     background-color: #ffffff;
 }*/
+
+.container--wide { /* replaces html */
+    font-size: 62.5%;
+    word-wrap:break-word;
+}
+
+fieldset, form, label {
+    margin : 0;
+    padding : 0;
+    border : 0;
+    outline : 0;
+    font-size : 100%;
+    vertical-align : baseline;
+    background : transparent;
+}
+
+/* Theirs */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
 input {
     border-radius: 0;
