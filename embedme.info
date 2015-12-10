@@ -6,9 +6,9 @@ engine = phptemplate
 
 //stylesheets[all][] = css/ai.css
 stylesheets[all][] = ai-formulario/css/style-form.css
-scripts[] = js/ai.js
-scripts[] = js/require.js
-scripts[] = js/bootstrap.js
+//scripts[] = js/ai.js
+//scripts[] = js/require.js
+//scripts[] = js/bootstrap.js
 
 version = "7.x-1.x-dev"
 core = "7.x"
