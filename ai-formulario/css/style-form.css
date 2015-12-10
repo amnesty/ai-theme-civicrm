@@ -30,10 +30,6 @@ body {
     background-color: #ffffff;
 }*/
 
-.container--wide { /* replaces html */
-    font-size: 62.5%;
-    word-wrap:break-word;
-}
 
 fieldset, form, label {
     margin : 0;
