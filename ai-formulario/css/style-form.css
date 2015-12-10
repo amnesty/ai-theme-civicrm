@@ -111,7 +111,7 @@ input {
     height: 50px;
     position: relative;
     float: left;
-    margin-right: 20px;
+    margin-right: 40px;
     list-style: none inside none;
     padding-left: 10px;
 }
@@ -150,15 +150,16 @@ input {
 }
 
 
-.box-form-es span{
+.box-form-es h2{
 	font-family: 'TradeGothic-BoldCondTwenty';
 	font-size: 40px;
 	border-bottom: 2px solid #000;
 	padding-bottom: 20px;
     display: block;
+    font-weight: normal;
 }
 
-.box-form-es span img{
+.box-form-es h2 img{
     display: inline-block;
     top: 10px;
     position: relative;
@@ -254,7 +255,7 @@ input {
     -webkit-box-shadow: none;
 }
 
-.content-colaborar .quota-suffix{
+.content-colaborar .field-suffix /*.quota-suffix*/{
 	width: 25%;
     float: left;
     text-align: center;

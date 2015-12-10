@@ -4,11 +4,11 @@ description = The AI theme integration for CiviCRM (Developed by ICTI for the We
 core = 7.x
 engine = phptemplate
 
-//stylesheets[all][] = css/ai.css
+;stylesheets[all][] = css/ai.css
 stylesheets[all][] = ai-formulario/css/style-form.css
-//scripts[] = js/ai.js
-//scripts[] = js/require.js
-//scripts[] = js/bootstrap.js
+;scripts[] = js/ai.js
+;scripts[] = js/require.js
+;scripts[] = js/bootstrap.js
 
 version = "7.x-1.x-dev"
 core = "7.x"
