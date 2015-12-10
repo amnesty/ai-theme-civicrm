@@ -71,20 +71,6 @@ echo '
 
 }
 else {
-echo '<!-- Bootstrap Grid -->
-<div class="container--wide">
-    <div class="grid">
-         <div id="content-area">
-                <div class="content-form clearfix">
-                        <p class="text-intro">En Amnistía Internacional <span>renunciamos a los fondos de gobiernos y partidos políticos</span> por una simple razón: nuestra independencia está por encima de todo. <span>Nos financiamos gracias a las aportaciones de personas como tú, que deciden apoyarnos económicamente porque quieren un mundo más justo.</span></p>
-                        <div class="box-form-es">
-                        <p>Los campos marcados con * son obligatorios.</p>      
-';
          print render($page['content']);
-         echo '</div>
-                        </div>
-                </div>    
-        </div>
-</div>';
 }
 ?>
