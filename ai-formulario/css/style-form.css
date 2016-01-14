@@ -504,6 +504,11 @@ input {
     float: left;
 }
 
+.content-end-form .check-politica label {
+    visibility: hidden;
+    color: #fff;
+}
+
 .content-end-form .check label:after {
     opacity: 0;
     content: '\2713';
