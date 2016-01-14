@@ -21,41 +21,38 @@
 
                     <div class="content-colaborar clearfix">
 
-                        <h2>¿CON CUÁNTO QUIERES COLABORAR? <img src="images/icon-hand.png" alt="icono hand"/></h2>
+                        <h2>¿CON CUÁNTO QUIERES COLABORAR?</h2> <img src="images/icon-hand.png" alt="icono hand"/>
 
-                        <div class="cuota-options-wrapper-general">
-                            <div class="cuota-options-wrapper">
+                        <fieldset class="fila-1 clearfix">
+                            <div class="fieldset-wrapper">
                                 <div class="capa-selecttime border-radius-form shadow">
-                                    <select class="selecttime " name="selecttime" form="selecttime">
+                                    <select class="input-generic selecttime " name="selecttime" form="selecttime">
                                         <option value="time-month">Al mes</option>
                                         <option value="time-year">Al año</option>
                                     </select>
                                 </div>
-                                <div class="cuota-option-9 cuotas active border-radius-form">
-                                    <div class="cuota-option">9 €</div>
-                                </div>
-                                <div class="cuota-option-12 cuotas border-radius-form">
-                                    <div class="cuota-option">12 €</div>
-                                </div>
-                                <div class="cuota-option-25 cuotas border-radius-form">
-                                    <div class="cuota-option">25 €</div>
-                                </div>
-                            </div>
 
-                            <div class="importe-cuota-other">
-                                <div class="form-item-other">
-                                    <input type="text" maxlength="8" name="" size="8" value="" placeholder="Otra" class="border-radius-form active">
+                                <div class="cuotas">
+                                    <div>
+                                        <div><input type="radio" name="cuota" value="9" checked /><label>9 €</label></div>
+                                        <div><input type="radio" name="cuota" value="12" /><label>12 €</label></div>
+                                        <div><input type="radio" name="cuota" value="25" /><label>25 €</label></div>
+                                        <div><input type="radio" name="cuota" value="otra" /><label>otra</label></div>
+                                    </div>
                                 </div>
 
-                                <div class="quota-suffix">€</div>
+                                <!-- Helena -->
+                                <div class="capa-other-quant">
+                                    <input class="border-radius-form input-generic other-quant" id="other-quant" type="text" maxlength="4" size="1" value="" />
+                                </div>
                             </div>
-                        </div><!--/cuota-options-wrapper-general-->
+                        </fieldset>
 
                     </div><!--/colaborar-->
 
                     <div class="content-datos active padding-medium">
 
-                        <h2>POR FAVOR, DÉJANOS TUS DATOS PERSONALES <img src="images/icon-datos.png" alt="icono datos"/></h2>
+                        <h2>POR FAVOR, DÉJANOS TUS DATOS PERSONALES </h2><img src="images/icon-datos.png" alt="icono datos"/>
 
                         <fieldset class="fila-1">
                             <div class="margin-medium">
@@ -77,14 +74,16 @@
                                         <option value="NIF">NIF</option>
                                     </select>
                                 </div>
-                                <input class="border-radius-form input-generic number-dni" type="text" name="number-dni" id="number-dni" placeholder=""><a class="margin-negativo" href="">+info</a>
+                                <input class="border-radius-form input-generic number-dni" type="text" name="number-dni" id="number-dni" placeholder=""><a class="margin-negativo" href="">+info</a></input>
                             </div>
 
                             <div class="margin-medium">
                                 <div class="capa-genero border-radius-form shadow">
                                     <select class="genero input-generic" name="genero" form="genero">
-                                        <option value="M">M</option>
-                                        <option value="H">H</option>
+                                        <option value="" selected="selected">Género</option>
+                                        <option value="1">Mujer</option>
+                                        <option value="2">Hombre</option>
+                                        <option value="3">No declara</option>
                                     </select>
                                 </div>
                             </div>
@@ -108,29 +107,38 @@
                                 <input class="border-radius-form input-generic" type="email" name="email" id="email" placeholder="Email" maxlength="20">
                             </div>
                             <div class="margin-medium">
-                                <input class="border-radius-form input-generic" type="text" name="profesion" id="profesion" placeholder="Profesión">
+                                <div class="capa-profesion border-radius-form shadow">
+                                    <select class="input-generic profesion" name="provincia" form="provincia">
+                                        <option value="calle">Estudiante</option>
+                                        <option value="avenida">Diseñador Gráfico</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="margin-medium">
                                 <label>Fecha de nacimiento</label>
-                                <div class="capa-fechas border-radius-form shadow">
-                                    <select class="input-generic day" name="day" form="day">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                    </select>
-                                </div>
+                                <div class="capa-fechas">
+                                    <div>
+                                        <div class="">
+                                            <select class="" name="day" form="day">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                            </select>
+                                        </div>
 
-                                <div class="capa-fechas border-radius-form shadow">
-                                    <select class="input-generic month" name="month" form="month">
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                    </select>
-                                </div>
+                                        <div class="">
+                                            <select class="" name="month" form="month">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                            </select>
+                                        </div>
 
-                                <div class="capa-year border-radius-form shadow">
-                                    <select class="input-generic year" name="year" form="year">
-                                        <option value="1985">1985</option>
-                                        <option value="1986">1986</option>
-                                    </select>
+                                        <div class="">
+                                            <select class="input-generic year" name="year" form="year">
+                                                <option value="1985">1985</option>
+                                                <option value="1986">1986</option>
+                                            </select>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </fieldset>
@@ -139,7 +147,7 @@
 
                     <div class="content-direccion padding-medium">
 
-                        <h2>AHORA, TU DIRECCIÓN <img src="images/icon-direccion.png" alt="icono datos"/></h2>
+                        <h2>AHORA, TU DIRECCIÓN </h2><img src="images/icon-direccion.png" alt="icono datos"/>
 
                         <fieldset class="fila-1">
                             <div class="margin-medium">
@@ -196,12 +204,17 @@
 
                     <div class="content-cuenta padding-medium">
 
-                        <h2>Y PARA TERMINAR,  TU NÚMERO DE CUENTA <img src="images/icon-cuenta.png" alt="icono cuenta"/></h2>
+                        <h2>Y PARA TERMINAR,  TU NÚMERO DE CUENTA </h2><img src="images/icon-cuenta.png" alt="icono cuenta"/>
 
                         <fieldset class="fila-1">
                             <div class="margin-medium">
                                 <label class="iban">IBAN</label>
-                                <input class="border-radius-form input-generic iban-letras" type="text" name="iban-letras" id="iban-letras">
+                                <div class="capa-iban-letras border-radius-form shadow">
+                                    <select class="input-generic iban-letras" name="iban-letras" form="iban-letras">
+                                        <option value="es">EE</option>
+                                        <option value="mm">ES</option>
+                                    </select>
+                                </div>
                             </div>
 
                             <div class="margin-medium">
@@ -240,9 +253,12 @@
                         </fieldset>
 
                         <fieldset class="botons-form">
-                            <div class="margin-medium">
-                                <input class="btn-enviar" type="submit" value="Enviar">
 
+                            <div class="form-actions">
+                                <input class="webform-submit button-primary form-submit" name="op" value="Enviar" type="submit">
+                            </div>
+
+                            <div>
                                 <img src="images/comodo-secure.png" alt="comodo-secure"/>
                             </div>
                         </fieldset>
