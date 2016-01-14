@@ -1,6 +1,7 @@
 <?php
 
 //var_dump($node);
+$images_path = "../sites/all/themes/ai-theme-civicrm/ai-formulario/images/";
 
 if ($node->nid=='51'){
 echo '
@@ -90,6 +91,27 @@ else {
     print render($page['content']); 
     echo '
                     </div>
+                    <div class="box-es-right">
+
+                        <div class="three-column ventajas">
+                            <img src="' . $images_path . 'pig.png" alt="pig"/>
+                            <h3>¿Conoces las ventajas fiscales de ser socio/a?</h3>
+                            <p>Todas tus aportaciones desgravan un 50% los primeros 150€. A partir de esa cifra, el 27,5%. En el País Vasco y Navarra, la deducción es del 20% y 25% respectivamente.</p>
+                        </div>
+
+                        <div class="three-column formas-pago">
+                            <img src="' . $images_path . 'cartera.png" alt="pig"/>
+                            <h3>Otras formas de pago</h3>
+                            <p>Si tienes algún problema al realizar tu donación o quieres información sobre otras formas de pago o sobre cuotas reducidas, llámanos a <b>913101277</b> (extensiones <b>30</b> y <b>37</b>) o escribe a <a href="mailto:socios@es.amnesty.org" title="socios@es.amnesty.org">socios@es.amnesty.org</a></p>
+                        </div>
+
+                        <div class="three-column compromiso">
+                            <img src="' . $images_path . 'ventana.png" alt="pig"/>
+                            <h3>Transparencia, nuestro compromiso</h3>
+                            <p>El 100% de nuestros recursos los destinamos a luchar por los derechos humanos en todo el mundo. Nuestras cuentas son públicas y puedes verlas en nuestra web.</p>
+                        </div>
+
+                </div><!-- /box-es-right -->
                 </div>
             </div>    
         </div>
