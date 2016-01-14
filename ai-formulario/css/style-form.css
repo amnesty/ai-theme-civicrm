@@ -504,7 +504,7 @@ input {
     float: left;
 }
 
-.content-end-form .check-politica label {
+.content-end-form .check label span{
     visibility: hidden;
     color: #fff;
 }
