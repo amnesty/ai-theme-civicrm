@@ -1,6 +1,10 @@
 <?php
+
+//var_dump($node);
+
 if ($node->nid=='51'){
 echo '
+<!-- Header -->
 <header class="header" data-header="" role="banner">
     <div class="header__container" data-header-container="">
         <div class="header__slogan-container">
@@ -38,6 +42,7 @@ echo '
 <div class="container--wide">
     <div class="grid">
    	 <div id="content-area">
+            <!-- Formulario -->
          	<div class="content-form clearfix">
 			<p class="text-intro">En Amnistía Internacional <span>renunciamos a los fondos de gobiernos y partidos políticos</span> por una simple razón: nuestra independencia está por encima de todo. <span>Nos financiamos gracias a las aportaciones de personas como tú, que deciden apoyarnos económicamente porque quieren un mundo más justo.</span></p>
 		        <div class="box-form-es">
@@ -50,6 +55,7 @@ echo '
 	</div>
 </div>
 
+<!-- Footer -->
 <footer class="footer print-hidden">
     <div class="footer__container">
         <div class="grid footer__bottom">
@@ -63,7 +69,7 @@ echo '
             </div>
             <div class="footer__col--left">
                 <p class="footer-legal"> <a href="#" class="footer-legal__link">Contacto</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="#" class="footer-legal__link">Política de privacidad</a> &nbsp;&nbsp;|&nbsp;&nbsp; <a href="#" class="footer-legal__link">Mapa del sitio</a> </p>
-                <p class="footer-copyright">© 2015 Amnistía Internacional España</p>
+                <p class="footer-copyright">© 2016 Amnistía Internacional España</p>
             </div>
         </div>
     </div>
@@ -71,6 +77,22 @@ echo '
 
 }
 else {
-         print render($page['content']);
+    echo '
+    <!-- Bootstrap Grid -->
+    <div class="container--wide">
+        <div class="grid">
+         <div id="content-area">
+                <div class="content-form clearfix">
+                <p class="text-intro">En Amnistía Internacional <span>renunciamos a los fondos de gobiernos y partidos políticos</span> por una simple razón: nuestra independencia está por encima de todo. <span>Nos financiamos gracias a las aportaciones de personas como tú, que deciden apoyarnos económicamente porque quieren un mundo más justo.</span></p>
+                    <div class="box-form-es">
+                        <p>Los campos marcados con * son obligatorios.</p>  
+    ';
+    print render($page['content']); 
+    echo '
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>';
 }
 ?>

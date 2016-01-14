@@ -1,4 +1,4 @@
-/*html, body, body div, span, object, iframe,
+html, body, body div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code, del, dfn, em, img,
 ins, kbd, q, samp, small, strong, sub, sup, var,
@@ -20,6 +20,12 @@ header, hgroup, nav, section {
     display : block;
 }
 
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 html {
     font-size: 62.5%;
     word-wrap:break-word;
@@ -28,25 +34,6 @@ html {
 body {
     color: #000000;
     background-color: #ffffff;
-}*/
-
-
-fieldset, form, label {
-    margin : 0;
-    padding : 0;
-    border : 0;
-    outline : 0;
-    font-size : 100%;
-    vertical-align : baseline;
-    background : transparent;
-}
-
-/* Theirs */
-
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
 }
 
 input {
@@ -140,7 +127,6 @@ input {
 }
 
 .box-form-es p{
-
     font-size: 13px;
     color: #000000;
 }
@@ -151,14 +137,16 @@ input {
 	font-size: 40px;
 	border-bottom: 2px solid #000;
 	padding-bottom: 20px;
-    display: block;
+    display: inline-block;
+    line-height: 40px;
     font-weight: normal;
 }
 
-.box-form-es h2 img{
+.box-form-es img{
     display: inline-block;
     top: 10px;
     position: relative;
+    margin-left: 10px;
 }
 
 .box-form-es form .cuota-options-wrapper-general{
@@ -173,92 +161,67 @@ input {
 
 
 /* content-colaborar  ----------------------------------------------------- */
+.content-colaborar .fila-1 {
+    margin-top: 20px;
+}
+
 .content-colaborar {
     padding: 0 20px 20px;
 }
 
-.content-colaborar .capa-selecttime{
-    width: 24%;
+.content-colaborar .capa-selecttime {
+    width: 380px;
     overflow: hidden;
     float: left;
     border: 2px solid #000;
     height: 50px;
+    margin-right: 20px;
 }
 
-.content-colaborar .cuota-options-wrapper .selecttime{
-    border: 0;
-	font-family: 'TradeGothic-BoldCondTwenty';
-    height: 44px;
+.content-colaborar .selecttime {
+    width: 120%;
+    border:0;
+}
+
+.content-colaborar select.selecttime {
+    background-position: 340px center;
+}
+
+.content-colaborar .cuotas {
+    font-family: 'TradeGothic-BoldCondTwenty';
     font-size: 24px;
-    color: #000000;
-    line-height: 40px;
-    position: relative;
-    margin: 0;
-    width: 112%;
-    float: left;
-    list-style: none inside none;
-}
-
-.content-colaborar select.selecttime{
-    background-position: 140px center;
-}
-
-.content-colaborar .cuota-options-wrapper .cuotas{
-	font-family: 'TradeGothic-BoldCondTwenty';
-	border: 2px solid #000;
-    height: 50px;
-    font-size: 24px;
-    color: #000000;
     line-height: 50px;
-    position: relative;
-    margin-left: 20px;
-    width: 15%;
+    float:left;
+    overflow: hidden;
+}
+
+/*.content-colaborar .cuotas label {
+    margin-right: 10px;
+}*/
+
+
+    /* Helena ----------------------- */
+
+.content-colaborar .cuotas div {
     float: left;
-    text-align: center;
-    list-style: none inside none;
-    cursor: pointer;
+    overflow: hidden;
+    margin-right: 10px;
 }
 
-.content-colaborar .importe-cuota-other{
-	width: 20%;
-	color: #000000;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin: 0;
-    height: 40px;
-}
-
-.content-colaborar .form-item-other{
-	margin: 0;
+.content-colaborar .capa-other-quant {
+    width: 70px;
+    overflow: hidden;
     float: left;
-    width: 70%;
-}
-
-.content-colaborar .form-item-other input{
-	border: 2px solid #000;
-    width: 100%;
     height: 50px;
-    max-width: 100%;
-    background: none;
-    padding: 0;
-    text-align: center;
-    font-family: 'TradeGothic-BoldCondTwenty';
-    font-size: 24px;
-    line-height: 27px;
-    box-shadow: none;
-    -moz-box-shadow: none;
-    -webkit-box-shadow: none;
+    margin-right: 20px;
+    line-height: 50px;
+    margin-left: 20px;
 }
 
-.content-colaborar .field-suffix /*.quota-suffix*/{
-	width: 25%;
-    float: left;
-    text-align: center;
-    line-height: 44px;
-    font-size: 24px;
-    font-family: 'TradeGothic-BoldCondTwenty';
+.content-colaborar .other-quant {
+    border: 2px solid #000;
 }
+
 
 /* content-datos ----------------------------------------------------- */
 .content-datos .fila-1,
@@ -314,7 +277,7 @@ input {
 }
 
 .content-datos .capa-genero{
-    width: 85px;
+    width: 155px;
     overflow: hidden;
     float: left;
     border: 2px solid #000;
@@ -323,9 +286,12 @@ input {
 }
 
 .content-datos .genero{
-	width: 130%;
+	width: 120%;
     border: 0;
+}
 
+.content-datos select.genero {
+    background-position: 120px center;
 }
 
 .content-datos .capa-language{
@@ -353,54 +319,68 @@ input {
     margin-right: 20px;
 }
 
-.content-datos .capa-fechas{
-    width: 85px;
+.content-datos .capa-profesion {
+    width: 270px;
     overflow: hidden;
     float: left;
     border: 2px solid #000;
     height: 50px;
-    margin-right: 10px;
-
+    margin-right: 20px;
 }
 
-.content-datos .day,
-.content-datos .month {
-    width: 125%;
-    border: 0;
+.content-datos .profesion {
+    width: 120%;
+    border:0;
 }
 
-.content-datos .capa-year{
+.content-datos select.profesion {
+    background-position: 230px center;
+}
+
+    /* Helena ---------- */
+
+.content-datos .capa-fechas div div {
     width: 95px;
     overflow: hidden;
     float: left;
     border: 2px solid #000;
     height: 50px;
-    margin-right: 10px;
-
+    margin-right: 5px;
+    /* Border radius */
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    /* Shadow */
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.63);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.63);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.63);
 }
 
-.content-datos .year {
+.content-datos .capa-fechas div select {
     width: 130%;
+    background-position: 65px center;
+    /* como input-generic */
     border: 0;
+    font-family: 'TradeGothic-BoldCondTwenty';
+    font-size: 24px;
+    color: #000;
+    line-height: 50px;
+    height: 50px;
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    list-style: none inside none;
+    padding-left: 10px;
 }
 
 .content-datos select.document {
-    background-position: 65px center;
+    background-position: 57px center;
 }
 
 .content-datos select.language {
     background-position: 200px center;
 }
 
-.content-datos select.day,
-.content-datos select.month,
-.content-datos select.genero {
-    background-position: 50px center;
-}
-
-.content-datos select.year {
-    background-position: 65px center;
-}
 
 /* content-direccion ----------------------------------------------------- */
 .content-direccion .capa-tipo-via{
@@ -469,7 +449,25 @@ input {
     margin-right: 20px;
 }
 
-.content-cuenta .iban-letras,
+.content-cuenta .capa-iban-letras{
+    width: 95px;
+    overflow: hidden;
+    float: left;
+    border: 2px solid #000;
+    height: 50px;
+    margin-right: 10px;
+
+}
+
+.content-cuenta  .iban-letras {
+    width: 125%;
+    border: 0;
+}
+
+.content-cuenta select.iban-letras {
+    background-position: 50px center;
+}
+
 .content-cuenta .iban-numero{
     max-width: 55px;
 }
@@ -540,7 +538,7 @@ input {
     margin-top: 40px;
 }
 
-.content-end-form .botons-form .btn-enviar{
+.content-end-form .button-primary{
     font-family: 'TradeGothic-BoldCondTwenty';
     max-width: 315px;
     width: 100%;
@@ -580,12 +578,13 @@ input {
     max-width: 80px;
     width: 100%;
     display: block;
-    margin: auto;
+    margin: auto auto 20px;
 }
 
 .box-es-right .three-column h3{
     font-family: 'TradeGothic-BoldCondTwenty';
     font-size: 36px;
+    line-height: 36px;
     text-align: center;
     color: #000;
 }
@@ -615,9 +614,6 @@ input {
         float: none;
     }
 
-    .box-form-es form .cuota-options-wrapper-general {
-        width: 80%;
-    }
 
     .content-datos select.document {
         background-position: 55px center;
@@ -663,11 +659,8 @@ input {
 
     .box-form-es span{
         font-size: 37px;
+        line-height: 37px;
 
-    }
-
-    .box-form-es form .cuota-options-wrapper-general {
-        width: 100%;
     }
 
     .content-datos .fila-1 input, .content-datos .fila-3 input {
@@ -751,40 +744,6 @@ input {
         max-width:500px;
     }
 
-    .content-colaborar .capa-selecttime {
-        width: 100%;
-        float: none;
-    }
-
-    .content-colaborar .cuota-options-wrapper .cuotas {
-        margin-left: 0;
-        width: 100%;
-        float: none;
-    }
-
-    .content-colaborar .importe-cuota-other {
-        width: 100%;
-        position: relative;
-    }
-
-    .content-colaborar .form-item-other {
-        width: 95%;
-        margin-top: 20px;
-    }
-
-    .content-colaborar .quota-suffix {
-        width: 5%;
-        margin-top: 20px;
-    }
-
-    .content-colaborar select.selecttime {
-        background-position: 86% center;
-    }
-
-    .content-colaborar .cuota-options-wrapper .cuotas {
-        margin-top: 20px;
-    }
-
     .content-datos .fila-1 input, .content-datos .fila-3 input {
         max-width: 100%;
         margin-top: 20px;
@@ -834,7 +793,7 @@ input {
         background-position: 86% center;
     }
 
-    .content-cuenta .iban-letras, .content-cuenta .iban-numero {
+    .content-cuenta .iban-numero {
         max-width: 41%;
     }
 
@@ -884,6 +843,24 @@ input {
 /* max-width: 767px */
 @media only screen and (max-width: 767px) {
 
+    .content-colaborar .capa-selecttime {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+
+    .content-colaborar select.selecttime {
+        background-position: 79% center;
+    }
+
+    .content-colaborar .cuotas {
+        margin-top: 20px;
+    }
+
+    .content-colaborar .cuotas label {
+        margin-right: 4px;
+    }
+
     .content-form{
         max-width:320px;
     }
@@ -902,6 +879,15 @@ input {
 
     .content-datos .number-dni {
         max-width: 52%;
+    }
+
+    .content-datos .capa-profesion {
+        width: 100%;
+        float: none;
+    }
+
+    .content-datos  input#email {
+        margin-bottom: 20px;
     }
 
     .content-datos .capa-language {
@@ -936,10 +922,19 @@ input {
         background-position: 79% center;
     }
 
-    .content-cuenta .iban-letras, .content-cuenta .iban-numero {
+    .content-cuenta .iban-numero {
         max-width: 100%;
         display: block;
         float: none;
+    }
+
+    .content-cuenta .capa-iban-letras {
+        width: 100%;
+        float: none;
+    }
+
+    .content-cuenta select.iban-letras {
+        background-position: 76% center;
     }
 
 }
