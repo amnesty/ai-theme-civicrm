@@ -2,7 +2,7 @@
 
 //var_dump($node);
 
-if ($node->nid=='51'){
+if ($node->nid=='10'){
 echo '
 <!-- Header -->
 <header class="header" data-header="" role="banner">
