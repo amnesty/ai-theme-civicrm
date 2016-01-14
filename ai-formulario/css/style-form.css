@@ -542,8 +542,8 @@ input {
 .content-end-form .botons-form{
     margin-top: 40px;
 }
-
-.content-end-form .button-primary{
+    /* Helena ------------ */
+.box-form-es form .button-primary{
     font-family: 'TradeGothic-BoldCondTwenty';
     max-width: 315px;
     width: 100%;
@@ -554,6 +554,7 @@ input {
     clear: both;
     background: #f1e60d;
     border: 0;
+    margin-top: -110px;
 }
 
 .content-end-form .botons-form img{
