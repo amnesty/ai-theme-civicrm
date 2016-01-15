@@ -4,7 +4,7 @@
 
 // globals
 $images_path = "../sites/all/themes/ai-theme-civicrm/ai-formulario/images/"; // directorio donde se encuentran las imágenes dentro del tema del formulario
-$form_node = 1; // aqui se tiene que poner el id de la página que contiene el forumulario de socixs en este contexto
+$form_node = 51; // aqui se tiene que poner el id de la página que contiene el forumulario de socixs en este contexto
 
 if ($node->nid==$form_node){
 ?>
