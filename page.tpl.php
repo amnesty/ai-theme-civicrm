@@ -105,9 +105,8 @@ if ($node->nid==$form_node){
 else {
 ?>
 <!-- Contenido básico de una página si no es la del formulario de socixs -->
-                <div class="box-form-es">
-                    <p>Los campos marcados con * son obligatorios.</p>  
-                    <?php print render($page['content']); ?>
-                </div>
+    <div class="content-area">
+        <?php print render($page['content']); ?>
+    </div>
 <?php } ?>
 </div></div>
