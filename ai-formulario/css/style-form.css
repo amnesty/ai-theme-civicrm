@@ -1,4 +1,5 @@
-html, body, body div, span, object, iframe,
+/*html, body, body div, */
+.content-form span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code, del, dfn, em, img,
 ins, kbd, q, samp, small, strong, sub, sup, var,
@@ -15,28 +16,25 @@ hgroup, menu, nav, section, time, mark, audio, video {
     background : transparent;
 }
 
-article, aside, figure, footer,
+.content-form article, aside, figure, footer,
 header, hgroup, nav, section {
     display : block;
 }
 
-* {
+.content-form * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-html {
+.content-form {
     font-size: 62.5%;
     word-wrap:break-word;
-}
-
-body {
     color: #000000;
     background-color: #ffffff;
 }
 
-input {
+.content-form input {
     border-radius: 0;
 }
 
@@ -943,11 +941,4 @@ input {
         background-position: 76% center;
     }
 
-}
-
-/* Added from system.theme.css */
-.form-item input.error,
-.form-item textarea.error,
-.form-item select.error {
-  border: 2px solid red;
 }
