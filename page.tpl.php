@@ -1,9 +1,12 @@
 <div id="page-wrapper"><div id="page">
 
 <?php
-$images_path = "../sites/all/themes/ai-theme-civicrm/ai-formulario/images/";
 
-if ($node->nid=='51'){
+// globals
+$images_path = "../sites/all/themes/ai-theme-civicrm/ai-formulario/images/";
+$form_node = 10;
+
+if ($node->nid==$form_node){
 ?>
 
 <!-- Header -->
@@ -79,7 +82,7 @@ if ($node->nid=='51'){
 </div>
 
 <?php
-if ($node->nid=='51'){
+if ($node->nid==$form_node){
 ?>
 
 <!-- Footer -->
