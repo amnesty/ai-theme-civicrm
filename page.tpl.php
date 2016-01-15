@@ -1,4 +1,4 @@
-<div id="page-wrapper"><div id="page">
+<div id="page-wrapper"><div id="page"><div id="content" class="clearfix">
 
 <?php
 
@@ -109,4 +109,4 @@ else {
         <?php print render($page['content']); ?>
     </div>
 <?php } ?>
-</div></div>
+</div></div></div>
