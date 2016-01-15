@@ -3,8 +3,8 @@
 <?php
 
 // globals
-$images_path = "../sites/all/themes/ai-theme-civicrm/ai-formulario/images/";
-$form_node = 10;
+$images_path = "../sites/all/themes/ai-theme-civicrm/ai-formulario/images/"; // directorio donde se encuentran las imágenes dentro del tema del formulario
+$form_node = 1; // aqui se tiene que poner el id de la página que contiene el forumulario de socixs en este contexto
 
 if ($node->nid==$form_node){
 ?>
@@ -43,7 +43,6 @@ if ($node->nid==$form_node){
     </div>
 </div><!-- Image after header -->
 
-<?php } ?>
 
 <!-- Errors -->
 <?php print $messages; ?>
@@ -81,10 +80,6 @@ if ($node->nid==$form_node){
 	</div>
 </div>
 
-<?php
-if ($node->nid==$form_node){
-?>
-
 <!-- Footer -->
 <footer class="footer print-hidden">
     <div class="footer__container">
@@ -107,5 +102,12 @@ if ($node->nid==$form_node){
 
 <?php
 }
+else {
 ?>
+<!-- Contenido básico de una página si no es la del formulario de socixs -->
+                <div class="box-form-es">
+                    <p>Los campos marcados con * son obligatorios.</p>  
+                    <?php print render($page['content']); ?>
+                </div>
+<?php } ?>
 </div></div>
