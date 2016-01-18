@@ -17,7 +17,7 @@ hgroup, menu, nav, section, time, mark, audio, video {
 }
 
 .content-form label {
-    font-weight: none;
+    font-weight: normal;
 }
 
 .content-form article, aside, figure, footer,
