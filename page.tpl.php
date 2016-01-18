@@ -108,7 +108,7 @@ else {
 ?>
 <!-- Cargamos los CSS que necesitamos -->
 <link rel="stylesheet" type="text/css" href="<?php print system_base(); ?>/modules/system/system.theme.css">
-<link rel="stylesheet" type="text/css" href="<?php print theme_path; ?>/css/webform_all.css">
+<link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/webform_all.css">
 
 <!-- Contenido básico de una página si no es la del formulario de socixs -->
     <div class="content-area">
