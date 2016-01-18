@@ -951,4 +951,5 @@ header, hgroup, nav, section {
 div.error {
     font-family: 'TradeGothic-BoldCondTwenty';
     background: #fee;
+    font-size: 20px;
 }
