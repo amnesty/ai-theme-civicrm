@@ -105,6 +105,10 @@ if ($node->nid==$form_node){
 }
 else {
 ?>
+<!-- Cargamos los CSS que necesitamos -->
+<link rel="stylesheet" type="text/css" href="../../../../modules/system/system.theme.css">
+<link rel="stylesheet" type="text/css" href="../../default/modules/cpn/webform.css">
+
 <!-- Contenido básico de una página si no es la del formulario de socixs -->
     <div class="content-area">
         <?php print render($page['content']); ?>
