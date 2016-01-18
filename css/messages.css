@@ -1,9 +1,0 @@
-div.error, .error {
-    color: #8C2E0B;
-}
-div.error {
-    background: #fee;
-    border-color: #ED541D;
-    font-family: 'TradeGothic-BoldCondTwenty';
-    font-size: 20px;
-}

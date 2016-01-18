@@ -154,3 +154,8 @@ input[type="submit"]:active {
     font-size: 10px;
     .webform-layout-box.horiz: 0em;
 }
+
+/* Añadido para encajar el formulario con el estilo de la web */
+.container--wide {
+    max-width: 100%;
+}
