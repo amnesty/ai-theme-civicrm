@@ -107,7 +107,7 @@ else {
 ?>
 <!-- Cargamos los CSS que necesitamos -->
 <link rel="stylesheet" type="text/css" href="../../../../modules/system/system.theme.css">
-<link rel="stylesheet" type="text/css" href="../../default/modules/cpn/webform.css">
+<link rel="stylesheet" type="text/css" href="css/webform_all.css">
 
 <!-- Contenido básico de una página si no es la del formulario de socixs -->
     <div class="content-area">
