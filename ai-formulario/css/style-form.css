@@ -16,6 +16,10 @@ hgroup, menu, nav, section, time, mark, audio, video {
     background : transparent;
 }
 
+.content-form label {
+    font-weight: none;
+}
+
 .content-form article, aside, figure, footer,
 header, hgroup, nav, section {
     display : block;
