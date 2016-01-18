@@ -104,6 +104,10 @@ if ($node->nid==$form_node){
 }
 else {
 ?>
+<?php 
+    // Cargamos el css base
+    drupal_add_css('/modules/system/system.theme.css');
+?>
 <!-- Contenido básico de una página si no es la del formulario de socixs -->
     <div class="content-area">
         <?php print render($page['content']); ?>

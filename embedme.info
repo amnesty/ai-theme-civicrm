@@ -11,7 +11,7 @@ engine = phptemplate
 stylesheets[all][] = ai-formulario/css/style-form.css
 stylesheets[all][] = css/messages.css
 
-; Remove these core stylesheets to avoid conflicts
+; Remove these core stylesheets to avoid conflicts --> necesarios en el resto de plantillas !!!!!!!!!!!!!!!!!!
 stylesheets[all][] = system.theme.css
 stylesheets[all][] = layout_box.css
 
