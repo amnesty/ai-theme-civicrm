@@ -3,7 +3,8 @@
 <?php
 
 // globals
-$theme_path = "../sites/all/themes/ai-theme-civicrm/ai-formulario";
+global $base_url;
+$theme_path = $base_url . "/sites/all/themes/ai-theme-civicrm";
 $images_path = $theme_path . "/images/"; // directorio donde se encuentran las imágenes dentro del tema del formulario
 $form_node = 1; // aqui se tiene que poner el id de la página que contiene el forumulario de socixs en este contexto
 
@@ -107,8 +108,8 @@ if ($node->nid==$form_node){
 else {
 ?>
 <!-- Cargamos los CSS que necesitamos -->
-<link rel="stylesheet" type="text/css" href="<?php print base_path(); ?>/modules/system/system.theme.css">
-<link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/webform_all.css">
+<link rel="stylesheet" type="text/css" href="<?php print $base_url; ?>/modules/system/system.theme.css">
+<link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/webform_add.css">
 
 <!-- Contenido básico de una página si no es la del formulario de socixs -->
     <div class="content-area">
