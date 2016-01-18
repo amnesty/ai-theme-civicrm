@@ -7,6 +7,7 @@ $images_path = "../sites/all/themes/ai-theme-civicrm/ai-formulario/images/"; // 
 $form_node = 51; // aqui se tiene que poner el id de la página que contiene el forumulario de socixs en este contexto
 
 if ($node->nid==$form_node){
+        //drupal_add_css('../modules/system/system.theme.css');
 ?>
 
 <!-- Header -->
