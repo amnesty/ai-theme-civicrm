@@ -3,8 +3,9 @@
 <?php
 
 // globals
-$images_path = "../sites/all/themes/ai-theme-civicrm/ai-formulario/images/"; // directorio donde se encuentran las imágenes dentro del tema del formulario
-$form_node = 51; // aqui se tiene que poner el id de la página que contiene el forumulario de socixs en este contexto
+$theme_path = "../sites/all/themes/ai-theme-civicrm/ai-formulario";
+$images_path = $theme_path . "/images/"; // directorio donde se encuentran las imágenes dentro del tema del formulario
+$form_node = 1; // aqui se tiene que poner el id de la página que contiene el forumulario de socixs en este contexto
 
 if ($node->nid==$form_node){
         //drupal_add_css('../modules/system/system.theme.css');
@@ -106,8 +107,8 @@ if ($node->nid==$form_node){
 else {
 ?>
 <!-- Cargamos los CSS que necesitamos -->
-<link rel="stylesheet" type="text/css" href="../../../../modules/system/system.theme.css">
-<link rel="stylesheet" type="text/css" href="css/webform_all.css">
+<link rel="stylesheet" type="text/css" href="<?php print system_base(); ?>/modules/system/system.theme.css">
+<link rel="stylesheet" type="text/css" href="<?php print theme_path(); ?>/css/webform_all.css">
 
 <!-- Contenido básico de una página si no es la del formulario de socixs -->
     <div class="content-area">
