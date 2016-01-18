@@ -1,4 +1,4 @@
-@font-face {
+G@font-face {
     font-family: TradeGothicLT-BoldCondTwenty;
     src: url("../fonts/tradegothiclt-boldcondtwenty.eot");
 }
@@ -2784,7 +2784,8 @@ screen and (max-height: 300px) {
 }
 .container--wide {
     margin: 0 auto;
-    max-width: 90.7857142857rem
+    max-width: 100%; /*90.7857142857rem -- cambiado para cuadrar con el formulario */
+
 }
 .container--highlight {
     max-width: 105.142857143rem;
