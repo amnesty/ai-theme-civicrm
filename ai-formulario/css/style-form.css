@@ -946,3 +946,9 @@ header, hgroup, nav, section {
     }
 
 }
+
+/* Helena ---------- Errores */
+div.error {
+    font-family: 'TradeGothic-BoldCondTwenty';
+    background: #fee;
+}
