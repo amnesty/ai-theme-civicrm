@@ -7,6 +7,7 @@ $images_path = "../sites/all/themes/ai-theme-civicrm/ai-formulario/images/"; // 
 $form_node = 1; // aqui se tiene que poner el id de la página que contiene el forumulario de socixs en este contexto
 
 if ($node->nid==$form_node){
+        //drupal_add_css('../modules/system/system.theme.css');
 ?>
 
 <!-- Header -->
@@ -104,10 +105,10 @@ if ($node->nid==$form_node){
 }
 else {
 ?>
-<?php 
-    // Cargamos el css base
-    drupal_add_css('/modules/system/system.theme.css');
-?>
+<!-- Cargamos los CSS que necesitamos -->
+<link rel="stylesheet" type="text/css" href="../../../../modules/system/system.theme.css">
+<link rel="stylesheet" type="text/css" href="../../default/modules/cpn/webform.css">
+
 <!-- Contenido básico de una página si no es la del formulario de socixs -->
     <div class="content-area">
         <?php print render($page['content']); ?>
