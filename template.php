@@ -1,8 +1,8 @@
 <?php
 
-function ai-theme-civicrm_css_alter(&$css) {
+//function ai-theme-civicrm_css_alter(&$css) {
     // Cargamos el css base 
-    drupal_add_css('/modules/system/system.theme.css');
-}
+    //drupal_add_css('/modules/system/system.theme.css');
+//}
 
 ?>
