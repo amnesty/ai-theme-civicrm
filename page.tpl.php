@@ -3,10 +3,7 @@
 <?php
 
 // globals
-global $base_url;
-$theme_path = $base_url . "/sites/all/themes/ai-theme-civicrm";
-$images_path = $theme_path . "/images/"; // directorio donde se encuentran las imágenes dentro del tema del formulario
-$form_node = 51; // aqui se tiene que poner el id de la página que contiene el forumulario de socixs en este contexto
+include_once('config.php');
 
 if ($node->nid==$form_node){
         //drupal_add_css('../modules/system/system.theme.css');
