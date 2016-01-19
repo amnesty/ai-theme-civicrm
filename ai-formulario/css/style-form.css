@@ -954,6 +954,6 @@ div.error {
     font-size: 16px;
 }
 
-.form-item input.error, .form-item textarea.error, .form-item select.error {
+input.error, textarea.error, select.error {
     border: 2px solid #F00;
 }
