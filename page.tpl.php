@@ -110,6 +110,10 @@ else {
 
 <!-- Contenido básico de una página si no es la del formulario de socixs -->
     <div class="content-area">
+        <!-- Errors -->
+        <?php print $messages; ?>
+
+        <!-- Content -->
         <?php print render($page['content']); ?>
     </div>
 <?php } ?>
