@@ -44,9 +44,6 @@ if ($node->nid==$form_node){
 </div><!-- Image after header -->
 
 
-<!-- Errors -->
-<?php print $messages; ?>
-
 <!-- Page content -->
 <div class="container--wide"><!-- Bootstrap Grid -->
     <div class="grid">
@@ -55,7 +52,8 @@ if ($node->nid==$form_node){
          	<div class="content-form clearfix">
 			<p class="text-intro">En Amnistía Internacional <span>renunciamos a los fondos de gobiernos y partidos políticos</span> por una simple razón: nuestra independencia está por encima de todo. <span>Nos financiamos gracias a las aportaciones de personas como tú, que deciden apoyarnos económicamente porque quieren un mundo más justo.</span></p>
 		        <div class="box-form-es">
-                	<p>Los campos marcados con * son obligatorios.</p>	
+                	<p>Los campos marcados con * son obligatorios.</p>
+                    <?php print $messages; ?> <!-- Errors -->
                     <?php print render($page['content']); ?>
                 </div>
                 <div class="box-es-right">
