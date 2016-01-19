@@ -49,6 +49,17 @@ header, hgroup, nav, section {
     clear: both;
 }
 
+/* Errors ------- (Helena) */
+div.error {
+    font-family: 'TradeGothic-BoldCondTwenty';
+    background: #fee;
+    font-size: 16px;
+}
+
+input.error, textarea.error, select.error {
+    border: 2px solid #F00;
+}
+
 /* Fonts */
 @font-face {
   font-family: 'TradeGothic-BoldCondTwenty';
@@ -945,15 +956,4 @@ header, hgroup, nav, section {
         background-position: 76% center;
     }
 
-}
-
-/* Helena ---------- Errores */
-div.error {
-    font-family: 'TradeGothic-BoldCondTwenty';
-    background: #fee;
-    font-size: 16px;
-}
-
-input.error, textarea.error, select.error {
-    border: 2px solid #F00;
 }
