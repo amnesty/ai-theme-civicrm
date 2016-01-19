@@ -1,6 +1,6 @@
 <?php
 
-function embedme3333_webform_element($variables) {
+function embedme_webform_element($variables) {
 /*  $element = &$variables['element'];
 
   // This function is invoked as theme wrapper, but the rendered form element
@@ -70,7 +70,7 @@ function embedme3333_webform_element($variables) {
 
   // ------- Helena: Add a class for error elements.
   if (isset($element['#parents']) && form_get_error($element)) {
-    $attributes['class'][] = 'form-error';
+    array_push( $element['#wrapper_attributes']['class'], 'form-error');
   }
 
   $output = '<div ' . drupal_attributes($element['#wrapper_attributes']) . '>' . "\n";
