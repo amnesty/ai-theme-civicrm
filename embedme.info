@@ -9,6 +9,7 @@ stylesheets[all][] = css/ai.css
 
 ; AI form stylesheet
 stylesheets[all][] = ai-formulario/css/style-form.css
+stylesheets[all][] = css/.css
 
 ; Remove these core stylesheets to avoid conflicts --> necesarios en el resto de plantillas !!!!!!!!!!!!!!!!!!
 stylesheets[all][] = system.theme.css
@@ -17,7 +18,7 @@ stylesheets[all][] = layout_box.css
 ; Scripts
 scripts[] = js/ai.js
 scripts[] = js/require.js
-;scripts[] = js/bootstrap.js
+scripts[] = js/bootstrap.js
 
 version = "7.x-1.x-dev"
 core = "7.x"
