@@ -81,7 +81,7 @@ input.error, textarea.error, select.error {
     background: #fff url(../images/arrow.png);
     background-repeat: no-repeat;
 }
-.content-form .border-radius-form{
+.content-form .border-radius-form select, .content-form .border-radius-form input{
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
