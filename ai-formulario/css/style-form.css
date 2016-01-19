@@ -49,7 +49,7 @@ header, hgroup, nav, section {
     clear: both;
 }
 
-/* Errors ------- (Helena) */
+/* Errors ------- (Helena)*/
 div.error {
     font-family: 'TradeGothic-BoldCondTwenty';
     background: #fee;
@@ -81,7 +81,7 @@ input.error, textarea.error, select.error {
     background: #fff url(../images/arrow.png);
     background-repeat: no-repeat;
 }
-.content-form .border-radius-form select, .content-form .border-radius-form input{
+.content-form .border-radius-form{
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
