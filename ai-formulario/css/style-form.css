@@ -948,7 +948,7 @@ header, hgroup, nav, section {
 }
 
 /* Helena ---------- Errores */
-.content-form div.error {
+div.error {
     font-family: 'TradeGothic-BoldCondTwenty';
     background: #fee;
     font-size: 16px;
