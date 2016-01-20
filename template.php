@@ -5,9 +5,9 @@ function embedme_webform_element($variables) {
   $element = $variables['element'];
 
   // ------- Helena: Add a class for error elements.
-  if (isset($element['#parents']) && form_get_error($element)) {
+  /*if (isset($element['#parents']) && form_get_error($element)) {
     array_push( $element['#wrapper_attributes']['class'], 'form-error');
-  }
+  }*/
 
   $output = '<div ' . drupal_attributes($element['#wrapper_attributes']) . '>' . "\n";
   $prefix = isset($element['#field_prefix']) ? '<span class="field-prefix">' . webform_filter_xss($element['#field_prefix']) . '</span> ' : '';
