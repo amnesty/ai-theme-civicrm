@@ -58,7 +58,7 @@ div.error {
 
 .form-error .form-item, 
 .form-item input.error, .form-item textarea.error, .form-item select.error, 
-input.error, textarea.error, select.error {
+input.error, textarea.error, select.error, div.error {
     border-color: #F00;
 }
 
@@ -358,7 +358,7 @@ input.error, textarea.error, select.error {
     width: 95px;
     overflow: hidden;
     float: left;
-    border: 2px solid #000;
+    border: 2px solid;
     height: 50px;
     margin-right: 5px;
     /* Border radius */
