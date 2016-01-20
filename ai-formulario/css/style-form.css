@@ -56,7 +56,9 @@ div.error {
     font-size: 16px;
 }
 
-.form-error .form-item /*, input.error, textarea.error, select.error*/ {
+.form-error .form-item, 
+.form-item input.error, .form-item textarea.error, .form-item select.error, 
+input.error, textarea.error, select.error {
     border-color: #F00;
 }
 
