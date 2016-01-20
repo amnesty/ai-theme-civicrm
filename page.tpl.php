@@ -1,4 +1,4 @@
-<div id="page-wrapper"><div id="page"><div id="content" class="clearfix">
+<div id="page-wrapper" onload="errors()"><div id="page"><div id="content" class="clearfix">
 
 <?php
 
