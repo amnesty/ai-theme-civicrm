@@ -50,7 +50,11 @@ if ($node->nid==$form_node){
    	 <div id="content-area">
             <!-- Formulario -->
          	<div class="content-form clearfix">
-			<p class="text-intro">En Amnistía Internacional <span>renunciamos a los fondos de gobiernos y partidos políticos</span> por una simple razón: nuestra independencia está por encima de todo. <span>Nos financiamos gracias a las aportaciones de personas como tú, que deciden apoyarnos económicamente porque quieren un mundo más justo.</span></p>
+			     <p class="text-intro">
+                     <span>Tu ayuda hace posible que podamos renunciar a subvenciones de gobiernos y partidos políticos, porque nuestra independencia está por encima de todo. </span>
+                     <span>Es gracias a personas como tú que nos apoyáis económicamente por lo que podemos denunciar sin presiones de ningún tipo cualquier violación de los derechos humanos. </span>
+                     <span>Gracias por creer en un mundo más justo.</span>
+                </p>
 		        <div class="box-form-es">
                 	<p>Los campos marcados con * son obligatorios.</p>
                     <?php print $messages; ?> <!-- Errors -->
