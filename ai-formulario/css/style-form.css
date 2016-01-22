@@ -353,7 +353,6 @@ input.error, textarea.error, select.error, div.error {
 }
 
     /* Helena ---------- */
-
 .content-datos .capa-fechas div div {
     width: 95px;
     overflow: hidden;
@@ -417,24 +416,24 @@ input.error, textarea.error, select.error, div.error {
 }
 
 .content-direccion .nombre-via{
-    max-width: 590px;
+    max-width: 540px;
 }
 
 .content-direccion .numero-bloque{
-    max-width: 420px;
+    max-width: 370px;
 }
 
 .content-direccion .postal{
-    max-width: 340px;
+    max-width: 290px;
 }
 
 .content-direccion .poblacion{
-    max-width: 380px;
+    max-width: 330px;
 }
 
 .content-direccion .capa-provincia,
 .content-direccion .capa-pais{
-    width: 380px;
+    width: 330px;
     overflow: hidden;
     float: left;
     border: 2px solid #000;
@@ -450,7 +449,7 @@ input.error, textarea.error, select.error, div.error {
 
 .content-direccion select.provincia,
 .content-direccion select.pais {
-    background-position: 340px center;
+    background-position: 290px center;
 }
 
 /* content-cuenta ----------------------------------------------------- */
