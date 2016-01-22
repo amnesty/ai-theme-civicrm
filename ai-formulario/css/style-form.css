@@ -185,7 +185,7 @@ input.error, textarea.error, select.error, div.error {
 }
 
 .content-colaborar .capa-selecttime {
-    width: 200px;
+    width: 380px;
     overflow: hidden;
     float: left;
     border: 2px solid #000;
@@ -199,7 +199,7 @@ input.error, textarea.error, select.error, div.error {
 }
 
 .content-colaborar select.selecttime {
-    background-position: 160px center;
+    background-position: 340px center;
 }
 
 .content-colaborar .cuotas {
@@ -249,12 +249,7 @@ input.error, textarea.error, select.error, div.error {
      margin-left: -32px;
 }
 
-
-.content-datos .fila-1 input {
-    max-width: 240px;
-
-}
-
+.content-datos .fila-1 input,
 .content-datos .fila-3 input {
     max-width: 277px;
 }
