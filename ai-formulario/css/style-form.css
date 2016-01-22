@@ -109,7 +109,7 @@ input.error, textarea.error, select.error, div.error {
     height: 50px;
     position: relative;
     float: left;
-    margin-right: 20px;
+    margin-right: 10px;
     list-style: none inside none;
     padding-left: 10px;
 }
@@ -251,7 +251,7 @@ input.error, textarea.error, select.error, div.error {
 
 .content-datos .fila-1 input,
 .content-datos .fila-3 input {
-    max-width: 277px;
+    max-width: 227px;
 }
 
 .content-datos a{
