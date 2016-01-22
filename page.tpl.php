@@ -53,7 +53,7 @@ if ($node->nid==$form_node){
 			     <p class="text-intro">
                      <span>Tu ayuda hace posible que podamos renunciar a subvenciones de gobiernos y partidos políticos, porque nuestra independencia está por encima de todo. </span>
                      <span>Es gracias a personas como tú que nos apoyáis económicamente por lo que podemos denunciar sin presiones de ningún tipo cualquier violación de los derechos humanos. </span>
-                     <span>Gracias por creer en un mundo más justo.</span>
+                     <span><b>Gracias por creer en un mundo más justo.<b></span>
                 </p>
 		        <div class="box-form-es">
                 	<p>Los campos marcados con * son obligatorios.</p>
