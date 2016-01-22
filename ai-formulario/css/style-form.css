@@ -416,7 +416,7 @@ input.error, textarea.error, select.error, div.error {
 }
 
 .content-direccion .nombre-via{
-    max-width: 470px;
+    max-width: 480px;
 }
 
 .content-direccion .numero-bloque{
