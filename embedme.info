@@ -17,6 +17,8 @@ stylesheets[all][] = layout_box.css
 ; JS Scripts
 scripts[] = js/ai.js
 scripts[] = js/require.js
+scripts[] = ai-formulario/js/scroll.js
+
 
 version = "7.x-1.x-dev"
 core = "7.x"
