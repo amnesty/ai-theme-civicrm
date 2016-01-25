@@ -1,4 +1,9 @@
-/* Clases generales ---------------- */
+/*--------------------------------------------------------------- */
+/* ------------- Diseño general para formularios ---------------- */
+/* -------------------------------------------------------------- */
+
+
+/* Estructura general --------------- */
 
 span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -17,26 +22,16 @@ hgroup, menu, nav, section, time, mark, audio, video {
     background : transparent;
 }
 
-.content-form{
-    max-width:1472px;
-    width: 100%;
-    margin: auto;
-    margin-bottom: 30px;
-}
-
-.content-form label {
-    font-weight: normal;
-}
-
 .content-form article, aside, figure, footer,
 header, hgroup, nav, section {
     display : block;
 }
 
-.content-form * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+.content-form{
+    max-width:1472px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 30px;
 }
 
 .content-form {
@@ -46,8 +41,10 @@ header, hgroup, nav, section {
     background-color: #ffffff;
 }
 
-.content-form input {
-    border-radius: 0;
+.content-form * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .clearfix:after{
@@ -57,30 +54,52 @@ header, hgroup, nav, section {
     clear: both;
 }
 
-.content-form  select{
-    width: 104%;
-    background: #fff url(../images/arrow.png);
-    background-repeat: no-repeat;
-}
-
-.content-form .border-radius-form{
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
-}
-
-.content-form .shadow{
-    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.63);
-    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.63);
-    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.63);
-}
-
 .content-form .padding-medium{
     padding: 20px;
 }
 
 .content-form .margin-medium{
     margin: 20px 0 20px;
+}
+
+.content-form .active{
+    background: #f1e60d;
+}
+
+.content-form select:focus, .content-form textarea:focus, .content-form input:focus{
+    outline: 0;
+}
+
+.content-form fieldset {
+    margin-top: 20px;
+}
+
+/* Fonts ------------------------ */
+
+@font-face {
+  font-family: 'TradeGothic-BoldCondTwenty';
+  src: url('../font/TradeGothic-BoldCondTwenty.eot?#iefix') format('embedded-opentype'),
+  url('../font/TradeGothic-BoldCondTwenty.woff') format('woff'),
+  url('../font/TradeGothic-BoldCondTwenty.ttf')  format('truetype'),
+  url('../font/TradeGothic-BoldCondTwenty.svg#TradeGothic-BoldCondTwenty') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.content-form label {
+    font-weight: normal;
+}
+
+/* Elementos genéricos de formulario ------------- */
+
+.content-form input {
+    border-radius: 0;
+}
+
+.content-form  select{
+    width: 104%;
+    background: #fff url(../images/arrow.png);
+    background-repeat: no-repeat;
 }
 
 .content-form .input-generic{
@@ -98,18 +117,61 @@ header, hgroup, nav, section {
     padding-left: 10px;
 }
 
-.content-form .active{
+/* Caja con checkbox */
+.content-form .caja-checkbox {
+    font-family: 'TradeGothic-BoldCondTwenty';
+    font-size: 24px;
+    line-height: 50px;
+    float:left;
+    overflow: hidden;
+}
+
+/* Selects */
+.content-form .capa-select{
+    overflow: hidden;
+    float: left;
+    border: 2px solid #000;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.content-form .select{
+    width: 120%;
+    border: 0;
+}
+
+.content-form select.select {
+    background-position: 220px center;
+}
+
+/* Bordes y sombras ------------------- */
+
+.content-form .border-radius-form{
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.content-form .shadow{
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.63);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.63);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.63);
+}
+
+/* Boton de enviar -------------- */
+
+.content-form form .button-primary{
+    font-family: 'TradeGothic-BoldCondTwenty';
+    max-width: 315px;
+    width: 100%;
+    height: 100px;
+    font-size: 46px;
+    text-align: center;
+    float: left;
+    clear: both;
     background: #f1e60d;
+    border: 0;
 }
-
-.content-form select:focus, .content-form textarea:focus, .content-form input:focus{
-    outline: 0;
-}
-
-/*.content-form select {
-    background-position: 98% center;
-}*/
-
 
 /* Errores ---------------------- */
 div.error {
@@ -123,17 +185,6 @@ input.error, textarea.error, select.error, div.error {
     border-color: #F00;
 }
 
-/* Fonts ------------------------ */
-@font-face {
-  font-family: 'TradeGothic-BoldCondTwenty';
-  src: url('../font/TradeGothic-BoldCondTwenty.eot?#iefix') format('embedded-opentype'),
-  url('../font/TradeGothic-BoldCondTwenty.woff') format('woff'),
-  url('../font/TradeGothic-BoldCondTwenty.ttf')  format('truetype'),
-  url('../font/TradeGothic-BoldCondTwenty.svg#TradeGothic-BoldCondTwenty') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
 .content-form h2{
     font-family: 'TradeGothic-BoldCondTwenty';
     font-size: 40px;
@@ -142,4 +193,16 @@ input.error, textarea.error, select.error, div.error {
     display: inline-block;
     line-height: 40px;
     font-weight: normal;
+}
+
+/* Estilos específicos para el ejemplo ------------------------ */
+
+/* Hay que dar medida a las cajas, puede ser genérica como aquí o para cada uno de los elementos */
+.example .content-datos div, .example .content-colaborar div {
+    width: 250px;
+}
+
+/* margen de los elementos por defecto */
+.example .content-datos{
+    margin: 10px 0px;
 }

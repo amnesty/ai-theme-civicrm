@@ -8,7 +8,8 @@
         <meta name="description" content="Formulario">
         <link rel="stylesheet" type="text/css" href="css/style-form.css">
         <link rel="stylesheet" type="text/css" href="css/socixs-form.css">
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/scroll.js"></script>
     </head>
     <body>
         <div class="content-form clearfix">
@@ -21,7 +22,7 @@
 
                 <form action="" method="">
 
-                    <div class="content-colaborar clearfix">
+                    <div class="content-colaborar active clearfix caja-content">
 
                         <h2>¿CON CUÁNTO QUIERES COLABORAR?</h2> <img src="images/icon-hand.png" alt="icono hand"/>
 
@@ -52,7 +53,7 @@
 
                     </div><!--/colaborar-->
 
-                    <div class="content-datos active padding-medium">
+                    <div class="content-datos padding-medium caja-content">
 
                         <h2>POR FAVOR, DÉJANOS TUS DATOS PERSONALES </h2><img src="images/icon-datos.png" alt="icono datos"/>
 
@@ -74,6 +75,7 @@
                                     <select class="document input-generic" name="document" form="document">
                                         <option value="NIE">NIE</option>
                                         <option value="NIF">NIF</option>
+                                        <option value="NIF">Pasaporte</option>
                                     </select>
                                 </div>
                                 <input class="border-radius-form input-generic number-dni" type="text" name="number-dni" id="number-dni" placeholder=""><a class="margin-negativo" href="">+info</a></input>
@@ -147,7 +149,7 @@
 
                     </div><!--/datos-->
 
-                    <div class="content-direccion padding-medium">
+                    <div class="content-direccion padding-medium caja-content">
 
                         <h2>AHORA, TU DIRECCIÓN </h2><img src="images/icon-direccion.png" alt="icono datos"/>
 
@@ -204,7 +206,7 @@
 
                     </div><!--/direccion-->
 
-                    <div class="content-cuenta padding-medium">
+                    <div class="content-cuenta padding-medium caja-content">
 
                         <h2>Y PARA TERMINAR,  TU NÚMERO DE CUENTA </h2><img src="images/icon-cuenta.png" alt="icono cuenta"/>
 
