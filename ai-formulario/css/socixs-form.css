@@ -1,0 +1,834 @@
+/* CSS específico del formulario de socixs ------------------- */
+
+.text-intro{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 20px;
+
+}
+.text-intro span{
+    font-family: 'TradeGothic-BoldCondTwenty';
+}
+
+.box-form-es{
+	width: 75%;
+	float: left;
+}
+
+.box-form-es p{
+    font-size: 13px;
+    color: #000000;
+}
+
+.box-form-es h2{
+	font-family: 'TradeGothic-BoldCondTwenty';
+	font-size: 40px;
+	border-bottom: 2px solid #000;
+	padding-bottom: 20px;
+    display: inline-block;
+    line-height: 40px;
+    font-weight: normal;
+}
+
+.box-form-es img{
+    display: inline-block;
+    top: 10px;
+    position: relative;
+    margin-left: 10px;
+}
+
+/* content-colaborar  ----------------------------------------------------- */
+
+.content-colaborar form .cuota-options-wrapper-general{
+	width: 70%;
+	margin: 20px 0 20px 0;
+    padding: 0;
+    clear: both;
+    overflow: visible;
+    height: 51px;
+    position: relative;
+}
+
+.content-colaborar .fila-1 {
+    margin-top: 20px;
+}
+
+.content-colaborar {
+    padding: 0 20px 20px;
+}
+
+.content-colaborar .capa-selecttime {
+    width: 300px;
+    overflow: hidden;
+    float: left;
+    border: 2px solid #000;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.content-colaborar .selecttime {
+    width: 120%;
+    border:0;
+}
+
+.content-colaborar select.selecttime {
+    background-position: 260px center;
+}
+
+.content-colaborar .cuotas {
+    font-family: 'TradeGothic-BoldCondTwenty';
+    font-size: 24px;
+    line-height: 50px;
+    float:left;
+    overflow: hidden;
+}
+
+/*.content-colaborar .cuotas label {
+    margin-right: 10px;
+}*/
+
+
+/* H */
+.content-colaborar .cuotas div {
+    float: left;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.content-colaborar .capa-other-quant {
+    width: 70px;
+    overflow: hidden;
+    float: left;
+    height: 50px;
+    margin-right: 10px;
+    line-height: 50px;
+    margin-left: 20px;
+}
+
+.content-colaborar .other-quant {
+    border: 2px solid #000;
+}
+
+
+/* content-datos ----------------------------------------------------- */
+.content-datos .fila-1,
+.content-datos .fila-2,
+.content-datos .fila-3{
+    margin-top: 20px;
+}
+
+.content-datos .margin-negativo{
+     margin-left: -32px;
+}
+
+.content-datos .fila-1 input,
+.content-datos .fila-3 input {
+    max-width: 227px;
+}
+
+.content-datos a{
+	font-family: 'TradeGothic-BoldCondTwenty';
+	float: left;
+    font-size: 20px;
+    color: #000;
+    height: 44px;
+    line-height: 50px;
+    margin-right: 10px;
+}
+
+.content-datos .capa-document{
+    max-width: 125px;
+    border-radius: 10px 0 0 10px;
+    overflow: hidden;
+    float: left;
+    height: 50px;
+}
+
+.content-datos .document{
+	width: 125%;
+    z-index: 9;
+    border-radius: 10px 0 0 10px;
+}
+
+.content-datos .number-dni,
+.content-datos .mobile{
+	max-width: 162px;
+}
+
+.content-datos .number-dni{
+    left: -30px;
+	margin-right: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    padding-left: 40px;
+}
+
+.content-datos .capa-genero{
+    width: 155px;
+    overflow: hidden;
+    float: left;
+    border: 2px solid #000;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.content-datos .genero{
+	width: 120%;
+    border: 0;
+}
+
+.content-datos select.genero {
+    background-position: 120px center;
+}
+
+.content-datos .capa-language{
+    width: 240px;
+    overflow: hidden;
+    float: left;
+    border: 2px solid #000;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.content-datos .language{
+	width: 112%;
+    border:0;
+
+}
+
+.content-datos .fila-3 label {
+    font-family: 'TradeGothic-BoldCondTwenty';
+    float: left;
+    font-size: 20px;
+    color: #000;
+    height: 44px;
+    line-height: 50px;
+    margin-right: 10px;
+}
+
+.content-datos .capa-profesion {
+    width: 270px;
+    overflow: hidden;
+    float: left;
+    border: 2px solid #000;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.content-datos .profesion {
+    width: 120%;
+    border:0;
+}
+
+.content-datos select.profesion {
+    background-position: 230px center;
+}
+
+/* H */
+.content-datos .capa-fechas div div {
+    width: 95px;
+    overflow: hidden;
+    float: left;
+    border: 2px solid #000;
+    height: 50px;
+    margin-right: 5px;
+    /* Border radius */
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    /* Shadow */
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.63);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.63);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.63);
+}
+
+.content-datos .capa-fechas div select {
+    width: 130%;
+    background-position: 65px center;
+    /* como input-generic */
+    border: 0;
+    font-family: 'TradeGothic-BoldCondTwenty';
+    font-size: 24px;
+    color: #000;
+    line-height: 50px;
+    height: 50px;
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    list-style: none inside none;
+    padding-left: 10px;
+}
+
+.content-datos select.document {
+    background-position: 57px center;
+}
+
+.content-datos select.language {
+    background-position: 200px center;
+}
+
+
+/* content-direccion ----------------------------------------------------- */
+.content-direccion .capa-tipo-via{
+    width: 170px;
+    overflow: hidden;
+    float: left;
+    border: 2px solid #000;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.content-direccion .tipo-via{
+    width: 115%;
+    border:0;
+}
+
+.content-direccion select.tipo-via {
+    background-position: 135px center;
+}
+
+.content-direccion .nombre-via{
+    max-width: 490px;
+}
+
+.content-direccion .numero-bloque{
+    max-width: 370px;
+}
+
+.content-direccion .postal{
+    max-width: 290px;
+}
+
+.content-direccion .poblacion{
+    max-width: 330px;
+}
+
+.content-direccion .capa-provincia,
+.content-direccion .capa-pais{
+    width: 330px;
+    overflow: hidden;
+    float: left;
+    border: 2px solid #000;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.content-direccion .provincia,
+.content-direccion .pais{
+    width: 120%;
+    border:0;
+}
+
+.content-direccion select.provincia,
+.content-direccion select.pais {
+    background-position: 290px center;
+}
+
+/* content-cuenta ----------------------------------------------------- */
+.content-cuenta label.iban{
+    font-family: 'TradeGothic-BoldCondTwenty';
+    float: left;
+    font-size: 20px;
+    color: #000;
+    height: 44px;
+    line-height: 50px;
+    margin-right: 10px;
+}
+
+.content-cuenta .capa-iban-letras{
+    width: 95px;
+    overflow: hidden;
+    float: left;
+    border: 2px solid #000;
+    height: 50px;
+    margin-right: 10px;
+
+}
+
+.content-cuenta  .iban-letras {
+    width: 125%;
+    border: 0;
+}
+
+.content-cuenta select.iban-letras {
+    background-position: 50px center;
+}
+
+.content-cuenta .iban-numero{
+    max-width: 55px;
+}
+
+.content-cuenta .entidad{
+    max-width: 140px;
+}
+
+.content-cuenta .oficina{
+    max-width: 150px;
+}
+
+.content-cuenta .dc{
+    max-width: 100px;
+}
+
+.content-cuenta .ncuenta{
+    max-width: 270px;
+}
+
+/* content-end-form ----------------------------------------------------- */
+.content-end-form input[type=checkbox] {
+    visibility: hidden;
+    height: 28px;
+    width: 28px;
+}
+
+.content-end-form .check {
+    width: 28px;
+    height: 28px;
+    background: yellow;
+    position: relative;
+    margin-right: 20px;
+    float: left;
+}
+
+.content-end-form .check-politica label {
+
+    color: #fff;
+}
+
+.content-end-form .check label:after {
+    opacity: 0;
+    content: '\2713';
+    font-size: 20px;
+    color: #000;
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 2px;
+    left: 3px;
+}
+
+.content-end-form .check input[type=checkbox]:checked + label:after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+.content-end-form .politica{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 15px;
+    line-height: 28px;
+    color: #000;
+}
+
+.content-end-form .politica a{
+    font-weight: bold;
+    color: #000;
+}
+
+.content-end-form .botons-form{
+    margin-top: 40px;
+}
+
+/* H */
+.box-form-es form .button-primary{
+    font-family: 'TradeGothic-BoldCondTwenty';
+    max-width: 315px;
+    width: 100%;
+    height: 100px;
+    font-size: 46px;
+    text-align: center;
+    float: left;
+    clear: both;
+    background: #f1e60d;
+    border: 0;
+    margin-top: -110px;
+    margin-left: 70%; /* !!!!!!!!!!!!!!!! */
+
+}
+
+.content-end-form .botons-form img{
+    max-width: 158px;
+    width: 100%;
+    float: left;
+}
+
+/* Box Right ----------------------------------------------------- */
+.box-es-right{
+	width: 25%;
+	float: left;
+}
+
+.box-es-right .three-column{
+    max-width: 340px;
+    width: 100%;
+    min-height: 295px;
+    padding: 15px;
+    background: #e3e3e3;
+    float: right;
+    margin-bottom: 30px;
+}
+
+.box-es-right .three-column img{
+    max-width: 80px;
+    width: 100%;
+    display: block;
+    margin: auto auto 20px;
+}
+
+.box-es-right .three-column h3{
+    font-family: 'TradeGothic-BoldCondTwenty';
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+    color: #000;
+}
+
+.box-es-right .three-column p{
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: center;
+    color: #000;
+}
+
+.box-es-right .formas-pago a {
+    color:#000;
+    font-weight: bold;
+}
+
+/* max-width: 768px */
+@media only screen and (max-width: 1400px) {
+
+    .content-form{
+        max-width:960px;
+    }
+
+    .box-form-es {
+        width: 100%;
+        float: none;
+    }
+
+    .content-datos select.document {
+        background-position: 55px center;
+    }
+
+    .content-datos .fila-3 label {
+        clear: both;
+        margin-top: 20px;
+    }
+
+    .content-datos .capa-fechas,
+    .content-datos .capa-year {
+        margin-top: 20px;
+    }
+
+    .content-cuenta .ncuenta {
+        margin-top: 20px;
+    }
+
+    .box-es-right {
+        width: 100%;
+        float: none;
+    }
+
+    .box-es-right .three-column {
+        max-width: 306px;
+        min-height: 360px;
+        float: left;
+        margin-left: 20px;
+    }
+
+    .box-es-right .three-column:first-child {
+        margin-left: 0;
+    }
+}
+
+/* max-width: 960px */
+@media only screen and (max-width: 960px) {
+
+    .content-form{
+        max-width:768px;
+    }
+
+    .box-form-es span{
+        font-size: 37px;
+        line-height: 37px;
+
+    }
+
+    .content-datos .fila-1 input, .content-datos .fila-3 input {
+        max-width: 222px;
+    }
+
+    .content-datos .capa-document {
+        width: 80px;
+    }
+
+    .content-datos .number-dni{
+        max-width: 120px;
+    }
+
+    .content-datos .mobile {
+        max-width: 120px;
+    }
+
+    .content-datos .capa-language {
+        width: 175px;
+    }
+
+    .content-datos .language {
+        width: 112%;
+    }
+
+    .content-datos select.language {
+        background-position: 145px center;
+    }
+
+    .box-es-right .three-column {
+        max-width: 242px;
+        min-height: 418px;
+    }
+
+    .content-direccion .capa-tipo-via {
+        width: 100%;
+    }
+
+    .content-direccion .nombre-via {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .content-direccion .numero-bloque {
+        max-width: 100%;
+    }
+
+    .content-direccion .postal {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .content-direccion .poblacion {
+        max-width: 100%;
+    }
+
+    .content-direccion .capa-provincia {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .content-direccion .capa-pais {
+        width: 100%;
+    }
+
+    .content-direccion select.provincia, .content-direccion select.pais {
+        background-position: 82% center;
+    }
+
+    .content-direccion select.tipo-via {
+        background-position: 86% center;
+    }
+
+}
+
+/* max-width: 767px */
+@media only screen and (max-width: 767px) {
+
+    .content-form{
+        max-width:500px;
+    }
+
+    .content-datos .fila-1 input, .content-datos .fila-3 input {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .content-datos .margin-medium{
+        margin: 0;
+    }
+
+    .content-datos .capa-document {
+        width: 20%;
+    }
+
+    .content-datos .number-dni{
+        max-width: 71%;
+    }
+
+    .content-datos .capa-genero {
+        width: 100%;
+        margin-right: 0;
+        margin-top: 20px;
+    }
+
+    .content-datos .mobile{
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .content-datos .capa-language {
+        width: 84%;
+        margin-top: 20px;
+    }
+
+    .content-datos .info-language{
+        margin-top: 20px;
+    }
+
+    .content-datos .capa-fechas {
+        width: 81px;
+    }
+
+    .content-datos select.genero {
+        background-position: 75% center;
+    }
+
+    .content-datos select.language {
+        background-position: 86% center;
+    }
+
+    .content-cuenta .iban-numero {
+        max-width: 41%;
+    }
+
+    .content-cuenta .iban-numero {
+        margin-right: 0;
+    }
+
+    .content-cuenta .entidad {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .content-cuenta .oficina {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .content-cuenta .dc {
+        max-width: 100%;
+        margin-top: 20px;
+    }
+
+    .content-cuenta .ncuenta {
+        max-width:100%;
+    }
+
+    .box-es-right .three-column {
+        max-width: 100%;
+        min-height: auto;
+        margin-left: 0;
+        float: none;
+    }
+
+    .content-end-form .botons-form .btn-enviar {
+        float: none;
+        margin: auto;
+        display: block;
+    }
+
+    .content-end-form .botons-form img {
+        float: none;
+        margin: 20px auto auto;
+        display: block;
+    }
+}
+
+/* max-width: 767px */
+@media only screen and (max-width: 767px) {
+
+    .content-colaborar .capa-selecttime {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+
+    .content-colaborar select.selecttime {
+        background-position: 79% center;
+    }
+
+    .content-colaborar .cuotas {
+        margin-top: 20px;
+    }
+
+    .content-colaborar .cuotas label {
+        margin-right: 4px;
+    }
+
+    .content-form{
+        max-width:320px;
+    }
+
+    .box-form-es span {
+        font-size: 34px;
+    }
+
+    .box-form-es span img {
+        display: block;
+    }
+
+    .content-datos .capa-document {
+        width: 34%;
+    }
+
+    .content-datos .number-dni {
+        max-width: 52%;
+    }
+
+    .content-datos .capa-profesion {
+        width: 100%;
+        float: none;
+    }
+
+    .content-datos  input#email {
+        margin-bottom: 20px;
+    }
+
+    .content-datos .capa-language {
+        width: 75%;
+    }
+
+    .content-datos .capa-fechas {
+        width: 100%;
+    }
+
+    .content-datos .capa-year {
+        width: 100%;
+    }
+
+    .content-datos select.year {
+        background-position: 72% center;
+    }
+
+    .content-datos select.day, .content-datos select.month {
+        background-position: 75% center;
+    }
+
+    .content-datos select.genero {
+        background-position: 73% center;
+    }
+
+    .content-direccion select.tipo-via {
+        background-position: 84% center;
+    }
+
+    .content-direccion select.provincia, .content-direccion select.pais {
+        background-position: 79% center;
+    }
+
+    .content-cuenta .iban-numero {
+        max-width: 100%;
+        display: block;
+        float: none;
+    }
+
+    .content-cuenta .capa-iban-letras {
+        width: 100%;
+        float: none;
+    }
+
+    .content-cuenta select.iban-letras {
+        background-position: 76% center;
+    }
+
+}
