@@ -136,7 +136,7 @@
 }
 
 .content-datos .document{
-	width: 125%;
+	width: 135%;
     z-index: 9;
     border-radius: 10px 0 0 10px;
 }
@@ -251,7 +251,7 @@
 }
 
 .content-datos select.document {
-    background-position: 52px center;
+    background-position: 110px center;
 }
 
 .content-datos select.language {
