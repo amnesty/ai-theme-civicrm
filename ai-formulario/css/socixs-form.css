@@ -23,6 +23,11 @@
     margin-left: 10px;
 }
 
+.box-form-es p{
+    font-size: 13px;
+    color: #000000;
+}
+
 .box-form-es .input-generic {
     width: 100%;
 }

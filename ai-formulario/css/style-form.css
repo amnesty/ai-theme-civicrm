@@ -134,11 +134,6 @@ input.error, textarea.error, select.error, div.error {
   font-style: normal;
 }
 
-.content-form p{
-    font-size: 13px;
-    color: #000000;
-}
-
 .content-form h2{
     font-family: 'TradeGothic-BoldCondTwenty';
     font-size: 40px;
