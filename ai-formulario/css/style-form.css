@@ -21,6 +21,7 @@ hgroup, menu, nav, section, time, mark, audio, video {
     max-width:1472px;
     width: 100%;
     margin: auto;
+    margin-bottom: 30px;
 }
 
 .content-form label {
