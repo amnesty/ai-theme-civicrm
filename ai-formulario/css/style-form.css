@@ -17,6 +17,12 @@ hgroup, menu, nav, section, time, mark, audio, video {
     background : transparent;
 }
 
+.content-form{
+    max-width:1472px;
+    width: 100%;
+    margin: auto;
+}
+
 .content-form label {
     font-weight: normal;
 }
