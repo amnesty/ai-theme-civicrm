@@ -1,6 +1,6 @@
 /* Clases generales ---------------- */
 
-.content-form span, object, iframe,
+span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code, del, dfn, em, img,
 ins, kbd, q, samp, small, strong, sub, sup, var,
@@ -61,22 +61,27 @@ header, hgroup, nav, section {
     background: #fff url(../images/arrow.png);
     background-repeat: no-repeat;
 }
+
 .content-form .border-radius-form{
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 }
+
 .content-form .shadow{
     -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.63);
     -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.63);
     box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.63);
 }
+
 .content-form .padding-medium{
     padding: 20px;
 }
+
 .content-form .margin-medium{
     margin: 20px 0 20px;
 }
+
 .content-form .input-generic{
     border: 2px solid #000;
     font-family: 'TradeGothic-BoldCondTwenty';
@@ -91,6 +96,7 @@ header, hgroup, nav, section {
     list-style: none inside none;
     padding-left: 10px;
 }
+
 .content-form .active{
     background: #f1e60d;
 }
@@ -98,6 +104,11 @@ header, hgroup, nav, section {
 .content-form select:focus, .content-form textarea:focus, .content-form input:focus{
     outline: 0;
 }
+
+/*.content-form select {
+    background-position: 98% center;
+}*/
+
 
 /* Errores ---------------------- */
 div.error {
@@ -120,4 +131,19 @@ input.error, textarea.error, select.error, div.error {
   url('../font/TradeGothic-BoldCondTwenty.svg#TradeGothic-BoldCondTwenty') format('svg');
   font-weight: normal;
   font-style: normal;
+}
+
+.content-form p{
+    font-size: 13px;
+    color: #000000;
+}
+
+.content-form h2{
+    font-family: 'TradeGothic-BoldCondTwenty';
+    font-size: 40px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 20px;
+    display: inline-block;
+    line-height: 40px;
+    font-weight: normal;
 }

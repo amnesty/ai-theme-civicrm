@@ -16,26 +16,15 @@
 	float: left;
 }
 
-.box-form-es p{
-    font-size: 13px;
-    color: #000000;
-}
-
-.box-form-es h2{
-	font-family: 'TradeGothic-BoldCondTwenty';
-	font-size: 40px;
-	border-bottom: 2px solid #000;
-	padding-bottom: 20px;
-    display: inline-block;
-    line-height: 40px;
-    font-weight: normal;
-}
-
 .box-form-es img{
     display: inline-block;
     top: 10px;
     position: relative;
     margin-left: 10px;
+}
+
+.box-form-es .input-generic {
+    width: 100%;
 }
 
 /* content-colaborar  ----------------------------------------------------- */
@@ -108,6 +97,7 @@
 
 .content-colaborar .other-quant {
     border: 2px solid #000;
+    width: 100%;
 }
 
 
@@ -261,7 +251,7 @@
 }
 
 .content-datos select.document {
-    background-position: 57px center;
+    background-position: 52px center;
 }
 
 .content-datos select.language {
@@ -443,7 +433,7 @@
     background: #f1e60d;
     border: 0;
     margin-top: -110px;
-    margin-left: 70%; /* !!!!!!!!!!!!!!!! */
+    margin-left: 71%;
 
 }
 
@@ -497,7 +487,7 @@
     font-weight: bold;
 }
 
-/* max-width: 768px */
+/* max-width: 1400px */
 @media only screen and (max-width: 1400px) {
 
     .content-form{
@@ -542,10 +532,17 @@
     .box-es-right .three-column:first-child {
         margin-left: 0;
     }
+
+    .box-form-es form .button-primary{
+        float: left;
+        margin-top: -110px;
+        margin-left: 67%;
+    }
+
 }
 
-/* max-width: 960px */
-@media only screen and (max-width: 960px) {
+/* max-width: 986px */
+@media only screen and (max-width: 986px) {
 
     .content-form{
         max-width:768px;
@@ -627,6 +624,12 @@
 
     .content-direccion select.tipo-via {
         background-position: 86% center;
+    }
+
+    .box-form-es form .button-primary{
+        float: left;
+        margin-top: -110px;
+        margin-left: 58.5%;
     }
 
 }
@@ -731,6 +734,12 @@
         float: none;
         margin: 20px auto auto;
         display: block;
+    }
+
+    .box-form-es form .button-primary{
+        float: left;
+        margin-left: 0;
+        margin-top: -180px;
     }
 }
 
