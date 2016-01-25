@@ -1,4 +1,4 @@
-$(function() {
+jQuery(function() {
 
     $(".content-colaborar").hover( function(){
         $(".caja-content").removeClass('active');
