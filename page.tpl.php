@@ -100,8 +100,8 @@ if ($node->nid==$form_node){ // Sólo para el formulario de Socixs
             <div class="footer__col--left">
                 <p class="footer-legal"> 
                     <a href="https://www.es.amnesty.org/contacto/" class="footer-legal__link">Contacto</a> &nbsp;&nbsp;|&nbsp;&nbsp; 
-                    <a href="https://precrm.es.amnesty.org/test/formulario-socixs#" class="footer-legal__link">Política de privacidad</a> &nbsp;&nbsp;|&nbsp;&nbsp; 
-                    <a href="https://precrm.es.amnesty.org/test/formulario-socixs#" class="footer-legal__link">Mapa del sitio</a> 
+                    <a href="https://www.es.amnesty.org/politica-de-privacidad/" class="footer-legal__link">Política de privacidad</a> &nbsp;&nbsp;|&nbsp;&nbsp; 
+                    <a href="https://www.es.amnesty.org/mapa-del-sitio/" class="footer-legal__link">Mapa del sitio</a> 
                 </p>
                 <p class="footer-copyright">© 2016 Amnistía Internacional España</p>
             </div>
