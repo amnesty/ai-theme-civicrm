@@ -128,7 +128,7 @@
 }
 
 .content-datos .capa-document{
-    max-width: 125px;
+    max-width: 135px;
     border-radius: 10px 0 0 10px;
     overflow: hidden;
     float: left;
@@ -136,7 +136,7 @@
 }
 
 .content-datos .document{
-	width: 135%;
+	width: 125%;
     z-index: 9;
     border-radius: 10px 0 0 10px;
 }
