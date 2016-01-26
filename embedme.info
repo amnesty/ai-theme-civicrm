@@ -15,9 +15,9 @@ stylesheets[all][] = system.theme.css
 stylesheets[all][] = layout_box.css
 
 ; JS Scripts
-scripts[] = js/jquery-2.2.0.min.js
+;scripts[] = js/jquery-2.2.0.min.js
 scripts[] = js/ai.js
-scripts[] = js/require.js
+;scripts[] = js/require.js
 scripts[] = ai-formulario/js/scroll.js
 
 
