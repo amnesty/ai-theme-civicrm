@@ -5,7 +5,7 @@ core = 7.x
 engine = phptemplate
 
 ; AI Website stylesheet
-;stylesheets[all][] = css/ai.css
+stylesheets[all][] = css/ai.css
 
 ; AI generic forms stylesheet
 stylesheets[all][] = ai-formulario/css/style-form.css
@@ -16,7 +16,7 @@ stylesheets[all][] = layout_box.css
 
 ; JS Scripts
 scripts[] = js/ai.js
-scripts[] = js/require.js
+;scripts[] = js/require.js
 scripts[] = ai-formulario/js/scroll.js
 
 
