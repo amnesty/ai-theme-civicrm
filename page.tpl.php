@@ -9,6 +9,9 @@ if ($node->nid==$form_node){ // Sólo para el formulario de Socixs
 
 ?>
 
+<!-- Cargamos los CSS que necesitamos para el contenido genérico -->
+<link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/style-form.css">
+<link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/ai.css">
 <!-- Añadimos la hoja CSS para el formulario de Socixs en concreto -->
 <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/socixs-form.css">
 
@@ -18,13 +21,28 @@ if ($node->nid==$form_node){ // Sólo para el formulario de Socixs
         <div class="header__slogan-container">
             <div class="header__slogan"> Actuamos por los derechos humanos en todo el mundo </div>
         </div>
-        <h1 class="logo" data-logo=""><a class="logo__link" href="http://ai-frontend.dev01.icti.es/home.html">Amnistía Internacional España</a></h1>
+        <h1 class="logo" data-logo=""><a class="logo__link" href="https://www.es.amnesty.org">Amnistía Internacional España</a></h1>
     </div>
 </header>
 
 <!-- Image after header-->
 <div class="image-header image-header--has-credits-sm image-header--actua">
-    <div style="background-image: url(&quot;https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1472_42&quot;);" class="responsive--bg  lazyloaded" data-bgset="https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1472_42, https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1472_42_hi 2x [(min-width: 1272px)] | https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1224_42, https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1224_42_hi 2x [(min-width: 1040px)] | https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1039_52, https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1039_52_hi 2x [(min-width: 840px)] | https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_839_52, https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_839_52_hi 2x [(min-width: 640px)] | https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_639_72, https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_639_72_hi 2x [(min-width: 480px)] | https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_479_102, https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_479_102_hi 2x [(min-width: 346px)] | https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_345_102, https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_345_102_hi 2x">
+    <div style="background-image: url(https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1472_42);" 
+        class="responsive--bg  lazyloaded" data-bgset="
+        https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1472_42, 
+        https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1472_42_hi 2x [(min-width: 1272px)] | 
+        https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1224_42, 
+        https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1224_42_hi 2x [(min-width: 1040px)] | 
+        https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1039_52, 
+        https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1039_52_hi 2x [(min-width: 840px)] | 
+        https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_839_52, 
+        https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_839_52_hi 2x [(min-width: 640px)] | 
+        https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_639_72, 
+        https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_639_72_hi 2x [(min-width: 480px)] | 
+        https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_479_102, 
+        https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_479_102_hi 2x [(min-width: 346px)] | 
+        https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_345_102, 
+        https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_345_102_hi 2x">
         <picture style="display: none;">
             <source srcset="https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1472_42, https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1472_42_hi 2x" sizes="1472px" media="(min-width: 1272px)" data-srcset="https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1472_42, https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1472_42_hi 2x">
             <source srcset="https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1224_42, https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1224_42_hi 2x" sizes="1472px" media="(min-width: 1040px)" data-srcset="https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1224_42, https://www.amnesty.org/media/patternlibrary/air_fivefaces_2.jpg?anchor=topcenter&amp;preset=fixed_1224_42_hi 2x">
@@ -113,7 +131,7 @@ if ($node->nid==$form_node){ // Sólo para el formulario de Socixs
 }
 else {
 ?>
-<!-- Cargamos los CSS que necesitamos para el contenido genérico -->
+<!-- Cargamos los CSS que necesitamos para el contenido de diseño base de CiviCRM -->
 <link rel="stylesheet" type="text/css" href="<?php print $base_url; ?>/modules/system/system.theme.css">
 <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/webform_add.css">
 
