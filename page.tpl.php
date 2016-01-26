@@ -11,6 +11,9 @@ if ($node->nid==$form_node){ // Sólo para el formulario de Socixs
 
 <!-- Añadimos la hoja CSS para el formulario de Socixs en concreto -->
 <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/socixs-form.css">
+<!-- Cargamos los CSS que necesitamos para el contenido genérico -->
+<link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/style-form.css">
+<link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/ai.css">
 
 <!-- Header -->
 <header class="header" data-header="" role="banner">
@@ -113,7 +116,7 @@ if ($node->nid==$form_node){ // Sólo para el formulario de Socixs
 }
 else {
 ?>
-<!-- Cargamos los CSS que necesitamos para el contenido genérico -->
+<!-- Cargamos los CSS que necesitamos para el contenido de diseño base de CiviCRM -->
 <link rel="stylesheet" type="text/css" href="<?php print $base_url; ?>/modules/system/system.theme.css">
 <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/webform_add.css">
 
