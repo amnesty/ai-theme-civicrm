@@ -9,11 +9,11 @@ if ($node->nid==$form_node){ // Sólo para el formulario de Socixs
 
 ?>
 
-<!-- Añadimos la hoja CSS para el formulario de Socixs en concreto -->
-<link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/socixs-form.css">
 <!-- Cargamos los CSS que necesitamos para el contenido genérico -->
 <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/style-form.css">
 <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/ai.css">
+<!-- Añadimos la hoja CSS para el formulario de Socixs en concreto -->
+<link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/socixs-form.css">
 
 <!-- Header -->
 <header class="header" data-header="" role="banner">
