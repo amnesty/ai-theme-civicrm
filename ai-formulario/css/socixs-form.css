@@ -5,6 +5,7 @@
     font-size: 18px;
     color: #000;
     margin-bottom: 20px;
+    padding: 0px 20px;
 
 }
 .text-intro span{
@@ -26,6 +27,7 @@
 .box-form-es p{
     font-size: 13px;
     color: #000000;
+    padding: 0px 20px;
 }
 
 .box-form-es .input-generic {
@@ -371,6 +373,11 @@
 }
 
 /* content-end-form ----------------------------------------------------- */
+
+.content-end-form {
+    padding: 0px;
+    margin:0px;
+}
 .content-end-form input[type=checkbox] {
     visibility: hidden;
     height: 28px;
@@ -422,7 +429,7 @@
 }
 
 .content-end-form .botons-form{
-    margin-top: 40px;
+    margin-top: 0px;
 }
 
 /* H */
