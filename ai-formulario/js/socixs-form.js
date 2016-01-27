@@ -90,4 +90,6 @@ jQuery(function($) {
         $(".otra_cuota").val('');
     });
 
+    // Navbar
+    $('.navbar-fixed').autoHidingNavbar();
 })

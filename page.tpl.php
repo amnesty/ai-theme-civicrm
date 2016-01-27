@@ -8,7 +8,10 @@ include_once('config.php');
 if ($node->nid==$form_node){ // Sólo para el formulario de Socixs
 
 ?>
-
+<!-- Bootstrap Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<!-- Bootstrap Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <!-- Cargamos los CSS que necesitamos para el contenido genérico -->
 <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/style-form.css">
 <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/ai.css">
@@ -16,6 +19,7 @@ if ($node->nid==$form_node){ // Sólo para el formulario de Socixs
 <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/socixs-form.css">
 
 <!-- Header -->
+<nav class="navbar navbar-fixed-top">
 <header class="header" data-header="" role="banner">
     <div class="header__container" data-header-container="">
         <div class="header__slogan-container">
@@ -24,6 +28,7 @@ if ($node->nid==$form_node){ // Sólo para el formulario de Socixs
         <h1 class="logo" data-logo=""><a class="logo__link" href="https://www.es.amnesty.org">Amnistía Internacional España</a></h1>
     </div>
 </header>
+</nav>
 
 <!-- Image after header-->
 <div class="image-header image-header--has-credits-sm image-header--actua">
