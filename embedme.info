@@ -14,9 +14,12 @@ engine = phptemplate
 stylesheets[all][] = system.theme.css
 stylesheets[all][] = layout_box.css
 
+;Bootstrap
+stylesheets[all][] = css/bootstrap.min.css
+scripts[] = js/bootstrap.min.js
+
 ; JS Scripts
 scripts[] = js/ai.js
-;scripts[] = js/require.js
 scripts[] = ai-formulario/js/socixs-form.js
 
 version = "7.x-1.x-dev"
