@@ -3180,7 +3180,7 @@ time {
     z-index: 0
 }
 .responsive--bg {
-    background-position: 50%;
+    background-position: center 20%; /* H */
     background-size: cover
 }
 .responsive__img {
