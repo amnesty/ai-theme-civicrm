@@ -3180,7 +3180,7 @@ time {
     z-index: 0
 }
 .responsive--bg {
-    background-position: center 20%; /* H */
+    background-position: center 10%; /* H */
     background-size: cover
 }
 .responsive__img {
@@ -9471,11 +9471,13 @@ x:-o-prefocus {
     margin: 0 auto
 }
 .image-header__content--medium {
-    padding-top: 75%
+    /* padding-top: 75% */
+    padding-top: 37.5%; /* H */
 }
 @media screen and (min-width: 30em) {
     .image-header__content--medium {
-        padding-top: 56.25%
+        /* padding-top: 56.25% */
+        padding-top: 40%; /* H */
     }
 }
 @media screen and (min-width: 40em) {
@@ -9488,7 +9490,8 @@ x:-o-prefocus {
         width: 50%
     }
     .image-header__content--medium {
-        padding-top: 35%
+        /*padding-top: 35%*/ 
+        padding-top: 25%; /* H */
     }
 }
 .image-header__content--thin {
