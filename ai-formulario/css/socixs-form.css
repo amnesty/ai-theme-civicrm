@@ -374,10 +374,6 @@
 
 /* content-end-form ----------------------------------------------------- */
 
-.content-end-form {
-    padding: 0px;
-    margin:0px;
-}
 .content-end-form input[type=checkbox] {
     visibility: hidden;
     height: 28px;
@@ -394,7 +390,6 @@
 }
 
 .content-end-form .check-politica label {
-
     color: #fff;
 }
 
@@ -432,6 +427,11 @@
     margin-top: 0px;
 }
 
+.content-end-form {
+    padding: 0px;
+    margin: -60px 0px 50px 0px;
+}
+
 /* H */
 .box-form-es form .button-primary{
     font-family: 'TradeGothic-BoldCondTwenty';
@@ -444,7 +444,7 @@
     clear: both;
     background: #f1e60d;
     border: 0;
-    margin-top: -110px;
+    margin-top: -120px;
     margin-left: 71%;
 
 }
@@ -453,6 +453,10 @@
     max-width: 158px;
     width: 100%;
     float: left;
+}
+
+.box-form-es .form-actions {
+    margin: -40px 0px 0px 0px;
 }
 
 /* Box Right ----------------------------------------------------- */
