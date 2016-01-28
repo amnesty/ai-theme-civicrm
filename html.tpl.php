@@ -8,6 +8,14 @@
   <?php print $styles; ?>
   <?php print $scripts; ?>
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+  <script language="javascript" type="text/javascript">
+    function popitup(url) {
+        newwindow=window.open(url,'name','height=200,width=150');
+        if (window.focus) {newwindow.focus()}
+        return false;
+    }
+</script>
+
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div id="skip-link">
