@@ -5,7 +5,6 @@
     font-size: 18px;
     color: #000;
     margin-bottom: 20px;
-    padding: 0px 20px;
 
 }
 .text-intro span{
@@ -27,7 +26,6 @@
 .box-form-es p{
     font-size: 13px;
     color: #000000;
-    padding: 0px 20px;
 }
 
 .box-form-es .input-generic {
@@ -51,7 +49,7 @@
 }
 
 .content-colaborar {
-    padding: 0 20px 20px;
+    padding: 20px 20px 20px;
 }
 
 .content-colaborar .capa-selecttime {
@@ -373,7 +371,6 @@
 }
 
 /* content-end-form ----------------------------------------------------- */
-
 .content-end-form input[type=checkbox] {
     visibility: hidden;
     height: 28px;
@@ -390,6 +387,7 @@
 }
 
 .content-end-form .check-politica label {
+
     color: #fff;
 }
 
@@ -424,39 +422,37 @@
 }
 
 .content-end-form .botons-form{
-    margin-top: 0px;
-}
-
-.content-end-form {
-    padding: 0px;
-    margin: -60px 0px 50px 0px;
+    margin-top: 40px;
 }
 
 /* H */
 .box-form-es form .button-primary{
-    font-family: 'TradeGothic-BoldCondTwenty';
+    font-family: 'Arial';
     max-width: 315px;
     width: 100%;
     height: 100px;
     font-size: 46px;
     text-align: center;
-    float: left;
-    clear: both;
     background: #f1e60d;
     border: 0;
-    margin-top: -120px;
-    margin-left: 71%;
+    margin-top: 30px;
+}
 
+.secure-img {
+    float: left;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.box-form-es form .secure-img img{
+    max-width: 158px;
+    display: block;
 }
 
 .content-end-form .botons-form img{
     max-width: 158px;
     width: 100%;
     float: left;
-}
-
-.box-form-es .form-actions {
-    margin: -40px 0px 0px 0px;
 }
 
 /* Box Right ----------------------------------------------------- */
@@ -508,7 +504,6 @@
 
     .content-form{
         max-width:960px;
-        margin: auto;
     }
 
     .box-form-es {
@@ -549,13 +544,6 @@
     .box-es-right .three-column:first-child {
         margin-left: 0;
     }
-
-    .box-form-es form .button-primary{
-        float: left;
-        margin-top: -110px;
-        margin-left: 67%;
-    }
-
 }
 
 /* max-width: 986px */
@@ -563,7 +551,6 @@
 
     .content-form{
         max-width:768px;
-        margin: auto;
     }
 
     .box-form-es span{
@@ -637,27 +624,45 @@
     }
 
     .content-direccion select.provincia, .content-direccion select.pais {
-        background-position: 82% center;
+        background-position: 80% center;
     }
 
     .content-direccion select.tipo-via {
-        background-position: 86% center;
+        background-position: 83% center;
     }
 
-    .box-form-es form .button-primary{
-        float: left;
-        margin-top: -110px;
-        margin-left: 58.5%;
+    .box-es-right .three-column {
+        max-width: 100%;
+        min-height: 100%;
+        margin: 20px auto auto;
+        float: none;
+    }
+
+    .box-es-right .three-column:first-child {
+        margin-left: auto;
     }
 
 }
 
-/* max-width: 767px */
-@media only screen and (max-width: 767px) {
+/* max-width: 769px */
+@media only screen and (max-width: 769px) {
 
     .content-form{
-        max-width:500px;
-        margin: auto;
+        max-width:630px;
+    }
+
+    .content-form h2 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .content-colaborar .capa-selecttime {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .content-colaborar select.selecttime {
+        background-position: 80% center;
     }
 
     .content-datos .fila-1 input, .content-datos .fila-3 input {
@@ -683,9 +688,19 @@
         margin-top: 20px;
     }
 
+    .content-datos select.profesion {
+        background-position: 80% center;
+    }
+
     .content-datos .mobile{
         max-width: 100%;
         margin-top: 20px;
+    }
+
+    .content-datos .capa-profesion {
+        width: 100%;
+        margin-top: 20px;
+
     }
 
     .content-datos .capa-language {
@@ -698,19 +713,30 @@
     }
 
     .content-datos .capa-fechas {
-        width: 81px;
+        width: 100%;
     }
 
     .content-datos select.genero {
-        background-position: 75% center;
+        background-position: 80% center;
     }
 
     .content-datos select.language {
         background-position: 86% center;
     }
 
+    .content-datos .capa-fechas div select {
+        background-position: 73% center;
+    }
+
+    .content-datos .capa-fechas div div {
+        width: 100%;
+        float: none;
+        clear: both;
+        margin-bottom: 20px;
+    }
+
     .content-cuenta .iban-numero {
-        max-width: 41%;
+        max-width: 74%;
     }
 
     .content-cuenta .iban-numero {
@@ -753,19 +779,28 @@
         float: none;
         margin: 20px auto auto;
         display: block;
-        top: -30px;
-        margin-bottom: 150px;
     }
 
-    .box-form-es form .button-primary{
+
+    .box-form-es form .secure-img{
         float: left;
-        margin-left: 16.7%;
-        margin-top: -180px;
     }
 }
 
-/* max-width: 587px */
-@media only screen and (max-width: 587px) {
+
+
+/* max-width: 480px */
+@media only screen and (max-width: 480px) {
+
+    .content-form h2 {
+        font-size: 30px;
+        padding-bottom: 10px;
+        line-height: 30px;
+    }
+
+    .box-form-es img {
+        display: none;
+    }
 
     .content-colaborar .capa-selecttime {
         width: 100%;
@@ -787,7 +822,6 @@
 
     .content-form{
         max-width:320px;
-        margin: auto;
     }
 
     .box-form-es span {
@@ -835,6 +869,7 @@
         background-position: 75% center;
     }
 
+
     .content-datos select.genero {
         background-position: 73% center;
     }
@@ -862,18 +897,11 @@
         background-position: 76% center;
     }
 
-    .content-end-form .botons-form img {
+    .box-form-es form .secure-img {
         float: none;
-        margin: 20px auto auto;
-        display: block;
-        top: -30px;
-        margin-bottom: 150px;
+        margin-bottom: 40px;
+        clear: both;
     }
 
-    .box-form-es form .button-primary{
-        float: left;
-        margin-left: 0;
-        margin-top: -180px;
-    }
 
 }
