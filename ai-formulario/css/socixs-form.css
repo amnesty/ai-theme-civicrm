@@ -508,6 +508,7 @@
 
     .content-form{
         max-width:960px;
+        margin: auto;
     }
 
     .box-form-es {
@@ -562,6 +563,7 @@
 
     .content-form{
         max-width:768px;
+        margin: auto;
     }
 
     .box-form-es span{
@@ -655,6 +657,7 @@
 
     .content-form{
         max-width:500px;
+        margin: auto;
     }
 
     .content-datos .fila-1 input, .content-datos .fila-3 input {
@@ -750,17 +753,19 @@
         float: none;
         margin: 20px auto auto;
         display: block;
+        top: -30px;
+        margin-bottom: 150px;
     }
 
     .box-form-es form .button-primary{
         float: left;
-        margin-left: 0;
+        margin-left: 16.7%;
         margin-top: -180px;
     }
 }
 
-/* max-width: 767px */
-@media only screen and (max-width: 767px) {
+/* max-width: 587px */
+@media only screen and (max-width: 587px) {
 
     .content-colaborar .capa-selecttime {
         width: 100%;
@@ -782,6 +787,7 @@
 
     .content-form{
         max-width:320px;
+        margin: auto;
     }
 
     .box-form-es span {
@@ -854,6 +860,20 @@
 
     .content-cuenta select.iban-letras {
         background-position: 76% center;
+    }
+
+    .content-end-form .botons-form img {
+        float: none;
+        margin: 20px auto auto;
+        display: block;
+        top: -30px;
+        margin-bottom: 150px;
+    }
+
+    .box-form-es form .button-primary{
+        float: left;
+        margin-left: 0;
+        margin-top: -180px;
     }
 
 }
