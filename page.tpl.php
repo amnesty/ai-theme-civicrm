@@ -17,6 +17,8 @@ if ($node->nid==$form_node){ // Sólo para el formulario de Socixs
 
 ?>
 
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+
 <!-- Cargamos los CSS que necesitamos para el contenido genérico -->
 <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/style-form.css">
 <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/ai.css">
