@@ -6,8 +6,8 @@
     color: #000;
     margin-bottom: 20px;
     padding: 0px 20px;
-
 }
+
 .text-intro span{
     font-family: 'TradeGothic-BoldCondTwenty';
 }
@@ -51,7 +51,7 @@
 }
 
 .content-colaborar {
-    padding: 0 20px 20px;
+    padding: 0px 20px 20px; /*20*/
 }
 
 .content-colaborar .capa-selecttime {
@@ -148,6 +148,10 @@
     border-radius: 10px 0 0 10px;
 }
 
+.content-datos select.document {
+    background-position: 110px center;
+}
+
 .content-datos .number-dni,
 .content-datos .mobile{
 	max-width: 162px;
@@ -191,8 +195,12 @@
 .content-datos .language{
 	width: 112%;
     border:0;
-
 }
+
+.content-datos select.language {
+    background-position: 200px center;
+}
+
 
 .content-datos .fila-3 label {
     font-family: 'TradeGothic-BoldCondTwenty';
@@ -256,15 +264,6 @@
     list-style: none inside none;
     padding-left: 10px;
 }
-
-.content-datos select.document {
-    background-position: 110px center;
-}
-
-.content-datos select.language {
-    background-position: 200px center;
-}
-
 
 /* content-direccion ----------------------------------------------------- */
 .content-direccion .capa-tipo-via{
@@ -373,7 +372,6 @@
 }
 
 /* content-end-form ----------------------------------------------------- */
-
 .content-end-form input[type=checkbox] {
     visibility: hidden;
     height: 28px;
@@ -390,6 +388,7 @@
 }
 
 .content-end-form .check-politica label {
+
     color: #fff;
 }
 
@@ -411,6 +410,12 @@
     opacity: 1;
 }
 
+.content-end-form {
+    padding: 0px;
+    margin: -50px 0px 50px 0px;
+}
+
+/* politica de privacidad */
 .content-end-form .politica{
     font-family: Verdana, Geneva, sans-serif;
     font-size: 15px;
@@ -423,16 +428,7 @@
     color: #000;
 }
 
-.content-end-form .botons-form{
-    margin-top: 0px;
-}
-
-.content-end-form {
-    padding: 0px;
-    margin: -60px 0px 50px 0px;
-}
-
-/* H */
+/* boton enviar */
 .box-form-es form .button-primary{
     font-family: 'TradeGothic-BoldCondTwenty';
     max-width: 315px;
@@ -444,20 +440,31 @@
     clear: both;
     background: #f1e60d;
     border: 0;
-    margin-top: -120px;
+    margin-top: -150px;
     margin-left: 71%;
-
 }
 
-.content-end-form .botons-form img{
-    max-width: 158px;
-    width: 100%;
-    float: left;
-}
-
+/* caja botones y politica */
 .box-form-es .form-actions {
-    margin: -40px 0px 0px 0px;
+    margin: -30px 0px 0px 0px;
 }
+
+.content-end-form .botons-form{
+    margin-top: 0px;
+}
+
+/* Comodo Secure */
+.secure-img {
+    float: left;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.box-form-es form .secure-img img{
+    max-width: 158px;
+    display: block;
+}
+
 
 /* Box Right ----------------------------------------------------- */
 .box-es-right{
@@ -508,7 +515,6 @@
 
     .content-form{
         max-width:960px;
-        margin: auto;
     }
 
     .box-form-es {
@@ -517,7 +523,7 @@
     }
 
     .content-datos select.document {
-        background-position: 55px center;
+        background-position: 110px center;
     }
 
     .content-datos .fila-3 label {
@@ -527,10 +533,6 @@
 
     .content-datos .capa-fechas,
     .content-datos .capa-year {
-        margin-top: 20px;
-    }
-
-    .content-cuenta .ncuenta {
         margin-top: 20px;
     }
 
@@ -550,10 +552,15 @@
         margin-left: 0;
     }
 
+    .content-datos .capa-fechas div div {
+        margin-top: 20px;
+    }
+
     .box-form-es form .button-primary{
         float: left;
-        margin-top: -110px;
+        margin-top: -150px;
         margin-left: 67%;
+        margin-bottom: 40px;
     }
 
 }
@@ -563,7 +570,6 @@
 
     .content-form{
         max-width:768px;
-        margin: auto;
     }
 
     .box-form-es span{
@@ -577,15 +583,19 @@
     }
 
     .content-datos .capa-document {
-        width: 80px;
+        width: 100%px;
     }
 
     .content-datos .number-dni{
-        max-width: 120px;
+        max-width: 200px;
     }
 
     .content-datos .mobile {
-        max-width: 120px;
+        max-width: 200px;
+    }
+
+    .content-datos .capa-genero{
+        margin-bottom: 20px;
     }
 
     .content-datos .capa-language {
@@ -644,6 +654,10 @@
         background-position: 83% center;
     }
 
+    .content-cuenta .ncuenta {
+        margin-top: 20px;
+    }
+
     .box-es-right .three-column {
         max-width: 100%;
         min-height: 100%;
@@ -657,8 +671,9 @@
 
     .box-form-es form .button-primary{
         float: left;
-        margin-top: -110px;
-        margin-left: 58.5%;
+        margin-top: -150px;
+        margin-left: 59%;
+        margin-bottom: 40px;
     }
 
 }
@@ -668,12 +683,23 @@
 
     .content-form{
         max-width:630px;
-        margin: auto;
     }
 
     .content-form h2 {
         font-size: 30px;
         line-height: 30px;
+    }
+
+    .content-form fieldset {
+        margin-top: 0;
+    }
+
+    .content-datos .fila-1, .content-datos .fila-3 {
+        margin-top: 0;
+    }
+
+    .content-dato .fila-2.clearfix {
+        margin-top: 20px;
     }
 
     .content-colaborar .capa-selecttime {
@@ -695,11 +721,11 @@
     }
 
     .content-datos .capa-document {
-        width: 20%;
+        width: 30%;
     }
 
     .content-datos .number-dni{
-        max-width: 71%;
+        max-width: 60%;
     }
 
     .content-datos .capa-genero {
@@ -724,7 +750,7 @@
     }
 
     .content-datos .capa-language {
-        width: 84%;
+        width: 80%;
         margin-top: 20px;
     }
 
@@ -744,7 +770,7 @@
         background-position: 86% center;
     }
 
-    .content-datos .capa-fechas div select {
+    /*.content-datos .capa-fechas div select {
         background-position: 73% center;
     }
 
@@ -753,10 +779,10 @@
         float: none;
         clear: both;
         margin-bottom: 20px;
-    }
+    }*/
 
     .content-cuenta .iban-numero {
-        max-width: 41%; /* !!!!!!!!!!!!! */
+        max-width: 74%;
     }
 
     .content-cuenta .iban-numero {
@@ -780,6 +806,7 @@
 
     .content-cuenta .ncuenta {
         max-width:100%;
+        margin-top: 20px;
     }
 
     .box-es-right .three-column {
@@ -789,33 +816,32 @@
         float: none;
     }
 
-    .content-end-form .botons-form .btn-enviar {
-        float: none;
-        margin: auto;
-        display: block;
+    .box-form-es form .button-primary{
+        float: left;
+        margin-top: -150px;
+        margin-left: 50%;
+        margin-bottom: 40px;
     }
 
     .content-end-form .botons-form img {
-        float: none;
-        margin: 20px auto auto;
+        float: left;
+        margin: 0px auto auto;
         display: block;
-        top: -30px;
-        margin-bottom: 150px;
+        top: -20px;
     }
 
-    .box-form-es form .secure-img{
-        float: left;
-    }
-
-    .box-form-es form .button-primary{
-        float: left;
-        margin-left: 16.7%;
-        margin-top: -180px;
+    .content-end-form {
+        padding: 0px;
+        margin: -30px 0px 50px 0px;
     }
 }
 
 /* max-width: 480px */
 @media only screen and (max-width: 480px) {
+
+    .content-form{
+        max-width:320px;
+    }
 
     .content-form h2 {
         font-size: 30px;
@@ -838,16 +864,11 @@
     }
 
     .content-colaborar .cuotas {
-        margin-top: 20px;
+        margin-top: 0;
     }
 
     .content-colaborar .cuotas label {
         margin-right: 4px;
-    }
-
-    .content-form{
-        max-width:320px;
-        margin: auto;
     }
 
     .box-form-es span {
@@ -879,20 +900,49 @@
         width: 75%;
     }
 
+    .content-datos .fila-3 label {
+        clear: both;
+        margin-top: 0;
+    }
+
+    .content-datos .fila-3 label {
+        line-height: 20px;
+    }
+
     .content-datos .capa-fechas {
         width: 100%;
     }
 
-    .content-datos .capa-year {
+    .content-datos .capa-fechas  div div{
+        float: left;
         width: 100%;
     }
 
-    .content-datos select.year {
+    /*.content-datos .capa-year {
+        width: 100%;
+    }*/
+
+    /*.content-datos select.year {
         background-position: 72% center;
     }
 
     .content-datos select.day, .content-datos select.month {
         background-position: 75% center;
+    }*/
+
+    .content-datos a{
+        float: left;
+        height: 44px;
+        line-height: 50px;
+        margin-right: 0px;
+    }
+
+    .content-datos .capa-fechas  div select {
+        background-position: 70% center;
+    }
+
+    .content-datos select.profesion {
+        background-position: 78% center;
     }
 
     .content-datos select.genero {
@@ -907,6 +957,10 @@
         background-position: 79% center;
     }
 
+    .content-datos .fila-3 label{
+        height: 0px;
+    }
+
     .content-cuenta .iban-numero {
         max-width: 100%;
         display: block;
@@ -914,32 +968,38 @@
     }
 
     .content-cuenta .capa-iban-letras {
-        width: 100%;
-        float: none;
+        width: 50%;
+        float: left;
+    }
+
+    .content-cuenta .capa-iban-numero {
+        float: left;
+        width: 40%;
+        margin-top: 0px;
     }
 
     .content-cuenta select.iban-letras {
-        background-position: 76% center;
+        background-position: 70% center;
     }
 
-    .content-end-form .botons-form img {
+    .botons-form img {
         float: none;
-        margin: 20px auto auto;
-        display: block;
-        top: -30px;
-        margin-bottom: 150px;
-    }
-
-    /*.box-form-es form .button-primary{
-        float: left;
-        margin-left: 0;
-        margin-top: -180px;
-    }*/
-
-    .box-form-es form .secure-img {
-        float: none;
-        margin-bottom: 40px;
+        margin: 0px auto auto;
         clear: both;
+        top: -30px;
     }
+
+    .box-form-es form .button-primary{
+        float: none;
+        margin-top: -150px;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .content-end-form {
+        padding: 0px;
+        margin: -30px 0px 50px 0px;
+    }
+
 
 }
