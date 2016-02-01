@@ -92,7 +92,7 @@ jQuery(function($) {
 
     // Navbar
     //$('.navbar-fixed').autoHidingNavbar();
-    $('.navbar-fixed').autoHidingNavbar('hide');
+    $('.navbar-fixed').autoHidingNavbar();
 
     // Cuenta entera en rojo
     if($('.account').hasClass('error')){
