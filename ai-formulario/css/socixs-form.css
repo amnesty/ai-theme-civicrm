@@ -34,6 +34,10 @@
     width: 100%;
 }
 
+.content-colaborar, .content-datos, .content-direccion, .content-cuenta {
+    padding-top: 0px;
+}
+
 /* content-colaborar  ----------------------------------------------------- */
 
 .content-colaborar form .cuota-options-wrapper-general{

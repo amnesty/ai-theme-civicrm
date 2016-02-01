@@ -93,4 +93,12 @@ jQuery(function($) {
     // Navbar
     //$('.navbar-fixed').autoHidingNavbar();
     $('.navbar-fixed').autoHidingNavbar('hide');
+
+    // Cuenta entera en rojo
+    id($('.account').hasClass('error')){
+            $('entity').css("border", "#f00 2px solid");
+            $('office').css("border", "#f00 2px solid");
+            $('check').css("border", "#f00 2px solid");
+            $('account').css("border", "#f00 2px solid");
+    }
 })
