@@ -91,5 +91,6 @@ jQuery(function($) {
     });
 
     // Navbar
-    $('.navbar-fixed').autoHidingNavbar();
+    //$('.navbar-fixed').autoHidingNavbar();
+    $('.navbar-fixed').autoHidingNavbar('hide');
 })

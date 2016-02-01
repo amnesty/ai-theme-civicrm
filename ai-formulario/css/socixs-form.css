@@ -1001,5 +1001,9 @@
         margin: -30px 0px 50px 0px;
     }
 
+    /* header navbar*/
+    .image-header, .image-header--sunken {
+        margin-top: 90px;
+    }
 
 }
