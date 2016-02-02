@@ -13,6 +13,7 @@ stylesheets[all][] = webform.css
 scripts[] = js/bootstrap.js
 
 ; JS Scripts
+scripts[] = js/jquery-2.2.0.min.js
 scripts[] = js/ai.js
 scripts[] = ai-formulario/js/socixs-form.js
 
