@@ -10,7 +10,8 @@ function getUrlVars() {
 jQuery(function($) {
 
     // Origenes
-    var get_source = getUrlVars()["province"];
+    
+    var get_source = getUrlVars()["origen"];
     $('#civicrm_1_contact_1_contact_source').val(get_source);
 
     // Scrolling the active block of fields
