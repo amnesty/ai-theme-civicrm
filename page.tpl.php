@@ -9,7 +9,6 @@ include_once('config.php');
 if ($node->nid==$form_node){ 
 ?>
 
-<script language="javascript" type="text/javascript" src="<?php print $theme_path; ?>/js/bootstrap.min.js"></script>
 <!-- Cargamos los CSS que necesitamos para el contenido genérico -->
 <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/style-form.css">
 <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/ai.css">
