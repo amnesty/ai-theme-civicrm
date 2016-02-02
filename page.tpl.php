@@ -8,12 +8,13 @@ include_once('config.php');
 // ****************************** Sólo para el formulario de Socixs ************************************************
 if ($node->nid==$form_node){ 
 ?>
-
+<link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/bootstrap.min.css">
 <!-- Cargamos los CSS que necesitamos para el contenido genérico -->
 <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/style-form.css">
 <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/ai.css">
 <!-- Añadimos la hoja CSS para el formulario de Socixs en concreto -->
 <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/socixs-form.css">
+
 
 <!-- Header -->
 <nav class="navbar navbar-fixed-top">
