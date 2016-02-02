@@ -9,12 +9,12 @@ stylesheets[all][] = system.theme.css
 stylesheets[all][] = layout_box.css
 stylesheets[all][] = webform.css
 
+;Bootstrap
+scripts[] = js/bootstrap.js
+
 ; JS Scripts
 scripts[] = js/ai.js
 scripts[] = ai-formulario/js/socixs-form.js
-
-;Bootstrap
-scripts[] = js/bootstrap.min.js
 
 version = "7.x-1.x-dev"
 core = "7.x"
