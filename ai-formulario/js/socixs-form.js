@@ -108,10 +108,6 @@ jQuery(function($) {
         $(".otra_cuota").val('');
     });
 
-    // Navbar
-    //$('.navbar-fixed').autoHidingNavbar();
-    $('.navbar-fixed').autoHidingNavbar();
-
     // Cuenta entera en rojo
     if($('.account').hasClass('error')){
             $('.entity').css("border", "#f00 2px solid");
@@ -119,4 +115,7 @@ jQuery(function($) {
             $('.check').css("border", "#f00 2px solid");
             $('.account').css("border", "#f00 2px solid");
     }
+
+    // Navbar
+    $('.navbar-fixed').autoHidingNavbar();
 })
