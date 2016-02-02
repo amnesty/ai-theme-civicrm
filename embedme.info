@@ -8,11 +8,11 @@ engine = phptemplate
 stylesheets[all][] = system.theme.css
 stylesheets[all][] = layout_box.css
 stylesheets[all][] = webform.css
-scripts[] = jquery.js
+;scripts[] = jquery.js
 
 
 ;JQuery
-scripts[] = js/jquery-2.2.0.min.js
+;scripts[] = js/jquery-2.2.0.min.js
 
 ;Bootstrap
 scripts[] = js/bootstrap.js
