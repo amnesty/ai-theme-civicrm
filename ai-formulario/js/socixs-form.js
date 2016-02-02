@@ -14,7 +14,7 @@ jQuery(function($) {
     var get_source = getUrlVars()["origen"];
     
     var source_input = $( "[name='submitted[civicrm_1_contact_1_contact_source]']");
-    if( isset(get_source) ){
+    if( get_source != '' && get_source ){
         source_input.val(get_source);
     }
 
