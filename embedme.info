@@ -9,19 +9,10 @@ stylesheets[all][] = system.theme.css
 stylesheets[all][] = layout_box.css
 stylesheets[all][] = webform.css
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 8d2e0e2b2fb9c5828c2f04d291386005007e9f4e
 ;Bootstrap
 ;stylesheets[all][] = css/bootstrap.min.css
 scripts[] = js/bootstrap.min.js
 
-<<<<<<< HEAD
-=======
->>>>>>> d30920af6e7c117f5954ef93288ee4e0b67398f1
-=======
->>>>>>> 8d2e0e2b2fb9c5828c2f04d291386005007e9f4e
 ; JS Scripts
 scripts[] = js/ai.js
 scripts[] = ai-formulario/js/socixs-form.js
