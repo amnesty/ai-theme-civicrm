@@ -112,7 +112,7 @@ jQuery(function($) {
     if($('.account').hasClass('error')){
             $('.entity').css("border", "#f00 2px solid");
             $('.office').css("border", "#f00 2px solid");
-            $('.check').css("border", "#f00 2px solid");
+            $('.dc').css("border", "#f00 2px solid");
             $('.account').css("border", "#f00 2px solid");
     }
 
