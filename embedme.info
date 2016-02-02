@@ -10,10 +10,10 @@ stylesheets[all][] = layout_box.css
 stylesheets[all][] = webform.css
 
 ;Bootstrap
-scripts[] = js/bootstrap.js
+;scripts[] = js/bootstrap.js
 
 ; JS Scripts
-scripts[] = js/jquery-2.2.0.min.js
+;scripts[] = js/jquery-2.2.0.min.js
 scripts[] = js/ai.js
 scripts[] = ai-formulario/js/socixs-form.js
 
