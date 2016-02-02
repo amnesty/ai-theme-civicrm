@@ -13,6 +13,7 @@ engine = phptemplate
 ; Remove these core stylesheets to avoid conflicts
 stylesheets[all][] = system.theme.css
 stylesheets[all][] = layout_box.css
+stylesheets[all][] = webform.css
 
 ;Bootstrap
 ;stylesheets[all][] = css/bootstrap.min.css
