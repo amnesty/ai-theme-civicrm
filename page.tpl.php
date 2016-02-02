@@ -13,8 +13,6 @@ if ($node->nid==$form_node){ // Sólo para el formulario de Socixs
 <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/ai.css">
 <!-- Añadimos la hoja CSS para el formulario de Socixs en concreto -->
 <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/socixs-form.css">
-<!-- Bootstrap CSS -->
-<link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/bootstrap.min.css">
 
 <!-- Header -->
 <nav class="navbar navbar-fixed-top">
