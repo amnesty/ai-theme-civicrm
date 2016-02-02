@@ -7,8 +7,8 @@ include_once('config.php');
 
 // ****************************** Sólo para el formulario de Socixs ************************************************
 if ($node->nid==$form_node){ 
-    include_once('piwik.php');
 ?>
+
 <!-- Cargamos los CSS que necesitamos para el contenido genérico -->
 <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/style-form.css">
 <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/ai.css">
@@ -127,3 +127,9 @@ else {
     </div>
 <?php } ?>
 </div></div></div>
+
+<?php
+// Estadísticas en Piwik para el formulario de socixs, si aplica 
+if ($node->nid==$form_node){ include_once('piwik.php'); } 
+?>
+
