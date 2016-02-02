@@ -5,7 +5,7 @@ core = 7.x
 engine = phptemplate
 
 ;Bootstrap
-stylesheets[all][] = css/bootstrap.min.css
+;stylesheets[all][] = css/bootstrap.min.css
 scripts[] = js/bootstrap.min.js
 
 ; AI Website stylesheet
