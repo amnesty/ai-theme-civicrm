@@ -10,7 +10,7 @@ stylesheets[all][] = layout_box.css
 stylesheets[all][] = webform.css
 
 ;Bootstrap
-stylesheets[all][] = css/bootstrap.min.css
+;stylesheets[all][] = css/bootstrap.min.css
 scripts[] = js/bootstrap.min.js
 
 ; JS Scripts
