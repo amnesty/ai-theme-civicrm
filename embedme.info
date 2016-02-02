@@ -4,6 +4,10 @@ description = The AI theme integration for CiviCRM (Developed by ICTI for the We
 core = 7.x
 engine = phptemplate
 
+;Bootstrap
+stylesheets[all][] = css/bootstrap.min.css
+scripts[] = js/bootstrap.min.js
+
 ; AI Website stylesheet
 ;stylesheets[all][] = css/ai.css
 
@@ -14,10 +18,6 @@ engine = phptemplate
 stylesheets[all][] = system.theme.css
 stylesheets[all][] = layout_box.css
 stylesheets[all][] = webform.css
-
-;Bootstrap
-stylesheets[all][] = css/bootstrap.min.css
-scripts[] = js/bootstrap.min.js
 
 ; JS Scripts
 scripts[] = js/ai.js
