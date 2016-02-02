@@ -4,16 +4,6 @@ description = The AI theme integration for CiviCRM (Developed by ICTI for the We
 core = 7.x
 engine = phptemplate
 
-;Bootstrap
-;stylesheets[all][] = css/bootstrap.min.css
-scripts[] = js/bootstrap.min.js
-
-; AI Website stylesheet
-;stylesheets[all][] = css/ai.css
-
-; AI generic forms stylesheet
-;stylesheets[all][] = ai-formulario/css/style-form.css
-
 ; Remove these core stylesheets to avoid conflicts
 stylesheets[all][] = system.theme.css
 stylesheets[all][] = layout_box.css
@@ -22,6 +12,9 @@ stylesheets[all][] = webform.css
 ; JS Scripts
 scripts[] = js/ai.js
 scripts[] = ai-formulario/js/socixs-form.js
+
+;Bootstrap
+scripts[] = js/bootstrap.min.js
 
 version = "7.x-1.x-dev"
 core = "7.x"
