@@ -515,7 +515,7 @@
 }
 
 /* max-width: 1400px */
-@media only screen and (max-width: 1370px) {
+@media only screen and (max-width: 1366px) {
 
     .content-form{
         max-width:960px;
