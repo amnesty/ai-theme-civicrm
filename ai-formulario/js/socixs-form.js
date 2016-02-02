@@ -1,22 +1,31 @@
 // URL Vars
-/*function getUrlVars() {
+function getUrlVars() {
     var vars = {};
     var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
         vars[key] = value;
     });
     return vars;
-}*/
+}
 
+/*function checkScroll(){
+    var startY = $('.header').height() * 2; //The point where the navbar changes in px
+
+    if($(window).scrollTop() > startY){
+        $('.header').addClass("header__transparent");
+    }else{
+        $('.header').removeClass("header__transparent");
+    }
+}*/
 
 jQuery(function($) {
 
     // Origenes
-    /*var get_source = getUrlVars()["origen"];
+    var get_source = getUrlVars()["origen"];
     
     var source_input = $( "[name='submitted[civicrm_1_contact_1_contact_source]']");
     if( get_source != '' && get_source ){
         source_input.val(get_source);
-    }*/
+    }
 
     // Scrolling the active block of fields
 
@@ -117,5 +126,11 @@ jQuery(function($) {
     }
 
     // Navbar
-    $('.navbar-fixed').autoHidingNavbar();
+    //$('.navbar-fixed').autoHidingNavbar('setDisableAutohide', true);
+    
+    /*if($('.header').length > 0){
+        $(window).on("scroll load resize", function(){
+            checkScroll();
+        });
+    }*/
 })

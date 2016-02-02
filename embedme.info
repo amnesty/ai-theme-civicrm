@@ -11,7 +11,7 @@ stylesheets[all][] = webform.css
 
 ;Bootstrap
 ;stylesheets[all][] = css/bootstrap.min.css
-scripts[] = js/bootstrap.min.js
+;scripts[] = js/bootstrap.min.js
 
 ; JS Scripts
 scripts[] = js/ai.js
