@@ -8,7 +8,6 @@ include_once('config.php');
 if ($node->nid==$form_node){ // Sólo para el formulario de Socixs
 
 ?>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
 <!-- Cargamos los CSS que necesitamos para el contenido genérico -->
 <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/style-form.css">
 <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/ai.css">
