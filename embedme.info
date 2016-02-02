@@ -12,7 +12,7 @@ stylesheets[all][] = webform.css
 
 
 ;JQuery
-;scripts[] = js/jquery-2.2.0.min.js
+scripts[] = js/jquery-2.2.0.min.js
 
 ;Bootstrap
 scripts[] = js/bootstrap.js
