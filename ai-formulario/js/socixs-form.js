@@ -12,7 +12,9 @@ jQuery(function($) {
     // Origenes
     var get_source = getUrlVars()["origen"];
     var source_input = $( "[name='submitted[civicrm_1_contact_1_contact_source]']");
-    source_input.val(get_source);
+    if( source_input.val() != '' ){
+        source_input.val(get_source);
+    }
 
     // Scrolling the active block of fields
 
