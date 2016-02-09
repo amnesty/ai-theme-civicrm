@@ -14,8 +14,27 @@
         if (window.focus) {newwindow.focus()}
         return false;
     }
-</script>
+  </script>
+  <script>
+                    var urlActual = 'http://www.es.amnesty.org/gracias-2015';
+                    var tituloActual = 'Mira todo lo que se consiguió en 2015'; 
+                    var tituloActualTW = 'Mira todo lo que se consiguió en 2015';
+                    var urlActualFB = 'http://www.es.amnesty.org/gracias-2015?utm_source=facebook&utm_campaign=comp&utm_medium=social_com&utm_term=Amnesty&utm_content=gracias-2015';
+                    var urlActualTW = 'https://www.es.amnesty.org/gracias-2015?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=Amnesty&utm_content=gracias-2015';
+                    var urlActualFBFirma = 'http://www.es.amnesty.org/gracias-2015?utm_source=facebook&utm_campaign=comp&utm_medium=social_com&utm_term=Amnesty&utm_content=gracias-2015';
+                    var urlActualTWFirma = 'https://www.es.amnesty.org/gracias-2015?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=Amnesty&utm_content=gracias-2015';
+  </script>
 
+  <div id="fb-root"></div>
+  <!-- Faacebook -->
+  <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.5";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div id="skip-link">
