@@ -62,14 +62,15 @@ if ($node->nid==$socixs_form || $node->nid=$socixs_gracias){
 		        <div class="box-form-es">
                     <?php print $messages; ?> <!-- Errors -->
                     <?php print render($page['content']); ?>
-                    
-                    <!-- FB -->
-                    <div class="fb-share-button" data-href="https://crm.es.amnesty.org/unete-a-amnistia" data-layout="button" style="float:left;"></div>
-                    <!-- Twitter -->
-                    <div><a href="https://twitter.com/share" class="twitter-share-button" data-url="https://crm.es.amnesty.org/unete-a-amnistia" data-text="Yo también defiendo los derechos humanos con Amnistía Internacional" data-via="amnistiaespana">Tweet</a></div>
-                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
-                    
-                    <div class="box-es-right">
+                    <?php if ($node->nid==$socixs_gracias ){ ?>
+                        <!-- FB -->
+                        <div class="fb-share-button" data-href="https://crm.es.amnesty.org/unete-a-amnistia" data-text="Yo también defiendo los derechos humanos con Amnistía Internacional" data-layout="button" style="float:left;"></div>
+                        <!-- Twitter -->
+                        <div><a href="https://twitter.com/share" class="twitter-share-button" data-url="https://crm.es.amnesty.org/unete-a-amnistia" data-text="Yo también defiendo los derechos humanos con Amnistía Internacional" data-via="amnistiaespana">Tweet</a></div>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+                    <?php } ?>
+                </div>
+                <div class="box-es-right">
                         <div class="three-column ventajas">
                             <img src="<?php print $images_path; ?>pig.png" alt="pig"/>
                             <h3>¿Conoces las ventajas fiscales de ser socio/a?</h3>
@@ -85,8 +86,8 @@ if ($node->nid==$socixs_form || $node->nid=$socixs_gracias){
                             <h3>Transparencia, nuestro compromiso</h3>
                             <p>El 100% de nuestros recursos los destinamos a luchar por los derechos humanos en todo el mundo. Nuestras cuentas son públicas y puedes verlas en nuestra web.</p>
                         </div>
-                    </div><!-- /box-es-right -->
-			     </div>
+                </div><!-- /box-es-right -->
+			 </div>
 		</div>    
 	</div>
 </div>
