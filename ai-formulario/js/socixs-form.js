@@ -7,16 +7,6 @@ function getUrlVars() {
     return vars;
 }
 
-/*function checkScroll(){
-    var startY = $('.header').height() * 2; //The point where the navbar changes in px
-
-    if($(window).scrollTop() > startY){
-        $('.header').addClass("header__transparent");
-    }else{
-        $('.header').removeClass("header__transparent");
-    }
-}*/
-
 jQuery(function($) {
 
     // Origenes
@@ -26,7 +16,7 @@ jQuery(function($) {
     if( get_source != '' && get_source ){
         source_input.val(get_source);
     }
-
+    
     // Scrolling the active block of fields
 
     $(".content-colaborar").hover( function(){

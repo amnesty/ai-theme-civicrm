@@ -432,6 +432,10 @@
     color: #000;
 }
 
+input.button-primary {
+    -webkit-appearance: none;
+}
+
 /* boton enviar */
 .box-form-es form .button-primary{
     font-family: 'TradeGothic-BoldCondTwenty';
