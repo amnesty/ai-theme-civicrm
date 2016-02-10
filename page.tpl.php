@@ -10,14 +10,14 @@ if (!isset($_GET["origen"]) ){
 include_once('config.php');
 
 // ****************************** Sólo para el formulario de Socixs ************************************************
-if ($node->nid==$socixs_form || $node->nid=$socixs_gracias){ 
+if ($node->nid==$socixs_form || $node->nid==$socixs_gracias){ 
 ?>
     <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/bootstrap.min.css">
     <!-- WEB -->
     <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/ai.css">
 
 <?php 
-// ***************** Si no es la página de confirmación ***********************
+// ********************************** Si no es la página de confirmación ************************************
 if(!isset($_POST["submitted"])){  ?>
     <!-- Cargamos los CSS que necesitamos para el contenido genérico -->
     <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/style-form.css">
@@ -54,6 +54,7 @@ if(!isset($_POST["submitted"])){  ?>
     </div>
 </div><!-- Image after header -->
 
+<?php //var_dump($_POST); ?>
 
 <!-- Page content -->
 <div class="container--wide"><!-- Bootstrap Grid -->
@@ -61,7 +62,7 @@ if(!isset($_POST["submitted"])){  ?>
    	 <div id="content-area">
             <!-- Formulario -->
          	<div class="content-form clearfix">
-            <?php 
+            <?php
             // ********* Sólo mostramos el texto de intro en el formulario
             if ($node->nid==$socixs_form ){ ?>
 			    <p class="text-intro">
@@ -77,16 +78,16 @@ if(!isset($_POST["submitted"])){  ?>
                     // ****************  Sólo mostramos los botones de compartir en la página de gracias ******************
                     if ($node->nid==$socixs_gracias ){ ?>
                         <!-- FB -->
-                        <div class="fb-share-button" data-href="hhttps://crm.es.amnesty.org/unete-a-amnistia/?utm_source=facebook&utm_campaign=comp&utm_medium=social_com&utm_term=Amnesty&utm_content=form_socios" 
+                        <div class="fb-share-button" data-href="https://crm.es.amnesty.org/unete-a-amnistia/?utm_source=facebook&utm_campaign=comp&utm_medium=social_com&utm_term=Amnesty&utm_content=form_socios" 
                             data-text="Yo también defiendo los derechos humanos con Amnistía Internacional" data-layout="button" style="float:left;"></div>
                         <!-- Twitter -->
                         <div><a href="https://twitter.com/share" class="twitter-share-button" data-url="https://crm.es.amnesty.org/unete-a-amnistia/?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=Amnesty&utm_content=form_socios" 
                             data-text="Yo también defiendo los derechos humanos con Amnistía Internacional" data-via="amnistiaespana">Tweet</a></div>
                         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
                     <?php } ?>
-                </div>
+                <?php if($node->nid==$socixs_form) { ?></div> <!-- Box form ES --> <?php } ?>
                 <?php 
-                // ********************* Sólo mostramos la barra lateral derecha si es formulario o confirmación ****************
+                // ********************* Sólo mostramos la barra lateral derecha si es formulario o gracias ****************
                 if (!isset($_POST["submitted"])){ ?>
                 <div class="box-es-right">
                         <div class="three-column ventajas">
@@ -105,6 +106,7 @@ if(!isset($_POST["submitted"])){  ?>
                             <p>El 100% de nuestros recursos los destinamos a luchar por los derechos humanos en todo el mundo. Nuestras cuentas son públicas y puedes verlas en nuestra web.</p>
                         </div>
                 </div><!-- /box-es-right -->
+                <?php if($node->nid==$socixs_gracias) { ?></div> <!-- Box form ES --> <?php } ?>
                 <?php } ?>
 			 </div>
 		</div>    
