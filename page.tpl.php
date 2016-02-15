@@ -1,30 +1,46 @@
 <div id="page-wrapper" onload="errors()"><div id="page"><div id="content" class="clearfix">
 
 <?php
-// origen
+// Origen
 if (!isset($_GET["origen"]) ){
     $_GET["origen"] = "web";
 }
-
 // Globals
 include_once('config.php');
-
-// ****************************** Sólo para el formulario de Socixs ************************************************
-if ($node->nid==$socixs_form || $node->nid==$socixs_gracias){ 
 ?>
-    <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/bootstrap.min.css">
-    <!-- WEB -->
-    <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/ai.css">
 
-<?php 
-// ********************************** Si no es la página de confirmación ************************************
-if(!isset($_POST["submitted"])){  ?>
-    <!-- Cargamos los CSS que necesitamos para el contenido genérico -->
-    <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/style-form.css">
-    <!-- Añadimos la hoja CSS para el formulario de Socixs en concreto -->
-    <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/socixs-form.css">
+<?php
+// ****************************************************** CSS *********************************************************************
+
+// *********** Sólo para el formulario de Socixs y su página de gracias ***************
+if ( $node->nid==$socixs_form || $node->nid==$socixs_gracias ){ 
+?>
+    <!-- WEB -->
+    <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/ai.css">
+    <?php    // ********************* Si no es la página de confirmación ************
+    if(!isset($_POST["submitted"])){  ?>
+        <!-- Cargamos los CSS que necesitamos para el contenido genérico -->
+        <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/style-form.css">
+        <!-- Añadimos la hoja CSS para el formulario de Socixs en concreto -->
+        <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/socixs-form.css">
+    <?php }
+// **** Contenido general del resto de páginas o si es página de confirmación ******* 
+} 
+if( ($node->nid!=$socixs_form && $node->nid!=$socixs_gracias) || isset($_POST["submitted"]) ){
+?>
+    <!-- Cargamos los CSS que necesitamos para el contenido de diseño base de CiviCRM -->
+    <link rel="stylesheet" type="text/css" href="<?php print $base_url; ?>/modules/system/system.theme.css">
+    <link rel="stylesheet" type="text/css" href="<?php print $base_url; ?>/sites/all/modules/webform_layout/layout_box.css">
+    <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/webform_add.css">
 <?php } ?>
 
+<!-- ************************************************** CONTENIDO *************************************************************************-->
+
+<?php
+// *********** HEADER: Sólo para el formulario de Socixs ***************
+if ($node->nid==$socixs_form || $node->nid==$socixs_gracias){ 
+?>
 <!-- Header -->
 <nav class="navbar navbar-fixed-top">
 <header class="header" data-header="" role="banner">
@@ -36,7 +52,6 @@ if(!isset($_POST["submitted"])){  ?>
     </div>
 </header>
 </nav>
-
 <!-- Image after header-->
 <div class="image-header image-header--has-credits-sm image-header--actua">
     <div style="background-image: url('<?php print $form_path; ?>/images/header.jpg?anchor=topcenter');" class="responsive--bg  lazyloaded"
@@ -53,12 +68,15 @@ if(!isset($_POST["submitted"])){  ?>
         </div>
     </div>
 </div><!-- Image after header -->
-
-<?php //var_dump($_POST); ?>
+<?php } ?>
 
 <!-- Page content -->
-<div class="container--wide"><!-- Bootstrap Grid -->
+<div class="container--wide">
+    <!-- Bootstrap Grid -->
     <div class="grid">
+<?php
+// ************************************************ Solo formulario y gracias (no confirmacion) ******************************************************** 
+if ( ($node->nid==$socixs_form || $node->nid==$socixs_gracias) && !isset($_POST["submitted"]) ){  ?>
    	 <div id="content-area">
             <!-- Formulario -->
          	<div class="content-form clearfix">
@@ -74,21 +92,7 @@ if(!isset($_POST["submitted"])){  ?>
 		        <div class="box-form-es">
                     <?php print $messages; ?> <!-- Errors -->
                     <?php print render($page['content']); ?>
-                    <?php
-                    // ****************  Sólo mostramos los botones de compartir en la página de gracias ******************
-                    if ($node->nid==$socixs_gracias ){ ?>
-                        <!-- FB -->
-                        <div class="fb-share-button" data-href="https://crm.es.amnesty.org/unete-a-amnistia/?utm_source=facebook&utm_campaign=comp&utm_medium=social_com&utm_term=Amnesty&utm_content=form_socios" 
-                            data-text="Yo también defiendo los derechos humanos con Amnistía Internacional" data-layout="button" style="float:left;"></div>
-                        <!-- Twitter -->
-                        <div><a href="https://twitter.com/share" class="twitter-share-button" data-url="https://crm.es.amnesty.org/unete-a-amnistia/?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=Amnesty&utm_content=form_socios" 
-                            data-text="Yo también defiendo los derechos humanos con Amnistía Internacional" data-via="amnistiaespana">Tweet</a></div>
-                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
-                    <?php } ?>
-                <?php if($node->nid==$socixs_form) { ?></div> <!-- Box form ES --> <?php } ?>
-                <?php 
-                // ********************* Sólo mostramos la barra lateral derecha si es formulario o gracias ****************
-                if (!isset($_POST["submitted"])){ ?>
+                </div>
                 <div class="box-es-right">
                         <div class="three-column ventajas">
                             <img src="<?php print $images_path; ?>pig.png" alt="pig"/>
@@ -106,13 +110,37 @@ if(!isset($_POST["submitted"])){  ?>
                             <p>El 100% de nuestros recursos los destinamos a luchar por los derechos humanos en todo el mundo. Nuestras cuentas son públicas y puedes verlas en nuestra web.</p>
                         </div>
                 </div><!-- /box-es-right -->
-                <?php if($node->nid==$socixs_gracias) { ?></div> <!-- Box form ES --> <?php } ?>
-                <?php } ?>
 			 </div>
 		</div>    
-	</div>
+<?php
+// *********************** Página de confirmación o Contenido básico de una página si no es la del formulario de socixs ****************************
+} else { ?>
+    <div class="content-area" <?php if( $node->nid==$socixs_form && isset($_POST["submitted"]) ){ print 'style="margin: 0px 10%";'; } ?> >
+        <!-- Errors -->
+        <?php print $messages; ?>
+        <!-- Content -->
+        <?php print render($page['content']); ?>
+        <?php
+        // ****************  Sólo mostramos los botones de compartir en la página de gracias ******************
+        if ($node->nid==$socixs_gracias ){ ?>
+            <!-- FB -->
+            <div class="fb-share-button" data-href="https://crm.es.amnesty.org/unete-a-amnistia/?utm_source=facebook&utm_campaign=comp&utm_medium=social_com&utm_term=Amnesty&utm_content=form_socios" 
+            data-text="Yo también defiendo los derechos humanos con Amnistía Internacional" data-layout="button" style="float:left;"></div>
+            <!-- Twitter -->
+            <div><a href="https://twitter.com/share" class="twitter-share-button" data-url="https://crm.es.amnesty.org/unete-a-amnistia/?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=Amnesty&utm_content=form_socios" 
+            data-text="Yo también defiendo los derechos humanos con Amnistía Internacional" data-via="amnistiaespana">Tweet</a></div>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+        <?php } ?>
+    </div>
+<?php } ?>
+
+    </div>
 </div>
 
+<?php
+// *********** Footer: Sólo para el formulario de Socixs ***************
+if ($node->nid==$socixs_form || $node->nid==$socixs_gracias){ 
+?>
 <!-- Footer -->
 <footer class="footer print-hidden">
     <div class="footer__container">
@@ -136,29 +164,8 @@ if(!isset($_POST["submitted"])){  ?>
         </div>
     </div>
 </footer>
-
-<?php
-    // *********************************** Contenido general del resto de páginas o si es página de confirmación ********************************* 
-    if( isset($_POST["submitted"]) || ($node->nid!=$socixs_form && $node->nid!=$socixs_gracias) ){
-?>
-    <!-- Cargamos los CSS que necesitamos para el contenido de diseño base de CiviCRM -->
-    <link rel="stylesheet" type="text/css" href="<?php print $base_url; ?>/modules/system/system.theme.css">
-    <link rel="stylesheet" type="text/css" href="<?php print $base_url; ?>/sites/all/modules/webform_layout/layout_box.css">
-    <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/webform_add.css">
-<?php 
-    }
-}
-else { 
-// ***************** Contenido básico de una página si no es la del formulario de socixs ****************************
-?>
-    <div class="content-area">
-        <!-- Errors -->
-        <?php print $messages; ?>
-
-        <!-- Content -->
-        <?php print render($page['content']); ?>
-    </div>
 <?php } ?>
+
 </div></div></div>
 
 <?php
