@@ -123,4 +123,9 @@ jQuery(function($) {
             checkScroll();
         });
     }*/
+
+    if($('content-area').hasClass('confirm-div')){
+        alert("hola");
+        $('element-invisible').removeClass('element-invisible');
+    }
 })

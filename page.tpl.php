@@ -92,7 +92,18 @@ if ( ($node->nid==$socixs_form || $node->nid==$socixs_gracias) && !isset($_POST[
 		        <div class="box-form-es">
                     <?php print $messages; ?> <!-- Errors -->
                     <?php print render($page['content']); ?>
-                </div>
+                    <?php
+                        // ****************  Sólo mostramos los botones de compartir en la página de gracias ******************
+                        if ($node->nid==$socixs_gracias ){ ?>
+                            <!-- FB -->
+                            <div class="fb-share-button" data-href="https://crm.es.amnesty.org/unete-a-amnistia/?utm_source=facebook&utm_campaign=comp&utm_medium=social_com&utm_term=Amnesty&utm_content=form_socios" 
+                            data-text="Yo también defiendo los derechos humanos con Amnistía Internacional" data-layout="button" style="float:left;"></div>
+                            <!-- Twitter -->
+                            <div><a href="https://twitter.com/share" class="twitter-share-button" data-url="https://crm.es.amnesty.org/unete-a-amnistia/?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=Amnesty&utm_content=form_socios" 
+                            data-text="Yo también defiendo los derechos humanos con Amnistía Internacional" data-via="amnistiaespana">Tweet</a></div>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+                    <?php } ?>
+                <?php if($node->nid==$socixs_form) { print '</div><!-- Box FORM_ES -->'; }?>
                 <div class="box-es-right">
                         <div class="three-column ventajas">
                             <img src="<?php print $images_path; ?>pig.png" alt="pig"/>
@@ -110,27 +121,17 @@ if ( ($node->nid==$socixs_form || $node->nid==$socixs_gracias) && !isset($_POST[
                             <p>El 100% de nuestros recursos los destinamos a luchar por los derechos humanos en todo el mundo. Nuestras cuentas son públicas y puedes verlas en nuestra web.</p>
                         </div>
                 </div><!-- /box-es-right -->
+             <?php if($node->nid==$socixs_gracias) { print '</div><!-- Box FORM_ES -->'; }?>
 			 </div>
 		</div>    
 <?php
 // *********************** Página de confirmación o Contenido básico de una página si no es la del formulario de socixs ****************************
 } else { ?>
-    <div class="content-area" <?php if( $node->nid==$socixs_form && isset($_POST["submitted"]) ){ print 'style="margin: 0px 10%";'; } ?> >
+    <div class="content-area <?php if( $node->nid==$socixs_form && isset($_POST["submitted"]) ){ print 'confirm-div'; } ?>">
         <!-- Errors -->
         <?php print $messages; ?>
         <!-- Content -->
         <?php print render($page['content']); ?>
-        <?php
-        // ****************  Sólo mostramos los botones de compartir en la página de gracias ******************
-        if ($node->nid==$socixs_gracias ){ ?>
-            <!-- FB -->
-            <div class="fb-share-button" data-href="https://crm.es.amnesty.org/unete-a-amnistia/?utm_source=facebook&utm_campaign=comp&utm_medium=social_com&utm_term=Amnesty&utm_content=form_socios" 
-            data-text="Yo también defiendo los derechos humanos con Amnistía Internacional" data-layout="button" style="float:left;"></div>
-            <!-- Twitter -->
-            <div><a href="https://twitter.com/share" class="twitter-share-button" data-url="https://crm.es.amnesty.org/unete-a-amnistia/?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=Amnesty&utm_content=form_socios" 
-            data-text="Yo también defiendo los derechos humanos con Amnistía Internacional" data-via="amnistiaespana">Tweet</a></div>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
-        <?php } ?>
     </div>
 <?php } ?>
 
