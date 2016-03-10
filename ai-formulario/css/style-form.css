@@ -80,7 +80,6 @@ header, hgroup, nav, section {
 @font-face {
   font-family: 'TradeGothic-BoldCondTwenty';
   src: url('../font/TradeGothic-BoldCondTwenty.eot?#iefix') format('embedded-opentype'),
-  url('../font/TradeGothic-BoldCondTwenty.otf')  format('opentype'),
   url('../font/TradeGothic-BoldCondTwenty.woff') format('woff'),
   url('../font/TradeGothic-BoldCondTwenty.ttf')  format('truetype'),
   url('../font/TradeGothic-BoldCondTwenty.svg#TradeGothic-BoldCondTwenty') format('svg');
