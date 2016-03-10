@@ -19,12 +19,12 @@ if ( $node->nid==$socixs_form || $node->nid==$socixs_gracias ){
     <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/ai.css">
     <?php    // ********************* Si no es la página de confirmación ************
-    if(!isset($_POST["submitted"])){  ?>
+    //if(!isset($_POST["submitted"])){  ?>
         <!-- Cargamos los CSS que necesitamos para el contenido genérico -->
         <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/style-form.css">
         <!-- Añadimos la hoja CSS para el formulario de Socixs en concreto -->
         <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/socixs-form.css">
-    <?php }
+    <?php //}
 
 // **** Contenido general del resto de páginas o si es página de confirmación ******* 
 } 
