@@ -77,7 +77,7 @@ if ($node->nid==$socixs_form || $node->nid==$socixs_gracias){
     <div class="grid">
 <?php
 // ************************************************ Solo formulario y gracias (no confirmacion) ******************************************************** 
-if ( ($node->nid==$socixs_form || $node->nid==$socixs_gracias) && !isset($_POST["submitted"]) ){  ?>
+if ( ($node->nid==$socixs_form || $node->nid==$socixs_gracias) ) ){  ?>
    	 <div id="content-area">
             <!-- Formulario -->
          	<div class="content-form clearfix">
@@ -128,7 +128,7 @@ if ( ($node->nid==$socixs_form || $node->nid==$socixs_gracias) && !isset($_POST[
 <?php
 // *********************** Página de confirmación o Contenido básico de una página si no es la del formulario de socixs ****************************
 } else { ?>
-    <div class="content-area <?php if( $node->nid==$socixs_form && isset($_POST["submitted"]) ){ print 'confirm-div'; } ?>">
+    <div class="content-area <?php //if( $node->nid==$socixs_form && isset($_POST["submitted"]) ){ print 'confirm-div'; } ?>">
         <!-- Errors -->
         <?php print $messages; ?>
         <!-- Content -->
