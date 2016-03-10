@@ -25,9 +25,10 @@ if ( $node->nid==$socixs_form || $node->nid==$socixs_gracias ){
         <!-- Añadimos la hoja CSS para el formulario de Socixs en concreto -->
         <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/socixs-form.css">
     <?php }
+
 // **** Contenido general del resto de páginas o si es página de confirmación ******* 
 } 
-if( ($node->nid!=$socixs_form && $node->nid!=$socixs_gracias) || isset($_POST["submitted"]) ){
+else {
 ?>
     <!-- Cargamos los CSS que necesitamos para el contenido de diseño base de CiviCRM -->
     <link rel="stylesheet" type="text/css" href="<?php print $base_url; ?>/modules/system/system.theme.css">
