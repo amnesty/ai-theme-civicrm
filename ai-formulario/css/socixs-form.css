@@ -458,7 +458,7 @@ input.button-primary {
     clear: both;
     background: #f1e60d;
     border: 0;
-    margin-top: -150px;
+    margin-top: -130px;
     margin-left: 71%;
 }
 
@@ -576,7 +576,7 @@ input.button-primary {
 
     .box-form-es form .button-primary{
         float: left;
-        margin-top: -150px;
+        margin-top: -130px;
         margin-left: 67%;
         margin-bottom: 40px;
     }
@@ -689,7 +689,7 @@ input.button-primary {
 
     .box-form-es form .button-primary{
         float: left;
-        margin-top: -150px;
+        margin-top: -130px;
         margin-left: 59%;
         margin-bottom: 40px;
     }
