@@ -7,24 +7,32 @@ if (!isset($_GET["origen"]) ){
 }
 // Globals
 include_once('config.php');
-?>
 
+// número de página por defecto
+var_dump($_POST["details"]["sid"]);
+//var_dump( $_POST["details"]["finished"]);
+$confirmation = $_POST["details"]["sid"];
+if($confirmation == NULL){ $confirmation = 0; }
+else { $confirmation = 1; }
+var_dump($confirmation);
+
+?>
 <?php
 // ****************************************************** CSS *********************************************************************
 
 // *********** Sólo para el formulario de Socixs y su página de gracias ***************
-if ( $node->nid==$socixs_form || $node->nid==$socixs_gracias ){ 
+if ( $node->nid==$socixs_form || $node->nid==$socixs_gracias ){
 ?>
     <!-- WEB -->
     <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/ai.css">
     <?php    // ********************* Si no es la página de confirmación ************
-    //if(!isset($_POST["submitted"])){  ?>
+    if( $confirmation == 0 ){  ?>
         <!-- Cargamos los CSS que necesitamos para el contenido genérico -->
         <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/style-form.css">
         <!-- Añadimos la hoja CSS para el formulario de Socixs en concreto -->
         <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/socixs-form.css">
-    <?php //}
+    <?php }
 
 // **** Contenido general del resto de páginas o si es página de confirmación ******* 
 } 
@@ -77,7 +85,7 @@ if ($node->nid==$socixs_form || $node->nid==$socixs_gracias){
     <div class="grid">
 <?php
 // ************************************************ Solo formulario y gracias (no confirmacion) ******************************************************** 
-if ( ($node->nid==$socixs_form || $node->nid==$socixs_gracias) ) {  ?>
+if ( ($node->nid==$socixs_form || $node->nid==$socixs_gracias) && $confirmation == 0) {  ?>
    	 <div id="content-area">
             <!-- Formulario -->
          	<div class="content-form clearfix">
@@ -128,7 +136,7 @@ if ( ($node->nid==$socixs_form || $node->nid==$socixs_gracias) ) {  ?>
 <?php
 // *********************** Página de confirmación o Contenido básico de una página si no es la del formulario de socixs ****************************
 } else { ?>
-    <div class="content-area <?php //if( $node->nid==$socixs_form && isset($_POST["submitted"]) ){ print 'confirm-div'; } ?>">
+    <div class="content-area <?php if( $node->nid==$socixs_form && $confirmation == 1 ){ print 'confirm-div'; } ?>">
         <!-- Errors -->
         <?php print $messages; ?>
         <!-- Content -->
