@@ -77,7 +77,7 @@ if ($node->nid==$socixs_form || $node->nid==$socixs_gracias){
     <div class="grid">
 <?php
 // ************************************************ Solo formulario y gracias (no confirmacion) ******************************************************** 
-if ( ($node->nid==$socixs_form || $node->nid==$socixs_gracias) ) ){  ?>
+if ( ($node->nid==$socixs_form || $node->nid==$socixs_gracias) ) {  ?>
    	 <div id="content-area">
             <!-- Formulario -->
          	<div class="content-form clearfix">
