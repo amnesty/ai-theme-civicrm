@@ -188,9 +188,9 @@ input[type="submit"]:active {
 }
 
 .confirm-div fieldset {
-    border: 20px 5%;
+    border: 0px;
     padding: 0px;
-    margin: 0px;
+    margin: 20px 5%;
     background: #eee;
 }
 
