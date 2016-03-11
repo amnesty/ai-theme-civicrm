@@ -182,13 +182,23 @@ input[type="submit"]:active {
 }
 
 .confirm-div {
-    margin: 0px 10%;
+    margin: 0px 20%;
     font-family: 'TradeGothic-BoldCondTwenty';
     /*border: 2px solid #000;*/
 }
 
 .confirm-div fieldset {
-    border: 0px;
+    border: 20px 5%;
     padding: 0px;
     margin: 0px;
+    background: #eee;
+}
+
+.confirm-div fieldset .form-actions{
+    margin: 0px;
+    padding: 0px;
+}
+
+.confirm-div fieldset label{
+    
 }

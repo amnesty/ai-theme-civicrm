@@ -36,7 +36,7 @@ if ( $node->nid==$socixs_form || $node->nid==$socixs_gracias ){
 
 // **** Contenido general del resto de páginas o si es página de confirmación ******* 
 } 
-else {
+if (( $node->nid!=$socixs_form && $node->nid!=$socixs_gracias ) || $confirmation == 1) {
 ?>
     <!-- Cargamos los CSS que necesitamos para el contenido de diseño base de CiviCRM -->
     <link rel="stylesheet" type="text/css" href="<?php print $base_url; ?>/modules/system/system.theme.css">
