@@ -128,4 +128,7 @@ jQuery(function($) {
         alert("hola");
         $('element-invisible').removeClass('element-invisible');
     }
+
+    $('a.popup').colorbox({iframe:true, width:"80%", height:"80%"});
+
 })

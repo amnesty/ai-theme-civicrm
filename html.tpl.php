@@ -8,7 +8,8 @@
   <?php print $styles; ?>
   <?php print $scripts; ?>
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
-  <script language="javascript" type="text/javascript">
+
+<script language="javascript" type="text/javascript">
     function popitup(url) {
         newwindow=window.open(url,'name','height=200,width=150');
         if (window.focus) {newwindow.focus()}
@@ -16,13 +17,13 @@
     }
   </script>
   <script>
-                    var urlActual = 'http://www.es.amnesty.org/gracias-2015';
-                    var tituloActual = 'Mira todo lo que se consiguió en 2015'; 
-                    var tituloActualTW = 'Mira todo lo que se consiguió en 2015';
-                    var urlActualFB = 'http://www.es.amnesty.org/gracias-2015?utm_source=facebook&utm_campaign=comp&utm_medium=social_com&utm_term=Amnesty&utm_content=gracias-2015';
-                    var urlActualTW = 'https://www.es.amnesty.org/gracias-2015?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=Amnesty&utm_content=gracias-2015';
-                    var urlActualFBFirma = 'http://www.es.amnesty.org/gracias-2015?utm_source=facebook&utm_campaign=comp&utm_medium=social_com&utm_term=Amnesty&utm_content=gracias-2015';
-                    var urlActualTWFirma = 'https://www.es.amnesty.org/gracias-2015?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=Amnesty&utm_content=gracias-2015';
+    var urlActual = 'http://www.es.amnesty.org/gracias-2015';
+    var tituloActual = 'Mira todo lo que se consiguió en 2015'; 
+    var tituloActualTW = 'Mira todo lo que se consiguió en 2015';
+    var urlActualFB = 'http://www.es.amnesty.org/gracias-2015?utm_source=facebook&utm_campaign=comp&utm_medium=social_com&utm_term=Amnesty&utm_content=gracias-2015';
+    var urlActualTW = 'https://www.es.amnesty.org/gracias-2015?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=Amnesty&utm_content=gracias-2015';
+    var urlActualFBFirma = 'http://www.es.amnesty.org/gracias-2015?utm_source=facebook&utm_campaign=comp&utm_medium=social_com&utm_term=Amnesty&utm_content=gracias-2015';
+    var urlActualTWFirma = 'https://www.es.amnesty.org/gracias-2015?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=Amnesty&utm_content=gracias-2015';
   </script>
 
   <div id="fb-root"></div>
