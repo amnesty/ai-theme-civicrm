@@ -11,12 +11,12 @@ include_once('config.php');
 // número de página por defecto
 //var_dump($node);
 
-//var_dump($_POST["details"]["sid"]);
+var_dump($_POST["details"]["sid"]);
 //var_dump( $_POST["details"]["finished"]);
 $confirmation = $_POST["details"]["sid"];
 if($confirmation == NULL){ $confirmation = 0; }
 else { $confirmation = 1; }
-//var_dump($confirmation);
+var_dump($confirmation);
 
 ?>
 <?php
