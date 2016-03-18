@@ -688,7 +688,7 @@
         margin-left: auto;
     }
 
-    .box-form-es form .button-primary{
+    .box-form-es .webform-conditional-processed .button-primary{
         float: left;
         margin-top: -130px;
         margin-left: 59%;
@@ -846,7 +846,7 @@
         float: left;
         margin: 0px auto auto;
         display: block;
-        top: 20px;
+        top: 0px;
     }
 
     .webform-conditional-processed .content-end-form {
