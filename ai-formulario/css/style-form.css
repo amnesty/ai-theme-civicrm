@@ -103,17 +103,17 @@ header, hgroup, nav, section {
 
 /* Elementos genéricos de formulario ------------- */
 
-.content-form input {
+.content-form .webform-conditional-processed input {
     border-radius: 0;
 }
 
-.content-form  select{
+.content-form  .webform-conditional-processed select{
     width: 104%;
     background: #fff url(../images/arrow.png);
     background-repeat: no-repeat;
 }
 
-.content-form .input-generic{
+.content-form .webform-conditional-processed .input-generic{
     border: 2px solid #000;
     font-family: 'TradeGothic-BoldCondTwenty';
     width: 100%;
@@ -129,7 +129,7 @@ header, hgroup, nav, section {
 }
 
 /* Caja con checkbox */
-.content-form .caja-checkbox {
+.content-form .webform-conditional-processed .caja-checkbox {
     font-family: 'TradeGothic-BoldCondTwenty';
     font-size: 24px;
     line-height: 50px;
@@ -138,7 +138,7 @@ header, hgroup, nav, section {
 }
 
 /* Selects */
-.content-form .capa-select{
+.content-form .webform-conditional-processed .capa-select{
     overflow: hidden;
     float: left;
     border: 2px solid #000;
@@ -146,24 +146,24 @@ header, hgroup, nav, section {
     margin-right: 10px;
 }
 
-.content-form .select{
+.content-form .webform-conditional-processed .select{
     width: 120%;
     border: 0;
 }
 
-.content-form select.select {
+.content-form .webform-conditional-processed select.select {
     background-position: 220px center;
 }
 
 /* Bordes y sombras ------------------- */
 
-.content-form .border-radius-form{
+.content-form .webform-conditional-processed .border-radius-form{
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 }
 
-.content-form .shadow{
+.content-form .webform-conditional-processed .shadow{
     -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.63);
     -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.63);
     box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.63);

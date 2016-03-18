@@ -19,53 +19,59 @@ jQuery(function($) {
     
     // Scrolling the active block of fields
 
-    $(".content-colaborar").hover( function(){
-        $(".caja-content").removeClass('active');
-        $(this).addClass('active');
+    if( $('.webform-client-form').hasClass('webform-conditional-processed') ){
 
-    });
+        $(".content-colaborar").hover( function(){
+            $(".caja-content").removeClass('active');
+            $(this).addClass('active');
 
-    $(".content-colaborar").keyup( function(){
-        $(".caja-content").removeClass('active');
-        $(this).addClass('active');
+        });
 
-    });
+        $(".content-colaborar").keyup( function(){
+            $(".caja-content").removeClass('active');
+            $(this).addClass('active');
 
-    $(".content-datos").hover( function(){
-        $(".caja-content").removeClass('active');
-        $(this).addClass('active');
+        });
 
-    });
+        $(".content-datos").hover( function(){
+            $(".caja-content").removeClass('active');
+            $(this).addClass('active');
 
-    $(".content-datos").keyup( function(){
-        $(".caja-content").removeClass('active');
-        $(this).addClass('active');
+        });
 
-    });
+        $(".content-datos").keyup( function(){
+            $(".caja-content").removeClass('active');
+            $(this).addClass('active');
 
-    $(".content-direccion").hover( function(){
-        $(".caja-content").removeClass('active');
-        $(this).addClass('active');
+        });
 
-    });
+        $(".content-direccion").hover( function(){
+            $(".caja-content").removeClass('active');
+            $(this).addClass('active');
 
-    $(".content-direccion").keyup( function(){
-        $(".caja-content").removeClass('active');
-        $(this).addClass('active');
-    });
+        });
 
-    $(".content-cuenta").hover( function(){
-        $(".caja-content").removeClass('active');
-        $(this).addClass('active');
+        $(".content-direccion").keyup( function(){
+            $(".caja-content").removeClass('active');
+            $(this).addClass('active');
+        });
 
-    });
+        $(".content-cuenta").hover( function(){
+            $(".caja-content").removeClass('active');
+            $(this).addClass('active');
 
-    $(".content-cuenta").keyup( function(){
-        $(".caja-content").removeClass('active');
-        $(this).addClass('active');
+        });
 
-    });    
+        $(".content-cuenta").keyup( function(){
+            $(".caja-content").removeClass('active');
+            $(this).addClass('active');
 
+        });    
+
+    }
+    else {
+        $(".caja-content").removeClass('active');   
+    }
 
   // Make the IBAN fields to automatically move the cursor through when any field is fullfilled.
   
@@ -125,7 +131,6 @@ jQuery(function($) {
     }*/
 
     if($('content-area').hasClass('confirm-div')){
-        alert("hola");
         $('element-invisible').removeClass('element-invisible');
     }
 

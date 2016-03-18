@@ -1,532 +1,533 @@
 /* CSS específico del formulario de socixs ------------------- */
-
-@font-face {
-  font-family: 'TradeGothic-BoldCondTwenty';
-  src: url('../font/TradeGothic-BoldCondTwenty.eot?#iefix') format('embedded-opentype'),
-  url('../font/TradeGothic-BoldCondTwenty.woff') format('woff'),
-  url('../font/TradeGothic-BoldCondTwenty.ttf')  format('truetype'),
-  url('../font/TradeGothic-BoldCondTwenty.svg#TradeGothic-BoldCondTwenty') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-.text-intro{
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 18px;
-    color: #000;
-    margin-bottom: 20px;
-    padding: 0px 20px;
-}
-
-.text-intro span{
-    font-family: 'TradeGothic-BoldCondTwenty';
-}
-
-.box-form-es{
-	width: 75%;
-	float: left;
-}
-
-.box-form-es img{
-    display: inline-block;
-    top: 10px;
-    position: relative;
-    margin-left: 10px;
-}
-
-.box-form-es p{
-    font-size: 13px;
-    color: #000000;
-    padding: 0px 20px;
-}
-
-.box-form-es .input-generic {
-    width: 100%;
-}
-
-.content-colaborar, .content-datos, .content-direccion, .content-cuenta {
-    padding-top: 0px;
-}
-
-/* content-colaborar  ----------------------------------------------------- */
-
-.content-colaborar form .cuota-options-wrapper-general{
-	width: 70%;
-	margin: 20px 0 20px 0;
-    padding: 0;
-    clear: both;
-    overflow: visible;
-    height: 51px;
-    position: relative;
-}
-
-.content-colaborar .fila-1 {
-    margin-top: 20px;
-}
-
-.content-colaborar {
-    padding: 0px 20px 20px; /*20*/
-}
-
-.content-colaborar .capa-selecttime {
-    width: 300px;
-    overflow: hidden;
-    float: left;
-    border: 2px solid #000;
-    height: 50px;
-    margin-right: 20px;
-}
-
-.content-colaborar .selecttime {
-    width: 120%;
-    border:0;
-}
-
-.content-colaborar select.selecttime {
-    background-position: 260px center;
-}
-
-.content-colaborar .cuotas {
-    font-family: 'TradeGothic-BoldCondTwenty';
-    font-size: 24px;
-    line-height: 50px;
-    float:left;
-    overflow: hidden;
-}
-
-/*.content-colaborar .cuotas label {
-    margin-right: 10px;
-}*/
-
-
-/* H */
-.content-colaborar .cuotas div {
-    float: left;
-    overflow: hidden;
-    margin-right: 10px;
-}
-
-.content-colaborar .capa-other-quant {
-    width: 70px;
-    overflow: hidden;
-    float: left;
-    height: 50px;
-    margin-right: 10px;
-    line-height: 50px;
-    margin-left: 20px;
-}
-
-.content-colaborar .other-quant {
-    border: 2px solid #000;
-    width: 100%;
-}
-
-
-/* content-datos ----------------------------------------------------- */
-.content-datos .fila-1,
-.content-datos .fila-2,
-.content-datos .fila-3{
-    margin-top: 20px;
-}
-
-.content-datos .margin-negativo{
-     margin-left: -32px;
-}
-
-.content-datos .fila-1 input,
-.content-datos .fila-3 input {
-    max-width: 227px;
-}
-
-.content-datos a{
-	font-family: 'TradeGothic-BoldCondTwenty';
-	float: left;
-    font-size: 20px;
-    color: #000;
-    height: 44px;
-    line-height: 50px;
-    margin-right: 10px;
-}
-
-.content-datos .capa-document{
-    max-width: 135px;
-    border-radius: 10px 0 0 10px;
-    overflow: hidden;
-    float: left;
-    height: 50px;
-}
-
-.content-datos .document{
-	width: 125%;
-    z-index: 9;
-    border-radius: 10px 0 0 10px;
-}
-
-.content-datos select.document {
-    background-position: 110px center;
-}
-
-.content-datos .number-dni,
-.content-datos .mobile{
-	max-width: 162px;
-}
-
-.content-datos .number-dni{
-    left: -30px;
-	margin-right: 10px;
-    margin-right: 10px;
-    border-radius: 10px;
-    padding-left: 40px;
-}
-
-.content-datos .capa-genero{
-    width: 155px;
-    overflow: hidden;
-    float: left;
-    border: 2px solid #000;
-    height: 50px;
-    margin-right: 10px;
-}
-
-.content-datos .genero{
-	width: 120%;
-    border: 0;
-}
-
-.content-datos select.genero {
-    background-position: 120px center;
-}
-
-.content-datos .capa-language{
-    width: 240px;
-    overflow: hidden;
-    float: left;
-    border: 2px solid #000;
-    height: 50px;
-    margin-right: 10px;
-}
-
-.content-datos .language{
-	width: 112%;
-    border:0;
-}
-
-.content-datos select.language {
-    background-position: 200px center;
-}
-
-
-.content-datos .fila-3 label {
-    font-family: 'TradeGothic-BoldCondTwenty';
-    float: left;
-    font-size: 20px;
-    color: #000;
-    height: 44px;
-    line-height: 50px;
-    margin-right: 10px;
-}
-
-.content-datos .capa-profesion {
-    width: 270px;
-    overflow: hidden;
-    float: left;
-    border: 2px solid #000;
-    height: 50px;
-    margin-right: 10px;
-}
-
-.content-datos .profesion {
-    width: 120%;
-    border:0;
-}
-
-.content-datos select.profesion {
-    background-position: 230px center;
-}
-
-/* H */
-.content-datos .capa-fechas div div {
-    width: 95px;
-    overflow: hidden;
-    float: left;
-    border: 2px solid #000;
-    height: 50px;
-    margin-right: 5px;
-    /* Border radius */
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    /* Shadow */
-    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.63);
-    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.63);
-    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.63);
-}
-
-.content-datos .capa-fechas div select {
-    width: 130%;
-    background-position: 65px center;
-    /* como input-generic */
-    border: 0;
-    font-family: 'TradeGothic-BoldCondTwenty';
-    font-size: 24px;
-    color: #000;
-    line-height: 50px;
-    height: 50px;
-    position: relative;
-    float: left;
-    margin-right: 10px;
-    list-style: none inside none;
-    padding-left: 10px;
-}
-
-/* content-direccion ----------------------------------------------------- */
-.content-direccion .capa-tipo-via{
-    width: 170px;
-    overflow: hidden;
-    float: left;
-    border: 2px solid #000;
-    height: 50px;
-    margin-right: 10px;
-}
-
-.content-direccion .tipo-via{
-    width: 115%;
-    border:0;
-}
-
-.content-direccion select.tipo-via {
-    background-position: 135px center;
-}
-
-.content-direccion .nombre-via{
-    max-width: 490px;
-}
-
-.content-direccion .numero-bloque{
-    max-width: 370px;
-}
-
-.content-direccion .postal{
-    max-width: 290px;
-}
-
-.content-direccion .poblacion{
-    max-width: 330px;
-}
-
-.content-direccion .capa-provincia,
-.content-direccion .capa-pais{
-    width: 330px;
-    overflow: hidden;
-    float: left;
-    border: 2px solid #000;
-    height: 50px;
-    margin-right: 10px;
-}
-
-.content-direccion .provincia,
-.content-direccion .pais{
-    width: 120%;
-    border:0;
-}
-
-.content-direccion select.provincia,
-.content-direccion select.pais {
-    background-position: 290px center;
-}
-
-/* content-cuenta ----------------------------------------------------- */
-.content-cuenta label.iban{
-    font-family: 'TradeGothic-BoldCondTwenty';
-    float: left;
-    font-size: 20px;
-    color: #000;
-    height: 44px;
-    line-height: 50px;
-    margin-right: 10px;
-}
-
-.content-cuenta .capa-iban-letras{
-    width: 95px;
-    overflow: hidden;
-    float: left;
-    border: 2px solid #000;
-    height: 50px;
-    margin-right: 10px;
-
-}
-
-.content-cuenta  .iban-letras {
-    width: 125%;
-    border: 0;
-}
-
-.content-cuenta select.iban-letras {
-    background-position: 50px center;
-}
-
-.content-cuenta .iban-numero{
-    max-width: 55px;
-}
-
-.content-cuenta .entidad{
-    max-width: 140px;
-}
-
-.content-cuenta .oficina{
-    max-width: 150px;
-}
-
-.content-cuenta .dc{
-    max-width: 100px;
-}
-
-.content-cuenta .ncuenta{
-    max-width: 270px;
-}
-
-/* content-end-form ----------------------------------------------------- */
-.content-end-form input[type=checkbox] {
-    visibility: hidden;
-    height: 28px;
-    width: 28px;
-}
-
-.content-end-form .check {
-    width: 28px;
-    height: 28px;
-    background: yellow;
-    position: relative;
-    margin-right: 20px;
-    float: left;
-}
-
-.content-end-form .check-politica label {
-
-    color: #fff;
-}
-
-.content-end-form .check label:after {
-    opacity: 0;
-    content: '\2713';
-    font-size: 20px;
-    color: #000;
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    top: 2px;
-    left: 3px;
-}
-
-.content-end-form .check input[type=checkbox]:checked + label:after {
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-    filter: alpha(opacity=100);
-    opacity: 1;
-}
-
-.content-end-form {
-    padding: 0px;
-    margin: -30px 0px 50px 0px;
-}
-
-/* politica de privacidad */
-.content-end-form .politica{
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 15px;
-    line-height: 28px;
-    color: #000;
-}
-
-.content-end-form .politica a{
-    font-weight: bold;
-    color: #000;
-}
-
-input.button-primary {
-    -webkit-appearance: none;
-}
-
-/* boton enviar */
-.box-form-es form .button-primary{
-    font-family: 'TradeGothic-BoldCondTwenty';
-    max-width: 315px;
-    width: 100%;
-    height: 100px;
-    font-size: 46px;
-    text-align: center;
-    float: left;
-    clear: both;
-    background: #f1e60d;
-    border: 0;
-    margin-top: -130px;
-    margin-left: 71%;
-}
-
-/* caja botones y politica */
-.box-form-es .form-actions {
-    margin: -30px 0px 0px 0px;
-}
-
-.content-end-form .botons-form{
-    margin-top: 0px;
-}
-
-/* Comodo Secure */
-.secure-img {
-    float: left;
-    margin-left: 50px;
-    margin-top: 20px;
-}
-
-.box-form-es form .secure-img img{
-    max-width: 158px;
-    display: block;
-}
+    @font-face {
+      font-family: 'TradeGothic-BoldCondTwenty';
+      src: url('../font/TradeGothic-BoldCondTwenty.eot?#iefix') format('embedded-opentype'),
+      url('../font/TradeGothic-BoldCondTwenty.woff') format('woff'),
+      url('../font/TradeGothic-BoldCondTwenty.ttf')  format('truetype'),
+      url('../font/TradeGothic-BoldCondTwenty.svg#TradeGothic-BoldCondTwenty') format('svg');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    .text-intro{
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 18px;
+        color: #000;
+        margin-bottom: 20px;
+        padding: 0px 20px;
+    }
+
+    .text-intro span{
+        font-family: 'TradeGothic-BoldCondTwenty';
+    }
+
+    .box-form-es{
+    	width: 75%;
+    	float: left;
+    }
+
+    .box-form-es img{
+        display: inline-block;
+        top: 10px;
+        position: relative;
+        margin-left: 10px;
+    }
+
+    .box-form-es p{
+        font-size: 13px;
+        color: #000000;
+        padding: 0px 20px;
+    }
+
+    .box-form-es .webform-conditional-processed .input-generic {
+        width: 100%;
+    }
+
+    .webform-conditional-processed  .content-colaborar, .webform-conditional-processed .content-datos, 
+    .webform-conditional-processed .content-direccion, .webform-conditional-processed .content-cuenta {
+        padding-top: 0px;
+    }
+
+    /* content-colaborar  ----------------------------------------------------- */
+
+    .webform-conditional-processed .content-colaborar form .cuota-options-wrapper-general{
+    	width: 70%;
+    	margin: 20px 0 20px 0;
+        padding: 0;
+        clear: both;
+        overflow: visible;
+        height: 51px;
+        position: relative;
+    }
+
+    .webform-conditional-processed .content-colaborar .fila-1 {
+        margin-top: 20px;
+    }
+
+    .content-colaborar {
+        padding: 0px 20px 20px; /*20*/
+    }
+
+    .webform-conditional-processed .content-colaborar .capa-selecttime {
+        width: 300px;
+        overflow: hidden;
+        float: left;
+        border: 2px solid #000;
+        height: 50px;
+        margin-right: 20px;
+    }
+
+    .webform-conditional-processed .content-colaborar .selecttime {
+        width: 120%;
+        border:0;
+    }
+
+    .webform-conditional-processed .content-colaborar select.selecttime {
+        background-position: 260px center;
+    }
+
+    .webform-conditional-processed .content-colaborar .cuotas {
+        font-family: 'TradeGothic-BoldCondTwenty';
+        font-size: 24px;
+        line-height: 50px;
+        float:left;
+        overflow: hidden;
+    }
+
+    /*.content-colaborar .cuotas label {
+        margin-right: 10px;
+    }*/
+
+
+    /* H */
+    .webform-conditional-processed .content-colaborar .cuotas div {
+        float: left;
+        overflow: hidden;
+        margin-right: 10px;
+    }
+
+    .webform-conditional-processed .content-colaborar .capa-other-quant {
+        width: 70px;
+        overflow: hidden;
+        float: left;
+        height: 50px;
+        margin-right: 10px;
+        line-height: 50px;
+        margin-left: 20px;
+    }
+
+    .webform-conditional-processed .content-colaborar .other-quant {
+        border: 2px solid #000;
+        width: 100%;
+    }
+
+
+    /* content-datos ----------------------------------------------------- */
+    .webform-conditional-processed .content-datos .fila-1,
+    .webform-conditional-processed .content-datos .fila-2,
+    .webform-conditional-processed .content-datos .fila-3{
+        margin-top: 20px;
+    }
+
+    .webform-conditional-processed .content-datos .margin-negativo{
+         margin-left: -32px;
+    }
+
+    .webform-conditional-processed .content-datos .fila-1 input,
+    .webform-conditional-processed .content-datos .fila-3 input {
+        max-width: 227px;
+    }
+
+    .webform-conditional-processed .content-datos a{
+    	font-family: 'TradeGothic-BoldCondTwenty';
+    	float: left;
+        font-size: 20px;
+        color: #000;
+        height: 44px;
+        line-height: 50px;
+        margin-right: 10px;
+    }
+
+    .webform-conditional-processed .content-datos .capa-document{
+        max-width: 135px;
+        border-radius: 10px 0 0 10px;
+        overflow: hidden;
+        float: left;
+        height: 50px;
+    }
+
+    .webform-conditional-processed .content-datos .document{
+    	width: 125%;
+        z-index: 9;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .webform-conditional-processed .content-datos select.document {
+        background-position: 110px center;
+    }
+
+    .webform-conditional-processed .content-datos .number-dni,
+    .webform-conditional-processed .content-datos .mobile{
+    	max-width: 162px;
+    }
+
+    .webform-conditional-processed .content-datos .number-dni{
+        left: -30px;
+    	margin-right: 10px;
+        margin-right: 10px;
+        border-radius: 10px;
+        padding-left: 40px;
+    }
+
+    .webform-conditional-processed .content-datos .capa-genero{
+        width: 155px;
+        overflow: hidden;
+        float: left;
+        border: 2px solid #000;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    .webform-conditional-processed .content-datos .genero{
+    	width: 120%;
+        border: 0;
+    }
+
+    .webform-conditional-processed .content-datos select.genero {
+        background-position: 120px center;
+    }
+
+    .webform-conditional-processed .content-datos .capa-language{
+        width: 240px;
+        overflow: hidden;
+        float: left;
+        border: 2px solid #000;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    .webform-conditional-processed .content-datos .language{
+    	width: 112%;
+        border:0;
+    }
+
+    .webform-conditional-processed .content-datos select.language {
+        background-position: 200px center;
+    }
+
+
+    .webform-conditional-processed .content-datos .fila-3 label {
+        font-family: 'TradeGothic-BoldCondTwenty';
+        float: left;
+        font-size: 20px;
+        color: #000;
+        height: 44px;
+        line-height: 50px;
+        margin-right: 10px;
+    }
+
+    .webform-conditional-processed .content-datos .capa-profesion {
+        width: 270px;
+        overflow: hidden;
+        float: left;
+        border: 2px solid #000;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    .webform-conditional-processed .content-datos .profesion {
+        width: 120%;
+        border:0;
+    }
+
+    .webform-conditional-processed .content-datos select.profesion {
+        background-position: 230px center;
+    }
+
+    /* H */
+    .webform-conditional-processed .content-datos .capa-fechas div div {
+        width: 95px;
+        overflow: hidden;
+        float: left;
+        border: 2px solid #000;
+        height: 50px;
+        margin-right: 5px;
+        /* Border radius */
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        /* Shadow */
+        -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.63);
+        -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.63);
+        box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.63);
+    }
+
+    .webform-conditional-processed .content-datos .capa-fechas div select {
+        width: 130%;
+        background-position: 65px center;
+        /* como input-generic */
+        border: 0;
+        font-family: 'TradeGothic-BoldCondTwenty';
+        font-size: 24px;
+        color: #000;
+        line-height: 50px;
+        height: 50px;
+        position: relative;
+        float: left;
+        margin-right: 10px;
+        list-style: none inside none;
+        padding-left: 10px;
+    }
+
+    /* content-direccion ----------------------------------------------------- */
+    .webform-conditional-processed .content-direccion .capa-tipo-via{
+        width: 170px;
+        overflow: hidden;
+        float: left;
+        border: 2px solid #000;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    .webform-conditional-processed .content-direccion .tipo-via{
+        width: 115%;
+        border:0;
+    }
+
+    .webform-conditional-processed .content-direccion select.tipo-via {
+        background-position: 135px center;
+    }
+
+    .webform-conditional-processed .content-direccion .nombre-via{
+        max-width: 490px;
+    }
+
+    .webform-conditional-processed .content-direccion .numero-bloque{
+        max-width: 370px;
+    }
+
+    .webform-conditional-processed .content-direccion .postal{
+        max-width: 290px;
+    }
+
+    .webform-conditional-processed .content-direccion .poblacion{
+        max-width: 330px;
+    }
+
+    .webform-conditional-processed .content-direccion .capa-provincia,
+    .webform-conditional-processed .content-direccion .capa-pais{
+        width: 330px;
+        overflow: hidden;
+        float: left;
+        border: 2px solid #000;
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    .webform-conditional-processed .content-direccion .provincia,
+    .webform-conditional-processed .content-direccion .pais{
+        width: 120%;
+        border:0;
+    }
+
+    .webform-conditional-processed .content-direccion select.provincia,
+    .webform-conditional-processed .content-direccion select.pais {
+        background-position: 290px center;
+    }
+
+    /* content-cuenta ----------------------------------------------------- */
+    .webform-conditional-processed .content-cuenta label.iban{
+        font-family: 'TradeGothic-BoldCondTwenty';
+        float: left;
+        font-size: 20px;
+        color: #000;
+        height: 44px;
+        line-height: 50px;
+        margin-right: 10px;
+    }
+
+    .webform-conditional-processed .content-cuenta .capa-iban-letras{
+        width: 95px;
+        overflow: hidden;
+        float: left;
+        border: 2px solid #000;
+        height: 50px;
+        margin-right: 10px;
+
+    }
+
+    .webform-conditional-processed .content-cuenta  .iban-letras {
+        width: 125%;
+        border: 0;
+    }
+
+    .webform-conditional-processed .content-cuenta select.iban-letras {
+        background-position: 50px center;
+    }
+
+    .webform-conditional-processed .content-cuenta .iban-numero{
+        max-width: 55px;
+    }
+
+    .webform-conditional-processed .content-cuenta .entidad{
+        max-width: 140px;
+    }
+
+    .webform-conditional-processed .content-cuenta .oficina{
+        max-width: 150px;
+    }
+
+    .webform-conditional-processed .content-cuenta .dc{
+        max-width: 100px;
+    }
+
+    .webform-conditional-processed .content-cuenta .ncuenta{
+        max-width: 270px;
+    }
+
+    /* content-end-form ----------------------------------------------------- */
+     .webform-conditional-processed .content-end-form input[type=checkbox] {
+        visibility: hidden;
+        height: 28px;
+        width: 28px;
+    }
+
+     .webform-conditional-processed .content-end-form .check {
+        width: 28px;
+        height: 28px;
+        background: yellow;
+        position: relative;
+        margin-right: 20px;
+        float: left;
+    }
+
+     .webform-conditional-processed .content-end-form .check-politica label {
+
+        color: #fff;
+    }
+
+     .webform-conditional-processed .content-end-form .check label:after {
+        opacity: 0;
+        content: '\2713';
+        font-size: 20px;
+        color: #000;
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: 2px;
+        left: 3px;
+    }
+
+     .webform-conditional-processed .content-end-form .check input[type=checkbox]:checked + label:after {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        filter: alpha(opacity=100);
+        opacity: 1;
+    }
+
+     .webform-conditional-processed .content-end-form {
+        padding: 0px;
+        margin: -30px 0px 50px 0px;
+    }
+
+    /* politica de privacidad */
+     .webform-conditional-processed .content-end-form .politica{
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 15px;
+        line-height: 28px;
+        color: #000;
+    }
+
+     .webform-conditional-processed .content-end-form .politica a{
+        font-weight: bold;
+        color: #000;
+    }
+
+     .webform-conditional-processed input.button-primary {
+        -webkit-appearance: none;
+    }
+
+    /* boton enviar */
+    .box-form-es  .webform-conditional-processed .button-primary{
+        font-family: 'TradeGothic-BoldCondTwenty';
+        max-width: 315px;
+        width: 100%;
+        height: 100px;
+        font-size: 46px;
+        text-align: center;
+        float: left;
+        clear: both;
+        background: #f1e60d;
+        border: 0;
+        margin-top: -130px;
+        margin-left: 71%;
+    }
+
+    /* caja botones y politica */
+    .box-form-es  .webform-conditional-processed .form-actions {
+        margin: -30px 0px 0px 0px;
+    }
+
+    .content-end-form  .webform-conditional-processed .botons-form{
+        margin-top: 0px;
+    }
+
+    /* Comodo Secure */
+     .webform-conditional-processed .secure-img {
+        float: left;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+
+    .box-form-es  .webform-conditional-processed .secure-img img{
+        max-width: 158px;
+        display: block;
+    }
 
 
 /* Box Right ----------------------------------------------------- */
-.box-es-right{
-	width: 25%;
-	float: left;
-}
+    .box-es-right{
+    	width: 25%;
+    	float: left;
+    }
 
-.box-es-right .three-column{
-    max-width: 340px;
-    width: 100%;
-    min-height: 295px;
-    padding: 15px;
-    background: #e3e3e3;
-    float: right;
-    margin-bottom: 30px;
-}
+    .box-es-right .three-column{
+        max-width: 340px;
+        width: 100%;
+        min-height: 295px;
+        padding: 15px;
+        background: #e3e3e3;
+        float: right;
+        margin-bottom: 30px;
+    }
 
-.box-es-right .three-column img{
-    max-width: 80px;
-    width: 100%;
-    display: block;
-    margin: auto auto 20px;
-}
+    .box-es-right .three-column img{
+        max-width: 80px;
+        width: 100%;
+        display: block;
+        margin: auto auto 20px;
+    }
 
-.box-es-right .three-column h3{
-    font-family: 'TradeGothic-BoldCondTwenty';
-    font-size: 32px;
-    line-height: 36px;
-    text-align: center;
-    color: #000;
-}
+    .box-es-right .three-column h3{
+        font-family: 'TradeGothic-BoldCondTwenty';
+        font-size: 32px;
+        line-height: 36px;
+        text-align: center;
+        color: #000;
+    }
 
-.box-es-right .three-column p{
-    font-family: Verdana, Geneva, sans-serif;
-    font-size: 15px;
-    margin-top: 10px;
-    text-align: center;
-    color: #000;
-}
+    .box-es-right .three-column p{
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 15px;
+        margin-top: 10px;
+        text-align: center;
+        color: #000;
+    }
 
-.box-es-right .formas-pago a {
-    color:#000;
-    font-weight: bold;
-}
+    .box-es-right .formas-pago a {
+        color:#000;
+        font-weight: bold;
+    }
+
 
 /* max-width: 1400px */
 @media only screen and (max-width: 1360px) {
@@ -540,17 +541,17 @@ input.button-primary {
         float: none;
     }
 
-    .content-datos select.document {
+    .webform-conditional-processed .content-datos select.document {
         background-position: 110px center;
     }
 
-    .content-datos .fila-3 label {
+    .webform-conditional-processed .content-datos .fila-3 label {
         clear: both;
         margin-top: 20px;
     }
 
-    .content-datos .capa-fechas,
-    .content-datos .capa-year {
+    .webform-conditional-processed .content-datos .capa-fechas,
+    .webform-conditional-processed .content-datos .capa-year {
         margin-top: 20px;
     }
 
@@ -570,11 +571,11 @@ input.button-primary {
         margin-left: 0;
     }
 
-    .content-datos .capa-fechas div div {
+    .webform-conditional-processed .content-datos .capa-fechas div div {
         margin-top: 20px;
     }
 
-    .box-form-es form .button-primary{
+    .box-form-es .webform-conditional-processed .button-primary{
         float: left;
         margin-top: -130px;
         margin-left: 67%;
@@ -596,35 +597,35 @@ input.button-primary {
 
     }
 
-    .content-datos .fila-1 input, .content-datos .fila-3 input {
+    .webform-conditional-processed .content-datos .fila-1 input, .content-datos .fila-3 input {
         max-width: 222px;
     }
 
-    .content-datos .capa-document {
+    .webform-conditional-processed .content-datos .capa-document {
         width: 100%px;
     }
 
-    .content-datos .number-dni{
+    .webform-conditional-processed .content-datos .number-dni{
         max-width: 200px;
     }
 
-    .content-datos .mobile {
+    .webform-conditional-processed .content-datos .mobile {
         max-width: 200px;
     }
 
-    .content-datos .capa-genero{
+    .webform-conditional-processed .content-datos .capa-genero{
         margin-bottom: 20px;
     }
 
-    .content-datos .capa-language {
+    .webform-conditional-processed .content-datos .capa-language {
         width: 175px;
     }
 
-    .content-datos .language {
+    .webform-conditional-processed .content-datos .language {
         width: 112%;
     }
 
-    .content-datos select.language {
+    .webform-conditional-processed .content-datos select.language {
         background-position: 145px center;
     }
 
@@ -633,46 +634,46 @@ input.button-primary {
         min-height: 418px;
     }
 
-    .content-direccion .capa-tipo-via {
+    .webform-conditional-processed .content-direccion .capa-tipo-via {
         width: 100%;
     }
 
-    .content-direccion .nombre-via {
+    .webform-conditional-processed .content-direccion .nombre-via {
         max-width: 100%;
         margin-top: 20px;
     }
 
-    .content-direccion .numero-bloque {
+    .webform-conditional-processed .content-direccion .numero-bloque {
         max-width: 100%;
     }
 
-    .content-direccion .postal {
+    .webform-conditional-processed .content-direccion .postal {
         max-width: 100%;
         margin-top: 20px;
     }
 
-    .content-direccion .poblacion {
+    .webform-conditional-processed .content-direccion .poblacion {
         max-width: 100%;
     }
 
-    .content-direccion .capa-provincia {
+    .webform-conditional-processed .content-direccion .capa-provincia {
         width: 100%;
         margin-top: 20px;
     }
 
-    .content-direccion .capa-pais {
+    .webform-conditional-processed .content-direccion .capa-pais {
         width: 100%;
     }
 
-    .content-direccion select.provincia, .content-direccion select.pais {
+    .webform-conditional-processed .content-direccion select.provincia, .content-direccion select.pais {
         background-position: 80% center;
     }
 
-    .content-direccion select.tipo-via {
+    .webform-conditional-processed .content-direccion select.tipo-via {
         background-position: 83% center;
     }
 
-    .content-cuenta .ncuenta {
+    .webform-conditional-processed .content-cuenta .ncuenta {
         margin-top: 20px;
     }
 
@@ -712,79 +713,79 @@ input.button-primary {
         margin-top: 0;
     }
 
-    .content-datos .fila-1, .content-datos .fila-3 {
+    .webform-conditional-processed .content-datos .fila-1, .content-datos .fila-3 {
         margin-top: 0;
     }
 
-    .content-dato .fila-2.clearfix {
+    .webform-conditional-processed .content-datos .fila-2.clearfix {
         margin-top: 20px;
     }
 
-    .content-colaborar .capa-selecttime {
+    .webform-conditional-processed .content-colaborar .capa-selecttime {
         width: 100%;
         margin-bottom: 20px;
     }
 
-    .content-colaborar select.selecttime {
+    .webform-conditional-processed .content-colaborar select.selecttime {
         background-position: 80% center;
     }
 
-    .content-datos .fila-1 input, .content-datos .fila-3 input {
+    .webform-conditional-processed .content-datos .fila-1 input, .content-datos .fila-3 input {
         max-width: 100%;
         margin-top: 20px;
     }
 
-    .content-datos .margin-medium{
+    .webform-conditional-processed .content-datos .margin-medium{
         margin: 0;
     }
 
-    .content-datos .capa-document {
+    .webform-conditional-processed .content-datos .capa-document {
         width: 30%;
     }
 
-    .content-datos .number-dni{
+    .webform-conditional-processed .content-datos .number-dni{
         max-width: 60%;
     }
 
-    .content-datos .capa-genero {
+    .webform-conditional-processed .content-datos .capa-genero {
         width: 100%;
         margin-right: 0;
         margin-top: 20px;
     }
 
-    .content-datos select.profesion {
+    .webform-conditional-processed .content-datos select.profesion {
         background-position: 80% center;
     }
 
-    .content-datos .mobile{
+    .webform-conditional-processed .content-datos .mobile{
         max-width: 100%;
         margin-top: 20px;
     }
 
-    .content-datos .capa-profesion {
+    .webform-conditional-processed .content-datos .capa-profesion {
         width: 100%;
         margin-top: 20px;
 
     }
 
-    .content-datos .capa-language {
+    .webform-conditional-processed .content-datos .capa-language {
         width: 80%;
         margin-top: 20px;
     }
 
-    .content-datos .info-language{
+    .webform-conditional-processed .content-datos .info-language{
         margin-top: 20px;
     }
 
-    .content-datos .capa-fechas {
+    .webform-conditional-processed .content-datos .capa-fechas {
         width: 100%;
     }
 
-    .content-datos select.genero {
+    .webform-conditional-processed .content-datos select.genero {
         background-position: 80% center;
     }
 
-    .content-datos select.language {
+    .webform-conditional-processed .content-datos select.language {
         background-position: 86% center;
     }
 
@@ -799,30 +800,30 @@ input.button-primary {
         margin-bottom: 20px;
     }*/
 
-    .content-cuenta .iban-numero {
+    .webform-conditional-processed .content-cuenta .iban-numero {
         max-width: 74%;
     }
 
-    .content-cuenta .iban-numero {
+    .webform-conditional-processed .content-cuenta .iban-numero {
         margin-right: 0;
     }
 
-    .content-cuenta .entidad {
+    .webform-conditional-processed .content-cuenta .entidad {
         max-width: 100%;
         margin-top: 20px;
     }
 
-    .content-cuenta .oficina {
+    .webform-conditional-processed .content-cuenta .oficina {
         max-width: 100%;
         margin-top: 20px;
     }
 
-    .content-cuenta .dc {
+    .webform-conditional-processed .content-cuenta .dc {
         max-width: 100%;
         margin-top: 20px;
     }
 
-    .content-cuenta .ncuenta {
+    .webform-conditional-processed .content-cuenta .ncuenta {
         max-width:100%;
         margin-top: 20px;
     }
@@ -834,27 +835,27 @@ input.button-primary {
         float: none;
     }
 
-    .box-form-es form .button-primary{
+    .box-form-es .webform-conditional-processed  .button-primary{
         float: left;
         margin-top: -150px;
         margin-left: 50%;
         margin-bottom: 40px;
     }
 
-    .content-end-form .botons-form img {
+    .webform-conditional-processed .content-end-form .botons-form img {
         float: left;
         margin: 0px auto auto;
         display: block;
         top: 20px;
     }
 
-    .content-end-form {
+    .webform-conditional-processed .content-end-form {
         padding: 0px;
         margin: 0px 0px 50px 0px;
     }
 
     /* caja botones y politica */
-    .box-form-es .form-actions {
+    .box-form-es .webform-conditional-processed .form-actions {
         margin: 30px 0px 0px 0px;
     }
 }
@@ -876,21 +877,21 @@ input.button-primary {
         display: none;
     }
 
-    .content-colaborar .capa-selecttime {
+    .webform-conditional-processed .content-colaborar .capa-selecttime {
         width: 100%;
         float: none;
         margin-right: 0;
     }
 
-    .content-colaborar select.selecttime {
+    .webform-conditional-processed .content-colaborar select.selecttime {
         background-position: 79% center;
     }
 
-    .content-colaborar .cuotas {
+    .webform-conditional-processed .content-colaborar .cuotas {
         margin-top: 0;
     }
 
-    .content-colaborar .cuotas label {
+    .webform-conditional-processed .content-colaborar .cuotas label {
         margin-right: 4px;
     }
 
@@ -902,41 +903,41 @@ input.button-primary {
         display: block;
     }
 
-    .content-datos .capa-document {
+    .webform-conditional-processed .content-datos .capa-document {
         width: 34%;
     }
 
-    .content-datos .number-dni {
+    .webform-conditional-processed .content-datos .number-dni {
         max-width: 52%;
     }
 
-    .content-datos .capa-profesion {
+    .webform-conditional-processed .content-datos .capa-profesion {
         width: 100%;
         float: none;
     }
 
-    .content-datos  input#email {
+    .webform-conditional-processed .content-datos  input#email {
         margin-bottom: 20px;
     }
 
-    .content-datos .capa-language {
+    .webform-conditional-processed .content-datos .capa-language {
         width: 75%;
     }
 
-    .content-datos .fila-3 label {
+    .webform-conditional-processed .content-datos .fila-3 label {
         clear: both;
         margin-top: 0;
     }
 
-    .content-datos .fila-3 label {
+    .webform-conditional-processed .content-datos .fila-3 label {
         line-height: 20px;
     }
 
-    .content-datos .capa-fechas {
+    .webform-conditional-processed .content-datos .capa-fechas {
         width: 100%;
     }
 
-    .content-datos .capa-fechas  div div{
+    .webform-conditional-processed .content-datos .capa-fechas  div div{
         float: left;
         width: 100%;
     }
@@ -953,73 +954,73 @@ input.button-primary {
         background-position: 75% center;
     }*/
 
-    .content-datos a{
+    .webform-conditional-processed .content-datos a{
         float: left;
         height: 44px;
         line-height: 50px;
         margin-right: 0px;
     }
 
-    .content-datos .capa-fechas  div select {
+    .webform-conditional-processed .content-datos .capa-fechas  div select {
         background-position: 70% center;
     }
 
-    .content-datos select.profesion {
+    .webform-conditional-processed .content-datos select.profesion {
         background-position: 78% center;
     }
 
-    .content-datos select.genero {
+    .webform-conditional-processed .content-datos select.genero {
         background-position: 73% center;
     }
 
-    .content-direccion select.tipo-via {
+    .webform-conditional-processed .content-direccion select.tipo-via {
         background-position: 84% center;
     }
 
-    .content-direccion select.provincia, .content-direccion select.pais {
+    .webform-conditional-processed .content-direccion select.provincia, .content-direccion select.pais {
         background-position: 79% center;
     }
 
-    .content-datos .fila-3 label{
+    .webform-conditional-processed .content-datos .fila-3 label{
         height: 0px;
     }
 
-    .content-cuenta .iban-numero {
+    .webform-conditional-processed .content-cuenta .iban-numero {
         max-width: 100%;
         display: block;
         float: none;
     }
 
-    .content-cuenta .capa-iban-letras {
+    .webform-conditional-processed .content-cuenta .capa-iban-letras {
         width: 50%;
         float: left;
     }
 
-    .content-cuenta .capa-iban-numero {
+    .webform-conditional-processed .content-cuenta .capa-iban-numero {
         float: left;
         width: 40%;
         margin-top: 0px;
     }
 
-    .content-cuenta select.iban-letras {
+    .webform-conditional-processed .content-cuenta select.iban-letras {
         background-position: 70% center;
     }
 
-    .botons-form img {
+    .webform-conditional-processed .botons-form img {
         float: none;
         margin: 0px auto auto;
         clear: both;
         top: -30px;
     }
 
-    .box-form-es form .button-primary{
+    .box-form-es .webform-conditional-processed  .button-primary{
         float: none;
         margin-top: -150px;
         margin-left: 0;
         margin-bottom: 20px;
     }
 
-    .content-end-form {
+    .webform-conditional-processed .content-end-form {
         padding: 0px;
         margin: 0px 0px 50px 0px;
     }
@@ -1029,6 +1030,156 @@ input.button-primary {
         margin-top: 50px;
     }
 
-    .content-end-form .botons-form {
+    .webform-conditional-processed .content-end-form .botons-form {
         margin-top: 30px;
     }
+
+/************** Confirmation page ****************/
+.preview label {
+    font-weight: normal;
+}
+
+.preview h2{
+    font-family: 'TradeGothic-BoldCondTwenty';
+    font-size: 40px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+    display: inline-block;
+    line-height: 40px;
+    font-weight: normal;
+}
+
+.preview *{
+    margin: 0px 20%;
+    font-family: 'TradeGothic-BoldCondTwenty';
+    /*border: 2px solid #000;*/
+    font-size: 150%;
+}
+
+.preview fieldset {
+    border: 0px;
+    padding: 0px;
+    margin: 20px 5%;
+    background: #eee;
+}
+
+.preview fieldset .form-actions{
+    margin: 0px;
+    padding: 0px;
+}
+
+.preview .webform-component-fieldset {
+    background-color:  #FFF;
+}
+
+.preview fieldset {
+    border: 1px solid #CCC;
+}
+
+/* This styles have been taken from http://freezecoders.com/2012/10/css-style-for-textbox-textarea-dropdown-box-submit-button.html */
+.preview form ul.token-input-list {
+    border: none;
+}
+
+.preview form ul.token-input-list li input,
+.preview input[type="text"],
+.preview input[type="email"],
+.preview input[type="password"],
+.preview select,
+.preview textarea {
+    -webkit-appearance: none;
+    border-radius: 3px;
+    border: 1px solid #CCC;
+    padding: 8px;
+    font-weight: 200;
+    box-shadow: 1px 1px 5px #CCC;
+    background-color:#FFF;
+    cursor: text;
+    outline-color: none;
+    list-style-type: none;
+    list-style-image: none;
+}
+
+.preview option {
+    height: 17px;
+}
+
+.preview form ul.token-input-list li input,
+.preview input[type="text"],
+.preview input[type="email"],
+.preview input[type="password"] {
+    height: 19px;
+}
+
+.preview textarea {
+    height: 90px;
+}
+
+.preview form ul.token-input-list li input:hover,
+.preview select:hover,
+.preview input:hover,
+.preview textarea:hover {
+    border: 1px solid #AAA;
+}
+
+.preview .fieldset-title {
+    color: gray;
+    text-decoration: none;
+}
+
+.preview .webform-calendar,
+.preview .webform-calendar:hover {
+    border: 1px solid #FFF;
+    width: 16px;
+    height: 16px;
+}
+
+/* This imageless css button was generated by CSSButtonGenerator.com */
+.preview .button-primary {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #fcdd14), color-stop(1, #e3c100) );
+    background:-moz-linear-gradient( center top, #fcdd14 5%, #e3c100 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcdd14', endColorstr='#e3c100');
+    background-color:#fcdd14;
+    -webkit-border-top-left-radius:5px;
+    -moz-border-radius-topleft:5px;
+    border-top-left-radius:5px;
+    -webkit-border-top-right-radius:5px;
+    -moz-border-radius-topright:5px;
+    border-top-right-radius:5px;
+    -webkit-border-bottom-right-radius:5px;
+    -moz-border-radius-bottomright:5px;
+    border-bottom-right-radius:5px;
+    -webkit-border-bottom-left-radius:5px;
+    -moz-border-radius-bottomleft:5px;
+    border-bottom-left-radius:5px;
+    text-indent:0;
+    border:1px solid #cfcfcf;
+    display:inline-block;
+    color:#000000;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    font-style:normal;
+    padding: 10px;
+    /* height:65px;
+    line-height:65px;
+    width:131px; */
+    text-decoration:none;
+    text-align:center;
+}
+
+.preview html.js input.form-autocomplete {
+    background-image: none;
+}
+
+.preview input[type="submit"]:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #e3c100), color-stop(1, #fcdd14) );
+    background:-moz-linear-gradient( center top, #e3c100 5%, #fcdd14 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e3c100', endColorstr='#fcdd14');
+    background-color:#e3c100;
+}
+
+.preview input[type="submit"]:active {
+    position:relative;
+    top:1px;
+}

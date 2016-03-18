@@ -8,18 +8,6 @@ if (!isset($_GET["origen"]) ){
 // Globals
 include_once('config.php');
 
-// número de página por defecto
-//var_dump($node);
-
-var_dump($_POST["details"]["sid"]);
-//var_dump( $_POST["details"]["finished"]);
-$confirmation = $_POST["details"]["sid"];
-if($confirmation == NULL){ $confirmation = 0; }
-else { $confirmation = 1; }
-var_dump($confirmation);
-
-?>
-<?php
 // ****************************************************** CSS *********************************************************************
 
 // *********** Sólo para el formulario de Socixs y su página de gracias ***************
@@ -28,23 +16,21 @@ if ( $node->nid==$socixs_form || $node->nid==$socixs_gracias ){
     <!-- WEB -->
     <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/ai.css">
-    <?php    // ********************* Si no es la página de confirmación ************
-    if( $confirmation == 0 ){  ?>
-        <!-- Cargamos los CSS que necesitamos para el contenido genérico -->
-        <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/style-form.css">
-        <!-- Añadimos la hoja CSS para el formulario de Socixs en concreto -->
-        <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/socixs-form.css">
-    <?php }
+    <!-- Cargamos los CSS que necesitamos para el contenido genérico -->
+    <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/style-form.css">
+    <!-- Añadimos la hoja CSS para el formulario de Socixs en concreto -->
+    <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/socixs-form.css">
 
+<?php
 // **** Contenido general del resto de páginas o si es página de confirmación ******* 
 } 
-if (( $node->nid!=$socixs_form && $node->nid!=$socixs_gracias ) || $confirmation == 1) {
+else {
 ?>
     <!-- Cargamos los CSS que necesitamos para el contenido de diseño base de CiviCRM -->
     <link rel="stylesheet" type="text/css" href="<?php print $base_url; ?>/modules/system/system.theme.css">
     <link rel="stylesheet" type="text/css" href="<?php print $base_url; ?>/sites/all/modules/webform_layout/layout_box.css">
     <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/webform_add.css">
-<?php } ?>
+<?php } ?>    
 
 <!-- ************************************************** CONTENIDO *************************************************************************-->
 
@@ -86,8 +72,8 @@ if ($node->nid==$socixs_form || $node->nid==$socixs_gracias){
     <!-- Bootstrap Grid -->
     <div class="grid">
 <?php
-// ************************************************ Solo formulario y gracias (no confirmacion) ******************************************************** 
-if ( ($node->nid==$socixs_form || $node->nid==$socixs_gracias) && $confirmation == 0) {  ?>
+// ************************************************ Solo formulario socixs ******************************************************** 
+if ( $node->nid==$socixs_form || $node->nid==$socixs_gracias) {  ?>
    	 <div id="content-area">
             <!-- Formulario -->
          	<div class="content-form clearfix">
@@ -103,8 +89,7 @@ if ( ($node->nid==$socixs_form || $node->nid==$socixs_gracias) && $confirmation 
 		        <div class="box-form-es">
                     <?php print $messages; ?> <!-- Errors -->
                     <?php print render($page['content']); ?>
-                    <?php
-                        // ****************  Sólo mostramos los botones de compartir en la página de gracias ******************
+                    <?php // ****************  Sólo mostramos los botones de compartir en la página de gracias ******************
                         if ($node->nid==$socixs_gracias ){ ?>
                             <!-- FB -->
                             <div class="fb-share-button" data-href="https://crm.es.amnesty.org/unete-a-amnistia/?utm_source=facebook&utm_campaign=comp&utm_medium=social_com&utm_term=Amnesty&utm_content=form_socios" 
@@ -114,7 +99,8 @@ if ( ($node->nid==$socixs_form || $node->nid==$socixs_gracias) && $confirmation 
                             data-text="Yo también defiendo los derechos humanos con Amnistía Internacional" data-via="amnistiaespana">Tweet</a></div>
                             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
                     <?php } ?>
-                <?php if($node->nid==$socixs_form) { print '</div><!-- Box FORM_ES -->'; }?>
+                <?php if($node->nid==$socixs_form) { 
+                    print '</div><!-- Box FORM_ES -->'; ?>
                 <div class="box-es-right">
                         <div class="three-column ventajas">
                             <img src="<?php print $images_path; ?>pig.png" alt="pig"/>
@@ -132,13 +118,14 @@ if ( ($node->nid==$socixs_form || $node->nid==$socixs_gracias) && $confirmation 
                             <p>El 100% de nuestros recursos los destinamos a luchar por los derechos humanos en todo el mundo. Nuestras cuentas son públicas y puedes verlas en nuestra web.</p>
                         </div>
                 </div><!-- /box-es-right -->
-             <?php if($node->nid==$socixs_gracias) { print '</div><!-- Box FORM_ES -->'; }?>
+                <?php } ?>
+                <?php if($node->nid==$socixs_gracias) { print '</div><!-- Box FORM_ES -->'; }?>
 			 </div>
 		</div>    
 <?php
-// *********************** Página de confirmación o Contenido básico de una página si no es la del formulario de socixs ****************************
+// *********************** Contenido básico de una página si no es la del formulario de socixs ****************************
 } else { ?>
-    <div class="content-area <?php if( $node->nid==$socixs_form && $confirmation == 1 ){ print 'confirm-div'; } ?>">
+    <div class="content-area">
         <!-- Errors -->
         <?php print $messages; ?>
         <!-- Content -->
@@ -184,4 +171,3 @@ if ($node->nid==$socixs_form || $node->nid==$socixs_gracias){
 // ****************** Estadísticas en Piwik, si aplica (el fichero tiene que existir aunque sea vacío)
 include_once('piwik.php');
 ?>
-
