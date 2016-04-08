@@ -72,7 +72,7 @@
         margin-top: 20px;
     }
 
-    .content-colaborar {
+    .webform-conditional-processed .content-colaborar {
         padding: 0px 20px 20px; /*20*/
     }
 
@@ -1043,9 +1043,6 @@
     }
 
 /************************* Preview page *******************************/
-.preview .caja-content{
-    padding: 0px 20px 20px;
-}
 
 /*.preview .margin-medium {
     margin: 0px;
@@ -1065,8 +1062,11 @@
     font-weight: normal;
 }
 
-.preview *{
+.preview .caja-content, .preview .form-actions {
     margin: 0px 20%;
+}
+
+.preview *{
     font-family: 'TradeGothic-BoldCondTwenty';
     /*border: 2px solid #000;*/
     font-size: 150%;
