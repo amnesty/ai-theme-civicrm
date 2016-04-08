@@ -1035,6 +1035,14 @@
     }
 
 /************************* Preview page *******************************/
+.preview .caja_content{
+    padding: 0px;
+}
+
+.preview .margin-medium {
+    margin: 0px;
+}
+
 .preview label {
     font-weight: normal;
 }
