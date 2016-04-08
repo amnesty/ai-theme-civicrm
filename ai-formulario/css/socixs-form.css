@@ -455,7 +455,7 @@
     }
 
     /* boton enviar */
-    .box-form-es  .webform-conditional-processed .button-primary{
+    .box-form-es .webform-conditional-processed .button-primary{
         font-family: 'TradeGothic-BoldCondTwenty';
         max-width: 315px;
         width: 100%;
@@ -1047,9 +1047,9 @@
     padding: 0px;
 }
 
-.preview .content_form .margin-medium {
+/*.preview .content_form .margin-medium {
     margin: 0px;
-}
+}*/
 
 .preview label {
     font-weight: normal;
