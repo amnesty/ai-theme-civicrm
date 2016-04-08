@@ -1044,9 +1044,11 @@
 
 /************************* Preview page *******************************/
 
-/*.preview .margin-medium {
-    margin: 0px;
-}*/
+.preview {
+    margin: 0px 20px;
+    font-family: 'TradeGothic-BoldCondTwenty';
+    font-size: 150%;
+}
 
 .preview label {
     font-weight: normal;
@@ -1062,15 +1064,6 @@
     font-weight: normal;
 }
 
-.preview .caja-content, .preview .form-actions {
-    margin: 0px 20%;
-}
-
-.preview *{
-    font-family: 'TradeGothic-BoldCondTwenty';
-    font-size: 150%;
-}
-
 .preview fieldset {
     border: 0px;
     padding: 0px;
@@ -1079,7 +1072,6 @@
 }
 
 .preview fieldset .form-actions{
-    margin: 0px;
     padding: 0px;
 }
 

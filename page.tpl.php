@@ -30,7 +30,8 @@ else {
     <link rel="stylesheet" type="text/css" href="<?php print $base_url; ?>/modules/system/system.theme.css">
     <link rel="stylesheet" type="text/css" href="<?php print $base_url; ?>/sites/all/modules/webform_layout/layout_box.css">
     <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/webform_add.css">
-<?php } ?>    
+<?php 
+} ?>    
 
 <!-- ************************************************** CONTENIDO *************************************************************************-->
 
