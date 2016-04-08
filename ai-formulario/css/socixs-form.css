@@ -48,6 +48,14 @@
         padding-top: 0px;
     }
 
+    .webform-conditional-processed .content-form .padding-medium{
+        padding: 20px;
+    }
+
+    .webform-conditional-processed .content-form .margin-medium{
+        margin: 20px 0 20px;
+    }
+
     /* content-colaborar  ----------------------------------------------------- */
 
     .webform-conditional-processed .content-colaborar form .cuota-options-wrapper-general{

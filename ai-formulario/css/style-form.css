@@ -54,14 +54,6 @@ header, hgroup, nav, section {
     clear: both;
 }
 
-.content-form .padding-medium{
-    padding: 20px;
-}
-
-.content-form .margin-medium{
-    margin: 20px 0 20px;
-}
-
 .content-form .active{
     background: #f1e60d;
 }
