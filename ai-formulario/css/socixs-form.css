@@ -1044,7 +1044,7 @@
 
 /************************* Preview page *******************************/
 .preview .content_form .caja_content{
-    padding: 0px;
+    padding: 0px 20px 20px;
 }
 
 /*.preview .content_form .margin-medium {
