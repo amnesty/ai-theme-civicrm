@@ -1053,6 +1053,7 @@
 
 .preview .caja-content {
     border: 0px;
+    background: #eee;
 }
 
 .preview label {
@@ -1073,7 +1074,6 @@
     border: 0px;
     padding: 0px;
     /*margin: 20px 5%;*/
-    background: #eee;
 }
 
 .preview .webform-component-fieldset {
