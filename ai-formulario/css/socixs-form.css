@@ -1035,11 +1035,11 @@
     }
 
 /************************* Preview page *******************************/
-.preview .caja_content{
+.preview .content_form .caja_content{
     padding: 0px;
 }
 
-.preview .caja_content .margin-medium {
+.preview .content_form .margin-medium {
     margin: 0px;
 }
 
