@@ -1068,12 +1068,8 @@
 .preview fieldset {
     border: 0px;
     padding: 0px;
-    margin: 20px 5%;
+    /*margin: 20px 5%;*/
     background: #eee;
-}
-
-.preview fieldset .form-actions{
-    padding: 0px;
 }
 
 .preview .webform-component-fieldset {
@@ -1194,4 +1190,8 @@
 
 .preview .capa-fechas label {
     visibility: hidden;
+}
+
+.preview .capa-fechas input {
+    left: -100px;
 }
