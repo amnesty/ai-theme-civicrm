@@ -1053,7 +1053,6 @@
 
 .preview .caja-content {
     border: 0px;
-    background: #eee;
 }
 
 .preview label {
@@ -1074,10 +1073,11 @@
     border: 0px;
     padding: 0px;
     /*margin: 20px 5%;*/
+    background: #eee;
 }
 
 .preview .webform-component-fieldset {
-    background-color:  #FFF;
+    /*background-color:  #FFF;*/
 }
 
 /* This styles have been taken from http://freezecoders.com/2012/10/css-style-for-textbox-textarea-dropdown-box-submit-button.html */
@@ -1193,5 +1193,5 @@
 }
 
 .preview .capa-fechas input {
-    left: -300px;
+    left: -700px;
 }
