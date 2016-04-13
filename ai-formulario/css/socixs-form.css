@@ -34,7 +34,7 @@
     }
 
     .box-form-es p{
-        font-size: 13px;
+        font-size: 17px;
         color: #000000;
         padding: 0px 20px;
     }
@@ -1072,7 +1072,7 @@
 .preview fieldset {
     border: 0px;
     padding: 0px;
-    /*margin: 20px 5%;*/
+    margin: 0px 2%;
     background: #eee;
 }
 
