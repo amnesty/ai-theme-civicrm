@@ -1072,8 +1072,8 @@
 .preview fieldset {
     border: 0px;
     padding: 0px;
-    margin: 0px 2%;
-    background: #eee;
+    margin: 5px 0%;
+    background: #fff;
 }
 
 .preview .webform-component-fieldset {
