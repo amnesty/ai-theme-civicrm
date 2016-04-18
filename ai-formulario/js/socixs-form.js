@@ -130,7 +130,8 @@ jQuery(function($) {
         });
     }*/
 
-    if($('content-area').hasClass('confirm-div')){
+    if($('webform-client').hasClass('.preview')){
+        $('element-invisible').addClass('element-visible');
         $('element-invisible').removeClass('element-invisible');
     }
 
