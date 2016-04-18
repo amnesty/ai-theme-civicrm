@@ -101,12 +101,12 @@ jQuery(function($) {
 
   // Mark errors in select boxes
 
-  $(".error").not(".messages").each( function(){
+  /*$(".error").not(".messages").each( function(){
     if ($(this).is("select")){
         $(this).parent().addClass("form-error");
         $(this).parent().css("border", "#f00 2px solid");
     }
-  });
+  });*/
 
     // Show or hide/erase "other quantity" field depending on which checkbox is checked
     $(".cuota").click(function() {
