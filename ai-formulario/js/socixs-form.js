@@ -11,10 +11,15 @@ jQuery(function($) {
 
     // Origenes
     var get_source = getUrlVars()["origen"];
+    var get_campaign = getUrlVars()["pk_campaign"];
+    var get_kwd = getUrlVars()["pk_kwd"];
     
     var source_input = $( "[name='submitted[civicrm_1_contact_1_contact_source]']");
     if( get_source != '' && get_source ){
         source_input.val(get_source);
+    }
+    else if( get_campaign != '' && get_campaign ){
+        source_input.val(get_campaign);
     }
     
     // Scrolling the active block of fields
@@ -101,12 +106,12 @@ jQuery(function($) {
 
   // Mark errors in select boxes
 
-  /*$(".error").not(".messages").each( function(){
+  $(".error").not(".messages").each( function(){
     if ($(this).is("select")){
         $(this).parent().addClass("form-error");
         $(this).parent().css("border", "#f00 2px solid");
     }
-  });*/
+  });
 
     // Show or hide/erase "other quantity" field depending on which checkbox is checked
     $(".cuota").click(function() {
@@ -118,7 +123,7 @@ jQuery(function($) {
             $('.entity').css("border", "#f00 2px solid");
             $('.office').css("border", "#f00 2px solid");
             $('.dc').css("border", "#f00 2px solid");
-            //$('.account').not(".first").css("border", "#f00 2px solid");
+            $('.account').not(".first").css("border", "#f00 2px solid");
     }
 
     // Navbar
