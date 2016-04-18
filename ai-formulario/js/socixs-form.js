@@ -118,7 +118,7 @@ jQuery(function($) {
             $('.entity').css("border", "#f00 2px solid");
             $('.office').css("border", "#f00 2px solid");
             $('.dc').css("border", "#f00 2px solid");
-            $('.account').not(".first").css("border", "#f00 2px solid");
+            //$('.account').not(".first").css("border", "#f00 2px solid");
     }
 
     // Navbar
