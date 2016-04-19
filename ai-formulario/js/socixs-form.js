@@ -24,7 +24,7 @@ jQuery(function($) {
 
     // Añadir títulos a la página de preview 
 
-    if( $(".webform-client").hasClass("preview") ){
+    if( $(".webform-client-form").hasClass("preview") ){
         $(".text-intro").append("<h2 style='margin-top: 20px;'> Confirma tus datos</h2>");
     }
     
