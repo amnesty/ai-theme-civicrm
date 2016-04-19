@@ -27,8 +27,12 @@ jQuery(function($) {
     if( $(".webform-client-form").first().hasClass("preview") ){
         // título confirma tus datos
         $(".text-intro").append("<h2 style='margin-top: 20px;'> Confirma tus datos</h2>");
-        $('element-invisible').addClass('element-visible');
-        $('element-invisible').removeClass('element-invisible');
+        $('element-invisible').each( function() {
+            $(this).addClass('element-visible');
+        });
+        $('element-invisible').each( function(){
+            $(this).removeClass('element-invisible');
+        });
     
     }
     
