@@ -28,7 +28,7 @@ jQuery(function($) {
         // título confirma tus datos
         $(".text-intro").append("<h2 style='margin-top: 20px;'> Confirma tus datos</h2>");
 
-        $(".preview > .element-invisible").each( function() {
+        $(".preview .element-invisible").each( function() {
                 $(this).addClass('element-visible');
                 $(this).toggleClass('element-invisible');
         });
