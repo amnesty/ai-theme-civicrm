@@ -13,7 +13,6 @@ include_once('config.php');
 // *********** Sólo para el formulario de Socixs y su página de gracias ***************
 if ( $node->nid==$socixs_form || $node->nid==$socixs_gracias ){
 ?>
-    var_dump("hello");
     <!-- WEB -->
     <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/ai.css">
