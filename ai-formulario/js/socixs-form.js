@@ -25,7 +25,11 @@ jQuery(function($) {
     // Añadir títulos a la página de preview 
 
     if( $(".webform-client-form").first().hasClass("preview") ){
+        // título confirma tus datos
         $(".text-intro").append("<h2 style='margin-top: 20px;'> Confirma tus datos</h2>");
+        $('element-invisible').addClass('element-visible');
+        $('element-invisible').removeClass('element-invisible');
+    
     }
     
     // Scrolling the active block of fields
@@ -130,11 +134,6 @@ jQuery(function($) {
             $('.office').css("border", "#f00 2px solid");
             $('.dc').css("border", "#f00 2px solid");
             $('.account').not(".first").css("border", "#f00 2px solid");
-    }
-
-    if($('webform-client').hasClass('.preview')){
-        $('element-invisible').addClass('element-visible');
-        $('element-invisible').removeClass('element-invisible');
     }
 
     $('a.popup').colorbox({iframe:true, width:"50%", height:"50%"});
