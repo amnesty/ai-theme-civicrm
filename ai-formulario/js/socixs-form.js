@@ -24,9 +24,9 @@ jQuery(function($) {
 
     // Añadir títulos a la página de preview 
 
-    //if(1=1){ //$(".form").hasClass("preview")
-        $(".text-intro").append("<h2 style='margin-top: 20opx;'> Confirma tus datos</h2>");
-    //}
+    if( $(".webform-client").hasClass("preview") ){
+        $(".text-intro").append("<h2 style='margin-top: 20px;'> Confirma tus datos</h2>");
+    }
     
     // Scrolling the active block of fields
 
