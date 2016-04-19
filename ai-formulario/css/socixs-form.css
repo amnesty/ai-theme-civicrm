@@ -1076,8 +1076,8 @@
     background: #fff;
 }
 
-.preview .webform-component-fieldset {
-    /*background-color:  #FFF;*/
+.preview .status {
+    visibility: hidden;
 }
 
 /* This styles have been taken from http://freezecoders.com/2012/10/css-style-for-textbox-textarea-dropdown-box-submit-button.html */
