@@ -56,6 +56,12 @@
         margin: 20px 0 20px;
     }
 
+    /* Esconder mensajes de info / estado */
+    .status {
+        visibility: hidden;
+    }
+
+
     /* content-colaborar  ----------------------------------------------------- */
 
     .webform-conditional-processed .content-colaborar form .cuota-options-wrapper-general{
@@ -490,7 +496,6 @@
         max-width: 158px;
         display: block;
     }
-
 
 /* Box Right ----------------------------------------------------- */
     .box-es-right{
@@ -1074,10 +1079,6 @@
     padding: 0px;
     margin: 5px 0%;
     background: #fff;
-}
-
-.preview .status {
-    visibility: hidden;
 }
 
 /* This styles have been taken from http://freezecoders.com/2012/10/css-style-for-textbox-textarea-dropdown-box-submit-button.html */
