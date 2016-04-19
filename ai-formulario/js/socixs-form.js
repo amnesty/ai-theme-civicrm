@@ -21,6 +21,10 @@ jQuery(function($) {
     else if( get_campaign != '' && get_campaign ){
         source_input.val(get_campaign);
     }
+
+    // Añadir títulos a la página de preview 
+
+    $(".text-intro").append("<h2>Confirma tus datos</h2>");
     
     // Scrolling the active block of fields
 
@@ -141,5 +145,6 @@ jQuery(function($) {
     }
 
     $('a.popup').colorbox({iframe:true, width:"50%", height:"50%"});
+
 
 })
