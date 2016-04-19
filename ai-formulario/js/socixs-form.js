@@ -31,6 +31,7 @@ jQuery(function($) {
         $(".preview .element-invisible").each( function() {
                 $(this).addClass('element-visible');
                 $(this).toggleClass('element-invisible');
+                $(this).append(': ');
         });
     
     }
