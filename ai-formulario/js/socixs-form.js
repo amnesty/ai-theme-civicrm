@@ -24,7 +24,7 @@ jQuery(function($) {
 
     // Añadir títulos a la página de preview 
 
-    if( $(".webform-client-form").hasClass("preview") ){
+    if( $(".webform-client-form").first().hasClass("preview") ){
         $(".text-intro").append("<h2 style='margin-top: 20px;'> Confirma tus datos</h2>");
     }
     
@@ -131,15 +131,6 @@ jQuery(function($) {
             $('.dc').css("border", "#f00 2px solid");
             $('.account').not(".first").css("border", "#f00 2px solid");
     }
-
-    // Navbar
-    //$('.navbar-fixed').autoHidingNavbar('setDisableAutohide', true);
-    
-    /*if($('.header').length > 0){
-        $(window).on("scroll load resize", function(){
-            checkScroll();
-        });
-    }*/
 
     if($('webform-client').hasClass('.preview')){
         $('element-invisible').addClass('element-visible');
