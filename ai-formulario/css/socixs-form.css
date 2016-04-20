@@ -1080,20 +1080,15 @@
         background: #f1e60d;
     }
 
-    .preview .webform-previous {
+    .preview .webform-previous,
+    .preview .webform-submit {
         margin-left: 0%;
         max-width: 350px;
 
     }
 
-    .preview .webform-submit {
-        margin-left: 67%;
-        max-width: 300px;
-
-    }
-
     .box-form-es .preview .form-actions {
-        margin: 150px 0px 0px 0px;
+        margin: 0px;
     }
 
     .content-end-form .preview .botons-form{
