@@ -30,7 +30,7 @@ jQuery(function($) {
 
         $(".content-colaborar").prepend("<h2 style='margin-top: 15px; margin-bottom: 15px;'>Datos personales</h2>");
 
-        $(".content-cuenta").prepend("<h2 style='margin-top: 15px; margin-bottom: 15px;'>Forma de pago</h2>");
+        $(".content-cuenta").prepend("<h4 style='margin-top: 15px; margin-bottom: 15px;'>Forma de pago</h4>");
 
         $(".preview .element-invisible").each( function() {
                 $(this).addClass('element-visible');
