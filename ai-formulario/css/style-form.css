@@ -93,6 +93,15 @@ header, hgroup, nav, section {
     font-weight: normal;
 }
 
+.content-form h3{
+    font-family: 'TradeGothic-BoldCondTwenty';
+    font-size: 40px;
+    padding-bottom: 10px;
+    display: inline-block;
+    line-height: 40px;
+    font-weight: normal;
+}
+
 /* Elementos genéricos de formulario ------------- */
 
 .content-form .webform-conditional-processed input {
