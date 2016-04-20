@@ -461,7 +461,8 @@
     }
 
     /* boton enviar */
-    .box-form-es /*.webform-conditional-processed*/ .button-primary{
+    .box-form-es .button-primary,
+    .box-form-es .form-submit {
         font-family: 'TradeGothic-BoldCondTwenty';
         max-width: 315px;
         width: 100%;
