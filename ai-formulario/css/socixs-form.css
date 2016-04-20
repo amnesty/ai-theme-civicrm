@@ -617,6 +617,10 @@
     margin-top: 0px;
 }
 
+.box-form-es .preview span {
+    font-size: 20px;
+}
+
 
 /* max-width: 1400px */
 @media only screen and (max-width: 1360px) {
@@ -1005,7 +1009,7 @@
     }
 
     .box-form-es span {
-        font-size: 34px;
+        font-size: 24px;
     }
 
     .box-form-es span img {
