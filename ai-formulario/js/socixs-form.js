@@ -28,9 +28,9 @@ jQuery(function($) {
         // título confirma tus datos
         $(".text-intro").append("<h3 style='margin-top: 20px; margin-bottom: -50px;'>¿Nos ayudas a confirmar que tus datos son correctos?</h3>");
 
-        $(".content-colaborar").prepend("<h2 style='margin-top: 20px; margin-bottom: 20px;'>Datos personales</h2>");
+        $(".content-colaborar").prepend("<h2 style='margin-top: 15px; margin-bottom: 15px;'>Datos personales</h2>");
 
-        $(".content-cuenta").prepend("<h2 style='margin-top: 30px; margin-bottom: 20px;'>Forma de pago</h2>");
+        $(".content-cuenta").prepend("<h2 style='margin-top: 15px; margin-bottom: 15px;'>Forma de pago</h2>");
 
         $(".preview .element-invisible").each( function() {
                 $(this).addClass('element-visible');
