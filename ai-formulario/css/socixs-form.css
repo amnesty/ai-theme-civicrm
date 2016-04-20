@@ -1156,16 +1156,15 @@
     }
 
     .preview .webform-previous {
+        margin-top: 20px;
         margin-left: 0%;
         max-width: 350px;
-
     }
 
     .preview .webform-submit {
         margin-top: 20px;
         margin-left: 0%;
         max-width: 350px;
-
     }
 
     .box-form-es .preview .form-actions {
