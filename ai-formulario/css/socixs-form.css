@@ -1074,6 +1074,15 @@
     font-weight: normal;
 }
 
+.preview h3{
+    font-family: 'TradeGothic-BoldCondTwenty';
+    font-size: 40px;
+    padding-bottom: 10px;
+    display: inline-block;
+    line-height: 40px;
+    font-weight: normal;
+}
+
 .preview fieldset {
     border: 0px;
     padding: 0px;

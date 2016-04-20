@@ -26,7 +26,7 @@ jQuery(function($) {
 
     if( $(".webform-client-form").first().hasClass("preview") ){
         // título confirma tus datos
-        $(".text-intro").append("<h2 style='margin-top: 20px; margin-bottom: -50px;'>¿Nos ayudas a confirmar que tus datos son correctos?</h2>");
+        $(".text-intro").append("<h3 style='margin-top: 20px; margin-bottom: -50px;'>¿Nos ayudas a confirmar que tus datos son correctos?</h3>");
 
         $(".content-colaborar").prepend("<h2 style='margin-top: 20px; margin-bottom: 20px;'>Datos personales</h2>");
 
