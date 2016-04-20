@@ -1091,6 +1091,22 @@
     margin-bottom: 20px;
 }
 
+/* boton enviar */
+.preview .form-submit {
+    font-family: 'TradeGothic-BoldCondTwenty';
+    max-width: 615px;
+    /*width: 100%;*/
+    height: 70px;
+    font-size: 30px;
+    text-align: center;
+    float: left;
+    clear: both;
+    background: #f1e60d;
+    /*border: 0;
+    margin-top: -130px;*/
+    margin-left: 71%;
+}
+
 /* This styles have been taken from http://freezecoders.com/2012/10/css-style-for-textbox-textarea-dropdown-box-submit-button.html */
 /*.preview form ul.token-input-list {
     border: none;
