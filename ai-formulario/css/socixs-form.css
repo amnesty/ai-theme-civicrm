@@ -1155,8 +1155,14 @@
         background: #f1e60d;
     }
 
-    .preview .webform-previous,
+    .preview .webform-previous {
+        margin-left: 0%;
+        max-width: 350px;
+
+    }
+
     .preview .webform-submit {
+        margin-top: 20px;
         margin-left: 0%;
         max-width: 350px;
 
