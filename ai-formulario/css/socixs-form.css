@@ -478,11 +478,11 @@
     }
 
     /* caja botones y politica */
-    .box-form-es  /*.webform-conditional-processed*/ .form-actions {
+    .box-form-es  .webform-conditional-processed .form-actions {
         margin: -30px 0px 0px 0px;
     }
 
-    .content-end-form  /*.webform-conditional-processed*/ .botons-form{
+    .content-end-form  .webform-conditional-processed .botons-form{
         margin-top: 0px;
     }
 
@@ -1101,12 +1101,10 @@
     float: left;
     clear: both;
     background: #f1e60d;
-    /*border: 0;
-    margin-top: -130px;*/
 }
 
 .preview .webform-previous {
-    margin-left: 30%;
+    margin-left: 0%;
     max-width: 350px;
 
 }
@@ -1115,6 +1113,14 @@
     margin-left: 67%;
     max-width: 300px;
 
+}
+
+.box-form-es .preview .form-actions {
+    margin: 150px 0px 0px 0px;
+}
+
+.content-end-form .preview .botons-form{
+    margin-top: 0px;
 }
 
 /* This styles have been taken from http://freezecoders.com/2012/10/css-style-for-textbox-textarea-dropdown-box-submit-button.html */
