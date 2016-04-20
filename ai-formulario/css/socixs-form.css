@@ -621,6 +621,15 @@
     font-size: 20px;
 }
 
+.preview .content-direccion {
+    float: left;
+    margin-right: 200px;
+    margin-left: 600px;
+    margin-top: -420px;
+}
+
+
+/****************************** Responsive *******************************/
 
 /* max-width: 1400px */
 @media only screen and (max-width: 1360px) {
@@ -798,6 +807,13 @@
         max-width: 300px;
     }
 
+    .preview .content-direccion {
+        float: none;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: -0px;
+    }
+
 }
 
 /* max-width: 769px */
@@ -970,6 +986,13 @@
     .preview .webform-previous {
         margin-left: 0%;
         max-width: 320px;
+    }
+
+    .preview .content-direccion {
+        float: none;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: -0px;
     }
 }
 
@@ -1177,5 +1200,12 @@
 
     .content-end-form .preview .botons-form{
         margin-top: 0px;
+    }
+
+    .preview .content-direccion {
+        float: none;
+        margin-right: 0px;
+        margin-left: 0px;
+        margin-top: -0px;
     }
 }
