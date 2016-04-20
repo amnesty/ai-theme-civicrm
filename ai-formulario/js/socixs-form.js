@@ -26,11 +26,11 @@ jQuery(function($) {
 
     if( $(".webform-client-form").first().hasClass("preview") ){
         // título confirma tus datos
-        $(".text-intro").append("<h3 style='margin-top: 20px; margin-bottom: -50px;'>¿Nos ayudas a confirmar que tus datos son correctos?</h3>");
+        $(".text-intro").append("<h4 style='margin-top: 20px; margin-bottom: -50px;'>¿Nos ayudas a confirmar que tus datos son correctos?</h4>");
 
         $(".content-colaborar").prepend("<h2 style='margin-top: 15px; margin-bottom: 15px;'>Datos personales</h2>");
 
-        $(".content-cuenta").prepend("<h4 style='margin-top: 15px; margin-bottom: 15px;'>Forma de pago</h4>");
+        $(".content-cuenta").prepend("<h2 style='margin-top: 15px; margin-bottom: 15px;'>Forma de pago</h2>");
 
         $(".preview .element-invisible").each( function() {
                 $(this).addClass('element-visible');
