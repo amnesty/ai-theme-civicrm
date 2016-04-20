@@ -91,11 +91,12 @@ if ( $node->nid==$socixs_form || $node->nid==$socixs_gracias) {  ?>
 		        <div class="box-form-es">
                     <?php print $messages; ?> <!-- Errors -->
                     <?php print render($page['content']); ?>
+
                     <?php // ****************  Sólo mostramos los botones de compartir en la página de gracias ******************
                         if ($node->nid==$socixs_gracias ){ ?>
                             <!-- FB -->
-                            <div class="fb-share-button" data-href="https://pruebacrm.es.amnesty.org/unete-a-amnistia/?utm_source=facebook&utm_campaign=comp&utm_medium=social_com&utm_term=Amnesty&utm_content=form_socios" data-layout="button" style="float:left;"></div> <!--data-text="Yo también defiendo los derechos humanos con Amnistía Internacional"-->
-
+                            <div class="fb-share-button" data-href="https://crm.es.amnesty.org/unete-a-amnistia/?utm_source=facebook&utm_campaign=comp&utm_medium=social_com&utm_term=Amnesty&utm_content=form_socios" data-layout="button" style="float:left;"></div>
+                    
                             <!-- Twitter -->
                             <div><a href="https://twitter.com/share" class="twitter-share-button" data-url="https://crm.es.amnesty.org/unete-a-amnistia/?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=Amnesty&utm_content=form_socios" 
                             data-text="Yo también defiendo los derechos humanos con Amnistía Internacional" data-via="amnistiaespana">Tweet</a></div>

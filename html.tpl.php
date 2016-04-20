@@ -9,13 +9,12 @@
   <?php print $styles; ?>
   <?php print $scripts; ?>
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
-  
    <!-- You can use Open Graph tags to customize link previews.
     Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
   <meta property="og:url"           content="https://crm.es.amnesty.com/unete-a-amnistia" />
   <meta property="og:type"          content="website" />
-  <meta property="og:title"         content="Únete a Amnistía Internacional" />
-  <meta property="og:description"   content="El mundo puede cambiar, pero no va a cambiar solo" />
+  <meta name="title" property="og:title"         content="Únete a Amnistía Internacional" />
+  <meta name="description" property="og:description"   content="El mundo puede cambiar, pero no va a cambiar solo" />
 
   <!-- Faacebook -->
   <div id="fb-root"></div>
