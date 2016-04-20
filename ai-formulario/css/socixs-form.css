@@ -1104,15 +1104,22 @@
     background: #f1e60d;
     /*border: 0;
     margin-top: -130px;*/
+}
+
+.preview .webform-previous {
+    margin-left: 51%;
+}
+
+.preview .webform-submit {
     margin-left: 71%;
 }
 
 /* This styles have been taken from http://freezecoders.com/2012/10/css-style-for-textbox-textarea-dropdown-box-submit-button.html */
 /*.preview form ul.token-input-list {
     border: none;
-}*/
+}
 
-/*.preview form ul.token-input-list li input,
+.preview form ul.token-input-list li input,
 .preview input[type="text"],
 .preview input[type="email"],
 .preview input[type="password"],
@@ -1129,43 +1136,43 @@
     outline-color: none;
     list-style-type: none;
     list-style-image: none;
-}*/
+}
 
-/*.preview option {
+.preview option {
     height: 17px;
-}*/
+}
 
-/*.preview form ul.token-input-list li input,
+.preview form ul.token-input-list li input,
 .preview input[type="text"],
 .preview input[type="email"],
 .preview input[type="password"] {
     height: 19px;
-}*/
+}
 
-/*.preview textarea {
+.preview textarea {
     height: 90px;
-}*/
+}
 
-/*.preview form ul.token-input-list li input:hover,
+.preview form ul.token-input-list li input:hover,
 .preview select:hover,
 .preview input:hover,
 .preview textarea:hover {
     border: 1px solid #AAA;
-}*/
+}
 
-/*.preview .fieldset-title {
+.preview .fieldset-title {
     color: gray;
     text-decoration: none;
-}*/
+}
 
-/*.preview .webform-calendar,
+.preview .webform-calendar,
 .preview .webform-calendar:hover {
     border: 1px solid #FFF;
     width: 16px;
     height: 16px;
-}*/
+}
 
-/*.preview html.js input.form-autocomplete {
+.preview html.js input.form-autocomplete {
     background-image: none;
 }*/
 
@@ -1215,9 +1222,9 @@
 .preview .form_actions input[type="submit"]:active {
     position:relative;
     top:1px;
-}*/
+}
 
-/*.preview .capa-fechas label {
+.preview .capa-fechas label {
     visibility: hidden;
 }
 
