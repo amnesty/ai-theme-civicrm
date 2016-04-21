@@ -212,7 +212,7 @@
     }
 
     .webform-conditional-processed .content-datos .capa-language{
-        width: 240px;
+        width: 150px;
         overflow: hidden;
         float: left;
         border: 2px solid #000;
@@ -226,7 +226,7 @@
     }
 
     .webform-conditional-processed .content-datos select.language {
-        background-position: 200px center;
+        background-position: 120px center;
     }
 
 
