@@ -630,7 +630,7 @@
 
 /***** Página de gracias *******/
 
-#share-buttons{
+#share-buttons, .field-name-body {
     margin: 0px 30px;
 }
 
