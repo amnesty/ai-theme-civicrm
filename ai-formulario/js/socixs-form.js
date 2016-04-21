@@ -38,7 +38,7 @@ jQuery(function($) {
                 $(this).append(': ');
         });
 
-        $(".box-es-right").css("visibility", "hidden");
+        $(".box-es-right").remove();
     
     }
     
