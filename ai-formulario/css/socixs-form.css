@@ -611,7 +611,7 @@
 }
 
 .preview .webform-previous:hover{
-    background: -moz-linear-gradient( center top, #eee 5%, #ddd 100% );
+    background: -moz-linear-gradient( center top, #ddd 5%, #eee 100% );
 }
 
 .preview .webform-submit {
@@ -1170,7 +1170,7 @@
         background-position: 70% center;
     }
 
-    .webform-conditional-processed .botons-form img {
+    .webform-conditional-processed .content-end-form .botons-form img {
         float: none;
         margin: 0px auto auto;
         clear: both;
