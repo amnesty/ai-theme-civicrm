@@ -610,7 +610,7 @@
     font-size: 23px;
 }
 
-.preview .webform-previous input:hover{
+.preview .webform-previous:hover{
     background-color: #eee;
 }
 
