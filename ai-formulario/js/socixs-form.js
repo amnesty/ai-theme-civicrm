@@ -144,7 +144,9 @@ jQuery(function($) {
             $('.account').not(".first").css("border", "#f00 2px solid");
     }
 
+    // popups colorbox
     $('a.popup').colorbox({iframe:true, width:"50%", height:"50%"});
+    $('a.popup_little').colorbox({iframe:true, width:"50%", height:"auto"});
 
 
 })
