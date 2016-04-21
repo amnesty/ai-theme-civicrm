@@ -37,6 +37,8 @@ jQuery(function($) {
                 $(this).toggleClass('element-invisible');
                 $(this).append(': ');
         });
+
+        $(".box-es-right").css("visibility", "hidden");
     
     }
     
