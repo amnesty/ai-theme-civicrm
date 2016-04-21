@@ -5,6 +5,10 @@
 if (!isset($_GET["origen"]) ){
     $_GET["origen"] = "web";
 }
+else if ($_GET["origen"] == "attel"){
+     $_GET["origen"] = "web";
+}
+
 // Globals
 include_once('config.php');
 
@@ -173,6 +177,6 @@ if ($node->nid==$socixs_form || $node->nid==$socixs_gracias){
 </div></div></div>
 
 <?php
-// ****************** Estadísticas en Piwik, si aplica (el fichero tiene que existir aunque sea vacío)
+// ****************** Estadísticas en Piwik, si aplica (el fichero tiene que existir aunque sea vacío) *********
 include_once('piwik.php');
 ?>

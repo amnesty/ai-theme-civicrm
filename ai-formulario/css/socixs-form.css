@@ -182,7 +182,7 @@
 
     .webform-conditional-processed .content-datos .number-dni,
     .webform-conditional-processed .content-datos .mobile{
-    	max-width: 162px;
+    	max-width: 175px; /* 162 */
     }
 
     .webform-conditional-processed .content-datos .number-dni{
