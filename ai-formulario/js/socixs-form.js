@@ -39,6 +39,7 @@ jQuery(function($) {
         });
 
         $(".box-es-right").remove();
+        $(".box-form-es").css("width", "100%");
     
     }
     
