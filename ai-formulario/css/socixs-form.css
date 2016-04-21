@@ -629,8 +629,13 @@
 }
 
 /***** Página de gracias *******/
+
 #share-buttons, .field-name-body {
     margin: 0px 30px;
+}
+
+.field-name-body {
+    text-align: justify;
 }
 
 /****************************** Responsive *******************************/
