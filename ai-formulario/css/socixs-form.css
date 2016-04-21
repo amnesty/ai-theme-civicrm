@@ -583,6 +583,11 @@
 .preview .warning {
     margin-top: 10px;
     margin-bottom: 20px;
+    background-image: none;
+    padding: 5px;
+    font-size: 40px;
+    background-color: #eee;
+    border: 1px solid #000;
 }
 
 /* boton enviar */
@@ -600,7 +605,9 @@
 .preview .webform-previous {
     margin-left: 0%;
     max-width: 350px;
-
+    background: #fff;
+    border: 2px solid #000;
+    font-size: 23px;
 }
 
 .preview .webform-submit {
@@ -627,6 +634,7 @@
     margin-left: 600px;
     margin-top: -420px;
 }
+
 
 /***** Página de gracias *******/
 
@@ -1202,6 +1210,9 @@
         margin-top: 20px;
         margin-left: 0%;
         max-width: 350px;
+        background: #fff;
+        border: 2px solid #000;
+        font-size: 20px;
     }
 
     .preview .webform-submit {
