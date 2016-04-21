@@ -611,7 +611,7 @@
 }
 
 .preview .webform-previous:hover{
-    background-color: #eee;
+    background: -moz-linear-gradient( center top, #eee 5%, #ddd 100% );
 }
 
 .preview .webform-submit {
