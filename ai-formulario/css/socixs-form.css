@@ -548,7 +548,7 @@
 .preview {
     margin: 0px 20px;
     font-family: 'TradeGothic-BoldCondTwenty';
-    font-size: 150%;
+    font-size: 20px;
 }
 
 .preview .caja-content {
@@ -615,7 +615,7 @@
 }
 
 .preview .webform-submit {
-    margin-left: 67%;
+    margin-left: 78%;
     max-width: 300px;
 
 }
