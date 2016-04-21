@@ -610,6 +610,10 @@
     font-size: 23px;
 }
 
+.preview .webform-previous input:hover{
+    background-color: #eee;
+}
+
 .preview .webform-submit {
     margin-left: 67%;
     max-width: 300px;
