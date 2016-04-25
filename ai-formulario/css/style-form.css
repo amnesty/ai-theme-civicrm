@@ -179,7 +179,7 @@ div.error {
 
 .form-item input.error, .form-item textarea.error, .form-item select.error, 
 input.error, textarea.error, select.error, div.error {
-    border-color: #F00;
+    border: 2px #f00 solid;
 }
 
 /* Estilos específicos para el ejemplo ------------------------ */
