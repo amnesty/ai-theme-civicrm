@@ -151,8 +151,9 @@ jQuery(function($) {
     }
 
     // popups colorbox
+    var y = $('.cboxIframe html').height();
     $('a.popup').colorbox({iframe:true, width:"50%", height:"50%"});
-    $('a.popup_little').colorbox({iframe:true, width:"50%", height:"50%", "scrolling":false});
+    $('a.popup_little').colorbox({iframe:true, width:"50%", height:y, "scrolling":false});
 
 
 })
