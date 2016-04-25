@@ -143,7 +143,7 @@ jQuery(function($) {
     });
 
     // Cuenta entera en rojo
-    if($('.account').hasClass('error')){
+    if($('.account').hasClass('error') || $('.dc').hasClass('error') ){
             $('.entity').css("border", "#f00 2px solid");
             $('.office').css("border", "#f00 2px solid");
             $('.dc').css("border", "#f00 2px solid");
