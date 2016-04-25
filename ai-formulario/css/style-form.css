@@ -175,10 +175,12 @@ div.error {
     font-family: 'TradeGothic-BoldCondTwenty';
     background: #fee;
     font-size: 16px;
+    border-color: #8c2e0b;
 }
 
 .form-item input.error, .form-item select.error, 
-input.error, select.error, div.error {
+input.error, select.error, 
+/*div.error*/ {
     border: 2px #f00 solid;
 }
 
