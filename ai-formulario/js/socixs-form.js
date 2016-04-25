@@ -149,7 +149,7 @@ jQuery(function($) {
 
     // popups colorbox
     $('a.popup').colorbox({iframe:true, width:"50%", height:"50%"});
-    $('a.popup_little').colorbox({iframe:true, width:"50%", height:"auto"});
+    $('a.popup_little').colorbox({iframe:true, width:"50%", height:"50%", "scrolling":false});
 
 
 })
