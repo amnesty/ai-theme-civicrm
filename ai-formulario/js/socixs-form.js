@@ -153,4 +153,9 @@ jQuery(function($) {
     $('a.popup').colorbox({iframe:true, width:"50%", height:"50%"});
     $('a.popup_little').colorbox({iframe:true, width:"50%", height:"20%", "scrolling":false});
 
+    // popups colorbox
+    function refresh_popups(){
+        var y = $('.cboxIframe html').height();
+        $('a.popup_little').resize({ width:"50%", height:y });
+    }
 })
