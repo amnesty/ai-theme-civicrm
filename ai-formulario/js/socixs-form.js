@@ -150,10 +150,7 @@ jQuery(function($) {
             $('.account').not(".first").css("border", "#f00 2px solid");
     }
 
-    // popups colorbox
-    var y = $('.cboxIframe html').height();
     $('a.popup').colorbox({iframe:true, width:"50%", height:"50%"});
-    $('a.popup_little').colorbox({iframe:true, width:"50%", height:y, "scrolling":false});
-
+    $('a.popup_little').colorbox({iframe:true, width:"50%", height:"20%", "scrolling":false});
 
 })
