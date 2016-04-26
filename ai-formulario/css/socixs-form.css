@@ -34,9 +34,11 @@
     }
 
     .box-form-es p{
-        font-size: 17px;
+        font-size: 20px;
         color: #000000;
         padding: 0px 20px;
+        font-family: 'TradeGothic-BoldCondTwenty';
+        text-align: justify;
     }
 
     .box-form-es .webform-conditional-processed .input-generic {
