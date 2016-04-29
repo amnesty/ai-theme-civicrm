@@ -113,6 +113,8 @@ if ( $node->nid==$socixs_form || $node->nid==$socixs_gracias) {  ?>
                                 Compartir en <span class="ai-accion-firma-compartir__twitter-icon"></span>
                             </a>
                         </div>
+                      <script type="ai/text" id="text_twitter">Yo también defiendo los derechos humanos con Amnistía Internacional.</script>
+                      <script type="ai/text" id="text_facebook">Yo también defiendo los derechos humanos con Amnistía Internacional.</script>
                     <?php } ?>
                 <?php if($node->nid==$socixs_form) { 
                     print '</div><!-- Box FORM_ES -->'; ?>

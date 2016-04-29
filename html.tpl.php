@@ -35,10 +35,6 @@
     var urlActualTW = 'https://crm.es.amnesty.com/unete-a-amnistia/?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=Amnesty&utm_content=socios';
   </script>
 
-    <!-- Redes sociales -->
-  <script type="ai/text" id="text_twitter">Yo también defiendo los derechos humanos con Amnistía Internacional.</script>
-  <script type="ai/text" id="text_facebook">Yo también defiendo los derechos humanos con Amnistía Internacional.</script>
-
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <div id="skip-link">
