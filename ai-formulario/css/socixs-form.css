@@ -684,6 +684,10 @@
     text-align: justify;
 }
 
+.field-name-body p{
+    margin: 20px 0px;
+}
+
 /****************************** Responsive *******************************/
 
 /* max-width: 1400px */
