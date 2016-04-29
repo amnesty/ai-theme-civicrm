@@ -98,7 +98,7 @@ if ( $node->nid==$socixs_form || $node->nid==$socixs_gracias) {  ?>
 
                     <?php // ****************  Sólo mostramos los botones de compartir en la página de gracias ******************
                         if ($node->nid==$socixs_gracias ){ ?>
-                        <div id="share-buttons ai-accion-firma-compartir">
+                        <div id="share-buttons" class="ai-accion-firma-compartir">
                             <!-- FB -->
                             <!--div class="fb-share-button" data-href="https://crm.es.amnesty.org/unete-a-amnistia/?utm_source=facebook&utm_campaign=comp&utm_medium=social_com&utm_term=Amnesty&utm_content=form_socios" data-layout="button" style="float:left;"></div-->
                             <!-- Twitter -->
