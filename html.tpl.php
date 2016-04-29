@@ -36,8 +36,8 @@
   </script>
 
     <!-- Redes sociales -->
-  <script type="ai/text" id="text_twitter">Lee el manifiesto #YoAcojo y únete a él: </script>
-  <script type="ai/text" id="text_facebook">Desde Amnistía Internacional, hemos decidido poner en marcha el manifiesto #YoAcojo. Porque estamos en contra de los atropellos que están sufriendo las personas refugiadas, y pensamos que podemos y debemos acoger.</script>
+  <script type="ai/text" id="text_twitter">Yo también defiendo los derechos humanos con Amnistía Internacional.</script>
+  <script type="ai/text" id="text_facebook">Yo también defiendo los derechos humanos con Amnistía Internacional.</script>
 
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
