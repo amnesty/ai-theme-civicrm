@@ -16,7 +16,7 @@
   <meta name="title" property="og:title"         content="Únete a Amnistía Internacional" />
   <meta name="description" property="og:description"   content="El mundo puede cambiar, pero no va a cambiar solo" />
 
-  <!-- Faacebook -->
+  <!-- Facebook -->
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
@@ -26,6 +26,18 @@
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
   </script>
+
+  <script>
+    var urlActual = 'https://crm.es.amnesty.com/unete-a-amnistia/';
+    var tituloActual = 'Gracias'; 
+    var tituloActualTW = 'Gracias';
+    var urlActualFB = 'https://crm.es.amnesty.com/unete-a-amnistia/?utm_source=facebook&utm_campaign=comp&utm_medium=social_com&utm_term=Amnesty&utm_content=socios';
+    var urlActualTW = 'https://crm.es.amnesty.com/unete-a-amnistia/?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=Amnesty&utm_content=socios';
+  </script>
+
+    <!-- Redes sociales -->
+  <script type="ai/text" id="text_twitter">Lee el manifiesto #YoAcojo y únete a él: </script>
+  <script type="ai/text" id="text_facebook">Desde Amnistía Internacional, hemos decidido poner en marcha el manifiesto #YoAcojo. Porque estamos en contra de los atropellos que están sufriendo las personas refugiadas, y pensamos que podemos y debemos acoger.</script>
 
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>

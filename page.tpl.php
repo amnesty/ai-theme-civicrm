@@ -97,15 +97,22 @@ if ( $node->nid==$socixs_form || $node->nid==$socixs_gracias) {  ?>
                     <?php print render($page['content']); ?>
 
                     <?php // ****************  Sólo mostramos los botones de compartir en la página de gracias ******************
-                        if ($node->nid==$socixs_gracias ){ ?>
+                        if ($node->nid==$socixs_gracias ){ 
+                            var_dump($_POST); ?>
                         <div id="share-buttons">
                             <!-- FB -->
-                            <div class="fb-share-button" data-href="https://crm.es.amnesty.org/unete-a-amnistia/?utm_source=facebook&utm_campaign=comp&utm_medium=social_com&utm_term=Amnesty&utm_content=form_socios" data-layout="button" style="float:left;"></div>
-
+                            <!--div class="fb-share-button" data-href="https://crm.es.amnesty.org/unete-a-amnistia/?utm_source=facebook&utm_campaign=comp&utm_medium=social_com&utm_term=Amnesty&utm_content=form_socios" data-layout="button" style="float:left;"></div-->
                             <!-- Twitter -->
-                            <div><a href="https://twitter.com/share" class="twitter-share-button" data-url="https://crm.es.amnesty.org/unete-a-amnistia/?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=Amnesty&utm_content=form_socios" 
+                            <!--div><a href="https://twitter.com/share" class="twitter-share-button" data-url="https://crm.es.amnesty.org/unete-a-amnistia/?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=Amnesty&utm_content=form_socios" 
                             data-text="Yo también defiendo los derechos humanos con Amnistía Internacional" data-via="amnistiaespana">Tweet</a></div>
-                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div>
+                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div-->
+
+                            <a class="ai-accion-firma-compartir__facebook" href="javascript:" data-ai-share-title="Lee el manifiesto #YoAcojo y únete a él" data-ai-share-summary-html="#text_facebook" style="width: 100%;" >
+                                Compartir en <span class="ai-accion-firma-compartir__facebook-icon"></span><span class="sr-only">Facebook</span>
+                            </a>
+                            <a class="ai-accion-firma-compartir__twitter" href="javascript:" data-ai-share-summary-html="#text_twitter" style="width: 100%;  margin-top:20px; margin-bottom:40px">
+                                Compartir en <span class="ai-accion-firma-compartir__twitter-icon"></span>
+                            </a>
                         </div>
                     <?php } ?>
                 <?php if($node->nid==$socixs_form) { 
