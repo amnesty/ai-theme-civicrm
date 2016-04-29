@@ -106,10 +106,10 @@ if ( $node->nid==$socixs_form || $node->nid==$socixs_gracias) {  ?>
                             data-text="Yo también defiendo los derechos humanos con Amnistía Internacional" data-via="amnistiaespana">Tweet</a></div>
                             <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script></div-->
                             <h4 class="ai-accion-firma-compartir__header">¿Nos ayudas a conseguir más apoyo?</h4>
-                            <a class="ai-accion-firma-compartir__facebook" href="javascript:" data-ai-share-title="Lee el manifiesto #YoAcojo y únete a él" data-ai-share-summary-html="#text_facebook" style="margin-right: 10px;" >
+                            <a class="ai-accion-firma-compartir__facebook" href="javascript:" data-ai-share-title="Lee el manifiesto #YoAcojo y únete a él" data-ai-share-summary-html="#text_facebook">
                                 Compartir en <span class="ai-accion-firma-compartir__facebook-icon"></span><span class="sr-only">Facebook</span>
                             </a>
-                            <a class="ai-accion-firma-compartir__twitter" href="javascript:" data-ai-share-summary-html="#text_twitter" style="margin-left:10px">
+                            <a class="ai-accion-firma-compartir__twitter" href="javascript:" data-ai-share-summary-html="#text_twitter">
                                 Compartir en <span class="ai-accion-firma-compartir__twitter-icon"></span>
                             </a>
                         </div>

@@ -662,9 +662,17 @@
 
 #share-buttons .ai-accion-firma-compartir__facebook,  
 #share-buttons .ai-accion-firma-compartir__twitter {
-    width: 40%;
+    width: 45%;
     margin: 0px;
     font-size: 20px;
+}
+
+#share-buttons .ai-accion-firma-compartir__facebook{
+    margin-right: 5%;
+}
+
+#share-buttons .ai-accion-firma-compartir__twitter {
+    margin-left: 5%;
 }
 
 #share-buttons .ai-accion-firma-compartir__header {
