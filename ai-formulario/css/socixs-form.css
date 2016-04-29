@@ -660,6 +660,17 @@
     margin: 0px 30px;
 }
 
+#share-buttons .ai-accion-firma-compartir__facebook,  
+#share-buttons .ai-accion-firma-compartir__twitter {
+    width: 40%;
+    margin: 0px;
+    font-size: 20px;
+}
+
+#share-buttons .ai-accion-firma-compartir__header {
+    font-size: 25px;
+}
+
 .field-name-body {
     text-align: justify;
 }
