@@ -34,19 +34,16 @@ jQuery(function($) {
     // utm-medium
     var source_input = $( "[name='submitted[civicrm_1_contact_1_cg17_custom_51]']");
     if( get_utm_medium != '' && get_utm_medium ){
-        if(get_utm_medium == 'attel') { get_utm_medium = 'web'; }
         source_input.val(get_utm_medium);
     }
     // utm-source
     var source_input = $( "[name='submitted[civicrm_1_contact_1_cg17_custom_52]']");
     if( get_utm_source != '' && get_utm_source ){
-        if(get_utm_source == 'attel') { get_utm_source = 'web'; }
         source_input.val(get_utm_source);
     }
     // utm-content
     var source_input = $( "[name='submitted[civicrm_1_contact_1_cg17_custom_53]']");
     if( get_utm_content != '' && get_utm_content ){
-        if(get_utm_content == 'attel') { get_utm_content = 'web'; }
         source_input.val(get_utm_content);
     }
 
