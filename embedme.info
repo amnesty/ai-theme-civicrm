@@ -14,8 +14,6 @@ stylesheets[all][] = css/colorbox.css
 scripts[] = js/jquery.colorbox-min.js
 
 ; JS Scripts
-scripts[] = js/ai.js
-scripts[] = ai-formulario/js/socixs-form.js
 
 version = "7.x-1.x-dev"
 core = "7.x"
