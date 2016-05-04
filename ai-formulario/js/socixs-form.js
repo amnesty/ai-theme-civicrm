@@ -19,7 +19,7 @@ jQuery(function($) {
     var get_utm_content = getUrlVars()["utm_content"];
     
     var source_input = $( "[name='submitted[civicrm_1_contact_1_contact_source]']");
-    var source_input2 = $( "[name='submitted[civicrm_1_contact_1_cg17_custom_54]']");
+    var source_input2 = $( "[name='submitted[civicrm_1_contact_1_cg17_custom_50]']");
     if( get_source != '' && get_source ){
         if(get_source == 'attel') { get_source = 'web'; }
         source_input.val(get_source);
