@@ -17,6 +17,7 @@ jQuery(function($) {
     var get_utm_medium = getUrlVars()["utm_medium"];
     var get_utm_source = getUrlVars()["utm_source"];
     var get_utm_content = getUrlVars()["utm_content"];
+    var get_utm_term = getUrlVars()["utm_term"];
     
     var source_input = $( "[name='submitted[civicrm_1_contact_1_contact_source]']");
     var source_input2 = $( "[name='submitted[civicrm_1_contact_1_cg17_custom_50]']");
@@ -45,6 +46,11 @@ jQuery(function($) {
     var source_input = $( "[name='submitted[civicrm_1_contact_1_cg17_custom_53]']");
     if( get_utm_content != '' && get_utm_content ){
         source_input.val(get_utm_content);
+    }
+    // utm-term
+    var source_input = $( "[name='submitted[civicrm_1_contact_1_cg17_custom_54]']");
+    if( get_utm_term != '' && get_utm_term ){
+        source_input.val(get_utm_term);
     }
 
     // Añadir títulos a la página de preview 
