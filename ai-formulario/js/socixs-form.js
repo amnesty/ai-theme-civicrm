@@ -176,9 +176,7 @@ jQuery(function($) {
             a = n.data("ai-share-title"),
             s = n.data("ai-share-summary-html"),
             l = n.data("ai-share-image") || "";
-        alert("fb2");
         n.click(function() {
-            alert("fb3");
             return t(a, s, i, l), !1
         });
     });
@@ -188,12 +186,10 @@ jQuery(function($) {
     }
     
     $(".ai-accion-firma-compartir__twitter").each(function() {
-        alert("tw");
         var n = $(this),
             r = n.data("ai-share-url") || "",
             o = n.data("ai-share-summary-html");
             n.click(function() {
-                alert("tw2");
                 return tw(o, r), !1
             });
     });
