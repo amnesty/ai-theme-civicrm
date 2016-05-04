@@ -12,6 +12,7 @@ jQuery(function($) {
     // Origenes
     var get_source = getUrlVars()["origen"];
     var get_campaign = getUrlVars()["pk_campaign"];
+    var get_utm_campaign = getUrlVars()["utm_campaign"];
     var get_kwd = getUrlVars()["pk_kwd"];
     
     var source_input = $( "[name='submitted[civicrm_1_contact_1_contact_source]']");
@@ -21,6 +22,9 @@ jQuery(function($) {
     }
     else if( get_campaign != '' && get_campaign ){
         source_input.val(get_campaign);
+    }
+    else if( get_utm_campaign != '' && get_utm_campaign ){
+        source_input.val(get_utm_campaign);
     }
 
     // Añadir títulos a la página de preview 

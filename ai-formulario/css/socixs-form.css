@@ -675,6 +675,11 @@
     margin-left: 5%;
 }
 
+#share-buttons a:hover, #share-buttons a:visited, #share-buttons a:active {
+    text-decoration: none;
+    color: #fff;
+}
+
 #share-buttons .ai-accion-firma-compartir__header {
     font-size: 25px;
     padding-bottom: 0px;
