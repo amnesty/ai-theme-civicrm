@@ -13,11 +13,11 @@
     Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
   <meta property="og:url"           content="https://crm.es.amnesty.com/unete-a-amnistia" />
   <meta property="og:type"          content="website" />
-  <meta name="title" property="og:title"         content="Únete a Amnistía Internacional" />
-  <meta name="description" property="og:description"   content="El mundo puede cambiar, pero no va a cambiar solo" />
+  <meta name="title" property="og:title"         content="Hazte socio/a de Amnistía Internacional y apoya nuestro trabajo" />
+  <meta name="description" property="og:description"   content="Amnistía Internacional es una organización democrática e independiente que no acepta fondos que puedan comprometer su trabajo. Se financia exclusivamente gracias a las aportaciones de personas comprometidas con la idea de conseguir un mundo más justo. Tu colaboración, por pequeña que sea, es lo único que nos permite seguir defendiendo los derechos humanos, así como investigando y denunciando abusos que se cometen en todo el mundo. Hazte socio/a y apoya nuestro trabajo. Cuantos más seamos, más fuerza tendremos." />
 
   <!-- Facebook -->
-  <div id="fb-root"></div>
+  <!--div id="fb-root"></div>
   <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
@@ -25,8 +25,7 @@
       js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.5";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
-  </script>
-
+  </script-->
   <script>
     var urlActual = 'https://crm.es.amnesty.com/unete-a-amnistia/';
     var tituloActual = 'Gracias'; 

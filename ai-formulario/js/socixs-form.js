@@ -163,4 +163,39 @@ jQuery(function($) {
         var y = $('.cboxIframe html').height();
         $('a.popup_little').resize({ width:"50%", height:y });
     }
+
+    // Redes sociales
+
+    function t(e, t, n, i) {
+        window.open("http://www.facebook.com/sharer.php?m2w&s=100&p[title]=" + encodeURIComponent(e) + "&p[summary]=" + encodeURIComponent(t) + "&p[url]=" + encodeURIComponent(n) + "&p[images][0]=" + encodeURIComponent(i), "accionafacebook", "width=800,height=600,scrollbars=yes,menubar=yes,resizable=yes,location=yes")
+    }
+    
+    $(".ai-accion-firma-compartir__facebook").each(function() {
+        var n = $(this),
+            i = n.data("ai-share-url"),
+            a = n.data("ai-share-title"),
+            s = n.data("ai-share-summary-html"),
+            l = n.data("ai-share-image") || "";
+        alert("fb2");
+        n.click(function() {
+            alert("fb3");
+            return t(a, s, i, l), !1
+        });
+    });
+
+    function tw(e, t) {
+        window.open("https://twitter.com/intent/tweet?text=" + encodeURIComponent(e) + "&url=" + encodeURIComponent(t) + "&via=amnistiaespana", "accionatwitter", "width=800,height=600,scrollbars=yes,menubar=yes,resizable=yes,location=yes")
+    }
+    
+    $(".ai-accion-firma-compartir__twitter").each(function() {
+        alert("tw");
+        var n = $(this),
+            r = n.data("ai-share-url") || "",
+            o = n.data("ai-share-summary-html");
+            n.click(function() {
+                alert("tw2");
+                return tw(o, r), !1
+            });
+    });
+    
 })
