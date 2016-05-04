@@ -14,8 +14,12 @@ jQuery(function($) {
     var get_campaign = getUrlVars()["pk_campaign"];
     var get_utm_campaign = getUrlVars()["utm_campaign"];
     var get_kwd = getUrlVars()["pk_kwd"];
+    var get_utm_medium = getUrlVars()["utm_medium"];
+    var get_utm_source = getUrlVars()["utm_source"];
+    var get_utm_content = getUrlVars()["utm_content"];
     
     var source_input = $( "[name='submitted[civicrm_1_contact_1_contact_source]']");
+    var source_input2 = $( "[name='submitted[civicrm_1_contact_1_cg17_custom_54]']");
     if( get_source != '' && get_source ){
         if(get_source == 'attel') { get_source = 'web'; }
         source_input.val(get_source);
@@ -25,6 +29,25 @@ jQuery(function($) {
     }
     else if( get_utm_campaign != '' && get_utm_campaign ){
         source_input.val(get_utm_campaign);
+        source_input2.val(get_utm_campaign);
+    }
+    // utm-medium
+    var source_input = $( "[name='submitted[civicrm_1_contact_1_cg17_custom_51]']");
+    if( get_utm_medium != '' && get_utm_medium ){
+        if(get_utm_medium == 'attel') { get_utm_medium = 'web'; }
+        source_input.val(get_utm_medium);
+    }
+    // utm-source
+    var source_input = $( "[name='submitted[civicrm_1_contact_1_cg17_custom_52]']");
+    if( get_utm_source != '' && get_utm_source ){
+        if(get_utm_source == 'attel') { get_utm_source = 'web'; }
+        source_input.val(get_utm_source);
+    }
+    // utm-content
+    var source_input = $( "[name='submitted[civicrm_1_contact_1_cg17_custom_53]']");
+    if( get_utm_content != '' && get_utm_content ){
+        if(get_utm_content == 'attel') { get_utm_content = 'web'; }
+        source_input.val(get_utm_content);
     }
 
     // Añadir títulos a la página de preview 
