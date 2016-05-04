@@ -5,9 +5,6 @@
 if (!isset($_GET["origen"]) ){
     $_GET["origen"] = "web";
 }
-else if ($_GET["origen"] == "attel"){
-     $_GET["origen"] = "web";
-}
 
 // Globals
 include_once('config.php');
