@@ -112,6 +112,7 @@ header, hgroup, nav, section {
     width: 104%;
     background: #fff url(../images/arrow.png);
     background-repeat: no-repeat;
+    cursor: default;
 }
 
 .content-form .webform-conditional-processed .input-generic{
