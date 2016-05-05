@@ -198,7 +198,7 @@ jQuery(function($) {
     $(".ai-accion-firma-compartir__facebook").each(function() {
         var n = $(this),
             i = n.data("ai-share-url") || urlActualFB,
-            a = n.data("ai-share-title"),
+            a = n.data("ai-share-title") || tituloActualFB,
             s = n.data("ai-share-summary-html"),
             l = n.data("ai-share-image") || "";
         n.click(function() {
