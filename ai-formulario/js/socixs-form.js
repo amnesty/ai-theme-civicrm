@@ -202,7 +202,7 @@ jQuery(function($) {
     }  
     $(".ai-accion-firma-compartir__facebook").each(function() {
         var n = $(this),
-            i = n.data("ai-share-url") || urlActualFB,
+            i = urlActualFB, //n.data("ai-share-url")
             a = n.data("ai-share-title") || tituloActualFB,
             s = n.data("ai-share-summary-html"),
             l = n.data("ai-share-image") || "";
