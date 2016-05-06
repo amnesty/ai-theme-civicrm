@@ -194,7 +194,7 @@ jQuery(function($) {
 
     function share(title, summary, url, image) {
             window.open(
-                'https://m.facebook.com/sharer.php?u=' + encodeURIComponent(url)
+                'https://www.facebook.com/sharer.php?u=' + encodeURIComponent(url)
                 + '&t=' + encodeURIComponent(title),
                 'accionafacebook',
                 'width=800,height=600,scrollbars=yes,menubar=yes,resizable=yes,location=yes'
