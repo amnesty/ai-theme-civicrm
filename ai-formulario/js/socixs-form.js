@@ -204,7 +204,7 @@ jQuery(function($) {
                 'accionafacebook',
                 'width=800,height=600,scrollbars=yes,menubar=yes,resizable=yes,location=yes'
             );*/
-            window.open("http://www.facebook.com/sharer.php?m2w&s=100&p[title]=" + encodeURIComponent(title) 
+            window.open("http://www.facebook.com/sharer.php?p[title]=" + encodeURIComponent(title) 
                     + "&p[summary]=" + encodeURIComponent(summary) 
                     + "&p[url]=" + encodeURIComponent(url) 
                     + "&p[images][0]=" + encodeURIComponent(image), 
