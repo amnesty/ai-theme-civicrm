@@ -65,7 +65,7 @@ if ($node->nid==$socixs_form || $node->nid==$socixs_gracias){
                 <?php if ( $node->nid==$socixs_form) { ?>
                     <span class="heading--tape--dark">Únete a Amnistía Internacional</span>
                 <?php } else if ( $node->nid==$socixs_gracias) { ?>
-                    <span class="heading--tape--dark">Te damos la bienvenida a Amnistía Internacional</span>
+                    <span class="heading--tape--dark">¡Te damos la bienvenida!</span>
                 <?php } ?>
             </h2>
         </div>
