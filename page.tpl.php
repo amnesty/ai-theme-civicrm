@@ -61,8 +61,12 @@ if ($node->nid==$socixs_form || $node->nid==$socixs_gracias){
     </noscript>
     <div class="image-header__content--medium">
         <div class="image-headline--full">
-            <h2 class="image-headline__actua-title"> 
-                <span class="heading--tape--dark">Únete a Amnistía Internacional</span>
+            <h2 class="image-headline__actua-title">
+                <?php if ( $node->nid==$socixs_form) { ?>
+                    <span class="heading--tape--dark">Únete a Amnistía Internacional</span>
+                <?php } else if ( $node->nid==$socixs_gracias) { ?>
+                    <span class="heading--tape--dark">Te damos la bienvenida</span>
+                <?php } ?>
             </h2>
         </div>
     </div>
