@@ -32,6 +32,11 @@ jQuery(function($) {
         source_input.val(get_utm_campaign);
         source_input2.val(get_utm_campaign);
     }
+    // pk-kwd
+    var source_input = $( "[name='submitted[civicrm_1_contact_1_cg17_custom_55]']");
+    if( get_kwd != '' && get_kwd ){
+        source_input.val(get_kwd);
+    }
     // utm-medium
     var source_input = $( "[name='submitted[civicrm_1_contact_1_cg17_custom_51]']");
     if( get_utm_medium != '' && get_utm_medium ){
