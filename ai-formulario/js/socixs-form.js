@@ -192,9 +192,14 @@ jQuery(function($) {
 
     // Redes sociales
 
-    function t(e, t, n, i) {
-        window.open("http://www.facebook.com/sharer.php?m2w&s=100&p[title]=" + encodeURIComponent(e) + "&p[summary]=" + encodeURIComponent(t) + "&p[url]=" + encodeURIComponent(n) + "&p[images][0]=" + encodeURIComponent(i), "accionafacebook", "width=800,height=600,scrollbars=yes,menubar=yes,resizable=yes,location=yes")
-    }    
+    function share(title, summary, url, image) {
+            window.open(
+                'https://m.facebook.com/sharer.php?u=' + encodeURIComponent(url)
+                + '&t=' + encodeURIComponent(title),
+                'accionafacebook',
+                'width=800,height=600,scrollbars=yes,menubar=yes,resizable=yes,location=yes'
+            );
+    }  
     $(".ai-accion-firma-compartir__facebook").each(function() {
         var n = $(this),
             i = n.data("ai-share-url") || urlActualFB,
@@ -202,7 +207,7 @@ jQuery(function($) {
             s = n.data("ai-share-summary-html"),
             l = n.data("ai-share-image") || "";
         n.click(function() {
-            return t(a, s, i, l), !1
+            return share(a, s, i, l), !1
         });
     });
 
