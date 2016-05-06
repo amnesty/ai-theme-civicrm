@@ -660,6 +660,10 @@
     margin: 0px 30px;
 }
 
+#share-buttons .ai-accion-firma-compartir {
+    border-top: 0px;
+}
+
 #share-buttons .ai-accion-firma-compartir__facebook,  
 #share-buttons .ai-accion-firma-compartir__twitter {
     width: 45%;
