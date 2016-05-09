@@ -200,17 +200,19 @@ jQuery(function($) {
         var sharer="https://www.facebook.com/sharer/sharer.php";
         window.open(
             sharer + '?u=' + encodeURIComponent(url)
-            + '&t=' + encodeURIComponent(title),
-            'accionafacebook',
-            'width=800,height=600,scrollbars=yes,menubar=yes,resizable=yes,location=yes'
+            //+ '&t=' + encodeURIComponent(title)
+            //+ '&i=' + encodeURIComponent(image)
+            //+ '&s=' + encodeURIComponent(summary)
+            //,'accionafacebook'
+            ,'width=800,height=600,scrollbars=yes,menubar=yes,resizable=yes,location=yes'
         );   
     }  
     $(".ai-accion-firma-compartir__facebook").each(function() {
         var n = $(this),
             i = urlActualFB, //n.data("ai-share-url")
             a = tituloActualFB, //n.data("ai-share-title"),
-            s = resumenFB,//n.data("ai-share-summary-html"),
-            l = imagenFB;//n.data("ai-share-image") || "";
+            s = resumenFB, //n.data("ai-share-summary-html"),
+            l = imagenFB; //n.data("ai-share-image");
         n.click(function() {
             return share(a, s, i, l), !1
         });
