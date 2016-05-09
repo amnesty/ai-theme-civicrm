@@ -198,18 +198,13 @@ jQuery(function($) {
     // Redes sociales
 
     function share(title, summary, url, image) {
-            /*window.open(
-                'https://m.facebook.com/sharer.php?u=' + encodeURIComponent(url)
-                + '&t=' + encodeURIComponent(title),
-                'accionafacebook',
-                'width=800,height=600,scrollbars=yes,menubar=yes,resizable=yes,location=yes'
-            );*/
-            window.open("http://www.facebook.com/sharer.php?p[title]=" + encodeURIComponent(title) 
-                    + "&p[summary]=" + encodeURIComponent(summary) 
-                    + "&p[url]=" + encodeURIComponent(url) 
-                    + "&p[images][0]=" + encodeURIComponent(image), 
-                    "accionafacebook", "width=800,height=600,scrollbars=yes,menubar=yes,resizable=yes,location=yes"
-            );
+        var sharer="https://www.facebook.com/sharer/sharer.php";
+        window.open(
+            sharer + '?u=' + encodeURIComponent(url)
+            + '&t=' + encodeURIComponent(title),
+            'accionafacebook',
+            'width=800,height=600,scrollbars=yes,menubar=yes,resizable=yes,location=yes'
+        );   
     }  
     $(".ai-accion-firma-compartir__facebook").each(function() {
         var n = $(this),
