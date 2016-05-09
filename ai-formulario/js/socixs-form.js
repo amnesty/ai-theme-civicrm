@@ -197,7 +197,7 @@ jQuery(function($) {
 
     // Redes sociales
     function share(title, summary, url, image) {
-        var sharer="https://www.facebook.com/sharer/sharer.php";
+        var sharer = "https://www.facebook.com/sharer/sharer.php";
         window.open(
             sharer + '?u=' + encodeURIComponent(url)
             //+ '&t=' + encodeURIComponent(title)
