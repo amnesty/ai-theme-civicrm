@@ -121,12 +121,12 @@ if ( $node->nid==$socixs_form || $node->nid==$socixs_gracias) {  ?>
                         <div class="three-column formas-pago">
                             <img src="<?php print $images_path; ?>cartera.png" alt="cartera"/>
                             <h3>Otras formas de pago</h3>
-                            <p>Si tienes algún problema al realizar tu donación o quieres información sobre otras formas de pago o sobre cuotas reducidas, llámanos a <b>913101277</b> (extensiones <b>30</b> y <b>37</b>) o escribe a <a href="mailto:socios@es.amnesty.org" title="socios@es.amnesty.org">socios@es.amnesty.org</a></p>
+                            <p>Si tienes algún problema al realizar tu donación o quieres información sobre otras formas de pago o sobre cuotas reducidas, llámanos a <b>913101277</b> (extensiones <b>30</b> y <b>37</b>) o escribe a <a href="mailto:socios@es.amnesty.org" title="socios@es.amnesty.org">socios@es.amnesty.org</a><br/><br/></p>
                         </div>
                         <div class="three-column compromiso">
                             <img src="<?php print $images_path; ?>ventana.png" alt="ventana"/>
                             <h3>Transparencia, nuestro compromiso</h3>
-                            <p>El 100% de nuestros recursos los destinamos a luchar por los derechos humanos en todo el mundo. Nuestras cuentas son públicas y puedes verlas en nuestra web.</p>
+                            <p>El 100% de nuestros recursos los destinamos a luchar por los derechos humanos en todo el mundo. Nuestras cuentas son públicas y puedes verlas en nuestra web.<br/><br/></p>
                         </div>
                 </div><!-- /box-es-right -->
                 <?php } ?>
