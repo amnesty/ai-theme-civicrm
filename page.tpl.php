@@ -101,7 +101,7 @@ if ( $node->nid==$socixs_form || $node->nid==$socixs_gracias) {  ?>
                         if ($node->nid==$socixs_gracias ){ ?>
                         <div id="share-buttons" class="ai-accion-firma-compartir">
                             <!--h4 class="ai-accion-firma-compartir__header">¿Nos ayudas a conseguir más apoyo?</h4-->
-                            <a class="ai-accion-firma-compartir__facebook" href="javascript:" data-ai-share-title="Hazte socio/a de Amnistía Internacional y apoya nuestro trabajo" data-ai-share-summary-html="Amnistía Internacional es una organización democrática e independiente que no acepta fondos que puedan comprometer su trabajo. Se financia exclusivamente gracias a las aportaciones de personas comprometidas con la idea de conseguir un mundo más justo. Tu colaboración, por pequeña que sea, es lo único que nos permite seguir defendiendo los derechos humanos, así como investigando y denunciando abusos que se cometen en todo el mundo. Hazte socio/a y apoya nuestro trabajo. Cuantos más seamos, más fuerza tendremos.">
+                            <a class="ai-accion-firma-compartir__facebook" href="javascript:" data-ai-share-title="Hazte socio/a de Amnistía Internacional y apoya nuestro trabajo">
                                 Compartir en <span class="ai-accion-firma-compartir__facebook-icon"></span><span class="sr-only">Facebook</span>
                             </a>
                             <a class="ai-accion-firma-compartir__twitter" href="javascript:" data-ai-share-summary-html="Hazte socio/a de Amnistía Internacional y apoya nuestro trabajo">

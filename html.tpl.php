@@ -22,6 +22,8 @@
     var tituloActualTW = 'Gracias';
     var urlActualFB = 'https://crm.es.amnesty.org/unete-a-amnistia/?utm_source=facebook&utm_campaign=comp&utm_medium=social_com&utm_term=Amnesty&utm_content=socios';
     var urlActualTW = 'https://crm.es.amnesty.org/unete-a-amnistia/?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=Amnesty&utm_content=socios';
+    var resumenFB = 'Amnistía Internacional es una organización democrática e independiente que no acepta fondos que puedan comprometer su trabajo. Se financia exclusivamente gracias a las aportaciones de personas comprometidas con la idea de conseguir un mundo más justo. Tu colaboración, por pequeña que sea, es lo único que nos permite seguir defendiendo los derechos humanos, así como investigando y denunciando abusos que se cometen en todo el mundo. Hazte socio/a y apoya nuestro trabajo. Cuantos más seamos, más fuerza tendremos.';
+    var imagenFB = 'https://precrm.es.amnesty.org/sites/all/themes/ai-theme-civicrm/ai-formulario/images/header.jpg';
   </script>
 
 </head>
