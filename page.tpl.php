@@ -115,7 +115,7 @@ if ( $node->nid==$socixs_form || $node->nid==$socixs_gracias) {  ?>
                         <div class="three-column ventajas">
                             <img src="<?php print $images_path; ?>pig.png" alt="pig"/>
                             <h3>¿Conoces las ventajas fiscales de ser socio/a?</h3>
-                            <p>Todas tus aportaciones desgravan un 75% los primeros 150€. A partir de esa cifra, el 30%. Si en los últimos tres años se han mantenido o aumentado las aportaciones a la organización, la desgravación sube a un 35% para premiar tu fidelidad. No se aplica ni a País Vasco ni a Navarra.
+                            <p>Todas tus aportaciones desgravan un 75% los primeros 150€. A partir de esa cifra, el 30%. Si en los últimos tres años se han mantenido o aumentado las aportaciones a la organización, la desgravación sube a un 35% para premiar tu fidelidad. Estas deducciones no son aplicables ni al País Vasco ni a Navarra.
                             </p>
                         </div>
                         <div class="three-column formas-pago">
