@@ -189,18 +189,17 @@ jQuery(function($) {
     $('a.popup').colorbox({iframe:true, width:"50%", height:"50%"});
     $('a.popup_little').colorbox({iframe:true, width:"50%", height:"20%", "scrolling":false});
 
-    // popups colorbox
+    // Pop-ups colorbox
     function refresh_popups(){
         var y = $('.cboxIframe html').height();
         $('a.popup_little').resize({ width:"50%", height:y });
     }
 
     // Redes sociales
-
     function share(title, summary, url, image) {
         var sharer="https://www.facebook.com/sharer/sharer.php";
         window.open(
-            sharer + '?u=' + url /*encodeURIComponent(url)*/
+            sharer + '?u=' + encodeURIComponent(url)
             + '&t=' + encodeURIComponent(title),
             'accionafacebook',
             'width=800,height=600,scrollbars=yes,menubar=yes,resizable=yes,location=yes'
