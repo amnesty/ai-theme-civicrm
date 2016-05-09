@@ -509,7 +509,7 @@
     .box-es-right .three-column{
         max-width: 340px;
         width: 100%;
-        min-height: 420px;
+        min-height: 295px;
         padding: 15px;
         background: #e3e3e3;
         float: right;
@@ -732,7 +732,7 @@
 
     .box-es-right .three-column {
         max-width: 306px;
-        min-height: 360px;
+        min-height: 420px;
         float: left;
         margin-left: 20px;
     }
