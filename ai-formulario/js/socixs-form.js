@@ -203,7 +203,7 @@ jQuery(function($) {
             //+ '&t=' + encodeURIComponent(title)
             //+ '&i=' + encodeURIComponent(image)
             //+ '&s=' + encodeURIComponent(summary)
-            //,'accionafacebook'
+            ,'accionafacebook'
             ,'width=800,height=600,scrollbars=yes,menubar=yes,resizable=yes,location=yes'
         );   
     }  
