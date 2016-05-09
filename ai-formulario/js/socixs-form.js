@@ -189,29 +189,29 @@ jQuery(function($) {
     $('a.popup').colorbox({iframe:true, width:"50%", height:"50%"});
     $('a.popup_little').colorbox({iframe:true, width:"50%", height:"20%", "scrolling":false});
 
-    // Pop-ups colorbox
+    // popups colorbox
     function refresh_popups(){
         var y = $('.cboxIframe html').height();
         $('a.popup_little').resize({ width:"50%", height:y });
     }
 
     // Redes sociales
+
     function share(title, summary, url, image) {
+        //var sharer="https://www.facebook.com/sharer/sharer.php?u=example.org";
         window.open(
-            'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url)
-            //+ '&t=' + encodeURIComponent(title)
-            //+ '&i=' + encodeURIComponent(image)
-            //+ '&s=' + encodeURIComponent(summary)
-            ,'accionafacebook'
-            ,'width=800,height=600,scrollbars=yes,menubar=yes,resizable=yes,location=yes'
-        );   
+            'https://m.facebook.com/sharer.php?u=' + encodeURIComponent(url)
+            + '&t=' + encodeURIComponent(title),
+            'accionafacebook',
+            'width=800,height=600,scrollbars=yes,menubar=yes,resizable=yes,location=yes'
+        );
     }  
     $(".ai-accion-firma-compartir__facebook").each(function() {
         var n = $(this),
             i = urlActualFB, //n.data("ai-share-url")
-            a = tituloActualFB, //n.data("ai-share-title"),
-            s = resumenFB, //n.data("ai-share-summary-html"),
-            l = imagenFB; //n.data("ai-share-image");
+            a = n.data("ai-share-title") || tituloActualFB,
+            s = n.data("ai-share-summary-html"),
+            l = n.data("ai-share-image") || "";
         n.click(function() {
             return share(a, s, i, l), !1
         });
