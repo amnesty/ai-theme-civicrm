@@ -200,7 +200,7 @@ jQuery(function($) {
     function share(title, summary, url, image) {
         var sharer="https://www.facebook.com/sharer/sharer.php";
         window.open(
-            sharer + '?u=' + encodeURIComponent(url)
+            sharer + '?u=' + url /*encodeURIComponent(url)*/
             + '&t=' + encodeURIComponent(title),
             'accionafacebook',
             'width=800,height=600,scrollbars=yes,menubar=yes,resizable=yes,location=yes'
