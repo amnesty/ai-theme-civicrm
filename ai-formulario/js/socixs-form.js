@@ -196,7 +196,7 @@ jQuery(function($) {
     }
 
     // 0 del DNI
-    $('#edit-submitted-caja-datos-personales-fieldset-fila-2-margin-medium-nif-disabled-1-contact-1-cg1-custom-2').focusout(function(){
+    $('.number-dni').first().focusout(function(){
         var dni = String($(this).val());
         if(dni.substring(0,1)=='0'){
             $(this).val(dni.substring(1));
