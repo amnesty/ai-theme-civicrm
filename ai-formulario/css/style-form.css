@@ -108,7 +108,7 @@ header, hgroup, nav, section {
     border-radius: 0;
 }
 
-.content-form  .webform-conditional-processed select{
+.content-form .webform-conditional-processed select{
     width: 104%;
     background: #fff url(../images/arrow.png);
     background-repeat: no-repeat;
