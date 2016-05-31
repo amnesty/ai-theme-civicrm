@@ -84,8 +84,7 @@ header, hgroup, nav, section {
 }
 
 .content-form h2{
-  /*font-family: 'TradeGothic-BoldCondTwenty';*/
-  font-family: 'Arial';
+    font-family: 'TradeGothic-BoldCondTwenty';
     font-size: 40px;
     border-bottom: 2px solid #000;
     padding-bottom: 10px;
@@ -95,8 +94,7 @@ header, hgroup, nav, section {
 }
 
 .content-form h4{
-  /*font-family: 'TradeGothic-BoldCondTwenty';*/
-  font-family: 'Arial';
+    font-family: 'TradeGothic-BoldCondTwenty';
     font-size: 40px;
     padding-bottom: 10px;
     display: inline-block;
@@ -119,8 +117,7 @@ header, hgroup, nav, section {
 
 .content-form .webform-conditional-processed .input-generic{
     border: 2px solid #000;
-    /*font-family: 'TradeGothic-BoldCondTwenty';*/
-    font-family: 'Arial';
+    font-family: 'TradeGothic-BoldCondTwenty';
     width: 100%;
     font-size: 24px;
     color: #000000;
@@ -135,8 +132,7 @@ header, hgroup, nav, section {
 
 /* Caja con checkbox */
 .content-form .webform-conditional-processed .caja-checkbox {
-  /*font-family: 'TradeGothic-BoldCondTwenty';*/
-  font-family: 'Arial';
+    font-family: 'TradeGothic-BoldCondTwenty';
     font-size: 24px;
     line-height: 50px;
     float:left;
@@ -177,8 +173,7 @@ header, hgroup, nav, section {
 
 /* Errores ---------------------- */
 div.error {
-  /*font-family: 'TradeGothic-BoldCondTwenty';*/
-  font-family: 'Arial';
+    font-family: 'TradeGothic-BoldCondTwenty';
     background: #fee;
     font-size: 16px;
     border: 2px solid #f00; /*#8c2e0b;*/
