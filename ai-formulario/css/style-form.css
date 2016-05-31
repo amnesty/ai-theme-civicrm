@@ -117,7 +117,8 @@ header, hgroup, nav, section {
 
 .content-form .webform-conditional-processed .input-generic{
     border: 2px solid #000;
-    font-family: 'TradeGothic-BoldCondTwenty';
+    /*font-family: 'TradeGothic-BoldCondTwenty';*/
+    font-family: 'Arial';
     width: 100%;
     font-size: 24px;
     color: #000000;
