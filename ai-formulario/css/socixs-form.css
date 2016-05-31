@@ -18,7 +18,8 @@
     }
 
     .text-intro span{
-        font-family: 'TradeGothic-BoldCondTwenty';
+        /*font-family: 'TradeGothic-BoldCondTwenty';*/
+        font-family: 'Arial';
     }
 
     .box-form-es{
@@ -37,7 +38,8 @@
         font-size: 20px;
         color: #000000;
         padding: 0px 20px;
-        font-family: 'TradeGothic-BoldCondTwenty';
+        /*font-family: 'TradeGothic-BoldCondTwenty';*/
+        font-family: 'Arial';
         text-align: justify;
     }
 
@@ -45,7 +47,7 @@
         width: 100%;
     }
 
-    .webform-conditional-processed  .content-colaborar, .webform-conditional-processed .content-datos, 
+    .webform-conditional-processed  .content-colaborar, .webform-conditional-processed .content-datos,
     .webform-conditional-processed .content-direccion, .webform-conditional-processed .content-cuenta {
         padding: 0px 20px 20px;
     }
@@ -103,7 +105,8 @@
     }
 
     .webform-conditional-processed .content-colaborar .cuotas {
-        font-family: 'TradeGothic-BoldCondTwenty';
+      /*font-family: 'TradeGothic-BoldCondTwenty';*/
+      font-family: 'Arial';
         font-size: 24px;
         line-height: 50px;
         float:left;
@@ -155,8 +158,9 @@
     }
 
     .webform-conditional-processed .content-datos a{
-    	font-family: 'TradeGothic-BoldCondTwenty';
-    	float: left;
+      /*font-family: 'TradeGothic-BoldCondTwenty';*/
+      font-family: 'Arial';
+          	float: left;
         font-size: 20px;
         color: #000;
         height: 44px;
@@ -233,8 +237,9 @@
 
 
     .webform-conditional-processed .content-datos .fila-3 label {
-        font-family: 'TradeGothic-BoldCondTwenty';
-        float: left;
+      /*font-family: 'TradeGothic-BoldCondTwenty';*/
+      font-family: 'Arial';
+              float: left;
         font-size: 20px;
         color: #000;
         height: 44px;
@@ -283,8 +288,9 @@
         background-position: 65px center;
         /* como input-generic */
         border: 0;
-        font-family: 'TradeGothic-BoldCondTwenty';
-        font-size: 24px;
+        /*font-family: 'TradeGothic-BoldCondTwenty';*/
+        font-family: 'Arial';
+                font-size: 24px;
         color: #000;
         line-height: 50px;
         height: 50px;
@@ -353,8 +359,9 @@
 
     /* content-cuenta ----------------------------------------------------- */
     .webform-conditional-processed .content-cuenta label.iban{
-        font-family: 'TradeGothic-BoldCondTwenty';
-        float: left;
+      /*font-family: 'TradeGothic-BoldCondTwenty';*/
+      font-family: 'Arial';
+              float: left;
         font-size: 20px;
         color: #000;
         height: 44px;
@@ -465,8 +472,9 @@
     /* boton enviar */
     .box-form-es .button-primary,
     .box-form-es .form-submit {
-        font-family: 'TradeGothic-BoldCondTwenty';
-        max-width: 315px;
+      /*font-family: 'TradeGothic-BoldCondTwenty';*/
+      font-family: 'Arial';
+              max-width: 315px;
         width: 100%;
         height: 100px;
         font-size: 46px;
@@ -524,8 +532,9 @@
     }
 
     .box-es-right .three-column h3{
-        font-family: 'TradeGothic-BoldCondTwenty';
-        font-size: 32px;
+      /*font-family: 'TradeGothic-BoldCondTwenty';*/
+      font-family: 'Arial';
+              font-size: 32px;
         line-height: 36px;
         text-align: center;
         color: #000;
@@ -555,7 +564,8 @@
 
 .preview {
     margin: 0px 20px;
-    font-family: 'TradeGothic-BoldCondTwenty';
+    /*font-family: 'TradeGothic-BoldCondTwenty';*/
+    font-family: 'Arial';
     font-size: 20px;
 }
 
@@ -568,7 +578,8 @@
 }
 
 .preview h2{
-    font-family: 'TradeGothic-BoldCondTwenty';
+  /*font-family: 'TradeGothic-BoldCondTwenty';*/
+  font-family: 'Arial';
     font-size: 35px;
     border-bottom: 2px solid #000;
     padding-bottom: 10px;
@@ -600,7 +611,8 @@
 
 /* boton enviar */
 .preview .form-submit {
-    font-family: 'TradeGothic-BoldCondTwenty';
+  /*font-family: 'TradeGothic-BoldCondTwenty';*/
+  font-family: 'Arial';
     /*width: 100%;*/
     height: 70px;
     font-size: 30px;
@@ -664,7 +676,7 @@
     border-top: 0px;
 }
 
-#share-buttons .ai-accion-firma-compartir__facebook,  
+#share-buttons .ai-accion-firma-compartir__facebook,
 #share-buttons .ai-accion-firma-compartir__twitter {
     width: 45%;
     margin: 0px;
@@ -894,7 +906,7 @@
         margin-left: 0px;
         margin-top: -0px;
     }
-    
+
     .preview .content-cuenta {
         float: none;
         margin-left: 0px;
@@ -1266,7 +1278,8 @@
 
     /* boton enviar */
     .preview .form-submit {
-        font-family: 'TradeGothic-BoldCondTwenty';
+      /*font-family: 'TradeGothic-BoldCondTwenty';*/
+      font-family: 'Arial';
         /*width: 100%;*/
         height: 70px;
         font-size: 30px;
