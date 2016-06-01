@@ -67,24 +67,12 @@ header, hgroup, nav, section {
     background-color: transparent;
 }
 
-/* Fonts ------------------------ */
-
-@font-face {
-  font-family: 'TradeGothic-BoldCondTwenty';
-  src: url('../font/TradeGothic-BoldCondTwenty.eot?#iefix') format('embedded-opentype'),
-  url('../font/TradeGothic-BoldCondTwenty.woff') format('woff'),
-  url('../font/TradeGothic-BoldCondTwenty.ttf')  format('truetype'),
-  url('../font/TradeGothic-BoldCondTwenty.svg#TradeGothic-BoldCondTwenty') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
 .content-form label {
     font-weight: normal;
 }
 
 .content-form h2{
-    font-family: 'TradeGothic-BoldCondTwenty';
+    font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
     font-size: 40px;
     border-bottom: 2px solid #000;
     padding-bottom: 10px;
@@ -94,7 +82,7 @@ header, hgroup, nav, section {
 }
 
 .content-form h4{
-    font-family: 'TradeGothic-BoldCondTwenty';
+    font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
     font-size: 40px;
     padding-bottom: 10px;
     display: inline-block;
@@ -131,7 +119,7 @@ header, hgroup, nav, section {
 
 /* Caja con checkbox */
 .content-form .webform-conditional-processed .caja-checkbox {
-    font-family: 'TradeGothic-BoldCondTwenty';
+    font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
     font-size: 24px;
     line-height: 50px;
     float:left;
@@ -172,7 +160,7 @@ header, hgroup, nav, section {
 
 /* Errores ---------------------- */
 div.error {
-    font-family: 'TradeGothic-BoldCondTwenty';
+    font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
     background: #fee;
     font-size: 16px;
     border: 2px solid #f00; /*#8c2e0b;*/
