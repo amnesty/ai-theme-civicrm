@@ -103,7 +103,8 @@
     }
 
     .webform-conditional-processed .content-colaborar .cuotas {
-        font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
+        /*font-family: 'TradeGothic-BoldCondTwenty';*/
+        font-family: 'Arial';
         font-size: 24px;
         line-height: 50px;
         float:left;
@@ -179,7 +180,7 @@
     }
 
     .webform-conditional-processed .content-datos select.document {
-        background-position: 90px center;
+        background-position: 110px center;
     }
 
     .webform-conditional-processed .content-datos .number-dni,
@@ -283,9 +284,11 @@
         background-position: 65px center;
         /* como input-generic */
         border: 0;
-        font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
+        /*font-family: 'TradeGothic-BoldCondTwenty';*/
+        font-family: 'Arial';
         font-size: 24px;
         color: #000;
+        line-height: 50px;
         height: 50px;
         position: relative;
         float: left;
@@ -352,7 +355,8 @@
 
     /* content-cuenta ----------------------------------------------------- */
     .webform-conditional-processed .content-cuenta label.iban{
-        font-family: 'TradeGothic-BoldCondTwenty';
+      /*font-family: 'TradeGothic-BoldCondTwenty';*/
+      font-family: 'Arial';
         float: left;
         font-size: 20px;
         color: #000;
@@ -767,10 +771,6 @@
         float: none;
         margin-left: 0px;
         margin-top: -0px;
-    }
-
-    .webform-conditional-processed .content-cuenta .ncuenta{
-        margin-top:20px;
     }
 
 }
