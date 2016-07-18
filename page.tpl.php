@@ -1,3 +1,4 @@
+<?php include_once('sites/all/themes/blank/ab.php'); ?>
 <div id="page-wrapper" onload="errors()"><div id="page"><div id="content" class="clearfix">
 
 <?php
@@ -10,36 +11,17 @@ if (!isset($_GET["origen"]) ){
 include_once('config.php');
 
 // ****************************************************** CSS *********************************************************************
-
-// *********** Sólo para el formulario de Socixs y su página de gracias ***************
-if ( $node->nid==$socixs_form || $node->nid==$socixs_gracias ){
 ?>
-    <!-- WEB -->
-    <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/ai.css">
-    <!-- Cargamos los CSS que necesitamos para el contenido genérico -->
-    <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/style-form.css">
-    <!-- Añadimos la hoja CSS para el formulario de Socixs en concreto -->
-    <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/socixs-form.css">
-
-<?php
-// **** Contenido general del resto de páginas o si es página de confirmación ******* 
-} 
-else {
-?>
-    <!-- Cargamos los CSS que necesitamos para el contenido de diseño base de CiviCRM -->
-    <link rel="stylesheet" type="text/css" href="<?php print $base_url; ?>/modules/system/system.theme.css">
-    <link rel="stylesheet" type="text/css" href="<?php print $base_url; ?>/sites/all/modules/webform_layout/layout_box.css">
-    <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/webform_add.css">
-<?php 
-} ?>    
+  <!-- WEB -->
+  <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/ai.css">
+  <!-- Cargamos los CSS que necesitamos para el contenido genérico -->
+  <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/style-form.css">
+  <!-- Añadimos la hoja CSS para el formulario de Socixs en concreto -->
+  <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/socixs-form.css">
 
 <!-- ************************************************** CONTENIDO *************************************************************************-->
 
-<?php
-// *********** HEADER: Sólo para el formulario de Socixs ***************
-if ($node->nid==$socixs_form || $node->nid==$socixs_gracias){ 
-?>
 <!-- Header -->
 <nav class="navbar navbar-fixed-top">
 <header class="header" data-header="" role="banner">
@@ -56,15 +38,15 @@ if ($node->nid==$socixs_form || $node->nid==$socixs_gracias){
     <div style="background-image: url('<?php print $form_path; ?>/images/header.jpg?anchor=topcenter');" class="responsive--bg  lazyloaded"
         data-bgset="<?php print $form_path; ?>/images/header.jpg?anchor=topcenter">
     </div>
-    <noscript> 
-        <img src="<?php print $form_path; ?>/images/header.jpg?anchor=topcenter" class=responsive__img> 
+    <noscript>
+        <img src="<?php print $form_path; ?>/images/header.jpg?anchor=topcenter" class=responsive__img>
     </noscript>
     <div class="image-header__content--medium">
         <div class="image-headline--full">
             <h2 class="image-headline__actua-title">
-                <?php if ( $node->nid==$socixs_form) { ?>
+                <?php if ( $node->nid!=$socixs_gracias) { ?>
                     <span class="heading--tape--dark">Únete a Amnistía Internacional</span>
-                <?php } else if ( $node->nid==$socixs_gracias) { ?>
+                <?php } else { ?>
                     <span class="heading--tape--dark">¡Te damos la bienvenida!</span>
                 <?php } ?>
             </h2>
@@ -72,21 +54,17 @@ if ($node->nid==$socixs_form || $node->nid==$socixs_gracias){
     </div>
 </div>
 <!-- Image after header -->
-<?php } ?>
 
 <!-- Page content -->
 <div class="container--wide">
     <!-- Bootstrap Grid -->
     <div class="grid">
-<?php
-// ************************************************ Solo formulario socixs ******************************************************** 
-if ( $node->nid==$socixs_form || $node->nid==$socixs_gracias) {  ?>
    	 <div id="content-area">
             <!-- Formulario -->
          	<div class="content-form clearfix">
             <?php
             // ********* Sólo mostramos el texto de intro en el formulario
-            if ($node->nid==$socixs_form ){ ?>
+            if ($node->nid!=$socixs_gracias ){ ?>
 			    <p class="text-intro">
                      <span>Tu ayuda hace posible que podamos renunciar a subvenciones de gobiernos y partidos políticos, porque nuestra independencia está por encima de todo. </span>
                      <span>Es gracias a personas como tú que nos apoyáis económicamente por lo que podemos denunciar sin presiones de ningún tipo cualquier violación de los derechos humanos. </span>
@@ -109,7 +87,7 @@ if ( $node->nid==$socixs_form || $node->nid==$socixs_gracias) {  ?>
                             </a>
                         </div>
                     <?php } ?>
-                <?php if($node->nid==$socixs_form) { 
+                <?php if($node->nid!=$socixs_gracias) {
                     print '</div><!-- Box FORM_ES -->'; ?>
                 <div class="box-es-right">
                         <div class="three-column ventajas">
@@ -131,26 +109,11 @@ if ( $node->nid==$socixs_form || $node->nid==$socixs_gracias) {  ?>
                 </div><!-- /box-es-right -->
                 <?php } ?>
                 <?php if($node->nid==$socixs_gracias) { print '</div><!-- Box FORM_ES -->'; }?>
-			 </div>
-		</div>    
-<?php
-// *********************** Contenido básico de una página si no es la del formulario de socixs ****************************
-} else { ?>
-    <div class="content-area">
-        <!-- Errors -->
-        <?php print $messages; ?>
-        <!-- Content -->
-        <?php print render($page['content']); ?>
-    </div>
-<?php } ?>
-
+			  </div>
+		  </div>
     </div>
 </div>
 
-<?php
-// *********** Footer: Sólo para el formulario de Socixs ***************
-if ($node->nid==$socixs_form || $node->nid==$socixs_gracias){ 
-?>
 <!-- Footer -->
 <footer class="footer print-hidden">
     <div class="footer__container">
@@ -164,17 +127,16 @@ if ($node->nid==$socixs_form || $node->nid==$socixs_gracias){
                 </ul>
             </div>
             <div class="footer__col--left">
-                <p class="footer-legal"> 
-                    <a href="https://www.es.amnesty.org/contacto/" class="footer-legal__link">Contacto</a> &nbsp;&nbsp;|&nbsp;&nbsp; 
-                    <a href="https://www.es.amnesty.org/politica-de-privacidad/" class="footer-legal__link">Política de privacidad</a> &nbsp;&nbsp;|&nbsp;&nbsp; 
-                    <a href="https://www.es.amnesty.org/mapa-del-sitio/" class="footer-legal__link">Mapa del sitio</a> 
+                <p class="footer-legal">
+                    <a href="https://www.es.amnesty.org/contacto/" class="footer-legal__link">Contacto</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="https://www.es.amnesty.org/politica-de-privacidad/" class="footer-legal__link">Política de privacidad</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="https://www.es.amnesty.org/mapa-del-sitio/" class="footer-legal__link">Mapa del sitio</a>
                 </p>
                 <p class="footer-copyright">© 2016 Amnistía Internacional España</p>
             </div>
         </div>
     </div>
 </footer>
-<?php } ?>
 
 </div></div></div>
 
