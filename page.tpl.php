@@ -44,7 +44,7 @@ include_once('config.php');
     <div class="image-header__content--medium">
         <div class="image-headline--full">
             <h2 class="image-headline__actua-title">
-                <?php if ( $node->nid!=$socixs_gracias) { ?>
+                <?php if ( $node->nid!=$socixs_gracias || $node->nid==$socixs_gracies ) { ?>
                     <span class="heading--tape--dark">Únete a Amnistía Internacional</span>
                 <?php } else { ?>
                     <span class="heading--tape--dark">¡Te damos la bienvenida!</span>
@@ -64,7 +64,7 @@ include_once('config.php');
          	<div class="content-form clearfix">
             <?php
             // ********* Sólo mostramos el texto de intro en el formulario
-            if ($node->nid!=$socixs_gracias ){ ?>
+            if ($node->nid!=$socixs_gracias && $node->nid!=$socixs_gracies){ ?>
 			    <p class="text-intro">
                      <span>Tu ayuda hace posible que podamos renunciar a subvenciones de gobiernos y partidos políticos, porque nuestra independencia está por encima de todo. </span>
                      <span>Es gracias a personas como tú que nos apoyáis económicamente por lo que podemos denunciar sin presiones de ningún tipo cualquier violación de los derechos humanos. </span>
@@ -76,7 +76,7 @@ include_once('config.php');
                     <?php print render($page['content']); ?>
 
                     <?php // ****************  Sólo mostramos los botones de compartir en la página de gracias ******************
-                        if ($node->nid==$socixs_gracias ){ ?>
+                        if ($node->nid==$socixs_gracias || $node->nid==$socixs_gracies ){ ?>
                         <div id="share-buttons" class="ai-accion-firma-compartir">
                             <!--h4 class="ai-accion-firma-compartir__header">¿Nos ayudas a conseguir más apoyo?</h4-->
                             <a class="ai-accion-firma-compartir__facebook" href="javascript:" data-ai-share-title="Hazte socio/a de Amnistía Internacional y apoya nuestro trabajo">
@@ -87,7 +87,7 @@ include_once('config.php');
                             </a>
                         </div>
                     <?php } ?>
-                <?php if($node->nid!=$socixs_gracias) {
+                <?php if($node->nid!=$socixs_gracias && $node->nid!=$socixs_gracies) {
                     print '</div><!-- Box FORM_ES -->'; ?>
                 <div class="box-es-right">
                         <div class="three-column ventajas">
@@ -108,7 +108,7 @@ include_once('config.php');
                         </div>
                 </div><!-- /box-es-right -->
                 <?php } ?>
-                <?php if($node->nid==$socixs_gracias) { print '</div><!-- Box FORM_ES -->'; }?>
+                <?php if($node->nid==$socixs_gracias || $node->nid==$socixs_gracies) { print '</div><!-- Box FORM_ES -->'; }?>
 			  </div>
 		  </div>
     </div>
