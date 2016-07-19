@@ -18,7 +18,7 @@ jQuery(function($) {
     var get_utm_source = getUrlVars()["utm_source"];
     var get_utm_content = getUrlVars()["utm_content"];
     var get_utm_term = getUrlVars()["utm_term"];
-    
+
     var source_input = $( "[name='submitted[civicrm_1_contact_1_contact_source]']");
     var source_input2 = $( "[name='submitted[civicrm_1_contact_1_cg17_custom_50]']");
     if( get_source != '' && get_source ){
@@ -58,12 +58,16 @@ jQuery(function($) {
         source_input.val(get_utm_term);
     }
 
-    // Añadir títulos a la página de preview 
+    // Añadir títulos a la página de preview
 
     if( $(".webform-client-form").first().hasClass("preview") ){
         // título confirma tus datos
-        $(".text-intro").append("<h4 style='margin-top: 40px; margin-bottom: -50px;'>¿Nos ayudas a confirmar que tus datos son correctos?</h4>");
-
+        var url = window.location.pathname;
+        if(url.indexOf("/cat") > -1){
+          $(".text-intro").append("<h4 style='margin-top: 40px; margin-bottom: -50px;'>¿Ens ajudes a confirmar que les teves dades són correctes?</h4>");
+        }else {
+          $(".text-intro").append("<h4 style='margin-top: 40px; margin-bottom: -50px;'>¿Nos ayudas a confirmar que tus datos son correctos?</h4>");
+        }
         $(".content-colaborar").prepend("<h2 style='margin-top: 15px; margin-bottom: 15px;'>Datos personales</h2>");
 
         $(".content-cuenta").prepend("<h2 style='margin-top: 15px; margin-bottom: 15px;'>Forma de pago</h2>");
@@ -76,9 +80,9 @@ jQuery(function($) {
 
         $(".box-es-right").remove();
         $(".box-form-es").css("width", "100%");
-    
+
     }
-    
+
     // Scrolling the active block of fields
 
     if( $('.webform-client-form').hasClass('webform-conditional-processed') ){
@@ -128,36 +132,36 @@ jQuery(function($) {
             $(".caja-content").removeClass('active');
             $(this).addClass('active');
 
-        });    
+        });
 
     }
     else {
-        $(".caja-content").removeClass('active');   
+        $(".caja-content").removeClass('active');
     }
 
   // Make the IBAN fields to automatically move the cursor through when any field is fullfilled.
-  
+
   $(".country").keyup( function(){
     if($(".country").val().length >= 2){
-        $(".entity").focus();        
+        $(".entity").focus();
     }
   });
 
   $(".entity").keyup( function(){
     if($(".entity").val().length >= 4){
-        $(".office").focus();        
+        $(".office").focus();
     }
   });
 
   $(".office").keyup( function(){
     if($(".office").val().length >= 4){
-        $(".check").focus();        
+        $(".check").focus();
     }
   });
 
   $(".check").keyup( function(){
     if($(".check").val().length >= 2){
-        $(".account").focus();        
+        $(".account").focus();
     }
   });
 
@@ -213,7 +217,7 @@ jQuery(function($) {
             'accionafacebook',
             'width=800,height=600,scrollbars=yes,menubar=yes,resizable=yes,location=yes'
         );
-    }  
+    }
     $(".ai-accion-firma-compartir__facebook").each(function() {
         var n = $(this),
             i = urlActualFB, //n.data("ai-share-url")
@@ -227,7 +231,7 @@ jQuery(function($) {
 
     function tw(e, t) {
         window.open("https://twitter.com/intent/tweet?text=" + encodeURIComponent(e) + "&url=" + encodeURIComponent(t) + "&via=amnistiaespana", "accionatwitter", "width=800,height=600,scrollbars=yes,menubar=yes,resizable=yes,location=yes")
-    }    
+    }
     $(".ai-accion-firma-compartir__twitter").each(function() {
         var n = $(this),
             r = n.data("ai-share-url") || urlActualTW,
@@ -236,5 +240,5 @@ jQuery(function($) {
                 return tw(o, r), !1
             });
     });
-    
+
 })
