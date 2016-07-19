@@ -84,11 +84,17 @@ include_once('config.php');
             <?php
             // ********* Sólo mostramos el texto de intro en el formulario
             if ($node->nid!=$socixs_gracias && $node->nid!=$socixs_gracies){ ?>
-			    <p class="text-intro">
-                     <span>Tu ayuda hace posible que podamos renunciar a subvenciones de gobiernos y partidos políticos, porque nuestra independencia está por encima de todo. </span>
-                     <span>Es gracias a personas como tú que nos apoyáis económicamente por lo que podemos denunciar sin presiones de ningún tipo cualquier violación de los derechos humanos. </span>
-                     <span><b>Gracias por creer en un mundo más justo.</b></span>
-                </p>
+			      <p class="text-intro">
+              <?php if($cat == 0){ ?>
+                       <span>Tu ayuda hace posible que podamos renunciar a subvenciones de gobiernos y partidos políticos, porque nuestra independencia está por encima de todo. </span>
+                       <span>Es gracias a personas como tú que nos apoyáis económicamente por lo que podemos denunciar sin presiones de ningún tipo cualquier violación de los derechos humanos. </span>
+                       <span><b>Gracias por creer en un mundo más justo.</b></span>
+              <?php }else{ ?>
+                       <span>La teva ajuda fa possible que poguem renunicar a subvencions de governs i partits polítics, perquè la nostra independència està per sobre de tot. </span>
+                       <span>És gràcies a persones com tu que ens doneu suport econòmic pel que podem denunciar sense pressions de cap mena qualsevol violació dels drets humans. </span>
+                       <span><b>Gràcies per creure en un món més just.</b></span>
+              <?php } ?>
+              </p>
             <?php } ?>
 		        <div class="box-form-es">
                     <?php print $messages; ?> <!-- Errors -->
