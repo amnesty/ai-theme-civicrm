@@ -123,7 +123,7 @@ include_once('config.php');
                             <img src="<?php print $images_path; ?>pig.png" alt="pig"/>
                             <?php if($cat){ ?>
                               <h3>Coneixes els avantatges fiscals de ser soci/a?</h3>
-                              <p>Totes les teves aportacions desgraven un 75% els primers 150€. A partir d'aquesta xifra, el 30%. Si en els últims 3 anys s'han mantingut o augmentat les aportacions a l'organització, la desgravació puja a un 35% per a premiar la teva fidelitat. Aquestes deduccions no s'apliquen al País Basc i a Navarra.
+                              <p>Totes les teves aportacions desgraven un 75% els primers 150€. A partir d'aquesta xifra, el 30%. Si els últims 3 anys has mantingut o augmentat l'aportació a l'organització, la desgravació puja fins un 35% per a premiar la teva fidelitat. Aquestes deduccions no s'apliquen al País Basc ni a Navarra.
                             <?php }else{ ?>
                               <h3>¿Conoces las ventajas fiscales de ser socio/a?</h3>
                               <p>Todas tus aportaciones desgravan un 75% los primeros 150€. A partir de esa cifra, el 30%. Si en los últimos tres años se han mantenido o aumentado las aportaciones a la organización, la desgravación sube a un 35% para premiar tu fidelidad. Estas deducciones no aplican en País Vasco y Navarra.
