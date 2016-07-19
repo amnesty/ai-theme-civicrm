@@ -95,7 +95,7 @@ include_once('config.php');
                        <span><b>Gracias por creer en un mundo más justo.</b></span>
               <?php }else{ ?>
                        <span>La teva ajuda fa possible que puguem renunicar a subvencions de governs i partits polítics, perquè la nostra independència està per sobre de tot. </span>
-                       <span>És gràcies a persones com tu que ens doneu suport econòmic pel que podem denunciar sense pressions de cap mena qualsevol violació dels drets humans. </span>
+                       <span>És gràcies a persones com tu que ens doneu suport econòmic que podem denunciar sense pressions de cap mena qualsevol violació dels drets humans. </span>
                        <span><b>Gràcies per creure en un món més just.</b></span>
               <?php } ?>
               </p>
@@ -134,7 +134,7 @@ include_once('config.php');
                             <img src="<?php print $images_path; ?>cartera.png" alt="cartera"/>
                             <?php if($cat){ ?>
                               <h3>Altres mètodes de pagament</h3>
-                              <p>Si tens algun problema per a realitzar la teva donació o vols informació sobre altres mètodes de pagament o sobre quotes reduïdes, truca'ns al <b>913101277</b> (extensions <b>30</b> i <b>37</b>) o escriu-nos a <a href="mailto:socios@es.amnesty.org" title="socios@es.amnesty.org">socios@es.amnesty.org</a></p>
+                              <p>Si tens algún problema en realitzar la teva donació o vols informació sobre altres mètodes de pagament o sobre quotes reduïdes, truca'ns al <b>913101277</b> (extensions <b>30</b> i <b>37</b>) o escriu-nos a <a href="mailto:socios@es.amnesty.org" title="socios@es.amnesty.org">socios@es.amnesty.org</a></p>
                             <?php }else{ ?>
                               <h3>Otras formas de pago</h3>
                               <p>Si tienes algún problema al realizar tu donación o quieres información sobre otras formas de pago o sobre cuotas reducidas, llámanos a <b>913101277</b> (extensiones <b>30</b> y <b>37</b>) o escribe a <a href="mailto:socios@es.amnesty.org" title="socios@es.amnesty.org">socios@es.amnesty.org</a></p>
@@ -144,7 +144,7 @@ include_once('config.php');
                             <img src="<?php print $images_path; ?>ventana.png" alt="ventana"/>
                             <?php if($cat){ ?>
                               <h3>Transparència, el nostre compromís</h3>
-                              <p>El 100% dels nostres recursos els destinem a lluitar pels drets humans a tot el món. Els nostres comptes són públics a la nostra pàgina web.</p>
+                              <p>El 100% dels nostres recursos els destinem a lluitar pels drets humans arreu del món. Els nostres comptes són públics i pots veure'ls a la web.</p>
                             <?php }else{ ?>
                               <h3>Transparencia, nuestro compromiso</h3>
                               <p>El 100% de nuestros recursos los destinamos a luchar por los derechos humanos en todo el mundo. Nuestras cuentas son públicas y puedes verlas en nuestra web.</p>
