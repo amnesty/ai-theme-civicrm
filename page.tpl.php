@@ -117,19 +117,34 @@ include_once('config.php');
                 <div class="box-es-right">
                         <div class="three-column ventajas">
                             <img src="<?php print $images_path; ?>pig.png" alt="pig"/>
-                            <h3>¿Conoces las ventajas fiscales de ser socio/a?</h3>
-                            <p>Todas tus aportaciones desgravan un 75% los primeros 150€. A partir de esa cifra, el 30%. Si en los últimos tres años se han mantenido o aumentado las aportaciones a la organización, la desgravación sube a un 35% para premiar tu fidelidad. Estas deducciones no aplican en País Vasco y Navarra.
+                            <?php if($cat){ ?>
+                              <h3>Coneixes els avantatges fiscals de ser soci/a?</h3>
+                              <p>Totes les teves aportacions desgraven un 75% els primers 150€. A partir d'aquesta xifra, el 30%. Si en els últims 3 anys s'han mantingut o augmentat les aportacions a l'organització, la desgravació puja a un 35% per a premiar la teva fidelitat. Aquestes deduccions no s'apliquen al País Basc i a Navarra.
+                            <?php }else{ ?>
+                              <h3>¿Conoces las ventajas fiscales de ser socio/a?</h3>
+                              <p>Todas tus aportaciones desgravan un 75% los primeros 150€. A partir de esa cifra, el 30%. Si en los últimos tres años se han mantenido o aumentado las aportaciones a la organización, la desgravación sube a un 35% para premiar tu fidelidad. Estas deducciones no aplican en País Vasco y Navarra.
+                            <?php } ?>
                             </p>
                         </div>
                         <div class="three-column formas-pago">
                             <img src="<?php print $images_path; ?>cartera.png" alt="cartera"/>
-                            <h3>Otras formas de pago</h3>
-                            <p>Si tienes algún problema al realizar tu donación o quieres información sobre otras formas de pago o sobre cuotas reducidas, llámanos a <b>913101277</b> (extensiones <b>30</b> y <b>37</b>) o escribe a <a href="mailto:socios@es.amnesty.org" title="socios@es.amnesty.org">socios@es.amnesty.org</a></p>
+                            <?php if($cat){ ?>
+                              <h3>Altres mètodes de pagament</h3>
+                              <p>Si tens algun problema per a realitzar la teva donació o vols informació sobre altres mètodes de pagament o sobre quotes reduïdes, truca'ns al <b>913101277</b> (extensions <b>30</b> i <b>37</b>) o escriu-nos a <a href="mailto:socios@es.amnesty.org" title="socios@es.amnesty.org">socios@es.amnesty.org</a></p>
+                            <?php }else{ ?>
+                              <h3>Otras formas de pago</h3>
+                              <p>Si tienes algún problema al realizar tu donación o quieres información sobre otras formas de pago o sobre cuotas reducidas, llámanos a <b>913101277</b> (extensiones <b>30</b> y <b>37</b>) o escribe a <a href="mailto:socios@es.amnesty.org" title="socios@es.amnesty.org">socios@es.amnesty.org</a></p>
+                            <?php } ?>
                         </div>
                         <div class="three-column compromiso">
                             <img src="<?php print $images_path; ?>ventana.png" alt="ventana"/>
-                            <h3>Transparencia, nuestro compromiso</h3>
-                            <p>El 100% de nuestros recursos los destinamos a luchar por los derechos humanos en todo el mundo. Nuestras cuentas son públicas y puedes verlas en nuestra web.</p>
+                            <?php if($cat){ ?>
+                              <h3>Transparència, el nostre compromís</h3>
+                              <p>El 100% dels nostres recursos els destinem a lluitar pels drets humans a tot el món. Els nostres comptes són públics a la nostra pàgina web.</p>
+                            <?php }else{ ?>
+                              <h3>Transparencia, nuestro compromiso</h3>
+                              <p>El 100% de nuestros recursos los destinamos a luchar por los derechos humanos en todo el mundo. Nuestras cuentas son públicas y puedes verlas en nuestra web.</p>
+                            <?php } ?>
                         </div>
                 </div><!-- /box-es-right -->
                 <?php } ?>
