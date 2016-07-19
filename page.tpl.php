@@ -7,6 +7,13 @@ if (!isset($_GET["origen"]) ){
     $_GET["origen"] = "web";
 }
 
+//Idioma
+$cat = 0;
+$url = $_SERVER['REQUEST_URI'];
+if (strpos($url, '/cat') !== false) {
+  $cat = 1;
+}
+
 // Globals
 include_once('config.php');
 
@@ -27,7 +34,11 @@ include_once('config.php');
 <header class="header" data-header="" role="banner">
     <div class="header__container" data-header-container="">
         <div class="header__slogan-container">
-            <div class="header__slogan"> Actuamos por los derechos humanos en todo el mundo </div>
+<?php if($cat){ ?>
+            <div class="header__slogan"> Actuem pels drets humans a tot el món </div>
+<?php }else{ ?>
+              <div class="header__slogan"> Actuamos por los derechos humanos en todo el mundo </div>
+<?php } ?>
         </div>
         <h1 class="logo" data-logo=""><a class="logo__link" href="https://www.es.amnesty.org">Amnistía Internacional España</a></h1>
     </div>
@@ -45,9 +56,17 @@ include_once('config.php');
         <div class="image-headline--full">
             <h2 class="image-headline__actua-title">
                 <?php if ( $node->nid!=$socixs_gracias || $node->nid==$socixs_gracies ) { ?>
-                    <span class="heading--tape--dark">Únete a Amnistía Internacional</span>
+                  <?php if($cat){ ?>
+                              <span class="heading--tape--dark">Uneix-te a Amnistia Internacional</span>
+                  <?php }else{ ?>
+                              <span class="heading--tape--dark">Únete a Amnistía Internacional</span>
+                  <?php } ?>
                 <?php } else { ?>
-                    <span class="heading--tape--dark">¡Te damos la bienvenida!</span>
+                  <?php if($cat){ ?>
+                              <span class="heading--tape--dark">Et donem la benvinguda!</span>
+                  <?php }else{ ?>
+                              <span class="heading--tape--dark">¡Te damos la bienvenida!</span></span>
+                  <?php } ?>
                 <?php } ?>
             </h2>
         </div>
