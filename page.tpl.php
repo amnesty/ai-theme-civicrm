@@ -34,13 +34,17 @@ include_once('config.php');
 <header class="header" data-header="" role="banner">
     <div class="header__container" data-header-container="">
         <div class="header__slogan-container">
-<?php if($cat){ ?>
-            <div class="header__slogan"> Actuem pels drets humans a tot el món </div>
-<?php }else{ ?>
+        <?php if($cat){ ?>
+            <div class="header__slogan"> Actuem pels drets humans arreu del món. </div>
+        <?php }else{ ?>
               <div class="header__slogan"> Actuamos por los derechos humanos en todo el mundo </div>
-<?php } ?>
+        <?php } ?>
         </div>
-        <h1 class="logo" data-logo=""><a class="logo__link" href="https://www.es.amnesty.org">Amnistía Internacional España</a></h1>
+        <?php if($cat){ ?>
+          <h1 class="logo" data-logo=""><a class="logo__link" href="https://www.amnistiacatalunya.org">Amnistia Internacional Catalunya</a></h1>
+        <?php }else{ ?>
+          <h1 class="logo" data-logo=""><a class="logo__link" href="https://www.es.amnesty.org">Amnistía Internacional España</a></h1>
+        <?php } ?>
     </div>
 </header>
 </nav>
@@ -90,7 +94,7 @@ include_once('config.php');
                        <span>Es gracias a personas como tú que nos apoyáis económicamente por lo que podemos denunciar sin presiones de ningún tipo cualquier violación de los derechos humanos. </span>
                        <span><b>Gracias por creer en un mundo más justo.</b></span>
               <?php }else{ ?>
-                       <span>La teva ajuda fa possible que poguem renunicar a subvencions de governs i partits polítics, perquè la nostra independència està per sobre de tot. </span>
+                       <span>La teva ajuda fa possible que puguem renunicar a subvencions de governs i partits polítics, perquè la nostra independència està per sobre de tot. </span>
                        <span>És gràcies a persones com tu que ens doneu suport econòmic pel que podem denunciar sense pressions de cap mena qualsevol violació dels drets humans. </span>
                        <span><b>Gràcies per creure en un món més just.</b></span>
               <?php } ?>
