@@ -65,12 +65,13 @@ jQuery(function($) {
         var url = window.location.pathname;
         if(url.indexOf("/cat") > -1){
           $(".text-intro").append("<h4 style='margin-top: 40px; margin-bottom: -50px;'>¿Ens ajudes a confirmar que les teves dades són correctes?</h4>");
+          $(".content-colaborar").prepend("<h2 style='margin-top: 15px; margin-bottom: 15px;'>Dades personals</h2>");
+          $(".content-cuenta").prepend("<h2 style='margin-top: 15px; margin-bottom: 15px;'>Mètode de pagament</h2>");
         }else {
           $(".text-intro").append("<h4 style='margin-top: 40px; margin-bottom: -50px;'>¿Nos ayudas a confirmar que tus datos son correctos?</h4>");
+          $(".content-colaborar").prepend("<h2 style='margin-top: 15px; margin-bottom: 15px;'>Datos personales</h2>");
+          $(".content-cuenta").prepend("<h2 style='margin-top: 15px; margin-bottom: 15px;'>Forma de pago</h2>");
         }
-        $(".content-colaborar").prepend("<h2 style='margin-top: 15px; margin-bottom: 15px;'>Datos personales</h2>");
-
-        $(".content-cuenta").prepend("<h2 style='margin-top: 15px; margin-bottom: 15px;'>Forma de pago</h2>");
 
         $(".preview .element-invisible").each( function() {
                 $(this).addClass('element-visible');
