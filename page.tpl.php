@@ -1,4 +1,4 @@
-<?php include_once('sites/all/themes/blank/ab.php'); ?>
+<?php //include_once('sites/all/themes/blank/ab.php'); ?>
 <div id="page-wrapper" onload="errors()"><div id="page"><div id="content" class="clearfix">
 
 <?php
