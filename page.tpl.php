@@ -144,7 +144,7 @@ include_once('config.php');
                             <img src="<?php print $images_path; ?>ventana.png" alt="ventana"/>
                             <?php if($cat){ ?>
                               <h3>Transparència, el nostre compromís</h3>
-                              <p>El 100% dels nostres recursos els destinem a lluitar pels drets humans arreu del món. Els nostres comptes són públics i pots veure'ls a la web.</p>
+                              <p>El 100% dels nostres recursos els destinem a lluitar pels drets humans arreu del món. Els nostres comptes són públics i pots veure'ls a la nostra web.</p>
                             <?php }else{ ?>
                               <h3>Transparencia, nuestro compromiso</h3>
                               <p>El 100% de nuestros recursos los destinamos a luchar por los derechos humanos en todo el mundo. Nuestras cuentas son públicas y puedes verlas en nuestra web.</p>
