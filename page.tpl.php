@@ -10,7 +10,7 @@ if (!isset($_GET["origen"]) ){
 //Idioma
 $cat = 0;
 $url = $_SERVER['REQUEST_URI'];
-if (preg_match('/cat/',$url)){ 
+if (preg_match('/cat/',$url)){
   $cat = 1;
 }
 
@@ -55,7 +55,7 @@ include_once('config.php');
     <div class="image-header__content--medium">
         <div class="image-headline--full">
             <h2 class="image-headline__actua-title">
-                <?php if ( $node->nid!=$socixs_gracias || $node->nid==$socixs_gracies ) { ?>
+                <?php if ( $node->nid!=$socixs_gracias && $node->nid!=$socixs_gracies ) { ?>
                   <?php if($cat){ ?>
                               <span class="heading--tape--dark">Uneix-te a Amnistia Internacional</span>
                   <?php }else{ ?>
