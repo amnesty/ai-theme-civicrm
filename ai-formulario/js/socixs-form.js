@@ -242,7 +242,7 @@ jQuery(function($) {
     $(".ai-accion-firma-compartir__twitter").each(function() {
         var n = $(this),
             r = n.data("ai-share-url") || urlActualTW,
-            o = n.data("ai-share-summary-html");
+            o = n.data("ai-share-summary-html"),
             v = n.data("ai-via");
             n.click(function() {
                 return tw(o, r, v), !1
