@@ -10,7 +10,7 @@ if (!isset($_GET["origen"]) ){
 //Idioma
 $cat = 0;
 $url = $_SERVER['REQUEST_URI'];
-if (preg_match('/cat/',$url)){
+if (preg_match('/\/cat/',$url)){
   $cat = 1;
 }
 
