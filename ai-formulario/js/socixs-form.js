@@ -243,7 +243,7 @@ jQuery(function($) {
         var n = $(this),
             r = n.data("ai-share-url") || urlActualTW,
             o = n.data("ai-share-summary-html"),
-            v = n.data("ai-via");
+            v = n.data("ai-share-via");
             n.click(function() {
                 return tw(o, r, v), !1
             });
