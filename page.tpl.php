@@ -94,7 +94,7 @@ include_once('config.php');
                        <span>Es gracias a personas como tú que nos apoyáis económicamente por lo que podemos denunciar sin presiones de ningún tipo cualquier violación de los derechos humanos. </span>
                        <span><b>Gracias por creer en un mundo más justo.</b></span>
               <?php }else{ ?>
-                       <span>La teva ajuda fa possible que puguem renunicar a subvencions de governs i partits polítics, perquè la nostra independència està per sobre de tot. </span>
+                       <span>La teva ajuda fa possible que puguem renunciar a subvencions de governs i partits polítics, perquè la nostra independència està per sobre de tot. </span>
                        <span>És gràcies a persones com tu que ens doneu suport econòmic que podem denunciar sense pressions de cap mena qualsevol violació dels drets humans. </span>
                        <span><b>Gràcies per creure en un món més just.</b></span>
               <?php } ?>
