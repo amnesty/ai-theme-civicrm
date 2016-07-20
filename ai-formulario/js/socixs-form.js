@@ -8,8 +8,11 @@ function getUrlVars() {
 }
 
 jQuery(function($) {
+    // url
+    var url = window.location.pathname;
 
     // Origenes
+    var cat_source = "cat";
     var get_source = getUrlVars()["origen"];
     var get_campaign = getUrlVars()["pk_campaign"];
     var get_utm_campaign = getUrlVars()["utm_campaign"];
@@ -21,14 +24,18 @@ jQuery(function($) {
 
     var source_input = $( "[name='submitted[civicrm_1_contact_1_contact_source]']");
     var source_input2 = $( "[name='submitted[civicrm_1_contact_1_cg17_custom_50]']");
-    if( get_source != '' && get_source ){
+    // origen
+    if( get_source != '' && get_source ){ // origen
         //if(get_source == 'attel') { get_source = 'web'; }
         source_input.val(get_source);
     }
-    else if( get_campaign != '' && get_campaign ){
+    else if(url.indexOf("/cat") > -1){ // AmnistiaCAT
+        source_input.val(cat_source);
+    }
+    else if( get_campaign != '' && get_campaign ){ //pk_campaign
         source_input.val(get_campaign);
     }
-    else if( get_utm_campaign != '' && get_utm_campaign ){
+    else if( get_utm_campaign != '' && get_utm_campaign ){ // utm_campaign
         source_input.val(get_utm_campaign);
         source_input2.val(get_utm_campaign);
     }
@@ -62,7 +69,6 @@ jQuery(function($) {
 
     if( $(".webform-client-form").first().hasClass("preview") ){
         // título confirma tus datos
-        var url = window.location.pathname;
         if(url.indexOf("/cat") > -1){
           $(".text-intro").append("<h4 style='margin-top: 40px; margin-bottom: -50px;'>¿Ens ajudes a confirmar que les teves dades són correctes?</h4>");
           $(".content-colaborar").prepend("<h2 style='margin-top: 15px; margin-bottom: 15px;'>Dades personals</h2>");
@@ -230,15 +236,16 @@ jQuery(function($) {
         });
     });
 
-    function tw(e, t) {
-        window.open("https://twitter.com/intent/tweet?text=" + encodeURIComponent(e) + "&url=" + encodeURIComponent(t) + "&via=amnistiaespana", "accionatwitter", "width=800,height=600,scrollbars=yes,menubar=yes,resizable=yes,location=yes")
+    function tw(e, t, v) {
+        window.open("https://twitter.com/intent/tweet?text=" + encodeURIComponent(e) + "&url=" + encodeURIComponent(t) + "&via=" + encodeURIComponent(t), "accionatwitter", "width=800,height=600,scrollbars=yes,menubar=yes,resizable=yes,location=yes")
     }
     $(".ai-accion-firma-compartir__twitter").each(function() {
         var n = $(this),
             r = n.data("ai-share-url") || urlActualTW,
             o = n.data("ai-share-summary-html");
+            v = n.data("ai-via");
             n.click(function() {
-                return tw(o, r), !1
+                return tw(o, r, v), !1
             });
     });
 
