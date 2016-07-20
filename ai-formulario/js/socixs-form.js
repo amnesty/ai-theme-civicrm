@@ -12,7 +12,7 @@ jQuery(function($) {
     var url = window.location.pathname;
 
     // Origenes
-    var cat_source = "cat";
+    var cat_source = "ut01";
     var get_source = getUrlVars()["origen"];
     var get_campaign = getUrlVars()["pk_campaign"];
     var get_utm_campaign = getUrlVars()["utm_campaign"];
