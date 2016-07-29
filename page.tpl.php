@@ -72,7 +72,7 @@ include_once('config.php');
                               <span class="heading--tape--dark">¡Te damos la bienvenida!</span></span>
                   <?php } ?>
                 <?php } else {?>
-                  <span class="heading--tape--dark">$node->title</span></span>
+                  <span class="heading--tape--dark">$node->title</span>
                 <?php } ?>
             </h2>
         </div>
