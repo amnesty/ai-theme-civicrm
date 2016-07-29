@@ -59,18 +59,20 @@ include_once('config.php');
     <div class="image-header__content--medium">
         <div class="image-headline--full">
             <h2 class="image-headline__actua-title">
-                <?php if ( $node->nid!=$socixs_gracias && $node->nid!=$socixs_gracies ) { ?>
+                <?php if ( $node->nid==$socixs_form || $node->nid==$socixs_form_cat ) { ?>
                   <?php if($cat){ ?>
                               <span class="heading--tape--dark">Uneix-te a Amnistia Internacional</span>
                   <?php }else{ ?>
                               <span class="heading--tape--dark">Únete a Amnistía Internacional</span>
                   <?php } ?>
-                <?php } else { ?>
+                <?php } else if ( $node->nid==$socixs_gracias || $node->nid==$socixs_gracies ) { ?>
                   <?php if($cat){ ?>
                               <span class="heading--tape--dark">Et donem la benvinguda!</span>
                   <?php }else{ ?>
                               <span class="heading--tape--dark">¡Te damos la bienvenida!</span></span>
                   <?php } ?>
+                <?php } else {?>
+                  <span class="heading--tape--dark">$node->title</span></span>
                 <?php } ?>
             </h2>
         </div>
