@@ -127,7 +127,7 @@ include_once('config.php');
                           <?php } ?>
                         </div>
                     <?php } ?>
-                <?php if($node->nid!=$socixs_gracias && $node->nid!=$socixs_gracies) {
+                <?php if($node->nid==$socixs_form || $node->nid==$socixs_form_cat) {
                     print '</div><!-- Box FORM_ES -->'; ?>
                 <div class="box-es-right">
                         <div class="three-column ventajas">
