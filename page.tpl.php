@@ -86,8 +86,8 @@ include_once('config.php');
             <!-- Formulario -->
          	<div class="content-form clearfix">
             <?php
-            // ********* Sólo mostramos el texto de intro en el formulario
-            if ($node->nid!=$socixs_gracias && $node->nid!=$socixs_gracies){ ?>
+            // ********* Sólo mostramos el texto de intro en el formulario de socixs
+            if ($node->nid==$socixs_form || $node->nid==$socixs_form_cat){ ?>
 			      <p class="text-intro">
               <?php if($cat == 0){ ?>
                        <span>Tu ayuda hace posible que podamos renunciar a subvenciones de gobiernos y partidos políticos, porque nuestra independencia está por encima de todo. </span>
