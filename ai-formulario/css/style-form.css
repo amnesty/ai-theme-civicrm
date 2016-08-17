@@ -117,6 +117,7 @@ header, hgroup, nav, section {
     font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
     font-weight: normal;
     font-size: 20px;
+    padding: 10px 20px;
 }
 
 /* Elementos genéricos de formulario ------------- */
