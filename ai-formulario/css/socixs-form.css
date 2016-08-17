@@ -1,15 +1,11 @@
 -/* CSS específico del formulario de socixs ------------------- */
 
-    .text-intro{
-        font-family: Verdana, Geneva, sans-serif;
+    .content-form .text-intro {
+        font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
         font-size: 18px;
-        color: #000;
+        color: #000000;
         margin-bottom: 20px;
         padding: 0px 20px;
-    }
-
-    .text-intro span{
-        font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
     }
 
     .box-form-es{
@@ -36,8 +32,10 @@
         width: 100%;
     }
 
-    .webform-conditional-processed  .content-colaborar, .webform-conditional-processed .content-datos,
-    .webform-conditional-processed .content-direccion, .webform-conditional-processed .content-cuenta {
+    .webform-conditional-processed  .content-colaborar,
+    .webform-conditional-processed .content-datos,
+    .webform-conditional-processed .content-direccion,
+    .webform-conditional-processed .content-cuenta {
         padding: 0px 20px 20px;
     }
 
