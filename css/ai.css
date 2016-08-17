@@ -9490,7 +9490,7 @@ x:-o-prefocus {
         width: 50%
     }
     .image-header__content--medium {
-        /*padding-top: 35%*/ 
+        /*padding-top: 35%*/
         padding-top: 25%; /* H */
     }
 }

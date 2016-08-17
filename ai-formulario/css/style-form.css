@@ -2,6 +2,26 @@
 /* ------------- Diseño general para formularios ---------------- */
 /* -------------------------------------------------------------- */
 
+/* Fuentes */
+@font-face {
+      font-family: 'TradeGothic-BoldCondTwenty';
+      src: url('../font/TradeGothic-BoldCondTwenty.eot?#iefix') format('embedded-opentype'),
+      url('../font/TradeGothic-BoldCondTwenty.woff') format('woff'),
+      url('../font/TradeGothic-BoldCondTwenty.ttf')  format('truetype'),
+      url('../font/TradeGothic-BoldCondTwenty.svg#TradeGothic-BoldCondTwenty') format('svg');
+      font-weight: normal;
+      font-style: normal;
+}
+
+@font-face {
+  font-family: 'TradeGothicLT-BoldCondTwenty';
+  src: url("../font/tradegothiclt-boldcondtwenty.eot?#iefix") format("embedded-opentype"),
+  url("../font/tradegothiclt-boldcondtwenty.woff") format("woff"),
+  url("../font/tradegothiclt-boldcondtwenty.ttf") format("truetype"),
+  url("../font/tradegothiclt-boldcondtwenty.svg#TradeGothicLT-BoldCondTwenty") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 
 /* Estructura general --------------- */
 
