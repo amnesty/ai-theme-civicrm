@@ -129,7 +129,7 @@ include_once('config.php');
                     <?php } ?>
                 <?php if($node->nid==$socixs_form || $node->nid==$socixs_form_cat) {
                     print '</div><!-- Box FORM_ES -->'; ?>
-                <div class="box-es-right">
+                    <div class="box-es-right">
                         <div class="three-column ventajas">
                             <img src="<?php print $images_path; ?>pig.png" alt="pig"/>
                             <?php if($cat){ ?>
@@ -161,14 +161,13 @@ include_once('config.php');
                               <p>El 100% de nuestros recursos los destinamos a luchar por los derechos humanos en todo el mundo. Nuestras cuentas son públicas y puedes verlas en nuestra web.</p>
                             <?php } ?>
                         </div>
-                </div><!-- /box-es-right -->
-                <?php } ?>
-                <?php
+                    </div><!-- /box-es-right -->
+                <?php }
                     //if($node->nid==$socixs_gracias || $node->nid==$socixs_gracies) { print '</div><!-- Box FORM_ES -->';
                     else {
-                      echo '</div><!-- Box FORM_ES -->';
-                    }
                 ?>
+                      </div><!-- Box FORM_ES -->
+                <?php } ?>
 			  </div>
 		  </div>
     </div>
