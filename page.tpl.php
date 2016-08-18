@@ -163,7 +163,7 @@ include_once('config.php');
                         </div>
                 </div><!-- /box-es-right -->
                 <?php } ?>
-              <?php else /*if($node->nid==$socixs_gracias || $node->nid==$socixs_gracies)*/ { print '</div><!-- Box FORM_ES -->'; }?>
+                <?php if($node->nid==$socixs_gracias || $node->nid==$socixs_gracies) { print '</div><!-- Box FORM_ES -->'; }?>
 			  </div>
 		  </div>
     </div>
