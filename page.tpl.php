@@ -166,7 +166,7 @@ include_once('config.php');
                 <?php
                     //if($node->nid==$socixs_gracias || $node->nid==$socixs_gracies) { print '</div><!-- Box FORM_ES -->';
                     else {
-                      print '</div><!-- Box FORM_ES -->';
+                      echo '</div><!-- Box FORM_ES -->';
                     }
                 ?>
 			  </div>
