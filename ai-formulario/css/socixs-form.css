@@ -91,13 +91,13 @@
         background-position: 260px center;
     }
 
-    .webform-conditional-processed .content-colaborar .cuotas {
+    /*.webform-conditional-processed .content-colaborar .cuotas {
         font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
         font-size: 24px;
         line-height: 50px;
         float:left;
         overflow: hidden;
-    }
+    }*/
 
     /*.content-colaborar .cuotas label {
         margin-right: 10px;
@@ -105,11 +105,11 @@
 
 
     /* H */
-    .webform-conditional-processed .content-colaborar .cuotas div {
+    /*.webform-conditional-processed .content-colaborar .cuotas div {
         float: left;
         overflow: hidden;
         margin-right: 10px;
-    }
+    }*/
 
     .webform-conditional-processed .content-colaborar .capa-other-quant {
         width: 70px;
@@ -144,8 +144,8 @@
     }
 
     .webform-conditional-processed .content-datos a{
-    	font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
-    	float: left;
+    	  font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
+    	  float: left;
         font-size: 20px;
         color: #000;
         height: 44px;
@@ -248,40 +248,6 @@
     .webform-conditional-processed .content-datos select.profesion {
         background-position: 230px center;
     }
-
-    /* Fechas */
-    /*.webform-conditional-processed .content-datos .capa-fechas div div {
-        width: 95px;
-        overflow: hidden;
-        float: left;
-        border: 2px solid #000;
-        height: 50px;
-        margin-right: 5px;*/
-        /* Border radius */
-      /*  -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        border-radius: 10px;*/
-        /* Shadow */
-      /*  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.63);
-        -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.63);
-        box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.63);
-    }*/
-
-    /*.webform-conditional-processed .content-datos .capa-fechas div select {
-        width: 130%;
-        background-position: 65px center;*/
-        /* como input-generic */
-        /*border: 0;
-        font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
-        font-size: 24px;
-        color: #000;
-        height: 50px;
-        position: relative;
-        float: left;
-        margin-right: 10px;
-        list-style: none inside none;
-        padding-left: 10px;
-    }*/
 
     /* content-direccion ----------------------------------------------------- */
     .webform-conditional-processed .content-direccion .capa-tipo-via{
