@@ -249,29 +249,29 @@
         background-position: 230px center;
     }
 
-    /* H */
-    .webform-conditional-processed .content-datos .capa-fechas div div {
+    /* Fechas */
+    /*.webform-conditional-processed .content-datos .capa-fechas div div {
         width: 95px;
         overflow: hidden;
         float: left;
         border: 2px solid #000;
         height: 50px;
-        margin-right: 5px;
+        margin-right: 5px;*/
         /* Border radius */
-        -webkit-border-radius: 10px;
+      /*  -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
-        border-radius: 10px;
+        border-radius: 10px;*/
         /* Shadow */
-        -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.63);
+      /*  -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.63);
         -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.63);
         box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.63);
-    }
+    }*/
 
-    .webform-conditional-processed .content-datos .capa-fechas div select {
+    /*.webform-conditional-processed .content-datos .capa-fechas div select {
         width: 130%;
-        background-position: 65px center;
+        background-position: 65px center;*/
         /* como input-generic */
-        border: 0;
+        /*border: 0;
         font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
         font-size: 24px;
         color: #000;
@@ -281,7 +281,7 @@
         margin-right: 10px;
         list-style: none inside none;
         padding-left: 10px;
-    }
+    }*/
 
     /* content-direccion ----------------------------------------------------- */
     .webform-conditional-processed .content-direccion .capa-tipo-via{

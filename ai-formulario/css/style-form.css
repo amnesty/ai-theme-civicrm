@@ -92,6 +92,8 @@ header, hgroup, nav, section {
 
 .content-form label {
     font-weight: normal;
+    font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
+    font-size: 18px;
 }
 
 .content-form h2{
@@ -183,6 +185,45 @@ header, hgroup, nav, section {
   font-size: 46px;
   background: #f1e60d;
   border: 0;
+  /*color: #000;*/
+}
+
+.form-submit:hover{
+  background: #f1e60d;
+}
+
+/* Elementos de desplegable de fecha */
+.content-form .webform-conditional-processed .caja-content .capa-fechas div div {
+    width: 95px;
+    overflow: hidden;
+    float: left;
+    border: 2px solid #000;
+    height: 50px;
+    margin-right: 5px;
+    /* Border radius */
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    /* Shadow */
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.63);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.63);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.63);
+}
+
+.content-form .webform-conditional-processed .caja-content .capa-fechas div select {
+    width: 130%;
+    background-position: 65px center;
+    /* como input-generic */
+    border: 0;
+    font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
+    font-size: 24px;
+    color: #000;
+    height: 50px;
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    list-style: none inside none;
+    padding-left: 10px;
 }
 
 /* Bordes y sombras ------------------- */
@@ -216,11 +257,16 @@ input.error, select.error,
 /* Estilos específicos para el ejemplo ------------------------ */
 
 /* Hay que dar medida a las cajas, puede ser genérica como aquí o para cada uno de los elementos */
-.example .content-datos div, .example .content-colaborar div {
+.example .caja-content div {
     width: 250px;
 }
 
 /* margen de los elementos por defecto */
-.example .content-datos{
+.example .caja-content{
     margin: 10px 0px;
+}
+
+/* caso concreto para la caja contenedora de desplegables de fecha */
+.example .capa-fechas div{
+    width: 350px;
 }
