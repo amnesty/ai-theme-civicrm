@@ -818,17 +818,14 @@
         margin-top: 20px;
     }
 
-    .webform-conditional-processed .content-direccion .poblacion {
+    .webform-conditional-processed .content-direccion .poblacion,
+    .webform-conditional-processed .content-direccion .capa-pais {
         max-width: 100%;
     }
 
     .webform-conditional-processed .content-direccion .capa-provincia {
         width: 100%;
         margin-top: 20px;
-    }
-
-    .webform-conditional-processed .content-direccion .capa-pais {
-        width: 100%;
     }
 
     .webform-conditional-processed .content-direccion select.provincia,
