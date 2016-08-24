@@ -823,7 +823,8 @@
         max-width: 100%;
     }
 
-    .webform-conditional-processed .content-direccion .capa-provincia {
+    .webform-conditional-processed .content-direccion .capa-provincia,
+    .webform-conditional-processed .content-direccion .capa-pais {
         width: 100%;
         margin-top: 20px;
     }
