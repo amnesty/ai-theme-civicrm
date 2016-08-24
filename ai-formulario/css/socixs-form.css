@@ -924,6 +924,10 @@
         width: 30%;
     }
 
+    .webform-conditional-processed .content-datos select.document {
+        background-position: 70px center;
+    }
+
     .webform-conditional-processed .content-datos .number-dni{
         max-width: 60%;
     }
