@@ -231,7 +231,8 @@ header, hgroup, nav, section {
 }
 
 /* Boton enviar -------------- */
-.form-submit{
+.form-submit, .webform-submit,
+.form-actions input[type="submit"]{
   font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
   max-width: 315px;
   width: 100%;
