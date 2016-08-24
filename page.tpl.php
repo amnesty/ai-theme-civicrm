@@ -25,8 +25,9 @@ include_once('config.php');
   <!-- Cargamos los CSS que necesitamos para el contenido genérico -->
   <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/style-form.css">
   <!-- Añadimos la hoja CSS para el formulario de Socixs en concreto -->
+  <?php if ( $node->nid==$socixs_form || $node->nid==$socixs_form_cat || $node->nid==$socixs_gracias || $node->nid==$socixs_gracies ){ ?>
   <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/socixs-form.css">
-
+  <?php } ?>
 <!-- ************************************************** CONTENIDO *************************************************************************-->
 
 <!-- Header -->
