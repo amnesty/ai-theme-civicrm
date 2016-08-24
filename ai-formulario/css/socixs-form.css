@@ -67,7 +67,7 @@
     }
 
     .webform-conditional-processed .content-colaborar .fila-1 {
-        /*margin-top: 20px;*/
+        margin-top: 20px;
     }
 
     .webform-conditional-processed .content-colaborar {
@@ -164,7 +164,7 @@
 
     .webform-conditional-processed .content-datos .number-dni{
         left: -30px;
-    	margin-right: 10px;
+    	  margin-right: 10px;
         margin-right: 10px;
         border-radius: 10px;
         padding-left: 40px;
@@ -180,7 +180,7 @@
     }
 
     .webform-conditional-processed .content-datos .genero{
-    	width: 120%;
+    	  width: 120%;
         border: 0;
     }
 
@@ -197,8 +197,8 @@
         margin-right: 10px;
     }
 
-    .webform-conditional-processed .content-datos .language{
-    	width: 112%;
+    .webform-conditional-processed .content-datos .language {
+    	  width: 112%;
         border:0;
     }
 
