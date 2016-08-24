@@ -624,7 +624,7 @@
 }
 
 
-/***** Página de gracias *******/
+/***** Página de gracias --------------- *******/
 
 #share-buttons, .field-name-body {
     margin: 0px 30px;
@@ -831,7 +831,8 @@
         width: 100%;
     }
 
-    .webform-conditional-processed .content-direccion select.provincia, .content-direccion select.pais {
+    .webform-conditional-processed .content-direccion select.provincia,
+    .webform-conditional-processed .content-direccion select.pais {
         background-position: 80% center;
     }
 
