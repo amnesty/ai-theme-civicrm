@@ -236,6 +236,11 @@
     }
 
     /* content-direccion ----------------------------------------------------- */
+
+    .webform-conditional-processed .content-direccion .fila-1 {
+        margin-top: 20px;
+    }
+
     .webform-conditional-processed .content-direccion .capa-tipo-via{
         width: 170px;
         overflow: hidden;
