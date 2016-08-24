@@ -32,7 +32,7 @@
         width: 100%;
     }
 
-    .webform-conditional-processed  .content-colaborar,
+    .webform-conditional-processed .content-colaborar,
     .webform-conditional-processed .content-datos,
     .webform-conditional-processed .content-direccion,
     .webform-conditional-processed .content-cuenta {
@@ -66,7 +66,7 @@
     }
 
     .webform-conditional-processed .content-colaborar .fila-1 {
-        margin-top: 20px;
+        /*margin-top: 20px;*/
     }
 
     .webform-conditional-processed .content-colaborar {
@@ -91,23 +91,7 @@
         background-position: 260px center;
     }
 
-    /*.webform-conditional-processed .content-colaborar .cuotas {
-        font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
-        font-size: 24px;
-        line-height: 50px;
-        float:left;
-        overflow: hidden;
-    }*/
-
     /*.content-colaborar .cuotas label {
-        margin-right: 10px;
-    }*/
-
-
-    /* H */
-    /*.webform-conditional-processed .content-colaborar .cuotas div {
-        float: left;
-        overflow: hidden;
         margin-right: 10px;
     }*/
 
@@ -128,6 +112,7 @@
 
 
     /* content-datos ----------------------------------------------------- */
+
     .webform-conditional-processed .content-datos .fila-1,
     .webform-conditional-processed .content-datos .fila-2,
     .webform-conditional-processed .content-datos .fila-3{
@@ -306,6 +291,7 @@
     }
 
     /* content-cuenta ----------------------------------------------------- */
+
     .webform-conditional-processed .content-cuenta label.iban{
         font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
         float: left;
@@ -356,6 +342,7 @@
     }
 
     /* content-end-form ----------------------------------------------------- */
+
      .webform-conditional-processed .content-end-form input[type=checkbox] {
         visibility: hidden;
         height: 28px;
@@ -373,7 +360,6 @@
     }
 
      .webform-conditional-processed .content-end-form .check-politica label {
-
         color: #fff;
     }
 
@@ -474,6 +460,7 @@
     }
 
 /* Box Right ----------------------------------------------------- */
+
     .box-es-right{
     	width: 25%;
     	float: left;
