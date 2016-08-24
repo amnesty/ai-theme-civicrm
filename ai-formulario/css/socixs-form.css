@@ -293,6 +293,10 @@
 
     /* content-cuenta ----------------------------------------------------- */
 
+    .webform-conditional-processed .content-cuenta .fila-1 {
+        margin-top: 20px;
+    }
+
     .webform-conditional-processed .content-cuenta label.iban{
         font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
         float: left;
@@ -310,7 +314,6 @@
         border: 2px solid #000;
         height: 50px;
         margin-right: 10px;
-
     }
 
     .webform-conditional-processed .content-cuenta  .iban-letras {
