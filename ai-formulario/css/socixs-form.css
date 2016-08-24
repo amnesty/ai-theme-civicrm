@@ -207,7 +207,7 @@
     }
 
 
-    .webform-conditional-processed .content-datos .fila-3 label {
+    /*.webform-conditional-processed .content-datos .fila-3 label {
         font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
         float: left;
         font-size: 20px;
@@ -215,7 +215,7 @@
         height: 44px;
         line-height: 50px;
         margin-right: 10px;
-    }
+    }*/
 
     .webform-conditional-processed .content-datos .capa-profesion {
         width: 270px;

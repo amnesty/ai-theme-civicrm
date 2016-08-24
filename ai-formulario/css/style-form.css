@@ -217,6 +217,17 @@ header, hgroup, nav, section {
     padding-left: 10px;
 }
 
+/* Labels ----- */
+.content-form .webform-conditional-processed .caja-content label {
+    font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
+    float: left;
+    font-size: 20px;
+    color: #000;
+    height: 44px;
+    line-height: 50px;
+    margin-right: 10px;
+}
+
 /* Bordes y sombras ------------------- */
 .content-form .webform-conditional-processed .border-radius-form{
 	-webkit-border-radius: 10px;
