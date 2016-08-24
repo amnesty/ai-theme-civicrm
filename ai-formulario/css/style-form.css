@@ -2,7 +2,8 @@
 /* ------------- Diseño general para formularios ---------------- */
 /* -------------------------------------------------------------- */
 
-/* Fuentes */
+/* Fuentes ----------- */
+
 @font-face {
       font-family: 'TradeGothic-BoldCondTwenty';
       src: url('../font/TradeGothic-BoldCondTwenty.eot?#iefix') format('embedded-opentype'),
@@ -52,9 +53,6 @@ header, hgroup, nav, section {
     width: 100%;
     margin: auto;
     margin-bottom: 30px;
-}
-
-.content-form {
     font-size: 62.5%;
     word-wrap:break-word;
     color: #000000;
@@ -258,25 +256,6 @@ div.error {
 }
 
 .form-item input.error, .form-item select.error,
-input.error, select.error,
-/*div.error*/ {
+input.error, select.error, /*div.error*/ {
     border: 2px #f00 solid;
-}
-
-/* Estilos específicos para el ejemplo ------------------------ */
-
-/* Hay que dar medida a las cajas, puede ser genérica como aquí o para cada uno de los elementos */
-.example .caja-content .margin-medium,
-.example .caja-content .capa-select {
-    /*width: 250px;*/
-}
-
-/* caso concreto para la caja contenedora de desplegables de fecha */
-.example .capa-fechas div{
-    /*width: 350px;*/
-}
-
-/* margen de los elementos por defecto */
-.example .caja-content{
-    /*margin: 10px 0px;*/
 }

@@ -37,6 +37,7 @@
     .webform-conditional-processed .content-direccion,
     .webform-conditional-processed .content-cuenta {
         padding: 0px 20px 20px;
+        margin: 0px;
     }
 
     .webform-conditional-processed .content-form .padding-medium{
