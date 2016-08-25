@@ -17,7 +17,7 @@ if (preg_match('/\/cat/',$url)){
 // Globals
 include_once('config.php');
 
-// ****************************************************** CSS *********************************************************************
+// ****************************************************** CSS y JS*******************************************************************
 ?>
   <!-- WEB -->
   <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/bootstrap.min.css">
@@ -27,8 +27,10 @@ include_once('config.php');
   <!-- Añadimos la hoja CSS para el formulario de Socixs en concreto -->
   <?php if ( $node->nid==$socixs_form || $node->nid==$socixs_form_cat || $node->nid==$socixs_gracias || $node->nid==$socixs_gracies ){ ?>
   <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/socixs-form.css">
+  <script type="text/javascript" src="/js/socixs-form.js"></script>
   <?php } ?>
-<!-- ************************************************** CONTENIDO *************************************************************************-->
+
+<!-- ************************************************** CONTENIDO *****************************************************************-->
 
 <!-- Header -->
 <nav class="navbar navbar-fixed-top">
@@ -51,7 +53,7 @@ include_once('config.php');
 </nav>
 <!-- Image after header-->
 <div class="image-header image-header--has-credits-sm image-header--actua">
-    <div style="background-image: url('<?php print $form_path; ?>/images/header.jpg?anchor=topcenter');" class="responsive--bg  lazyloaded"
+    <div style="background-image: url('<?php print $form_path; ?>/images/header.jpg?anchor=topcenter');" class="responsive--bg lazyloaded"
         data-bgset="<?php print $form_path; ?>/images/header.jpg?anchor=topcenter">
     </div>
     <noscript>
