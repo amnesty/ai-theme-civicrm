@@ -27,7 +27,7 @@ include_once('config.php');
   <!-- Añadimos la hoja CSS para el formulario de Socixs en concreto -->
   <?php if ( $node->nid==$socixs_form || $node->nid==$socixs_form_cat || $node->nid==$socixs_gracias || $node->nid==$socixs_gracies ){ ?>
     <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/socixs-form.css">
-    <script type="text/javascript" src="/js/socixs-form.js"></script>
+    <script type="text/javascript" src="<?php print $form_path; ?>/js/socixs-form.js"></script>
   <?php } ?>
 
 <!-- ************************************************** CONTENIDO *****************************************************************-->
