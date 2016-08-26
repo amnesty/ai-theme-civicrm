@@ -58,12 +58,12 @@ class testAB {
     }*/
 
     // DB connection
-    $result = db_select('aiesp_multivariate_tests', 'mt') //!!!!
+    /*$result = db_select('aiesp_multivariate_tests', 'mt') //!!!!
       ->condition('enabled', 1, '=')
       ->fields('mt', array('id','node_origin', 'node_a', 'node_b'))
       ->execute();
 
-    /*while ($record = $result->fetchAssoc()){
+    while ($record = $result->fetchAssoc()){
       $test_id = $record['id'];
       $node_id = $record['node_origin'];
       $node_a = $record['node_a'];
