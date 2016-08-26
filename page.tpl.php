@@ -16,7 +16,7 @@ if (preg_match('/\/cat/',$url)){
 // Globals
 include_once('config.php');
 // AB Testing
-include_once( $theme_path . '/splitter/ab.php');
+include_once( 'sites/all/themes/ai-theme-civicrm/splitter/ab.php');
 
 
 // ****************************************************** CSS y JS *******************************************************************
