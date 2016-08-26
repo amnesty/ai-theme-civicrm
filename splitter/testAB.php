@@ -58,7 +58,7 @@ class testAB {
     }*/
 
     // DB connection
-    $result = db_select('aiesp_multivariate_tests', 'mt') //!!!!
+    /*$result = db_select('aiesp_multivariate_tests', 'mt') //!!!!
       ->condition('enabled', 1, '=')
       ->fields('mt', array('id','node_origin', 'node_a', 'node_b'))
       ->execute();
@@ -75,7 +75,7 @@ class testAB {
             $this->num_variants = count($this->$variants);
             break;
       }
-    }
+    }*/
   }
 
   // Searches an option in the DB having an ip address and test id
