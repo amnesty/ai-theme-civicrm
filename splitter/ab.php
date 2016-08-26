@@ -2,9 +2,7 @@
 
 include_once("testAB.php");
 
-var_dump("AAAAAAAAAA");
 echo "Node: " . $node->nid;
-exit(0);
 $testAB = new testAB($node->nid);
 
 // If this node has an enabled test A/B
