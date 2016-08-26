@@ -11,7 +11,7 @@ class testAB {
   function __construct($node) {
     $this->node = $node;
     $conn = Database::getConnection();
-    //$this->search_experiment();
+    $this->search_experiment();
   }
 
   // ---------- GETTERS -------------
@@ -63,7 +63,7 @@ class testAB {
       ->fields('mt', array('id','node_origin', 'node_a', 'node_b'))
       ->execute();
 
-    while ($record = $result->fetchAssoc()){
+    /*while ($record = $result->fetchAssoc()){
       $test_id = $record['id'];
       $node_id = $record['node_origin'];
       $node_a = $record['node_a'];
@@ -75,7 +75,7 @@ class testAB {
             $this->num_variants = count($this->$variants);
             break;
       }
-    }
+    }*/
   }
 
   // Searches an option in the DB having an ip address and test id
