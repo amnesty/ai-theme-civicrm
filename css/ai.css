@@ -3183,6 +3183,12 @@ time {
     background-position: center 10%; /* H */
     background-size: cover
 }
+
+.responsive--bg-b {
+    background-position: center 45%; /* H */
+    background-size: cover
+}
+
 .responsive__img {
     border: 0;
     height: 100%;

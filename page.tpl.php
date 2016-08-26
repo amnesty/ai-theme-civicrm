@@ -56,7 +56,7 @@ include_once('config.php');
 <!-- Image after header-->
 <div class="image-header image-header--has-credits-sm image-header--actua">
     <?php if ( $node->nid==$socixs_form_B ) { ?>
-      <div style="background-image: url('<?php print $form_path; ?>/images/headerB.jpg?anchor=topcenter');" class="responsive--bg lazyloaded"
+      <div style="background-image: url('<?php print $form_path; ?>/images/headerB.jpg?anchor=topcenter');" class="responsive--bg-b lazyloaded"
           data-bgset="<?php print $form_path; ?>/images/headerB.jpg?anchor=topcenter">
       </div>
       <noscript>
