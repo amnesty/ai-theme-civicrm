@@ -55,12 +55,21 @@ include_once('config.php');
 </nav>
 <!-- Image after header-->
 <div class="image-header image-header--has-credits-sm image-header--actua">
-    <div style="background-image: url('<?php print $form_path; ?>/images/header.jpg?anchor=topcenter');" class="responsive--bg lazyloaded"
-        data-bgset="<?php print $form_path; ?>/images/header.jpg?anchor=topcenter">
-    </div>
-    <noscript>
-        <img src="<?php print $form_path; ?>/images/header.jpg?anchor=topcenter" class=responsive__img>
-    </noscript>
+    <?php if ( $node->nid==$socixs_form_B ) { ?>
+      <div style="background-image: url('<?php print $form_path; ?>/images/header.jpg?anchor=topcenter');" class="responsive--bg lazyloaded"
+          data-bgset="<?php print $form_path; ?>/images/headerB.jpg?anchor=topcenter">
+      </div>
+      <noscript>
+          <img src="<?php print $form_path; ?>/images/headerB.jpg?anchor=topcenter" class=responsive__img>
+      </noscript>
+    <?php }else { ?>
+      <div style="background-image: url('<?php print $form_path; ?>/images/header.jpg?anchor=topcenter');" class="responsive--bg lazyloaded"
+          data-bgset="<?php print $form_path; ?>/images/header.jpg?anchor=topcenter">
+      </div>
+      <noscript>
+          <img src="<?php print $form_path; ?>/images/header.jpg?anchor=topcenter" class=responsive__img>
+      </noscript>
+    <?php } ?>
     <div class="image-header__content--medium">
         <div class="image-headline--full">
             <h2 class="image-headline__actua-title">
