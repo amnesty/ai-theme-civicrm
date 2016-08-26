@@ -17,7 +17,7 @@ if (preg_match('/\/cat/',$url)){
 // Globals
 include_once('config.php');
 
-// ****************************************************** CSS y JS*******************************************************************
+// ****************************************************** CSS y JS *******************************************************************
 ?>
   <!-- WEB -->
   <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/bootstrap.min.css">
@@ -26,8 +26,8 @@ include_once('config.php');
   <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/style-form.css">
   <!-- Añadimos la hoja CSS para el formulario de Socixs en concreto -->
   <?php if ( $node->nid==$socixs_form || $node->nid==$socixs_form_cat || $node->nid==$socixs_gracias || $node->nid==$socixs_gracies ){ ?>
-  <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/socixs-form.css">
-  <script type="text/javascript" src="/js/socixs-form.js"></script>
+    <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/socixs-form.css">
+    <script type="text/javascript" src="/js/socixs-form.js"></script>
   <?php } ?>
 
 <!-- ************************************************** CONTENIDO *****************************************************************-->
