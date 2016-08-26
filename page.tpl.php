@@ -1,6 +1,3 @@
-<?php
-include_once( $theme_path . '/splitter/ab.php');
-?>
 <div id="page-wrapper" onload="errors()"><div id="page"><div id="content" class="clearfix">
 
 <?php
@@ -18,6 +15,9 @@ if (preg_match('/\/cat/',$url)){
 
 // Globals
 include_once('config.php');
+// AB Testing
+include_once( $theme_path . '/splitter/ab.php');
+
 
 // ****************************************************** CSS y JS *******************************************************************
 ?>
