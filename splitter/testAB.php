@@ -11,7 +11,7 @@ class testAB {
   function __construct($node) {
     $this->node = $node;
     $conn = Database::getConnection();
-    $this->search_experiment();
+    //$this->search_experiment();
   }
 
   // ---------- GETTERS -------------
