@@ -2,6 +2,7 @@
 
 include_once("testAB.php");
 
+var_dump("AAAAAAAAAA");
 echo "Node: " . $node->nid;
 $testAB = new testAB($node->nid);
 
