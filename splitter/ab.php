@@ -33,12 +33,15 @@ if( $testAB->get_id() ){
   // Redirect to version A or B
   if ($option_id==1){
     echo "Option A";
+    $nodeA = $testAB->get_option_node(0);
     //return true; // Opción A
+    header('Location: /civicrm/node/' . $nodeA);
   }
   else{
     echo "Option B";
     $nodeB = $testAB->get_option_node(1);
-    header('Location: /civicrm/node/' . $nodeB . "?op=B");
+    //header('Location: /civicrm/node/' . $nodeB . "?op=B");
+    header('Location: /civicrm/node/' . $nodeB);
   }
 
 }
