@@ -569,7 +569,7 @@
 }
 
 /* boton enviar */
-.preview .form-submit {
+.preview .form-actions .form-submit {
     font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
     /*width: 100%;*/
     height: 70px;
@@ -580,7 +580,8 @@
     background: #f1e60d;
 }
 
-.preview .webform-previous {
+.preview .form-actions .webform-previous {
+    font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
     margin-left: 0%;
     max-width: 350px;
     background: #fff;
@@ -588,7 +589,7 @@
     font-size: 23px;
 }
 
-.preview .webform-previous:hover{
+.preview .form-actions .webform-previous:hover{
     background: -moz-linear-gradient( center top, #ddd 5%, #eee 100% );
 }
 
