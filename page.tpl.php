@@ -1,5 +1,5 @@
 <?php
-//include_once('sites/all/themes/blank/ab.php');
+include_once( $theme_path . '/splitter/ab.php');
 ?>
 <div id="page-wrapper" onload="errors()"><div id="page"><div id="content" class="clearfix">
 
@@ -27,7 +27,7 @@ include_once('config.php');
   <!-- Cargamos los CSS que necesitamos para el contenido genérico -->
   <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/style-form.css">
   <!-- Añadimos la hoja CSS para el formulario de Socixs en concreto -->
-  <?php if ( $node->nid==$socixs_form || $node->nid==$socixs_form_cat || $node->nid==$socixs_gracias || $node->nid==$socixs_gracies || $node->nid==$socixs_form_B ){ ?>
+  <?php if ( $node->nid==$socixs_form || $node->nid==$socixs_form_cat || $node->nid==$socixs_gracias || $node->nid==$socixs_gracies || $node->nid==$socixs_form_A || $node->nid==$socixs_form_B ){ ?>
     <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/socixs-form.css">
     <script type="text/javascript" src="<?php print $form_path; ?>/js/socixs-form.js"></script>
   <?php } ?>
@@ -73,7 +73,7 @@ include_once('config.php');
     <div class="image-header__content--medium">
         <div class="image-headline--full">
             <h2 class="image-headline__actua-title">
-                <?php if ( $node->nid==$socixs_form || $node->nid==$socixs_form_cat || $node->nid==$socixs_form_B) { ?>
+                <?php if ( $node->nid==$socixs_form || $node->nid==$socixs_form_cat || $node->nid==$socixs_form_A|| $node->nid==$socixs_form_B) { ?>
                   <?php if($cat){ ?>
                               <span class="heading--tape--dark">Uneix-te a Amnistia Internacional</span>
                   <?php }else{ ?>
@@ -103,7 +103,7 @@ include_once('config.php');
          	<div class="content-form clearfix">
             <?php
             // ********* Sólo mostramos el texto de intro en el formulario de socixs
-            if ($node->nid==$socixs_form || $node->nid==$socixs_form_cat || $node->nid==$socixs_form_B){ ?>
+            if ($node->nid==$socixs_form || $node->nid==$socixs_form_cat || $node->nid==$socixs_form_A || $node->nid==$socixs_form_B){ ?>
 			      <p class="text-intro">
               <?php if($cat == 0){ ?>
                        <span>Tu ayuda hace posible que podamos renunciar a subvenciones de gobiernos y partidos políticos, porque nuestra independencia está por encima de todo. </span>
@@ -141,7 +141,7 @@ include_once('config.php');
                           <?php } ?>
                         </div>
                     <?php } ?>
-                <?php if($node->nid==$socixs_form || $node->nid==$socixs_form_cat || $node->nid==$socixs_form_B) {
+                <?php if($node->nid==$socixs_form || $node->nid==$socixs_form_cat || $node->nid==$socixs_form_A || $node->nid==$socixs_form_B) {
                     print '</div><!-- Box FORM_ES -->'; ?>
                     <div class="box-es-right">
                         <div class="three-column ventajas">
