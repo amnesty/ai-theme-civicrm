@@ -57,26 +57,32 @@ class testAB {
       }
     }*/
 
-    // DB connection
-    $result = db_select('aiesp_multivariate_tests', 'mt') //!!!!
-      ->condition('enabled', 1, '=')
-      ->fields('mt', array('id','node_origin', 'node_a', 'node_b'))
-      ->execute();
+  try {
+      // DB connection
+      $result = db_select('aiesp_multivariate_tests', 'mt') //!!!!
+        ->condition('enabled', 1, '=')
+        ->fields('mt', array('id','node_origin', 'node_a', 'node_b'))
+        ->execute();
 
-    while ($record = $result->fetchAssoc()){
-      $test_id = $record['id'];
-      $node_id = $record['node_origin'];
-      $node_a = $record['node_a'];
-      $node_b = $record['node_b'];
-      // si el test es sobre el nodo actual
-      if( $node_id == $this->node ){
-            $this->test_id = $test_id;
-            array_push($this->variants, $node_a, $node_b);
-            $this->num_variants = count($this->$variants);
-            break;
+      while ($record = $result->fetchAssoc()){
+        $test_id = $record['id'];
+        $node_id = $record['node_origin'];
+        $node_a = $record['node_a'];
+        $node_b = $record['node_b'];
+        // si el test es sobre el nodo actual
+        if( $node_id == $this->node ){
+              $this->test_id = $test_id;
+              array_push($this->variants, $node_a, $node_b);
+              $this->num_variants = count($this->$variants);
+              break;
+        }
       }
     }
+  } catch (Exception $e) {
+      echo 'Caught exception: ',  $e->getMessage(), "\n";
   }
+
+}
 
   // Searches an option in the DB having an ip address and test id
   public function search_option($remote_ip){
