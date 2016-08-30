@@ -2,7 +2,6 @@
 
 include_once("testAB.php");
 
-var_dump($_SERVER);
 $testAB = new testAB($node->nid);
 
 // If this node has an enabled test A/B
@@ -32,11 +31,12 @@ if( $testAB->get_id() ){
   // ------------ Test A/B ------------------------
 
   // Redirect to version A or B
+  $url = $_SERVER['HTTP_HOST'];
   if ($option_id==1){
     echo "Option A";
     $nodeA = $testAB->get_option_node(0);
     //header('Location: /node/' . $nodeA);
-    include( '/node/' . $nodeA );
+    include( $url . '/node/' . $nodeA );
     exit;
   }
   else{
@@ -44,7 +44,7 @@ if( $testAB->get_id() ){
     $nodeB = $testAB->get_option_node(1);
     //header('Location: /civicrm/node/' . $nodeB . "?op=B");
     //header('Location: /node/' . $nodeB);
-    include( '/node/' . $nodeB );
+    include( $url . '/node/' . $nodeB );
     exit;
   }
 
