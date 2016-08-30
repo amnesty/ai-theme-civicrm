@@ -35,14 +35,16 @@ if( $testAB->get_id() ){
   if ($option_id==1){
     echo "Option A";
     $nodeA = $testAB->get_option_node(0);
-    header('Location: /node/' . $nodeA);
+    //header('Location: /node/' . $nodeA);
+    include( '/node/' . $nodeA );
     exit;
   }
   else{
     echo "Option B";
     $nodeB = $testAB->get_option_node(1);
     //header('Location: /civicrm/node/' . $nodeB . "?op=B");
-    header('Location: /node/' . $nodeB);
+    //header('Location: /node/' . $nodeB);
+    include( '/node/' . $nodeB );
     exit;
   }
 
