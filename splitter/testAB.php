@@ -74,7 +74,7 @@ class testAB {
                 $this->test_id = $test_id;
                 array_push($this->variants, $node_a, $node_b);
                 $this->num_variants = count($this->$variants);
-                break;
+                //break;
           }
         }
     } catch (Exception $e) {
