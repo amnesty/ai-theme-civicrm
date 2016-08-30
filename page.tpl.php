@@ -15,8 +15,12 @@ if (preg_match('/\/cat/',$url)){
 
 // Globals
 include_once('config.php');
+
 // AB Testing
-include_once( 'sites/all/themes/ai-theme-civicrm/splitter/ab.php');
+$splitter_url = 'sites/all/themes/ai-theme-civicrm/splitter/ab.php'
+if (file_exists($splitter_url)) {
+  include_once( $splitter_url );
+}
 
 
 // ****************************************************** CSS y JS *******************************************************************
@@ -221,6 +225,8 @@ include_once( 'sites/all/themes/ai-theme-civicrm/splitter/ab.php');
 </div></div></div>
 
 <?php
-// ****************** Estadísticas en Piwik, si aplica (el fichero tiene que existir aunque sea vacío) *********
-include_once('piwik.php');
+// ************** Estadísticas en Piwik (si aplica) *********
+if (file_exists('piwik.php')){
+  include_once('piwik.php');
+}
 ?>

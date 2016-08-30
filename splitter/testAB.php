@@ -42,7 +42,7 @@ class testAB {
 
     try {
         // DB connection
-        $result = db_select('aiesp_multivariate_tests', 'mt') //!!!!
+        $result = db_select('aiesp_multivariate_tests', 'mt')
           ->condition('enabled', 1, '=')
           ->fields('mt', array('id','node_origin', 'url_origin', 'url_a', 'url_b'))
           ->execute();
