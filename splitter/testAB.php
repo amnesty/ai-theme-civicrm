@@ -74,7 +74,7 @@ class testAB {
           var_dump($node_id);
           // si el test es sobre el nodo actual
           if( $node_id == $this->node ){
-                //$this->test_id = $test_id;
+                $this->test_id = $test_id;
                 //array_push($this->variants, $node_a, $node_b);
                 //$this->num_variants = count($this->$variants);
                 //break;
