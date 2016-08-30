@@ -67,8 +67,9 @@ class testAB {
         while ( $record = $result->fetchAssoc() ){
           $test_id = $record['id'];
           $node_id = $record['node_origin'];
-          $node_a = $record['node_a'];
-          $node_b = $record['node_b'];
+          $url_origin = $record['url_origin'];
+          $node_a = $record['url_a'];
+          $node_b = $record['url_b'];
           // si el test es sobre el nodo actual
           if( $node_id == $this->node ){
                 $this->test_id = $test_id;
