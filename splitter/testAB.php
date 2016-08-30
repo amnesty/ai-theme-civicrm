@@ -82,6 +82,7 @@ class testAB {
         }
     } catch (Exception $e) {
         echo 'Caught exception: ',  $e->getMessage(), "\n";
+        exit(1);
     }
 }
 
