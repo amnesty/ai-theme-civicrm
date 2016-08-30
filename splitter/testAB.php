@@ -76,7 +76,7 @@ class testAB {
           if( $node_id == $this->node ){
                 $this->test_id = $test_id;
                 array_push($this->variants, $node_a, $node_b);
-                //$this->num_variants = count($this->$variants);
+                $this->num_variants = count($this->$variants);
                 //break;
           }
         }
