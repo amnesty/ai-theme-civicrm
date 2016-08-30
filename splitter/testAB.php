@@ -28,6 +28,7 @@ class testAB {
   }
 
   public function get_option_node($id){
+    var_dump( $this->variants );
     return $this->variants[$id];
   }
 
@@ -38,24 +39,6 @@ class testAB {
     $this->test_id=0;
     $this->variants = array();
     $this->num_variants = 0;
-
-    // DB connection
-    /*$result = db_select('multivariate_test', 'mt')
-      ->condition('enabled', 1, '=')
-      ->fields('mt', array('mtid','variants_set'))
-      ->execute();
-
-    while ($record = $result->fetchAssoc()){
-      $test_id = $record['mtid'];
-      $variants = unserialize($record['variants_set'])[0]["variants"];
-      // si el test es sobre el nodo actual
-      if(!is_null($variants) && $variants[0]['mutations'][0]["target_nid"] == $this->node ){
-            $this->test_id = $test_id;
-            $this->variants = $variants;
-            $this->num_variants = count($variants);
-            break;
-      }
-    }*/
 
     try {
         // DB connection
