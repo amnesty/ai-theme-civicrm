@@ -17,7 +17,7 @@ if (preg_match('/\/cat/',$url)){
 include_once('config.php');
 
 // AB Testing
-$splitter_url = 'sites/all/themes/ai-theme-civicrm/splitter/ab.php'
+$splitter_url = 'sites/all/themes/ai-theme-civicrm/splitter/ab.php';
 if (file_exists($splitter_url)) {
   include_once( $splitter_url );
 }
