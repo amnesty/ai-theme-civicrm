@@ -32,7 +32,7 @@ if( $testAB->get_id() ){
 
   // Redirect to version A or B
   $url = $_SERVER['HTTP_HOST'];
-  if ($option_id==1){
+  if ($option_id==0){
     echo "Option A";
     $nodeA = $testAB->get_option_node(0);
     header('Location: /node/' . $nodeA);
