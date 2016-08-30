@@ -61,7 +61,7 @@ class testAB {
         // DB connection
         $result = db_select('aiesp_multivariate_tests', 'mt') //!!!!
           ->condition('enabled', 1, '=')
-          ->fields('mt', array('id','node_origin', 'node_a', 'node_b'))
+          ->fields('mt', array('id','node_origin', 'url_origin', 'url_a', 'url_b'))
           ->execute();
 
         while ( $record = $result->fetchAssoc() ){
