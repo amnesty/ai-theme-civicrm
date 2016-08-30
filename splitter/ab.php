@@ -30,10 +30,8 @@ if( $testAB->get_id() ){
   }
 
   // ------------ Test A/B ------------------------
+  
   // Redirect to version A or B
-  var_dump($option_id);
-  exit(1);
-
   if ($option_id==1){
     echo "Option A";
     $nodeA = $testAB->get_option_node(0);
