@@ -2,7 +2,7 @@
 
 include_once("testAB.php");
 
-echo "Node: " . $node->nid;
+//echo "Node: " . $node->nid;
 $testAB = new testAB($node->nid);
 
 // If this node has an enabled test A/B
@@ -30,7 +30,7 @@ if( $testAB->get_id() ){
   }
 
   // ------------ Test A/B ------------------------
-  
+
   // Redirect to version A or B
   if ($option_id==1){
     echo "Option A";
