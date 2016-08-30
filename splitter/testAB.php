@@ -66,18 +66,18 @@ class testAB {
 
         //var_dump($result->fetchAssoc());
 
-        while ($record = $result->fetchAssoc()){
+        while ( $record = $result->fetchAssoc() ){
           $test_id = $record['id'];
           $node_id = $record['node_origin'];
           $node_a = $record['node_a'];
           $node_b = $record['node_b'];
           // si el test es sobre el nodo actual
-          if( $node_id == $this->node ){
+          /*if( $node_id == $this->node ){
                 $this->test_id = $test_id;
                 array_push($this->variants, $node_a, $node_b);
                 $this->num_variants = count($this->$variants);
                 break;
-          }
+          }*/
         }
     } catch (Exception $e) {
         echo 'Caught exception: ',  $e->getMessage(), "\n";
