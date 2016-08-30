@@ -64,8 +64,8 @@ class testAB {
           ->fields('mt', array('id','node_origin', 'node_a', 'node_b'))
           ->execute();
 
-        var_dump($result);
-        
+        var_dump($result->fetchAssoc());
+
         while ($record = $result->fetchAssoc()){
           $test_id = $record['id'];
           $node_id = $record['node_origin'];
