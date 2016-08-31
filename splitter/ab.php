@@ -25,6 +25,8 @@ if( $testAB->get_id() ){
 
       // Unset the previous cookie (from another test, if there is)
       unset($_COOKIE['aiesp_multivariate_test']);
+      var_dump($testAB->get_id());
+      exit(1);
 
       // Set the cookie with the option served and the visitor id
       $cookie_expire = time()+60*60*24*60; // expiration in 60 days
