@@ -31,7 +31,7 @@ if (file_exists($splitter_url)) {
   <!-- Cargamos los CSS que necesitamos para el contenido genérico -->
   <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/style-form.css">
   <!-- Añadimos la hoja CSS para el formulario de Socixs en concreto -->
-  <?php if ( $node->nid==$socixs_form || $node->nid==$socixs_form_cat || $node->nid==$socixs_gracias || $node->nid==$socixs_gracies || $node->nid==$socixs_form_A || $node->nid==$socixs_form_B ){ ?>
+  <?php if ( $node->nid==$socixs_form || $node->nid==$socixs_form_cat || $node->nid==$socixs_gracias || $node->nid==$socixs_gracias_B|| $node->nid==$socixs_gracies || $node->nid==$socixs_form_A || $node->nid==$socixs_form_B ){ ?>
     <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/socixs-form.css">
     <script type="text/javascript" src="<?php print $form_path; ?>/js/socixs-form.js"></script>
   <?php } ?>
@@ -83,7 +83,7 @@ if (file_exists($splitter_url)) {
                   <?php }else{ ?>
                               <span class="heading--tape--dark">Únete a Amnistía Internacional</span>
                   <?php } ?>
-                <?php } else if ( $node->nid==$socixs_gracias || $node->nid==$socixs_gracies ) { ?>
+                <?php } else if ( $node->nid==$socixs_gracias || $node->nid==$socixs_gracies || $node->nid==$socixs_gracias_B ) { ?>
                   <?php if($cat){ ?>
                               <span class="heading--tape--dark">Et donem la benvinguda!</span>
                   <?php }else{ ?>
@@ -125,7 +125,7 @@ if (file_exists($splitter_url)) {
                     <?php print render($page['content']); ?>
 
                     <?php // ****************  Sólo mostramos los botones de compartir en la página de gracias ******************
-                        if ($node->nid==$socixs_gracias || $node->nid==$socixs_gracies ){ ?>
+                        if ($node->nid==$socixs_gracias || $node->nid==$socixs_gracies || $node->nid==$socixs_gracias_B ){ ?>
                         <div id="share-buttons" class="ai-accion-firma-compartir">
                             <!--h4 class="ai-accion-firma-compartir__header">¿Nos ayudas a conseguir más apoyo?</h4-->
                             <?php if($cat){ ?>
@@ -181,7 +181,6 @@ if (file_exists($splitter_url)) {
                         </div>
                     </div><!-- /box-es-right -->
                 <?php }
-                    //if($node->nid==$socixs_gracias || $node->nid==$socixs_gracies) { print '</div><!-- Box FORM_ES -->';
                     else {
                 ?>
                       </div><!-- Box FORM_ES -->
