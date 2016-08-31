@@ -14,6 +14,10 @@ if( $testAB->get_id() ){
   }
 
   // Get the cookie
+  foreach($cookie in $_COOKIE['aiesp_multivariate_test']){
+    echo $cookie;
+  }
+  exit;
   $cookie_info = explode('-', $_COOKIE['aiesp_multivariate_test']);
   if( isset($cookie_info) && $cookie_info[0] == $testAB->get_id() ){
       $test_id = $cookie_info[0];
