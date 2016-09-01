@@ -31,7 +31,7 @@ if (file_exists($splitter_url)) {
   <!-- Cargamos los CSS que necesitamos para el contenido genérico -->
   <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/style-form.css">
   <!-- Añadimos la hoja CSS para el formulario de Socixs en concreto -->
-  <?php if ( $node->nid==$socixs_form || $node->nid==$socixs_form_cat || $node->nid==$socixs_gracias || $node->nid==$socixs_gracias_B|| $node->nid==$socixs_gracies || $node->nid==$socixs_form_A || $node->nid==$socixs_form_B ){ ?>
+  <?php if ( $node->nid==$socixs_form || $node->nid==$socixs_form_cat || $node->nid==$socixs_gracias || $node->nid==$socixs_gracias_A || $node->nid==$socixs_gracias_B || $node->nid==$socixs_gracies || $node->nid==$socixs_form_A || $node->nid==$socixs_form_B ){ ?>
     <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/socixs-form.css">
     <script type="text/javascript" src="<?php print $form_path; ?>/js/socixs-form.js"></script>
   <?php } ?>
@@ -59,7 +59,7 @@ if (file_exists($splitter_url)) {
 </nav>
 <!-- Image after header-->
 <div class="image-header image-header--has-credits-sm image-header--actua">
-    <?php if ( $node->nid==$socixs_form_B || $node->nid==$socixs_gracias_B ) { ?>
+    <?php if ( $node->nid==$socixs_form_B || $node->nid==$socixs_gracias_A || $node->nid==$socixs_gracias_B ) { ?>
       <div style="background-image: url('<?php print $form_path; ?>/images/headerB.jpg?anchor=topcenter');" class="responsive--bg responsive--bg-b lazyloaded"
           data-bgset="<?php print $form_path; ?>/images/headerB.jpg?anchor=topcenter">
       </div>
@@ -83,7 +83,7 @@ if (file_exists($splitter_url)) {
                   <?php }else{ ?>
                               <span class="heading--tape--dark">Únete a Amnistía Internacional</span>
                   <?php } ?>
-                <?php } else if ( $node->nid==$socixs_gracias || $node->nid==$socixs_gracies || $node->nid==$socixs_gracias_B ) { ?>
+                <?php } else if ( $node->nid==$socixs_gracias || $node->nid==$socixs_gracies || $node->nid==$socixs_gracias_A || $node->nid==$socixs_gracias_B ) { ?>
                   <?php if($cat){ ?>
                               <span class="heading--tape--dark">Et donem la benvinguda!</span>
                   <?php }else{ ?>
@@ -125,7 +125,7 @@ if (file_exists($splitter_url)) {
                     <?php print render($page['content']); ?>
 
                     <?php // ****************  Sólo mostramos los botones de compartir en la página de gracias ******************
-                        if ($node->nid==$socixs_gracias || $node->nid==$socixs_gracies || $node->nid==$socixs_gracias_B ){ ?>
+                        if ($node->nid==$socixs_gracias || $node->nid==$socixs_gracies || $node->nid==$socixs_gracias_A || $node->nid==$socixs_gracias_B ){ ?>
                         <div id="share-buttons" class="ai-accion-firma-compartir">
                             <!--h4 class="ai-accion-firma-compartir__header">¿Nos ayudas a conseguir más apoyo?</h4-->
                             <?php if($cat){ ?>
