@@ -224,8 +224,6 @@ if (file_exists($splitter_url)) {
 </div></div></div>
 
 <?php
-// ************** Estadísticas en Piwik (si aplica) *********
-if (file_exists('piwik.php')){
+  // ************** Estadísticas en Piwik (si aplica, sino debe estar vacío) *********
   include_once('piwik.php');
-}
 ?>
