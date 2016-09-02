@@ -4,6 +4,17 @@ include_once("testAB.php");
 
 $testAB = new testAB($node->nid);
 
+// Get the GET parameters
+$getVars = '';
+$attel = (isset($_GET['origen']) && $_GET['origen']=='attel');
+var_dump($attel);
+
+foreach ($_GET as $key=>$value){
+  if($key != 'q'){
+    $getVars .= '?'.$key.'='.$value;
+  }
+}
+
 // If this node has an enabled test A/B
 if( $testAB->get_id() ){
 
@@ -32,14 +43,6 @@ if( $testAB->get_id() ){
   }
 
   // ------------ Test A/B ------------------------
-
-  // Get the GET parameters
-  $getVars = '';
-  foreach ($_GET as $key=>$value){
-    if($key != 'q'){
-      $getVars .= '?'.$key.'='.$value;
-    }
-  }
 
   // Redirect to version A or B
   $url = $_SERVER['HTTP_HOST'];
