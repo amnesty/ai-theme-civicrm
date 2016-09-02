@@ -6,7 +6,6 @@ $testAB = new testAB($node->nid);
 
 // Get the GET parameters
 $getVars = '';
-$attel = ( isset($_GET['origen']) && preg_match('/attel/',$_GET['origen']) );
 $i=0;
 foreach ($_GET as $key=>$value){
   if($key != 'q'){
@@ -19,6 +18,10 @@ foreach ($_GET as $key=>$value){
     $i++;
   }
 }
+
+// Search for excluded origins in the AB Test
+$attel = ( isset($_GET['origen']) && preg_match('/attel/',$_GET['origen']) );
+
 
 // If this node has an enabled test A/B
 if( !$attel && $testAB->get_id() ){
