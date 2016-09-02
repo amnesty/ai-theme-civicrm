@@ -8,10 +8,15 @@ $testAB = new testAB($node->nid);
 $getVars = '';
 $attel = (isset($_GET['origen']) && $_GET['origen']=='attel');
 var_dump($attel);
-
+$i=0;
 foreach ($_GET as $key=>$value){
   if($key != 'q'){
-    $getVars .= '?'.$key.'='.$value.'&';
+    if($i){
+      $getVars .= '&'.$key.'='.$value;
+    }
+    else { //primera variable
+      $getVars .= '?'.$key.'='.$value;
+    }
   }
 }
 
