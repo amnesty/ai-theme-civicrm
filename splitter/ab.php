@@ -17,6 +17,7 @@ foreach ($_GET as $key=>$value){
     else { //primera variable
       $getVars .= '?'.$key.'='.$value;
     }
+    $i++;
   }
 }
 
