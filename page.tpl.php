@@ -1,11 +1,6 @@
 <div id="page-wrapper" onload="errors()"><div id="page"><div id="content" class="clearfix">
 
 <?php
-// Origen
-if (!isset($_GET["origen"]) ){
-    $_GET["origen"] = "web";
-}
-
 //Idioma
 $cat = 0;
 $url = $_SERVER['REQUEST_URI'];
@@ -22,6 +17,10 @@ if (file_exists($splitter_url)) {
   include_once( $splitter_url );
 }
 
+// Origen
+if (!isset($_GET["origen"]) ){
+    $_GET["origen"] = "web";
+}
 
 // ****************************************************** CSS y JS *******************************************************************
 ?>
