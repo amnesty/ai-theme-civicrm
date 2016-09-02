@@ -11,7 +11,7 @@ var_dump($attel);
 
 foreach ($_GET as $key=>$value){
   if($key != 'q'){
-    $getVars .= '?'.$key.'='.$value;
+    $getVars .= '?'.$key.'='.$value.'&';
   }
 }
 
