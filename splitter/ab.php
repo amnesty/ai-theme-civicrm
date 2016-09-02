@@ -6,7 +6,8 @@ $testAB = new testAB($node->nid);
 
 // Get the GET parameters
 $getVars = '';
-$attel = (isset($_GET['origen']) && $_GET['origen']=='attel');
+$attel = ( isset($_GET['origen']) && preg_match('/?origen=attel/',$_GET['origen']) );
+$_GET['origen']=='attel');
 var_dump($attel);
 $i=0;
 foreach ($_GET as $key=>$value){
