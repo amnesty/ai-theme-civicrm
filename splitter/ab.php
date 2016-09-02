@@ -16,7 +16,7 @@ foreach ($_GET as $key=>$value){
 }
 
 // If this node has an enabled test A/B
-if( $testAB->get_id() ){
+if( !$attel && $testAB->get_id() ){
 
   // Get the user's IP
   $remote_ip = $_SERVER['REMOTE_ADDR'];
