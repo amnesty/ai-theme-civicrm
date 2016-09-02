@@ -14,10 +14,6 @@ if( $testAB->get_id() ){
   }
 
   // Get the cookie
-  /*foreach($_COOKIE['aiesp_multivariate_test'] as $cookie){
-    echo $cookie;
-  }
-  exit;*/
   $cookie_info = explode('-', $_COOKIE['aiesp_multivariate_test']);
   if( isset($cookie_info) && $cookie_info[0] == $testAB->get_id() ){
       $test_id = $cookie_info[0];
@@ -37,19 +33,27 @@ if( $testAB->get_id() ){
 
   // ------------ Test A/B ------------------------
 
+  // Get the GET parameters
+  $getVars = '';
+  foreach ($_GET as $key=>$value){
+    if($key != 'q'){
+      $getVars .= '?'.$key.'='.$value;
+    }
+  }
+  //echo $base_url . '/node/1/' . $getVars;
+
   // Redirect to version A or B
   $url = $_SERVER['HTTP_HOST'];
   if ($option_id==0){
-    echo "Option A";
+    //echo "Option A";
     $nodeA = $testAB->get_option_node(0);
-    header('Location: /' . $nodeA);
+    header('Location: /' . $nodeA . $getVars);
     exit;
   }
   else{
-    echo "Option B";
+    //echo "Option B";
     $nodeB = $testAB->get_option_node(1);
-    //header('Location: /civicrm/node/' . $nodeB . "?op=B");
-    header('Location: /' . $nodeB);
+    header('Location: /' . $nodeB . $getVars);
     exit;
   }
 
