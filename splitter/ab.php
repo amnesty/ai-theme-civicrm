@@ -40,7 +40,6 @@ if( $testAB->get_id() ){
       $getVars .= '?'.$key.'='.$value;
     }
   }
-  //echo $base_url . '/node/1/' . $getVars;
 
   // Redirect to version A or B
   $url = $_SERVER['HTTP_HOST'];
