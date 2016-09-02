@@ -22,7 +22,6 @@ foreach ($_GET as $key=>$value){
 // Search for excluded origins in the AB Test
 $attel = ( isset($_GET['origen']) && preg_match('/attel/',$_GET['origen']) );
 
-
 // If this node has an enabled test A/B
 if( !$attel && $testAB->get_id() ){
 
