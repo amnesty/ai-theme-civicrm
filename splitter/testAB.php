@@ -2,11 +2,11 @@
 
 class testAB {
 
-  private $node;
+  private $node; // Drupal page node, for other systems could be the URL
   private $test_id; //If it's 0 it means this node doesn't have a current test
-  private $num_variants; //number of variants ($variants.size)
+  /*private $num_variants;*/ //number of variants ($variants.size)
   private $variants; // array with every variant which contains: title (string), mutations(array):{ target_nid(int), nid(int), plugin(string)}
-  private $conn; //DB connection
+  private $conn; // DB connection
 
   function __construct($node) {
     $this->node = $node;
@@ -15,24 +15,28 @@ class testAB {
   }
 
   // ---------- GETTERS -------------
+
+  // Returns the current test id for this node, or 0 if there's no active test
   public function get_id(){
     return $this->test_id;
   }
 
+  // Return the current page node
   public function get_node(){
     return $this->node;
   }
 
-  public function get_num_variants(){
+  // Returns the number of variants
+  /*public function get_num_variants(){
     return $this->$num_variants;
-  }
+  }*/
 
   public function get_option_node($id){
     var_dump( $this->variants );
     return $this->variants[$id];
   }
 
-  // ------------- OTHER ---------------
+  // ------------- METHODS ---------------
 
   // searches if the given node is in a enabled A/B test
   private function search_experiment(){
@@ -58,17 +62,16 @@ class testAB {
           if( $node_id == $this->node ){
                 $this->test_id = $test_id;
                 array_push($this->variants, $node_a, $node_b);
-                //$this->num_variants = count($this->$variants);
                 break;
           }
         }
     } catch (Exception $e) {
-        echo 'Caught exception: ',  $e->getMessage(), "\n";
-        exit(1);
+        echo 'Caught error: ',  $e->getMessage(), "\n";
+        //exit(1);
     }
 }
 
-  // Searches an option in the DB having an ip address and test id
+  // Searches an option in the DB having an IP address and a test ID
   public function search_option($remote_ip){
     $result = db_select('aiesp_multivariate_users', 'u')
       ->condition('ip_address', $remote_ip, '=')
@@ -107,7 +110,6 @@ class testAB {
   public static function get_random() {
     mt_srand(testAB::make_seed());
     $rand = mt_rand(0,1);
-    //$rand = srand((double)microtime()*1000000);
     return $rand;
   }
 
