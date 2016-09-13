@@ -4,7 +4,6 @@ class testAB {
 
   private $node; // Drupal page node, for other systems could be the URL
   private $test_id; //If it's 0 it means this node doesn't have a current test
-  /*private $num_variants;*/ //number of variants ($variants.size)
   private $variants; // array with every variant which contains: title (string), mutations(array):{ target_nid(int), nid(int), plugin(string)}
   private $conn; // DB connection
 
@@ -25,11 +24,6 @@ class testAB {
   public function get_node(){
     return $this->node;
   }
-
-  // Returns the number of variants
-  /*public function get_num_variants(){
-    return $this->$num_variants;
-  }*/
 
   public function get_option_node($id){
     var_dump( $this->variants );
