@@ -124,7 +124,7 @@ if (!isset($_GET["origen"]) ){
                     <?php print render($page['content']); ?>
 
                     <?php // ****************  Sólo mostramos los botones de compartir en la página de gracias ******************
-                        if ($node->nid==$socixs_gracias || $node->nid==$socixs_gracies || $node->nid==$socixs_gracias_A || $node->nid==$socixs_gracias_B ){ ?>
+                        if (in_array($node->nid, $socixs_gracias_list)){ ?>
                         <div id="share-buttons" class="ai-accion-firma-compartir">
                             <!--h4 class="ai-accion-firma-compartir__header">¿Nos ayudas a conseguir más apoyo?</h4-->
                             <?php if($cat){ ?>
