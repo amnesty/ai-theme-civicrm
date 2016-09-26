@@ -76,13 +76,7 @@ if (!isset($_GET["origen"]) ){
     <div class="image-header__content--medium">
         <div class="image-headline--full">
             <h2 class="image-headline__actua-title">
-                <?php if ( in_array($node->nid, $socixs_form_list) ) { ?>
-                  <?php if($cat){ ?>
-                              <span class="heading--tape--dark">Uneix-te a Amnistia Internacional</span>
-                  <?php }else{ ?>
-                              <span class="heading--tape--dark">Únete a Amnistía Internacional</span>
-                  <?php } ?>
-                <?php } else if ( in_array($node->nid, $socixs_gracias_list) ) { ?>
+                <?php if ( in_array($node->nid, $socixs_gracias_list) ) { ?>
                   <?php if($cat){ ?>
                               <span class="heading--tape--dark">Et donem la benvinguda!</span>
                   <?php }else{ ?>
