@@ -76,13 +76,13 @@ if (!isset($_GET["origen"]) ){
     <div class="image-header__content--medium">
         <div class="image-headline--full">
             <h2 class="image-headline__actua-title">
-                <?php if ( $node->nid==$socixs_form || $node->nid==$socixs_form_cat || $node->nid==$socixs_form_A|| $node->nid==$socixs_form_B) { ?>
+                <?php if ( in_array($node->nid, $socixs_form_list) ) { ?>
                   <?php if($cat){ ?>
                               <span class="heading--tape--dark">Uneix-te a Amnistia Internacional</span>
                   <?php }else{ ?>
                               <span class="heading--tape--dark">Únete a Amnistía Internacional</span>
                   <?php } ?>
-                <?php } else if ( $node->nid==$socixs_gracias || $node->nid==$socixs_gracies || $node->nid==$socixs_gracias_A || $node->nid==$socixs_gracias_B ) { ?>
+                <?php } else if ( in_array($node->nid, $socixs_gracias_list) ) { ?>
                   <?php if($cat){ ?>
                               <span class="heading--tape--dark">Et donem la benvinguda!</span>
                   <?php }else{ ?>
@@ -106,7 +106,7 @@ if (!isset($_GET["origen"]) ){
          	<div class="content-form clearfix">
             <?php
             // ********* Sólo mostramos el texto de intro en el formulario de socixs
-            if ($node->nid==$socixs_form || $node->nid==$socixs_form_cat || $node->nid==$socixs_form_A || $node->nid==$socixs_form_B){ ?>
+            if (in_array($node->nid, $socixs_form_list)){ ?>
 			      <p class="text-intro">
               <?php if($cat == 0){ ?>
                        <span>Tu ayuda hace posible que podamos renunciar a subvenciones de gobiernos y partidos políticos, porque nuestra independencia está por encima de todo. </span>
@@ -144,7 +144,7 @@ if (!isset($_GET["origen"]) ){
                           <?php } ?>
                         </div>
                     <?php } ?>
-                <?php if($node->nid==$socixs_form || $node->nid==$socixs_form_cat || $node->nid==$socixs_form_A || $node->nid==$socixs_form_B) {
+                <?php if(in_array($node->nid, $socixs_form_list)) {
                     print '</div><!-- Box FORM_ES -->'; ?>
                     <div class="box-es-right">
                         <div class="three-column ventajas">
@@ -210,9 +210,15 @@ if (!isset($_GET["origen"]) ){
             </div>
             <div class="footer__col--left">
                 <p class="footer-legal">
+                  <?php if($cat){ ?>
+                    <a href="https://www.es.amnesty.org/contacto/" class="footer-legal__link">Contacte</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="https://www.es.amnesty.org/politica-de-privacidad/" class="footer-legal__link">Política de privacitat</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="https://www.es.amnesty.org/mapa-del-sitio/" class="footer-legal__link">Mapa del lloc</a>
+                  <?php }else{ ?>
                     <a href="https://www.es.amnesty.org/contacto/" class="footer-legal__link">Contacto</a> &nbsp;&nbsp;|&nbsp;&nbsp;
                     <a href="https://www.es.amnesty.org/politica-de-privacidad/" class="footer-legal__link">Política de privacidad</a> &nbsp;&nbsp;|&nbsp;&nbsp;
                     <a href="https://www.es.amnesty.org/mapa-del-sitio/" class="footer-legal__link">Mapa del sitio</a>
+                  <?php } ?>
                 </p>
                 <p class="footer-copyright">© <?php echo date("Y"); ?>Amnistía Internacional España</p>
             </div>
