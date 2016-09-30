@@ -120,10 +120,9 @@ if (!isset($_GET["origen"]) ){
                        <span>Renunciamos a cualquier subvención porque nuestra independencia está por encima de todo y, gracias a personas como tú, podemos denunciar sin presiones de ningún tipo cualquier violación de los derechos humanos.</span><br>
                        <span><b>Gracias por creer en un mundo más justo.</b></span>
               <?php } elseif($node->nid  == $antevenio_form_C){ ?>
-                       <p><span>La violencia contra mujeres y niñas es la violación de derechos humanos más frecuente e intensa, y muchas sufren discriminación en todo el mundo por el mero hecho de serlo.</span></p>
-                       <p><span>En Amnistía Internacional luchamos para conseguir igualdad y protección para todas las mujeres y niñas.</span></p>
-                       <p><span>Renunciamos a cualquier subvención porque nuestra independencia está por encima de todo y, gracias a personas como tú, podemos denunciar sin presiones de ningún tipo cualquier violación de los derechos humanos.</span></p>
-                       <p><span><b>Gracias por creer en un mundo más justo.</b></span></p>
+                       <span>En Amnistía Internacional luchamos para conseguir igualdad y protección para todas las mujeres y niñas.</span><br>
+                       <span>Renunciamos a cualquier subvención porque nuestra independencia está por encima de todo y, gracias a personas como tú, podemos denunciar sin presiones de ningún tipo cualquier violación de los derechos humanos.</span><br>
+                       <span><b>Gracias por creer en un mundo más justo.</b></span>
               <?php } elseif($cat == 0){ ?>
                        <span>Tu ayuda hace posible que podamos renunciar a subvenciones de gobiernos y partidos políticos, porque nuestra independencia está por encima de todo. </span>
                        <span>Es gracias a personas como tú que nos apoyáis económicamente por lo que podemos denunciar sin presiones de ningún tipo cualquier violación de los derechos humanos. </span>
