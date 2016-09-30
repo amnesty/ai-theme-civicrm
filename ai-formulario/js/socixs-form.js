@@ -10,7 +10,7 @@ function getUrlVars() {
 jQuery(function($) {
     // url
     var url = window.location.pathname;
-
+    
     // Origenes
     var cat_source = "ut01";
     var get_source = getUrlVars()["origen"];

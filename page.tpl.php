@@ -21,7 +21,6 @@ if (file_exists($splitter_url)) {
 if (!isset($_GET["origen"]) ){
     $_GET["origen"] = "web";
 }
-
 // ****************************************************** CSS y JS *******************************************************************
 ?>
   <!-- WEB -->
@@ -65,7 +64,21 @@ if (!isset($_GET["origen"]) ){
       <noscript>
           <img src="<?php print $form_path; ?>/images/headerB.jpg?anchor=topcenter" class=responsive__img>
       </noscript>
-    <?php }else { ?>
+    <?php } elseif (($node->nid == $antevenio_form_A) || ($node->nid == $antevenio_form_B)) { ?>
+      <div style="background-image: url('<?php print $form_path; ?>/images/<?php print $img_antevenio; ?>?anchor=topcenter');" class="responsive--bg lazyloaded"
+          data-bgset="<?php print $form_path; ?>/images/<?php print $img_antevenio; ?>?anchor=topcenter">
+      </div>
+      <noscript>
+          <img src="<?php print $form_path; ?>/images/<?php print $img_antevenio; ?>?anchor=topcenter" class=responsive__img>
+      </noscript>
+    <?php } elseif (($node->nid  == $antevenio_form_C)) { ?>
+      <div style="background-image: url('<?php print $form_path; ?>/images/<?php print $img_antevenio; ?>?anchor=topcenter');" class="responsive--bg responsive--bg-b lazyloaded"
+          data-bgset="<?php print $form_path; ?>/images/<?php print $img_antevenio; ?>?anchor=topcenter">
+      </div>
+      <noscript>
+          <img src="<?php print $form_path; ?>/images/<?php print $img_antevenio; ?>?anchor=topcenter" class=responsive__img>
+      </noscript>
+    <?php } else { //Formularios Socixs ?>
       <div style="background-image: url('<?php print $form_path; ?>/images/header.jpg?anchor=topcenter');" class="responsive--bg lazyloaded"
           data-bgset="<?php print $form_path; ?>/images/header.jpg?anchor=topcenter">
       </div>
@@ -102,7 +115,16 @@ if (!isset($_GET["origen"]) ){
             // ********* Sólo mostramos el texto de intro en el formulario de socixs
             if (in_array($node->nid, $socixs_form_list)){ ?>
 			      <p class="text-intro">
-              <?php if($cat == 0){ ?>
+              <?php if($node->nid == $antevenio_form_B){ ?>
+                       <p><span>Miles de personas huyen del infierno de las bombas y buscan un hogar seguro. Personas ancianas, mujeres embarazadas y bebés; niños y niñas separados de sus familias. Han visto sus casas derrumbarse, bombas caer sobre sus cabezas, sentido el miedo de acostarse sin saber si se despertarían al día siguiente.</span></p>
+                       <p><span>En Amnistía Internacional levantamos nuestra voz en defensa de todas las personas refugiadas para garantizarles un lugar seguro donde vivir, y devolver a cada niño y niña la infancia que se merece.</span></p>
+                       <p><span><b>Gracias por creer en un mundo más justo.</b></span></p>
+              <?php } elseif($node->nid  == $antevenio_form_C){ ?>
+                       <p><span>La violencia contra mujeres y niñas es la violación de derechos humanos más frecuente e intensa, y muchas sufren discriminación en todo el mundo por el mero hecho de serlo.</span></p>
+                       <p><span>En Amnistía Internacional luchamos para conseguir igualdad y protección para todas las mujeres y niñas.</span></p>
+                       <p><span>Renunciamos a cualquier subvención porque nuestra independencia está por encima de todo y, gracias a personas como tú, podemos denunciar sin presiones de ningún tipo cualquier violación de los derechos humanos.</span></p>
+                       <p><span><b>Gracias por creer en un mundo más justo.</b></span></p>
+              <?php } elseif($cat == 0){ ?>
                        <span>Tu ayuda hace posible que podamos renunciar a subvenciones de gobiernos y partidos políticos, porque nuestra independencia está por encima de todo. </span>
                        <span>Es gracias a personas como tú que nos apoyáis económicamente por lo que podemos denunciar sin presiones de ningún tipo cualquier violación de los derechos humanos. </span>
                        <span><b>Gracias por creer en un mundo más justo.</b></span>
