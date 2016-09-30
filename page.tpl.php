@@ -114,7 +114,7 @@ if (!isset($_GET["origen"]) ){
                        <span><b>Gracias por creer en un mundo más justo.</b></span>
               <?php } elseif($node->nid  == $antevenio_form_C){ ?>
                        <span>En Amnistía Internacional luchamos para conseguir igualdad y protección para todas las mujeres y niñas.</span><br>
-                       <span>Renunciamos a cualquier subvención porque nuestra independencia está por encima de todo y, gracias a personas como tú, podemos denunciar sin presiones de ningún tipo cualquier violación de los derechos humanos.</span><br>
+                       <span>Renunciamos a cualquier subvención porque nuestra independencia está por encima de todo y, gracias a personas como tú, podemos denunciar sin presiones violación de los derechos humanos.</span><br>
                        <span><b>Gracias por creer en un mundo más justo.</b></span>
               <?php } elseif($cat == 0){ ?>
                        <span>Tu ayuda hace posible que podamos renunciar a subvenciones de gobiernos y partidos políticos, porque nuestra independencia está por encima de todo. </span>
