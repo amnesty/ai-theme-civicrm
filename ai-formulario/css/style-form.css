@@ -185,7 +185,7 @@ header, hgroup, nav, section {
 
 /* Elementos de desplegable de fecha ----------- */
 .content-form .webform-conditional-processed .caja-content .capa-fechas div div {
-    width: 95px;
+    width: 100px;
     overflow: hidden;
     float: left;
     border: 2px solid #000;
@@ -203,11 +203,11 @@ header, hgroup, nav, section {
 
 .content-form .webform-conditional-processed .caja-content .capa-fechas div select {
     width: 130%;
-    background-position: 65px center;
+    background-position: 70px center;
     /* como input-generic */
     border: 0;
     font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     color: #000;
     height: 50px;
     position: relative;
