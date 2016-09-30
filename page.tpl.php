@@ -64,15 +64,8 @@ if (!isset($_GET["origen"]) ){
       <noscript>
           <img src="<?php print $form_path; ?>/images/headerB.jpg?anchor=topcenter" class=responsive__img>
       </noscript>
-    <?php } elseif (($node->nid == $antevenio_form_A) || ($node->nid == $antevenio_form_B) || ($node->nid  == $antevenio_form_D) || ($node->nid  == $antevenio_form_E)) { ?>
-      <div style="background-image: url('<?php print $form_path; ?>/images/<?php print $img_antevenio; ?>?anchor=topcenter');" class="responsive--bg lazyloaded"
-          data-bgset="<?php print $form_path; ?>/images/<?php print $img_antevenio; ?>?anchor=topcenter">
-      </div>
-      <noscript>
-          <img src="<?php print $form_path; ?>/images/<?php print $img_antevenio; ?>?anchor=topcenter" class=responsive__img>
-      </noscript>
-    <?php } elseif ($node->nid  == $antevenio_form_C) { ?>
-      <div style="background-image: url('<?php print $form_path; ?>/images/<?php print $img_antevenio; ?>?anchor=topcenter');" class="responsive--bg responsive--bg-c lazyloaded"
+    <?php } elseif (($node->nid == $antevenio_form_A) || ($node->nid == $antevenio_form_B) || ($node->nid  == $antevenio_form_C) || ($node->nid  == $antevenio_form_D) || ($node->nid  == $antevenio_form_E)) { ?>
+      <div style="background-image: url('<?php print $form_path; ?>/images/<?php print $img_antevenio; ?>?anchor=topcenter');" class="responsive--bg <?php print $extra_class; ?> lazyloaded"
           data-bgset="<?php print $form_path; ?>/images/<?php print $img_antevenio; ?>?anchor=topcenter">
       </div>
       <noscript>
