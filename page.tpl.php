@@ -72,7 +72,7 @@ if (!isset($_GET["origen"]) ){
           <img src="<?php print $form_path; ?>/images/<?php print $img_antevenio; ?>?anchor=topcenter" class=responsive__img>
       </noscript>
     <?php } elseif (($node->nid  == $antevenio_form_C)) { ?>
-      <div style="background-image: url('<?php print $form_path; ?>/images/<?php print $img_antevenio; ?>?anchor=topcenter');" class="responsive--bg responsive--bg-b lazyloaded"
+      <div style="background-image: url('<?php print $form_path; ?>/images/<?php print $img_antevenio; ?>?anchor=topcenter');" class="responsive--bg responsive--bg-c lazyloaded"
           data-bgset="<?php print $form_path; ?>/images/<?php print $img_antevenio; ?>?anchor=topcenter">
       </div>
       <noscript>
@@ -117,7 +117,7 @@ if (!isset($_GET["origen"]) ){
 			      <p class="text-intro">
               <?php if($node->nid == $antevenio_form_B){ ?>
                        <span>Miles de personas huyen del infierno de las bombas y buscan un hogar seguro. Personas ancianas, mujeres embarazadas y bebés; niños y niñas separados de sus familias. En Amnistía Internacional levantamos nuestra voz en defensa de todas las personas refugiadas para garantizarles un lugar seguro donde vivir, y devolver a cada niño y niña la infancia que se merece.</span><br>
-                       <span>Renunciamos a cualquier subvención porque nuestra independencia está por encima de todo y, gracias a personas como tú, podemos denunciar sin presiones de ningún tipo cualquier violación de los derechos humanos.</span>
+                       <span>Renunciamos a cualquier subvención porque nuestra independencia está por encima de todo y, gracias a personas como tú, podemos denunciar sin presiones de ningún tipo cualquier violación de los derechos humanos.</span><br>
                        <span><b>Gracias por creer en un mundo más justo.</b></span>
               <?php } elseif($node->nid  == $antevenio_form_C){ ?>
                        <p><span>La violencia contra mujeres y niñas es la violación de derechos humanos más frecuente e intensa, y muchas sufren discriminación en todo el mundo por el mero hecho de serlo.</span></p>

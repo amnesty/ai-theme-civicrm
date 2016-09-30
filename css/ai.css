@@ -3189,6 +3189,11 @@ time {
     background-size: cover
 }
 
+.responsive--bg-c {
+    background-position: center 50%; /* H */
+    background-size: cover
+}
+
 .responsive__img {
     border: 0;
     height: 100%;
