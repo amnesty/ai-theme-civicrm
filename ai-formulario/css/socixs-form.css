@@ -29,7 +29,7 @@
         font-style: italic;
     }
 
-    .box-form-es .webform-conditional-processed .input-generic {
+    .webform-conditional-processed .input-generic {
         width: 100%;
         max-width: 350px; /* H: ancho maximo de los campos */
     }
@@ -1014,59 +1014,76 @@
         line-height: 30px;
     }
 
-    .content-form fieldset {
-        margin-top: 0;
+    .webform-conditional-processed .input-generic{
+      float: none;
+      width: 100%;
     }
 
-    .box-form-es .webform-conditional-processed .input-generic {
-        max-width: 100%;
+    /* colaborar */
+
+    .webform-conditional-processed .content-colaborar .fila-1 .input-generic,
+    .webform-conditional-processed .content-colaborar .fila-2 .input-generic,
+    .webform-conditional-processed .content-colaborar .fila-3 .input-generic {
+        max-width: 129%;
+    }
+
+    .webform-conditional-processed .content-colaborar .capa-selecttime {
+        width: 100%;
+    }
+
+    .webform-conditional-processed .content-colaborar select.selecttime {
+        background-position: 81% center;
+    }
+
+    .content-form .webform-conditional-processed .caja-checkbox {
+        margin-left: 70px;
+    }
+
+    .content-form .webform-conditional-processed .caja-checkbox div {
+        margin-top: 10px;
+    }
+
+    .webform-conditional-processed .content-colaborar .capa-other-quant {
+        margin-top: 20px;
     }
 
     /* content-datos */
 
-    .webform-conditional-processed .content-datos .fila-1,
-    .webform-conditional-processed .content-datos .fila-3 {
-        margin-top: 0;
-    }
-
-    /*.webform-conditional-processed .content-datos .fila-2.clearfix {
-        margin-top: 20px;
-    }*/
-
-    .webform-conditional-processed .content-colaborar .capa-selecttime {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .webform-conditional-processed .content-colaborar select.selecttime {
-        background-position: 80% center;
-    }
-
-    .webform-conditional-processed .content-datos .fila-1 input, .content-datos .fila-3 input {
-        max-width: 100%;
+    .webform-conditional-processed .content-datos .fila-1 input,
+    .webform-conditional-processed .content-datos .fila-2 input {
         margin-top: 20px;
     }
 
-    .webform-conditional-processed .content-datos .margin-medium{
-        margin: 0;
+    .webform-conditional-processed .content-datos .fila-1 .input-generic,
+    .webform-conditional-processed .content-datos .fila-2 .input-generic,
+    .webform-conditional-processed .content-datos .fila-3 .input-generic {
+        max-width: 129%;
+    }
+
+    .webform-conditional-processed .content-datos .email {
+      width: 100%;
+      margin-top: 20px;
     }
 
     .webform-conditional-processed .content-datos .capa-document {
-        width: 30%;
+        width: 33%;
+        max-width: 40%;
+        margin-top: 20px;
     }
 
     .webform-conditional-processed .content-datos select.document {
         background-position: 70px center;
     }
 
-    .webform-conditional-processed .content-datos .number-dni{
+    .webform-conditional-processed .content-datos .fila-1 .number-dni{
         max-width: 60%;
+        margin-top: 20px;
     }
 
     .webform-conditional-processed .content-datos .capa-genero {
         width: 100%;
         margin-right: 0;
-        margin-top: 20px;
+        /*margin-top: 20px;*/
     }
 
     .webform-conditional-processed .content-datos select.profesion {
