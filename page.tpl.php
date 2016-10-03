@@ -90,7 +90,7 @@ if (!isset($_GET["origen"]) ){
                               <span class="heading--tape--dark">¡Te damos la bienvenida!</span></span>
                   <?php } ?>
                 <?php } else {?>
-                              <span class="heading--tape--dark"><?php echo $node->title ?></span>
+                              <span class="heading--tape--dark"><?php echo explode('#',$node->title)[0] ?></span>
                 <?php } ?>
             </h2>
         </div>
