@@ -176,6 +176,9 @@ jQuery(function($) {
       $(".pais").val(selected);
     });
 
+    // Province label
+    $('.provincia option[value=""]').text("-Provincia-");
+
     // Make the IBAN fields to automatically move the cursor through when any field is fullfilled.
 
     $(".country").keyup( function(){

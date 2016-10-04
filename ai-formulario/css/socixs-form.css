@@ -117,7 +117,7 @@
         margin-top: 20px;
     }
 
-    .webform-conditional-processed .content-datos .margin-negativo{
+    .webform-conditional-processed .content-datos .info-nif {
          margin-left: -32px;
     }
 
@@ -149,7 +149,7 @@
     }
 
     .webform-conditional-processed .content-datos .document{
-    	width: 125%;
+    	  width: 125%;
         z-index: 9;
         border-radius: 10px 0 0 10px;
     }
@@ -851,7 +851,7 @@
         float: left;
     }
 
-    .webform-conditional-processed .content-datos .margin-negativo {
+    .webform-conditional-processed .content-datos .info-nif {
         margin-top: 15px;
         font-size: 17px;
     }
@@ -1107,7 +1107,7 @@
 
     .webform-conditional-processed .content-datos select.profesion,
     .webform-conditional-processed .content-datos select.genero {
-        background-position: 80% center;
+        background-position: 77% center;
     }
 
     .webform-conditional-processed .content-datos .capa-language {
@@ -1115,7 +1115,7 @@
     }
 
     .webform-conditional-processed .content-datos select.language {
-        background-position: 86% center;
+        background-position: 84% center;
     }
 
     /* direccion */
@@ -1324,12 +1324,13 @@
     }
 
     /* content datos */
+
     .webform-conditional-processed .content-datos .fila-1 .number-dni {
       max-width: 52%;
     }
 
     .webform-conditional-processed .content-datos .capa-language {
-        width: 76%;
+        width: 72%;
     }
 
     .content-form .webform-conditional-processed .caja-content .capa-fechas label {
@@ -1344,12 +1345,12 @@
     }
 
     .content-form .webform-conditional-processed .caja-content .capa-fechas div div {
-        float: none;
-        width: 100%;
+        margin-top: 10px;
+        width: 30%;
     }
 
     .content-form .webform-conditional-processed .caja-content .capa-fechas div select {
-      background-position: 72% center;
+      background-position: 62% center;
     }
 
     /* direccion */
@@ -1362,17 +1363,33 @@
     }
 
     /* cuenta */
-    .webform-conditional-processed .content-cuenta .capa-iban-letras{
-      width: 100%;
-      max-width: 100%;
+
+    .webform-conditional-processed .content-cuenta select.iban-letras {
+        background-position: 90px center;
     }
 
-    .webform-conditional-processed .content-cuenta .iban-numero,
+    .webform-conditional-processed .content-cuenta .capa-iban-letras,
+    .webform-conditional-processed .content-cuenta .iban-numero{
+        width: 45%;
+        max-width: 50%;
+    }
+
     .webform-conditional-processed .content-cuenta .entidad,
-    .webform-conditional-processed .content-cuenta .oficina,
+    .webform-conditional-processed .content-cuenta .oficina{
+        width: 45%;
+        max-width: 50%;
+        margin-top: 20px;
+    }
+
     .webform-conditional-processed .content-cuenta .dc {
-        width: 100%;
-        max-width: 100%;
+        width: 20%;
+        max-width: 30%;
+        margin-top: 20px;
+    }
+
+    .webform-conditional-processed .content-cuenta .ncuenta {
+        width: 70%;
+        max-width: 80%;
         margin-top: 20px;
     }
 
@@ -1445,4 +1462,55 @@
         margin-left: 0px;
         margin-top: -0px;
     }
+}
+
+/* max-width: 275px - móviles antiguos */
+@media only screen and (max-width: 275px) {
+
+  .box-form-es .fila-1 p {
+    font-size: 0px;
+  }
+
+  .webform-conditional-processed .content-datos .info-nif,
+  .webform-conditional-processed .content-datos .info-language {
+      visibility: hidden;
+      margin: 0px;
+      margin-top: -10px;
+      float: none;
+      line-height: 0;
+      font-size: 0px;
+  }
+
+  .webform-conditional-processed .content-datos .capa-document {
+      width: 100%;
+      max-width: 100%;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 2px solid #000;
+  }
+
+  .webform-conditional-processed .content-datos select.document {
+      background-position: 75% center;
+      border: 0;
+  }
+
+  .webform-conditional-processed .content-datos .fila-1 .number-dni {
+      max-width: 100%;
+      width: 100%;
+      border-radius: 10px;
+      float: none;
+      /*position: absolute;*/
+      left: 0;
+      margin: 0;
+      margin-top: 20px;
+  }
+
+  .webform-conditional-processed .content-datos .capa-language {
+      width: 100%;
+  }
+
+  .webform-conditional-processed .content-cuenta select.iban-letras {
+      background-position: 60px center;
+  }
+
 }
