@@ -163,7 +163,7 @@
     }
 
     .webform-conditional-processed .content-datos .mobile{
-    	max-width: 225px;
+    	max-width: 150px;
     }
 
     .webform-conditional-processed .content-datos .number-dni{
@@ -728,7 +728,7 @@
         float: left;
         margin-right: 200px;
         margin-left: 500px;
-        margin-top: -420px;
+        margin-top: -520px;
     }
 
     .webform-conditional-processed .content-direccion .capa-provincia,
