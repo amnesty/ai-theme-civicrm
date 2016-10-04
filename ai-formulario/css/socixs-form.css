@@ -840,11 +840,11 @@
     }
 
     .webform-conditional-processed .content-datos .fila-1 .segundo-apellido {
-        max-width: 143px;
+        max-width: 135px;
     }
 
     .webform-conditional-processed .content-datos .capa-document {
-        width: 100%px;
+        width: 100%;
     }
 
     .webform-conditional-processed .content-datos select.genero {
