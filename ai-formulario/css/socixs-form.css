@@ -1192,19 +1192,12 @@
 
     /* botones */
 
-    .box-form-es .webform-conditional-processed .button-primary {
-        float: none;
-        margin: 0px;
-        margin-top: -30px;
-        margin-left: 10px;
-    }
-
-    /*.box-form-es .webform-conditional-processed  .button-primary{
+    .box-form-es .webform-conditional-processed  .button-primary{
         float: left;
         margin-top: -150px;
         margin-left: 50%;
         margin-bottom: 40px;
-    }*/
+    }
 
     .webform-conditional-processed .content-end-form .botons-form img {
         float: left;
@@ -1224,9 +1217,11 @@
 
     /* pagina confirmacion */
 
-    .preview .webform-submit {
-        margin-left: 74%;
-        max-width: 135px;
+    .preview .form-actions .form-submit {
+        /*margin-left: 74%;
+        max-width: 135px;*/
+        float: none;
+        clear: none;
     }
 
     .preview .webform-previous {
@@ -1405,12 +1400,9 @@
     /* pagina confirmacion */
     .preview .form-submit {
         font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
-        /*width: 100%;*/
         height: 70px;
         font-size: 30px;
         text-align: center;
-        /*float: left;
-        clear: both;*/
         background: #f1e60d;
     }
 
