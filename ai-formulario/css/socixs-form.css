@@ -1372,13 +1372,13 @@
 
     .webform-conditional-processed .content-cuenta .capa-iban-letras,
     .webform-conditional-processed .content-cuenta .iban-numero{
-        width: 45%;
+        width: 45.5%;
         max-width: 50%;
     }
 
     .webform-conditional-processed .content-cuenta .entidad,
     .webform-conditional-processed .content-cuenta .oficina{
-        width: 45%;
+        width: 33%;
         max-width: 50%;
         margin-top: 20px;
     }
@@ -1390,8 +1390,8 @@
     }
 
     .webform-conditional-processed .content-cuenta .ncuenta {
-        width: 70%;
-        max-width: 80%;
+        width: 100%;
+        max-width: 100%;
         margin-top: 20px;
     }
 
