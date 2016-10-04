@@ -173,8 +173,6 @@ jQuery(function($) {
         o.value = arr[i].v;
         $(o).text(arr[i].t);
       });
-      //$('.pais option:selected').attr('selected', '');
-      //selected.attr('selected', 'selected');
       $(".pais").val(selected);
     });
 
