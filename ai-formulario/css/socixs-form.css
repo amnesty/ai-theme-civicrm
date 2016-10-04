@@ -860,8 +860,12 @@
         font-size: 17px;
     }
 
+    .webform-conditional-processed .content-datos .capa-document {
+        max-width: 130px;
+    }
+
     .webform-conditional-processed .content-datos select.document {
-      background-position: 95px center;
+        background-position: 110px center;
     }
 
     .webform-conditional-processed .content-datos .fila-1 .number-dni {
