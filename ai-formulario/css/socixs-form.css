@@ -1218,10 +1218,13 @@
     /* pagina confirmacion */
 
     .preview .form-actions .form-submit {
-        /*margin-left: 74%;
-        max-width: 135px;*/
+        margin-left: 0;
         float: none;
         clear: none;
+    }
+
+    .box-form-es .preview .form-actions {
+        margin: 0px;
     }
 
     .preview .webform-previous {
