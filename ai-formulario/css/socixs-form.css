@@ -889,9 +889,9 @@
         max-width: 330px;
     }
 
-    .webform-conditional-processed .content-datos .profesion option:checked {
+    /*.webform-conditional-processed .content-datos .profesion option:checked {
         max-width: 245px;
-    }
+    }*/
 
     .webform-conditional-processed .content-datos .capa-genero,
     .webform-conditional-processed .content-datos .capa-language {
@@ -1221,6 +1221,7 @@
         margin-left: 0;
         float: none;
         clear: none;
+        margin-top: 10px;
     }
 
     .box-form-es .preview .form-actions {

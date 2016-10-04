@@ -10,7 +10,7 @@ function getUrlVars() {
 jQuery(function($) {
     // url
     var url = window.location.pathname;
-    
+
     // Origenes
     var cat_source = "ut01";
     var get_source = getUrlVars()["origen"];
@@ -145,6 +145,22 @@ jQuery(function($) {
     else {
         $(".caja-content").removeClass('active');
     }
+
+    // Cut option values in Profesion
+    // first time
+    $(".profesion option:selected").text(
+      function(i,t){
+          return t.length > ($(".profesion").width()/11) ? t.substr(0,25) + "..." : t;
+      }
+    );
+    // When it changes
+    $( ".profesion" ).change(function() {
+      $(".profesion option:selected").text(
+        function(i,t){
+            return t.length > ($(".profesion").width()/11) ? t.substr(0,25) + "..." : t;
+        }
+      );
+    });
 
   // Make the IBAN fields to automatically move the cursor through when any field is fullfilled.
 
