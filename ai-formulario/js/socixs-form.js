@@ -147,6 +147,7 @@ jQuery(function($) {
     }
 
     // Cut option values in Profesion
+
     // first time
     $(".profesion option:selected").text(
       function(i,t){
@@ -162,43 +163,52 @@ jQuery(function($) {
       );
     });
 
-  // Make the IBAN fields to automatically move the cursor through when any field is fullfilled.
+    // Sort the countries
+    var options = $('.pais option');
+    var arr = options.map(function(_, o) { return { t: $(o).text(), v: o.value }; }).get();
+    arr.sort(function(o1, o2) { return o1.t > o2.t ? 1 : o1.t < o2.t ? -1 : 0; });
+    options.each(function(i, o) {
+      o.value = arr[i].v;
+      $(o).text(arr[i].t);
+    });
 
-  $(".country").keyup( function(){
-    if($(".country").val().length >= 2){
-        $(".entity").focus();
-    }
-  });
+    // Make the IBAN fields to automatically move the cursor through when any field is fullfilled.
 
-  $(".entity").keyup( function(){
-    if($(".entity").val().length >= 4){
-        $(".office").focus();
-    }
-  });
+    $(".country").keyup( function(){
+      if($(".country").val().length >= 2){
+          $(".entity").focus();
+      }
+    });
 
-  $(".office").keyup( function(){
-    if($(".office").val().length >= 4){
-        $(".check").focus();
-    }
-  });
+    $(".entity").keyup( function(){
+      if($(".entity").val().length >= 4){
+          $(".office").focus();
+      }
+    });
 
-  $(".check").keyup( function(){
-    if($(".check").val().length >= 2){
-        $(".account").focus();
-    }
-  });
+    $(".office").keyup( function(){
+      if($(".office").val().length >= 4){
+          $(".check").focus();
+      }
+    });
 
-  // Mark errors in select boxes
+    $(".check").keyup( function(){
+      if($(".check").val().length >= 2){
+          $(".account").focus();
+      }
+    });
 
-  $(".error").not(".messages").each( function(){
-    if ($(this).is("select")){
-        $(this).parent().addClass("form-error");
-        $(this).parent().css("border", "#f00 2px solid");
-    }
-    else {
-        $(this).css("border", "#f00 2px solid");
-    }
-  });
+    // Mark errors in select boxes
+
+    $(".error").not(".messages").each( function(){
+      if ($(this).is("select")){
+          $(this).parent().addClass("form-error");
+          $(this).parent().css("border", "#f00 2px solid");
+      }
+      else {
+          $(this).css("border", "#f00 2px solid");
+      }
+    });
 
     // Show or hide/erase "other quantity" field depending on which checkbox is checked
     $(".cuota").click(function() {
