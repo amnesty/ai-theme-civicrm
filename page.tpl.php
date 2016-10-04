@@ -57,6 +57,7 @@ if (!isset($_GET["origen"]) ){
 </nav>
 <!-- Image after header-->
 <div class="image-header image-header--has-credits-sm image-header--actua">
+    <div id="pixel"></div>
     <?php if ( $node->nid==$socixs_form_B || $node->nid==$socixs_gracias_B ) { ?>
       <div style="background-image: url('<?php print $form_path; ?>/images/headerB.jpg?anchor=topcenter');" class="responsive--bg responsive--bg-b lazyloaded"
           data-bgset="<?php print $form_path; ?>/images/headerB.jpg?anchor=topcenter">
@@ -89,7 +90,7 @@ if (!isset($_GET["origen"]) ){
                               <span class="heading--tape--dark">¡Te damos la bienvenida!</span></span>
                   <?php } ?>
                 <?php } else {?>
-                              <span class="heading--tape--dark"><?php echo $node->title ?></span>
+                              <span class="heading--tape--dark"><?php $title = explode('#',$node->title); echo $title[0]; ?></span>
                 <?php } ?>
             </h2>
         </div>
