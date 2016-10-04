@@ -1098,7 +1098,7 @@
     }
 
     .webform-conditional-processed .content-datos select.document {
-        background-position: 70px center;
+        background-position: 165px center;
     }
 
     .webform-conditional-processed .content-datos .fila-1 .number-dni{
@@ -1192,12 +1192,19 @@
 
     /* botones */
 
-    .box-form-es .webform-conditional-processed  .button-primary{
+    .box-form-es .webform-conditional-processed .button-primary {
+        float: none;
+        margin: 0px;
+        margin-top: -30px;
+        margin-left: 10px;
+    }
+
+    /*.box-form-es .webform-conditional-processed  .button-primary{
         float: left;
         margin-top: -150px;
         margin-left: 50%;
         margin-bottom: 40px;
-    }
+    }*/
 
     .webform-conditional-processed .content-end-form .botons-form img {
         float: left;
