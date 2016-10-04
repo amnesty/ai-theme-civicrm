@@ -567,11 +567,14 @@
     padding: 5px;
     font-size: 40px;
     background-color: #eee;
-    border: 1px solid #000;
+}
+
+.preview .warning p {
+    font-style: inherit;
+    font-size: 18px;
     text-decoration: none;
 }
 
-/* boton enviar */
 .preview .form-actions .form-submit {
     font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
     /*width: 100%;*/
@@ -601,18 +604,6 @@
     max-width: 300px;
 }
 
-.box-form-es .preview .form-actions {
-    margin: 150px 0px 0px 0px;
-}
-
-.content-end-form .preview .botons-form{
-    margin-top: 0px;
-}
-
-.box-form-es .preview span {
-    font-size: 20px;
-}
-
 .preview .content-direccion {
     float: left;
     margin-right: 200px;
@@ -624,6 +615,20 @@
     float: left;
     margin-left: 1000px;
     margin-top: -600px;
+}
+
+/* boton enviar */
+
+.box-form-es .preview .form-actions {
+    margin: 150px 0px 0px 0px;
+}
+
+.content-end-form .preview .botons-form{
+    margin-top: 0px;
+}
+
+.box-form-es .preview span {
+    font-size: 20px;
 }
 
 
