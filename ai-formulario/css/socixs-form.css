@@ -1340,17 +1340,19 @@
         margin-bottom: -50px;
     }
 
+    /* fechas */
+
     .webform-conditional-processed .content-datos .capa-fechas {
         width: 100%;
     }
 
     .content-form .webform-conditional-processed .caja-content .capa-fechas div div {
         margin-top: 10px;
-        width: 30%;
+        width: 31%;
     }
 
     .content-form .webform-conditional-processed .caja-content .capa-fechas div select {
-      background-position: 62% center;
+        background-position: 62% center;
     }
 
     /* direccion */
@@ -1499,7 +1501,7 @@
       width: 100%;
       border-radius: 10px;
       float: none;
-      /*position: absolute;*/
+      padding-left: 10px;
       left: 0;
       margin: 0;
       margin-top: 20px;
@@ -1511,6 +1513,22 @@
 
   .webform-conditional-processed .content-cuenta select.iban-letras {
       background-position: 60px center;
+  }
+
+  .webform-conditional-processed .content-datos .capa-fechas {
+      float: none;
+      width: 100%;
+  }
+
+  .content-form .webform-conditional-processed .caja-content .capa-fechas div div {
+      float: none;
+      margin-top: 10px;
+      width: 100%;
+  }
+
+  .content-form .webform-conditional-processed .caja-content .capa-fechas div select {
+      float: none;
+      background-position: 70% center;
   }
 
 }
