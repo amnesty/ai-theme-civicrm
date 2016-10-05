@@ -8,25 +8,35 @@
         padding: 0px 20px;
     }
 
-    .box-form-es{
+    .box-form-es {
     	width: 75%;
     	float: left;
     }
 
-    .box-form-es img{
+    .box-form-es img {
         display: inline-block;
         top: 10px;
         position: relative;
         margin-left: 10px;
     }
 
-    .box-form-es p{
+    .box-form-es p {
         font-size: 15px;
         color: #000000;
         padding: 0px 20px;
         font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
         text-align: justify;
         font-style: italic;
+    }
+
+    /* Gracias */
+    .box-form-es .field p {
+        font-size: 20px;
+        color: #000000;
+        padding: 0px 20px;
+        font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
+        text-align: justify;
+        font-style: normal;
     }
 
     .webform-conditional-processed .input-generic {
