@@ -83,15 +83,7 @@ if (!isset($_GET["origen"]) ){
     <div class="image-header__content--medium">
         <div class="image-headline--full">
             <h2 class="image-headline__actua-title">
-                <?php if ( in_array($node->nid, $socixs_gracias_list) ) { ?>
-                  <?php if($cat){ ?>
-                              <span class="heading--tape--dark">Et donem la benvinguda!</span>
-                  <?php }else{ ?>
-                              <span class="heading--tape--dark">¡Te damos la bienvenida!</span></span>
-                  <?php } ?>
-                <?php } else {?>
-                              <span class="heading--tape--dark"><?php  $title = explode('#',$node->title); echo $title[0];  ?></span>
-                <?php } ?>
+                <span class="heading--tape--dark"><?php  $title = explode('#',$node->title); echo $title[0];  ?></span>
             </h2>
         </div>
     </div>
