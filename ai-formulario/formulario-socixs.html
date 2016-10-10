@@ -71,14 +71,11 @@
                                 <input class="border-radius-form input-generic" type="text" name="name" id="name" placeholder="Nombre" maxlength="20">
                             </div>
                             <div class="margin-medium">
-                                <input class="border-radius-form input-generic" type="text" name="first-surname" id="first-surname" placeholder="Apellido1">
+                                <input class="border-radius-form input-generic primer-apellido" type="text" name="first-surname" id="first-surname" placeholder="Apellido1">
                             </div>
                             <div class="margin-medium">
-                                <input class="border-radius-form input-generic" type="text" name="second-surname" id="second-surname" placeholder="Apellido2">
+                                <input class="border-radius-form input-generic segundo-apellido" type="text" name="second-surname" id="second-surname" placeholder="Apellido2">
                             </div>
-                        </fieldset>
-
-                        <fieldset class="fila-2">
                             <div class="margin-medium">
                                 <div class="capa-document border-radius-form shadow">
                                     <select class="document input-generic" name="document" form="document">
@@ -87,9 +84,12 @@
                                         <option value="NIF">Pasaporte</option>
                                     </select>
                                 </div>
-                                <input class="border-radius-form input-generic number-dni" type="text" name="number-dni" id="number-dni" placeholder=""><a class="margin-negativo" href="">+info</a></input>
+                                 <input class="border-radius-form input-generic number-dni" type="text" name="number-dni" id="number-dni" placeholder="">
+                                 <a class="margin-negativo info-nif" href="">+info</a></input>
                             </div>
+                        </fieldset>
 
+                        <fieldset class="fila-2">
                             <div class="margin-medium">
                                 <div class="capa-genero border-radius-form shadow">
                                     <select class="genero input-generic" name="genero" form="genero">
@@ -100,7 +100,9 @@
                                     </select>
                                 </div>
                             </div>
-
+                            <div class="margin-medium">
+                                <input class="border-radius-form input-generic" type="email" name="email" id="email" placeholder="Email" maxlength="20">
+                            </div>
                             <div class="margin-medium">
                                 <input class="border-radius-form input-generic mobile" type="tel" name="mobile" id="mobile" placeholder="Móvil">
                             </div>
@@ -118,9 +120,6 @@
                         </fieldset>
 
                         <fieldset class="fila-3">
-                            <div class="margin-medium">
-                                <input class="border-radius-form input-generic" type="email" name="email" id="email" placeholder="Email" maxlength="20">
-                            </div>
                             <div class="margin-medium">
                                 <div class="capa-profesion border-radius-form shadow">
                                     <select class="input-generic profesion" name="provincia" form="provincia">
@@ -177,9 +176,7 @@
                             <div class="margin-medium">
                                 <input class="border-radius-form input-generic nombre-via" type="text" name="nombre-via" id="nombre-via" placeholder="Nombre de vía*">
                             </div>
-                        </fieldset>
 
-                        <fieldset class="fila-2">
                             <div class="margin-medium">
                                 <input class="border-radius-form input-generic numero-bloque" type="text" name="numero-bloque" id="numero-bloque" placeholder="Nº, bloque, esc...*">
                             </div>
@@ -202,9 +199,6 @@
                                     </select>
                                 </div>
                             </div>
-                        </fieldset>
-
-                        <fieldset class="fila-3">
                             <div class="margin-medium">
                                 <div class="capa-pais border-radius-form shadow">
                                     <select class="input-generic pais" name="pais" form="pais">
