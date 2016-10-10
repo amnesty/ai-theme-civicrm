@@ -147,37 +147,32 @@ if (!isset($_GET["origen"]) ){
                     <?php } ?>
                 <?php if(in_array($node->nid, $socixs_form_list)) {
                     print '</div><!-- Box FORM_ES -->'; ?>
-                    <div class="box-es-right">
-                        <div class="three-column ventajas">
-                            <img src="<?php print $images_path; ?>pig.png" alt="pig"/>
-                            <?php if($cat){ ?>
-                              <h3>Coneixes els avantatges fiscals de ser soci/a?</h3>
-                              <p>Totes les teves aportacions desgraven un 75% els primers 150€. A partir d'aquesta xifra, el 30%. Si els últims 3 anys has mantingut o augmentat l'aportació a l'organització, la desgravació puja fins un 35% per a premiar la teva fidelitat. Aquestes deduccions no s'apliquen al País Basc ni a Navarra.
-                            <?php }else{ ?>
-                              <h3>¿Conoces las ventajas fiscales de ser socio/a?</h3>
-                              <p>Todas tus aportaciones desgravan un 75% los primeros 150€. A partir de esa cifra, el 30%. Si en los últimos tres años se han mantenido o aumentado las aportaciones a la organización, la desgravación sube a un 35% para premiar tu fidelidad. Estas deducciones no aplican en País Vasco y Navarra.
+                    <div class="box-es-right col-xs-12 col-sm-12 col-md-3 col-lg-3 margin-top-20px-element"> <!-- box-es-right -->
+                        <div class="row margin-0-auto">
+                          <?php if( $node->nid == $area_privada) { ?>
+                           <div class="three-column buenas-noticias bloques-x4 col-xs-12 col-sm-12 col-md-4 col-lg-4"> <!-- NUEVA CAJA - "BUENAS NOTICIAS" -->
+                                <img src="images/icon-good-news.png" alt="buenas noticias"/>
+                                <h3>¡Buenas Noticias!</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a class="link-caja-buenas-noticias" target="_blank" href="https://www.es.amnesty.org/en-que-estamos/para-celebrar" title="buenas noticias: en qué estamos - para celebrar">CONOCE MÁS</a>.</p>
+                            </div>
                             <?php } ?>
-                            </p>
-                        </div>
-                        <div class="three-column formas-pago">
-                            <img src="<?php print $images_path; ?>cartera.png" alt="cartera"/>
-                            <?php if($cat){ ?>
-                              <h3>Altres mètodes de pagament</h3>
-                              <p>Si tens algún problema en realitzar la teva donació o vols informació sobre altres mètodes de pagament o sobre quotes reduïdes, truca'ns al <b>913101277</b> (extensions <b>30</b> i <b>37</b>) o escriu-nos a <a href="mailto:socios@es.amnesty.org" title="socios@es.amnesty.org">socios@es.amnesty.org</a></p>
-                            <?php }else{ ?>
-                              <h3>Otras formas de pago</h3>
-                              <p>Si tienes algún problema al realizar tu donación o quieres información sobre otras formas de pago o sobre cuotas reducidas, llámanos a <b>913101277</b> (extensiones <b>30</b> y <b>37</b>) o escribe a <a href="mailto:socios@es.amnesty.org" title="socios@es.amnesty.org">socios@es.amnesty.org</a></p>
-                            <?php } ?>
-                        </div>
-                        <div class="three-column compromiso">
-                            <img src="<?php print $images_path; ?>ventana.png" alt="ventana"/>
-                            <?php if($cat){ ?>
-                              <h3>Transparència, el nostre compromís</h3>
-                              <p>El 100% dels nostres recursos els destinem a lluitar pels drets humans arreu del món. Els nostres comptes són públics i pots veure'ls a la nostra web.</p>
-                            <?php }else{ ?>
-                              <h3>Transparencia, nuestro compromiso</h3>
-                              <p>El 100% de nuestros recursos los destinamos a luchar por los derechos humanos en todo el mundo. Nuestras cuentas son públicas y puedes verlas en nuestra web.</p>
-                            <?php } ?>
+                            <div class="three-column ventajas bloques-x4 col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                <img src="images/pig.png" alt="pig"/>
+                                <h3>¿Conoces las ventajas fiscales de ser socio/a?</h3>
+                                <p>Todas tus aportaciones desgravan un 50% los primeros 150€. A partir de esa cifra, el 27,5%. En el País Vasco y Navarra, la deducción es del 20% y 25% respectivamente.</p>
+                            </div>
+
+                            <div class="three-column formas-pago bloques-x4 col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                <img src="images/cartera.png" alt="pig"/>
+                                <h3>Otras formas de pago</h3>
+                                <p>Si tienes algún problema al realizar tu donación o quieres información sobre otras formas de pago o sobre cuotas reducidas, llámanos a <b>913101277</b> (extensiones <b>30</b> y <b>37</b>) o escribe a <a href="mailto:socios@es.amnesty.org" title="socios@es.amnesty.org">socios@es.amnesty.org</a></p>
+                            </div>
+
+                            <div class="three-column compromiso bloques-x4 col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                <img src="images/ventana.png" alt="pig"/>
+                                <h3>Transparencia, nuestro compromiso</h3>
+                                <p>El 100% de nuestros recursos los destinamos a luchar por los derechos humanos en todo el mundo. Nuestras cuentas son públicas y puedes verlas en nuestra web.</p>
+                            </div>
                         </div>
                     </div><!-- /box-es-right -->
                 <?php }
