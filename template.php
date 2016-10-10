@@ -13,4 +13,3 @@
 function encoremed_bootstrap_menu_tree__primary(&$variables) {
   return '<ul class="menu nav navbar-nav navbar-right">' . $variables['tree'] . '</ul>';
 }
-

@@ -216,7 +216,7 @@ if (!isset($_GET["origen"]) ){
                     <a href="https://www.es.amnesty.org/mapa-del-sitio/" class="footer-legal__link">Mapa del sitio</a>
                   <?php } ?>
                 </p>
-                <p class="footer-copyright">© <?php echo date("Y"); ?>Amnistía Internacional España</p>
+                <p class="footer-copyright">©<?php echo date("Y"); ?> Amnistía Internacional España</p>
             </div>
         </div>
     </div>
