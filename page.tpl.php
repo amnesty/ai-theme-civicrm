@@ -151,25 +151,25 @@ if (!isset($_GET["origen"]) ){
                         <div class="row margin-0-auto">
                           <?php if( $node->nid == $area_privada) { ?>
                            <div class="three-column buenas-noticias bloques-x4 col-xs-12 col-sm-12 col-md-4 col-lg-4"> <!-- NUEVA CAJA - "BUENAS NOTICIAS" -->
-                                <img src="images/icon-good-news.png" alt="buenas noticias"/>
+                                <img src="<?php print $images_path; ?>icon-good-news.png" alt="imagen cara sonriente"/>
                                 <h3>¡Buenas Noticias!</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <a class="link-caja-buenas-noticias" target="_blank" href="https://www.es.amnesty.org/en-que-estamos/para-celebrar" title="buenas noticias: en qué estamos - para celebrar">CONOCE MÁS</a>.</p>
                             </div>
                             <?php } ?>
                             <div class="three-column ventajas bloques-x4 col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                <img src="images/pig.png" alt="pig"/>
+                                <img src="<?php print $images_path; ?>pig.png" alt="imagen hucha"/>
                                 <h3>¿Conoces las ventajas fiscales de ser socio/a?</h3>
                                 <p>Todas tus aportaciones desgravan un 50% los primeros 150€. A partir de esa cifra, el 27,5%. En el País Vasco y Navarra, la deducción es del 20% y 25% respectivamente.</p>
                             </div>
 
                             <div class="three-column formas-pago bloques-x4 col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                <img src="images/cartera.png" alt="pig"/>
+                                <img src="<?php print $images_path; ?>cartera.png" alt="imagen cartera"/>
                                 <h3>Otras formas de pago</h3>
                                 <p>Si tienes algún problema al realizar tu donación o quieres información sobre otras formas de pago o sobre cuotas reducidas, llámanos a <b>913101277</b> (extensiones <b>30</b> y <b>37</b>) o escribe a <a href="mailto:socios@es.amnesty.org" title="socios@es.amnesty.org">socios@es.amnesty.org</a></p>
                             </div>
 
                             <div class="three-column compromiso bloques-x4 col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                                <img src="images/ventana.png" alt="pig"/>
+                                <img src="<?php print $images_path; ?>ventana.png" alt="imagen ventana"/>
                                 <h3>Transparencia, nuestro compromiso</h3>
                                 <p>El 100% de nuestros recursos los destinamos a luchar por los derechos humanos en todo el mundo. Nuestras cuentas son públicas y puedes verlas en nuestra web.</p>
                             </div>
