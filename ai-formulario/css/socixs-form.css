@@ -1429,6 +1429,9 @@
     /*.responsive--bg {
       visibility: hidden;
     }*/
+    .image-header__content--medium{
+        margin-top: 72px;
+    }
 
     /* pagina confirmacion */
     .preview .form-submit {
