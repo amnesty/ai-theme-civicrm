@@ -104,6 +104,10 @@
         background-position: 260px center;
     }
 
+    .webform-conditional-processed .content-colaborar .cuotas {
+        float: left;
+    }
+
     .webform-conditional-processed .content-colaborar .capa-other-quant {
         width: 70px;
         overflow: hidden;
