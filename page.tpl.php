@@ -40,7 +40,10 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
   <?php if ( in_array($node->nid, $socixs_form_list) || in_array($node->nid, $socixs_gracias_list) ){ ?>
     <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/socixs-form.css">
     <script type="text/javascript" src="<?php print $form_path; ?>/js/socixs-form.js"></script>
-  <?php } ?>
+    <?php if ( $node->nid==$donativos_form ) { ?>
+      <script type="text/javascript" src="<?php print $form_path; ?>/js/donativos.js"></script>
+  <?php }
+    } ?>
 
 <!-- ************************************************** CONTENIDO *****************************************************************-->
 
