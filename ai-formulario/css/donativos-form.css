@@ -1,0 +1,18 @@
+/* CSS específico del formulario de donación ------------------- */
+
+.preview .content-cuenta {
+    float: left;
+    margin-left: 1000px;
+    margin-top: -550px;
+}
+
+/* max-width: 1400px */
+@media only screen and (max-width: 1370px) {
+
+  .preview .content-cuenta {
+      float: none;
+      margin-left: 0px;
+      margin-top: -0px;
+  }
+
+}

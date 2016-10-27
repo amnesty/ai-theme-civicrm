@@ -42,6 +42,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
     <script type="text/javascript" src="<?php print $form_path; ?>/js/socixs-form.js"></script>
     <?php if ( $node->nid==$donativos_form ) { ?>
       <script type="text/javascript" src="<?php print $form_path; ?>/js/donativos.js"></script>
+      <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/donativos-form.css">
   <?php }
     } ?>
 

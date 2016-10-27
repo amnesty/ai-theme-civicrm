@@ -1069,10 +1069,6 @@
         margin-left: -20px;
     }
 
-    .content-form .webform-conditional-processed .caja-checkbox div {
-        margin-top: 10px;
-    }
-
     .webform-conditional-processed .content-colaborar .capa-other-quant {
         margin-top: 20px;
     }
@@ -1293,6 +1289,13 @@
 
     .box-form-es span img {
         display: block;
+    }
+
+    .content-form .webform-conditional-processed .caja-checkbox div {
+        /*margin-top: 10px;*/
+        text-align: center;
+        margin-bottom: 10px;
+        float: none;
     }
 
     /** CUSTOMS - CAMBIANDO ASPECTO ICONO == FELIPEGILESTUDIO - 20/SEPTEMBER 2016 **/
