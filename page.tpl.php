@@ -48,7 +48,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 
 <!-- ************************************************** CONTENIDO *****************************************************************-->
 
-<!-- Header -->
+<!------------------------------------ Header -------------------------------------------->
 <nav class="navbar navbar-fixed-top">
 <header class="header" data-header="" role="banner">
     <div class="header__container" data-header-container="">
@@ -70,7 +70,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 <!-- Image after header-->
 <div class="image-header image-header--has-credits-sm image-header--actua">
     <div id="pixel"></div>
-    <?php if ( $node->nid==$socixs_form_B || $node->nid==$socixs_gracias_B || $node->nid==$socixs_form && $mobile ) { ?>
+    <?php if ( $node->nid==$socixs_form_B || $node->nid==$socixs_gracias_B || ($node->nid==$socixs_form || $node->nid==$donativos_form) && $mobile ) { ?>
       <div style="background-image: url('<?php print $form_path; ?>/images/headerB.jpg?anchor=topcenter');" class="responsive--bg responsive--bg-b lazyloaded"
           data-bgset="<?php print $form_path; ?>/images/headerB.jpg?anchor=topcenter">
       </div>
@@ -102,7 +102,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 </div>
 <!-- Image after header -->
 
-<!-- Page content -->
+<!----------------------------------------------------- CUERPO --------------------------------------------------------------->
 <div class="container--wide">
     <!-- Bootstrap Grid -->
     <div class="grid">
