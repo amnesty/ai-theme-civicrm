@@ -40,7 +40,7 @@ jQuery(function($) {
 
     // CIF: borrar nombre y cambiar placeholder
     $(".tipo_documento").change( function() {
-        if($(".tipo_documento option:selected").val()=='CIF'){
+        if($(".tipo_documento option:selected").val()=='cif'){
           $(".nombre").val('');
           $(".nombre").attr("placeholder", "Nombre de la entidad *");
         }
