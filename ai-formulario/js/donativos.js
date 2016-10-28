@@ -20,20 +20,20 @@ jQuery(function($) {
     }
 
     // Esconder otra cuota
-    if ( $("#form-item form-type-radio form-item-submitted-caja-colaborar-fieldset-fila-1-0-donativo-1").is(":checked") ||
-        $("#form-item form-type-radio form-item-submitted-caja-colaborar-fieldset-fila-1-0-donativo-2").is(":checked") ||
-        $("#form-item form-type-radio form-item-submitted-caja-colaborar-fieldset-fila-1-0-donativo-3").is(":checked")
+    if ( $("#edit-submitted-caja-colaborar-fieldset-fila-1-0-donativo-1").is(":checked") ||
+        $("#edit-submitted-caja-colaborar-fieldset-fila-1-0-donativo-2").is(":checked") ||
+        $("#edit-submitted-caja-colaborar-fieldset-fila-1-0-donativo-3").is(":checked")
     ){
         $(".otra_cuota").css("visibility", "hidden");
     }
     $(".cuota").click( function() {
-      if ( $("#form-item form-type-radio form-item-submitted-caja-colaborar-fieldset-fila-1-0-donativo-1").is(":checked") ||
-          $("#form-item form-type-radio form-item-submitted-caja-colaborar-fieldset-fila-1-0-donativo-2").is(":checked") ||
-          $("#form-item form-type-radio form-item-submitted-caja-colaborar-fieldset-fila-1-0-donativo-3").is(":checked")
+      if ( $("#edit-submitted-caja-colaborar-fieldset-fila-1-0-donativo-1").is(":checked") ||
+          $("#edit-submitted-caja-colaborar-fieldset-fila-1-0-donativo-2").is(":checked") ||
+          $("#edit-submitted-caja-colaborar-fieldset-fila-1-0-donativo-3").is(":checked")
       ){
           $(".otra_cuota").css("visibility", "hidden");
       }
-      if ( $("#form-item form-type-radio form-item-submitted-caja-colaborar-fieldset-fila-1-0-donativo-4").is(":checked") ){
+      if ( $("#edit-submitted-caja-colaborar-fieldset-fila-1-0-donativo-4").is(":checked") ){
           $(".otra_cuota").css("visibility", "visible");
       }
     });
