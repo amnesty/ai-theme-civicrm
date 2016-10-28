@@ -39,6 +39,18 @@ jQuery(function($) {
     });
 
     // CIF: borrar nombre y cambiar placeholder
+    if($(".tipo_documento option:selected").val()=='cif'){
+      $(".nombre").val('');
+      $(".nombre").attr("placeholder", "Nombre de la entidad *");
+      $(".nombre").css("width", "605px");
+      $(".email").css("width", "470px");
+    }
+    else {
+      $(".nombre").val('');
+      $(".nombre").attr("placeholder", "Nombre *");
+      $(".nombre").css("width", "210px");
+      $(".email").css("width", "350px");
+    }
     $(".tipo_documento").change( function() {
         if($(".tipo_documento option:selected").val()=='cif'){
           $(".nombre").val('');
