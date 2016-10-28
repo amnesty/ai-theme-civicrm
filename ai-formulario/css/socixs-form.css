@@ -176,6 +176,11 @@
       max-width: 151px;
     }
 
+    .webform-conditional-processed .content-datos .nombre{
+       max-width: 605px;
+       width: 210px;
+    }
+
     .webform-conditional-processed .content-datos .email{
        max-width: 605px;
        width: 350px;
