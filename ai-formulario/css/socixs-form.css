@@ -137,8 +137,7 @@
 
     .webform-conditional-processed .content-datos .fila-1 input,
     .webform-conditional-processed .content-datos .fila-3 input {
-        width: 210px;
-        max-width: 605px;
+        max-width: 210px;
     }
 
     .webform-conditional-processed .content-datos a{
@@ -178,8 +177,8 @@
     }
 
     .webform-conditional-processed .content-datos .email{
-    	max-width: 470px;
-      width: 350px;
+       max-width: 605px;
+       width: 350px;
     }
 
     .webform-conditional-processed .content-datos .mobile{
