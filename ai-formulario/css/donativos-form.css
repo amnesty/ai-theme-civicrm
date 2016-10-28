@@ -35,3 +35,10 @@
   }
 
 }
+
+/* max-width: 769px */
+@media only screen and (max-width: 769px) {
+  .webform-conditional-processed .content-colaborar .capa-other-quant {
+      margin-top: 0px;
+  }
+}
