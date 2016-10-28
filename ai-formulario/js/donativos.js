@@ -19,4 +19,24 @@ jQuery(function($) {
         contrib_source_input.val(get_campaign);
     }
 
+    // Esconder otra cuota
+    if ( $("#edit-submitted-caja-colaborar-fieldset-fila-1-0-civicrm-1-contact-1-cg15-custom-48-1").is(":checked") ||
+        $("#edit-submitted-caja-colaborar-fieldset-fila-1-0-civicrm-1-contact-1-cg15-custom-48-2").is(":checked") ||
+        $("#edit-submitted-caja-colaborar-fieldset-fila-1-0-civicrm-1-contact-1-cg15-custom-48-3").is(":checked")
+    ){
+        $(".otra_cuota").css("visibility", "hidden");
+    }
+    $(".cuota").click( function() {
+      if ( $("#edit-submitted-caja-colaborar-fieldset-fila-1-0-civicrm-1-contact-1-cg15-custom-48-1").is(":checked") ||
+          $("#edit-submitted-caja-colaborar-fieldset-fila-1-0-civicrm-1-contact-1-cg15-custom-48-2").is(":checked") ||
+          $("#edit-submitted-caja-colaborar-fieldset-fila-1-0-civicrm-1-contact-1-cg15-custom-48-3").is(":checked")
+      ){
+          $(".otra_cuota").css("visibility", "hidden");
+      }
+      if ( $("#edit-submitted-caja-colaborar-fieldset-fila-1-0-civicrm-1-contact-1-cg15-custom-48-4").is(":checked") ){
+          $(".otra_cuota").css("visibility", "visible");
+      }
+    });
+
+
 })
