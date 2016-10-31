@@ -22,7 +22,7 @@ jQuery(function($) {
     }
     // pk_kwd
     if( get_kw != '' && get_kw ){
-        contrib_source_input.val(get_kw);
+        contrib_kw_input.val(get_kw);
     }
 
     // Esconder otra cuota
