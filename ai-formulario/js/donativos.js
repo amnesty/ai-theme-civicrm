@@ -6,7 +6,9 @@ jQuery(function($) {
     var cat_source = "ut01";
     var get_source = getUrlVars()["origen"];
     var get_campaign = getUrlVars()["pk_campaign"];
+    var get_kw = getUrlVars()["pk_kwd"];
     var contrib_source_input = $( "[name='submitted[civicrm_1_contribution_1_contribution_source]']");
+    var contrib_kw_input = $( "[name='submitted[civicrm_1_contribution_1_cg21_custom_103]']");
 
     // origen
     if( get_source != '' && get_source ){ // origen
@@ -17,6 +19,10 @@ jQuery(function($) {
     }
     else if( get_campaign != '' && get_campaign ){ //pk_campaign
         contrib_source_input.val(get_campaign);
+    }
+    // pk_kwd
+    if( get_kw != '' && get_kw ){
+        contrib_source_input.val(get_kw);
     }
 
     // Esconder otra cuota
