@@ -48,7 +48,7 @@ jQuery(function($) {
     if($(".tipo_documento option:selected").val()=='cif'){
       $(".nombre").val('');
       $(".primer-apellido").val('');
-      $(".segundp-apellido-apellido").val('');
+      $(".segundo-apellido").val('');
       $(".nombre").attr("placeholder", "Nombre de la entidad *");
       $(".nombre").css("width", "605px");
       $(".email").css("width", "470px");
