@@ -13,6 +13,14 @@
   margin-top: -463px;
 }
 
+.webform-conditional-processed .content-datos .cif .fila-1 .nombre {
+    width:210px;
+}
+
+.webform-conditional-processed .content-datos .cif .fila-1 .nombre {
+    width: 350px;
+}
+
 /* max-width: 1370px */
 @media only screen and (max-width: 1370px) {
 

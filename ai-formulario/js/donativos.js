@@ -56,8 +56,6 @@ jQuery(function($) {
     // CIF: borrar nombre y cambiar placeholder
     if($(".tipo_documento option:selected").val()=='cif'){
       $(".nombre").attr("placeholder", "Nombre de la entidad *");
-      /*$(".nombre").css("width", "605px");
-      $(".email").css("width", "470px");*/
       $(".content-datos").addClass("cif");
     }
     $(".tipo_documento").change( function() {
@@ -66,15 +64,11 @@ jQuery(function($) {
           $(".primer-apellido").val('');
           $(".segundo-apellido").val('');
           $(".nombre").attr("placeholder", "Nombre de la entidad *");
-          /*$(".nombre").css("width", "605px");
-          $(".email").css("width", "470px");*/
           $(".content-datos").addClass("cif");
         }
         else {
           $(".nombre").val('');
           $(".nombre").attr("placeholder", "Nombre *");
-        /*  $(".nombre").css("width", "210px");
-          $(".email").css("width", "350px");*/
           $(".content-datos").removeClass("cif");
         }
     });
