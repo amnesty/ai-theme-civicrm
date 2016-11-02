@@ -86,6 +86,10 @@
       max-width: 129%;
   }
 
+  .webform-conditional-processed .cif .fila-1 .email {
+      margin-top: 0px;
+  }
+
   .webform-conditional-processed .content-colaborar .capa-other-quant {
       margin-top: 0px;
   }
