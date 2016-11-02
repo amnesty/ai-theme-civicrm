@@ -14,15 +14,25 @@
 }
 
 .webform-conditional-processed .cif .fila-1 .nombre {
-    width:210px;
+    max-width: 580px;
+    width: 580px;
+}
+
+.webform-conditional-processed .cif .fila-1 .number-dni {
+    max-width: 270px;
 }
 
 .webform-conditional-processed .cif .fila-1 .email {
-    width: 350px;
+    width: 440px;
+    max-width: 440px;
 }
 
 /* max-width: 1370px */
 @media only screen and (max-width: 1370px) {
+
+  .webform-conditional-processed .cif .fila-1 .nombre {
+      width: 550px;
+  }
 
   .preview .content-cuenta {
       float: none;
@@ -41,6 +51,10 @@
 
 /* max-width: 986px */
 @media only screen and (max-width: 986px) {
+
+  .webform-conditional-processed .cif .fila-1 .nombre {
+      width: 420px;
+  }
 
   .preview .content-direccion {
     float: none;
