@@ -721,6 +721,10 @@
         max-width: 185px;
     }
 
+    .webform-conditional-processed .content-datos .fila-1 .nombre{
+      max-width: 185px;
+    }
+
     .webform-conditional-processed .content-datos .email {
         max-width: 275px;
     }
@@ -1111,9 +1115,6 @@
     .content-form .webform-conditional-processed .caja-content .capa-fechas div div,
     .content-form .webform-conditional-processed .caja-content .capa-fechas label {
         margin-top: 20px;
-    }
-    .webform-conditional-processed .content-datos .fila-1 .nombre{
-      max-width: 185px;
     }
 
     .webform-conditional-processed .content-datos .capa-document {
