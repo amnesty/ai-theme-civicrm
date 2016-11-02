@@ -917,7 +917,7 @@
     }
 
     .webform-conditional-processed .content-datos select.profesion {
-        background-position: 290px center;
+        background-position: 286px center;
         max-width: 330px;
     }
 
@@ -1127,7 +1127,7 @@
     }
 
     .webform-conditional-processed .content-datos select.document {
-        background-position: 165px center;
+        background-position: 75% center;
     }
 
     .webform-conditional-processed .content-datos .fila-1 .number-dni{
