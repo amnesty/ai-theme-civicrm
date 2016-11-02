@@ -53,7 +53,16 @@
 @media only screen and (max-width: 986px) {
 
   .webform-conditional-processed .cif .fila-1 .nombre {
-      width: 420px;
+      width: 355px;
+  }
+
+  .webform-conditional-processed .cif .fila-1 .number-dni {
+      max-width: 270px;
+  }
+
+  .webform-conditional-processed .cif .fila-1 .email {
+      width: 388px;
+      max-width: 388px;
   }
 
   .preview .content-direccion {
