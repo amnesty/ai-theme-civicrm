@@ -3,7 +3,14 @@
 .preview .content-cuenta {
     float: left;
     margin-left: 1000px;
-    margin-top: -550px;
+    margin-top: -542px;
+}
+
+.preview .content-direccion {
+  float: left;
+  margin-right: 200px;
+  margin-left: 500px;
+  margin-top: -463px;
 }
 
 /* max-width: 1370px */
