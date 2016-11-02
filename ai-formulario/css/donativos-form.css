@@ -76,6 +76,16 @@
 
 /* max-width: 769px */
 @media only screen and (max-width: 769px) {
+
+  .webform-conditional-processed .cif .fila-1 .number-dni {
+      max-width: 58%;
+  }
+
+  .webform-conditional-processed .cif .fila-1 .nombre {
+      width: 100%;
+      max-width: 129%;
+  }
+
   .webform-conditional-processed .content-colaborar .capa-other-quant {
       margin-top: 0px;
   }
