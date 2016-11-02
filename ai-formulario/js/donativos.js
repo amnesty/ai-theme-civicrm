@@ -47,6 +47,8 @@ jQuery(function($) {
     // CIF: borrar nombre y cambiar placeholder
     if($(".tipo_documento option:selected").val()=='cif'){
       $(".nombre").val('');
+      $(".apellidp1").val('');
+      $(".apellido2").val('');
       $(".nombre").attr("placeholder", "Nombre de la entidad *");
       $(".nombre").css("width", "605px");
       $(".email").css("width", "470px");
@@ -54,6 +56,8 @@ jQuery(function($) {
     $(".tipo_documento").change( function() {
         if($(".tipo_documento option:selected").val()=='cif'){
           $(".nombre").val('');
+          $(".apellidp1").val('');
+          $(".apellido2").val('');
           $(".nombre").attr("placeholder", "Nombre de la entidad *");
           $(".nombre").css("width", "605px");
           $(".email").css("width", "470px");
