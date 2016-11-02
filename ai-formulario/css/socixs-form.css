@@ -805,6 +805,7 @@
 	  .box-es-right {
 		    width: 100%;
 		    float: left;
+        padding-right: 0px;
         /* TENÍA ====
         .box-es-right {
 				    width: 100%;
