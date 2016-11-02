@@ -1091,6 +1091,7 @@
         max-width: 129%;
     }
 
+    .webform-conditional-processed .content-datos .nombre,
     .webform-conditional-processed .content-datos .capa-profesion,
     .webform-conditional-processed .content-datos .email,
     .webform-conditional-processed .content-datos .mobile,
