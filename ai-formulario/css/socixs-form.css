@@ -1295,6 +1295,10 @@
         display: none;
     }
 
+    .box-form-es .content-cuenta img {
+        display: block;
+    }
+
     .webform-conditional-processed .content-colaborar .fila-1,
     .webform-conditional-processed .content-datos .fila-1,
     .webform-conditional-processed .content-direccion .fila-1,
