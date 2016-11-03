@@ -31,7 +31,7 @@
 @media only screen and (max-width: 1370px) {
 
   .webform-conditional-processed .cif .fila-1 .nombre {
-      width: 550px;
+      width: 460px;
   }
 
   .preview .content-cuenta {
@@ -88,6 +88,7 @@
 
   .webform-conditional-processed .cif .email {
       margin-top: 0px;
+      width: 388px;
   }
 
   .webform-conditional-processed .content-colaborar .capa-other-quant {
