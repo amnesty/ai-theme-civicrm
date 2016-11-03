@@ -34,6 +34,10 @@
       width: 460px;
   }
 
+  .webform-conditional-processed .cif .email {
+      width: 445px;
+  }
+
   .preview .content-cuenta {
       float: none;
       margin-left: 0px;
