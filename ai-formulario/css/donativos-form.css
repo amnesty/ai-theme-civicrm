@@ -15,14 +15,14 @@
 
 .webform-conditional-processed .cif .fila-1 .nombre {
     max-width: 580px;
-    width: 580px;
+    width: 540px;
 }
 
 .webform-conditional-processed .cif .fila-1 .number-dni {
     max-width: 270px;
 }
 
-.webform-conditional-processed .cif .fila-1 .email {
+.webform-conditional-processed .cif .email {
     width: 565px;
     max-width: 565px;
 }
