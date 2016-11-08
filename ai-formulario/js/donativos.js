@@ -85,7 +85,7 @@ jQuery(function($) {
 
     // Añadir títulos a la página de preview
 
-    if( $(".webform-client-form").first().hasClass("preview") ){
+    /*if( $(".webform-client-form").first().hasClass("preview") ){
         // título confirma tus datos
         if(url.indexOf("/cat") > -1){
           $(".box-form-es").prepend("<h4 style='margin-top: 10px; margin-bottom: 20px; margin-left: 20px;'>¿Ens ajudes a confirmar que les teves dades són correctes?</h4>");
@@ -106,7 +106,7 @@ jQuery(function($) {
         $(".box-es-right").remove();
         $(".box-form-es").css("width", "100%");
 
-    }
+    }*/
 
     // Scrolling the active block of fields
 
