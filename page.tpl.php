@@ -121,6 +121,8 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
                        <span>En Amnistía Internacional luchamos para conseguir igualdad y protección para todas las mujeres y niñas.</span><br>
                        <span>Renunciamos a cualquier subvención porque nuestra independencia está por encima de todo y, gracias a personas como tú, podemos denunciar sin presiones violación de los derechos humanos.</span><br>
                        <span><b>Gracias por creer en un mundo más justo.</b></span>
+              <?php } elseif($node->nid == $donativos_form) { ?>
+                      <span> Has llegado hasta aquí porque algo dentro de ti te dice que hay millones de razones para colaborar. La fundamental es que quieres cambiar el mundo, y no sabes cuanto nos alegra, porque sabemos que podemos contar contigo para lograrlo. <b>Gracias por creer en un mundo más justo<b/></span>
               <?php } elseif($cat == 0){ ?>
                        <span>Tu ayuda hace posible que podamos renunciar a subvenciones de gobiernos y partidos políticos, porque nuestra independencia está por encima de todo. </span>
                        <span>Es gracias a personas como tú que nos apoyáis económicamente por lo que podemos denunciar sin presiones cualquier violación de los derechos humanos. </span>
@@ -137,7 +139,11 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
                     <?php print render($page['content']); ?>
 
                     <?php // ****************  Sólo mostramos los botones de compartir en la página de gracias ******************
-                        if (in_array($node->nid, $socixs_gracias_list)){ ?>
+                        if($node->nid == $donativos_gracias){ ?>
+                          <div>
+                            <a class="ai-cta-2col__banner-btn" href="https://crm.es.amnesty.org/unete-a-amnistia/?origen=home">Hazte Socio/a</a>
+                          <div>
+                        <?php } else if (in_array($node->nid, $socixs_gracias_list)){ ?>
                         <div id="share-buttons" class="ai-accion-firma-compartir">
                             <!--h4 class="ai-accion-firma-compartir__header">¿Nos ayudas a conseguir más apoyo?</h4-->
                             <?php if($cat){ ?>

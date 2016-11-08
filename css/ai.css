@@ -4202,9 +4202,12 @@ x:-o-prefocus {
     cursor: pointer;
     box-sizing: border-box
 }
+
 .ai-cta-2col__banner-btn:hover {
     background-color: #ffd500;
-    border-color: #ffd500
+    border-color: #ffd500;
+    text-decoration: none;
+    color: #000;
 }
 .ai-accion-firma__button-primera {
     font-feature-settings: 'kern';
