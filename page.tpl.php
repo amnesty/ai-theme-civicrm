@@ -140,7 +140,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 
                     <?php // ****************  Sólo mostramos los botones de compartir en la página de gracias ******************
                         if($node->nid == $donativos_gracias){ ?>
-                          <div>
+                          <div style="width:50%;">
                             <a class="ai-cta-2col__banner-btn" href="https://crm.es.amnesty.org/unete-a-amnistia/?origen=home">Hazte Socio/a</a>
                           <div>
                         <?php } else if (in_array($node->nid, $socixs_gracias_list)){ ?>
