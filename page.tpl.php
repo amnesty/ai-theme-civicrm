@@ -39,17 +39,16 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
   <!-- Añadimos la hoja CSS para el formulario de Socixs en concreto -->
   <?php if ( in_array($node->nid, $socixs_form_list) || in_array($node->nid, $socixs_gracias_list) ){ ?>
     <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/socixs-form.css">
+    <script type="text/javascript" src="<?php print $form_path; ?>/js/socixs-form.js"></script>
     <?php if ( $node->nid==$donativos_form ) { ?>
       <script type="text/javascript" src="<?php print $form_path; ?>/js/donativos.js"></script>
       <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/donativos-form.css">
-    <?php } else { ?>
-      <script type="text/javascript" src="<?php print $form_path; ?>/js/socixs-form.js"></script>
-    <?php }
+  <?php }
     } ?>
 
 <!-- ************************************************** CONTENIDO *****************************************************************-->
 
-<!------------------------------------ Header -------------------------------------------->
+<!-- Header -->
 <nav class="navbar navbar-fixed-top">
 <header class="header" data-header="" role="banner">
     <div class="header__container" data-header-container="">
@@ -71,26 +70,26 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 <!-- Image after header-->
 <div class="image-header image-header--has-credits-sm image-header--actua">
     <div id="pixel"></div>
-    <?php if ( $node->nid==$socixs_form_B || $node->nid==$socixs_gracias_B || ($node->nid==$socixs_form || $node->nid==$donativos_form) && $mobile ) { ?>
+    <?php if ( ( $node->nid==$socixs_form || $node->nid==$socixs_form_cat || $node->nid==$socixs_gracias || $node->nid==$socixs_gracies) && $mobile ) { // MOBILE  ?>
       <div style="background-image: url('<?php print $form_path; ?>/images/headerB.jpg?anchor=topcenter');" class="responsive--bg responsive--bg-b lazyloaded"
           data-bgset="<?php print $form_path; ?>/images/headerB.jpg?anchor=topcenter">
       </div>
       <noscript>
           <img src="<?php print $form_path; ?>/images/headerB.jpg?anchor=topcenter" class=responsive__img>
       </noscript>
-    <?php } elseif ( in_array($node->nid, $antevenio_list) ) { ?>
-      <div style="background-image: url('<?php print $form_path; ?>/images/<?php print $img_antevenio; ?>?anchor=topcenter');" class="responsive--bg <?php print $extra_class; ?> lazyloaded"
-          data-bgset="<?php print $form_path; ?>/images/<?php print $img_antevenio; ?>?anchor=topcenter">
+    <?php } elseif ( in_array($node->nid, $antevenio_list) ) { // ANTEVENIO FORMS ?>
+      <div style="background-image: url('<?php print $form_path; ?>/images/<?php print $img_header; ?>?anchor=topcenter');" class="responsive--bg <?php print $extra_class; ?> lazyloaded"
+          data-bgset="<?php print $form_path; ?>/images/<?php print $img_header; ?>?anchor=topcenter">
       </div>
       <noscript>
-          <img src="<?php print $form_path; ?>/images/<?php print $img_antevenio; ?>?anchor=topcenter" class=responsive__img>
+          <img src="<?php print $form_path; ?>/images/<?php print $img_header; ?>?anchor=topcenter" class=responsive__img>
       </noscript>
-    <?php } else { //Formularios Socixs ?>
-      <div style="background-image: url('<?php print $form_path; ?>/images/header.jpg?anchor=topcenter');" class="responsive--bg lazyloaded"
-          data-bgset="<?php print $form_path; ?>/images/header.jpg?anchor=topcenter">
+    <?php } else { // Resto de formularios ?>
+      <div style="background-image: url('<?php print $form_path; ?>/images/<?php print $img_header; ?>?anchor=topcenter');" class="responsive--bg <?php print $extra_class; ?> lazyloaded"
+          data-bgset="<?php print $form_path; ?>/images/<?php print $img_header; ?>?anchor=topcenter">
       </div>
       <noscript>
-          <img src="<?php print $form_path; ?>/images/header.jpg?anchor=topcenter" class=responsive__img>
+          <img src="<?php print $form_path; ?>/images/<?php print $img_header; ?>?anchor=topcenter" class=responsive__img>
       </noscript>
     <?php } ?>
     <div class="image-header__content--medium">
@@ -103,7 +102,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 </div>
 <!-- Image after header -->
 
-<!----------------------------------------------------- CUERPO --------------------------------------------------------------->
+<!-- Page content -->
 <div class="container--wide">
     <!-- Bootstrap Grid -->
     <div class="grid">
