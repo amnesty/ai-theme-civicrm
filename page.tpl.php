@@ -122,7 +122,11 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
                        <span>Renunciamos a cualquier subvención porque nuestra independencia está por encima de todo y, gracias a personas como tú, podemos denunciar sin presiones violación de los derechos humanos.</span><br>
                        <span><b>Gracias por creer en un mundo más justo.</b></span>
               <?php } elseif($node->nid == $donativos_form) { ?>
-                      <span> Has llegado hasta aquí porque algo dentro de ti te dice que hay millones de razones para colaborar. La fundamental es que quieres cambiar el mundo, y no sabes cuanto nos alegra, porque sabemos que podemos contar contigo para lograrlo. <b>Gracias por creer en un mundo más justo<b/></span>
+                          <?php if($cat == 0) { ?>
+                            <span> Has llegado hasta aquí porque algo dentro de ti te dice que hay millones de razones para colaborar. La fundamental es que quieres cambiar el mundo, y no sabes cuanto nos alegra, porque sabemos que podemos contar contigo para lograrlo. <b>Gracias por creer en un mundo más justo<b/></span>
+                          <?php } else { ?>
+                            <span> Has arribat fins aquí perquè alguna cosa dins teu diu que hi ha milions de raons per a col·laborar. La fundamental és que vols canviar el món, i no saps com ens n'alegrem, perquè sabem que podemo comptar amb tu per aconseguir-ho. <b>Gràcies per creure en un món més just<b/></span>
+                          <?php } ?>
               <?php } elseif($cat == 0){ ?>
                        <span>Tu ayuda hace posible que podamos renunciar a subvenciones de gobiernos y partidos políticos, porque nuestra independencia está por encima de todo. </span>
                        <span>Es gracias a personas como tú que nos apoyáis económicamente por lo que podemos denunciar sin presiones cualquier violación de los derechos humanos. </span>
@@ -139,7 +143,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
                     <?php print render($page['content']); ?>
 
                     <?php // ****************  Sólo mostramos los botones de compartir en la página de gracias ******************
-                        if($node->nid == $donativos_gracias){ ?>
+                        if($node->nid == $donativos_gracias || $node->nid == $donativos_gracias_cat ){ ?>
                           <div style="width:45%; margin-left: 50px;">
                             <a class="ai-cta-2col__banner-btn" href="https://crm.es.amnesty.org/unete-a-amnistia/?origen=donativo">Únete a Amnistía Internacional</a>
                           <div>
