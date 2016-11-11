@@ -123,9 +123,9 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
                        <span><b>Gracias por creer en un mundo más justo.</b></span>
               <?php } elseif($node->nid == $donativos_form || $node->nid == $donativos_form_cat) { ?>
                           <?php if($cat == 0) { ?>
-                            <span> Has llegado hasta aquí porque algo dentro de ti te dice que hay millones de razones para colaborar. La fundamental es que quieres cambiar el mundo, y no sabes cuanto nos alegra, porque sabemos que podemos contar contigo para lograrlo. <b>Gracias por creer en un mundo más justo<b/></span>
+                            <span> Has llegado hasta aquí porque algo dentro de ti te dice que hay millones de razones para colaborar. La fundamental es que quieres cambiar el mundo, y no sabes cuanto nos alegra, porque sabemos que podemos contar contigo para lograrlo. <b>Gracias por creer en un mundo más justo.<b/></span>
                           <?php } else { ?>
-                            <span> Has arribat fins aquí perquè alguna cosa dins teu diu que hi ha milions de raons per a col·laborar. La fonamental és que vols canviar el món, i no saps com ens n'alegrem, perquè sabem que podem comptar amb tu per aconseguir-ho. <b>Gràcies per creure en un món més just<b/></span>
+                            <span> Has arribat fins aquí perquè alguna cosa dins teu diu que hi ha milions de raons per a col·laborar. La fonamental és que vols canviar el món, i no saps com ens n'alegrem, perquè sabem que podem comptar amb tu per aconseguir-ho. <b>Gràcies per creure en un món més just.<b/></span>
                           <?php } ?>
               <?php } elseif($cat == 0){ ?>
                        <span>Tu ayuda hace posible que podamos renunciar a subvenciones de gobiernos y partidos políticos, porque nuestra independencia está por encima de todo. </span>
