@@ -121,7 +121,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
                        <span>En Amnistía Internacional luchamos para conseguir igualdad y protección para todas las mujeres y niñas.</span><br>
                        <span>Renunciamos a cualquier subvención porque nuestra independencia está por encima de todo y, gracias a personas como tú, podemos denunciar sin presiones violación de los derechos humanos.</span><br>
                        <span><b>Gracias por creer en un mundo más justo.</b></span>
-              <?php } elseif($node->nid == $donativos_form) { ?>
+              <?php } elseif($node->nid == $donativos_form || $node->nid == $donativos_form_cat) { ?>
                           <?php if($cat == 0) { ?>
                             <span> Has llegado hasta aquí porque algo dentro de ti te dice que hay millones de razones para colaborar. La fundamental es que quieres cambiar el mundo, y no sabes cuanto nos alegra, porque sabemos que podemos contar contigo para lograrlo. <b>Gracias por creer en un mundo más justo<b/></span>
                           <?php } else { ?>
@@ -145,7 +145,11 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
                     <?php // ****************  Sólo mostramos los botones de compartir en la página de gracias ******************
                         if($node->nid == $donativos_gracias || $node->nid == $donativos_gracias_cat ){ ?>
                           <div style="width:45%; margin-left: 50px;">
-                            <a class="ai-cta-2col__banner-btn" href="https://crm.es.amnesty.org/unete-a-amnistia/?origen=donativo">Únete a Amnistía Internacional</a>
+                            <a class="ai-cta-2col__banner-btn" href="https://crm.es.amnesty.org/unete-a-amnistia/?origen=donativo">
+                                <?php if($cat == 0) { ?>Únete a Amnistía Internacional
+                                <?php } else { ?>Uneix-te a Amnistia Internacional
+                                <?php } ?>
+                            </a>
                           <div>
                         <?php } else if (in_array($node->nid, $socixs_gracias_list)){ ?>
                         <div id="share-buttons" class="ai-accion-firma-compartir">
