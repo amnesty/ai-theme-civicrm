@@ -144,7 +144,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 
                     <?php // ****************  Sólo mostramos los botones de compartir en la página de gracias ******************
                         if($node->nid == $donativos_gracias || $node->nid == $donativos_gracias_cat ){ ?>
-                          <div style="width:45%; margin-left: 50px;">
+                          <div style="width:500px; margin-left: 40px;">
                             <a class="ai-cta-2col__banner-btn" href="https://crm.es.amnesty.org/unete-a-amnistia/?origen=donativo">
                                 <?php if($cat == 0) { ?>Únete a Amnistía Internacional
                                 <?php } else { ?>Uneix-te a Amnistia Internacional
