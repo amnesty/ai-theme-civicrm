@@ -179,6 +179,13 @@ jQuery(function($) {
     // Province label
     $('.provincia option[value=""]').text("-Provincia-");
 
+    // Etiquetas de fecha de nacimiento
+    if(url.indexOf("/cat") > -1){ // AmnistiaCAT
+      $('.day option[value=""]').text("Dia");
+      $('.month option[value=""]').text("Mes");
+      $('.year option[value=""]').text("Any");
+    }
+
     // Make the IBAN fields to automatically move the cursor through when any field is fullfilled.
 
     $(".country").keyup( function(){
