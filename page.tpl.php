@@ -225,6 +225,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 </div>
 
 <!-- Footer -->
+<?php if( !in_array($node->nid, $excluded_header_list) ){ ?>
 <footer class="footer print-hidden">
     <div class="footer__container">
         <div class="grid footer__bottom">
@@ -260,7 +261,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
         </div>
     </div>
 </footer>
-
+<?php } ?>
 </div></div></div>
 
 <?php
