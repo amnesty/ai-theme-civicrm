@@ -125,6 +125,7 @@ header, hgroup, nav, section {
 
 .content-form .webform-conditional-processed input {
     border-radius: 0;
+    font-weight: normal;
 }
 
 .content-form .webform-conditional-processed .input-generic{
@@ -139,6 +140,7 @@ header, hgroup, nav, section {
     margin-right: 10px;
     list-style: none inside none;
     padding-left: 10px;
+    font-weight: normal;
 }
 
 /* Caja con checkbox --------- */
@@ -169,6 +171,7 @@ header, hgroup, nav, section {
 .content-form .webform-conditional-processed .select{
     width: 110%;
     border: 0;
+    font-weight: normal;
 }
 
 .content-form .webform-conditional-processed select{
@@ -215,6 +218,7 @@ header, hgroup, nav, section {
     margin-right: 10px;
     list-style: none inside none;
     padding-left: 10px;
+    font-weight: normal;
 }
 
 /* Labels ----- */
