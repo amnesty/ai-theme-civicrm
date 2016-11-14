@@ -139,7 +139,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
               <?php } ?>
               </p>
             <?php } ?>
-		        <div class="box-form-es">
+		        <div class="box-form-es" <?php if( in_array($node->nid, $excluded_header_list) ){ ?>style="width: 100%;" <?php } ?> >
                     <?php print $messages; ?> <!-- Errors -->
                     <?php print render($page['content']); ?>
 
