@@ -49,6 +49,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 <!-- ************************************************** CONTENIDO *****************************************************************-->
 
 <!-- Header -->
+<?php if( !in_array($node->nid, $excluded_header_list) ){ ?>
 <nav class="navbar navbar-fixed-top">
 <header class="header" data-header="" role="banner">
     <div class="header__container" data-header-container="">
@@ -99,8 +100,8 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
             </h2>
         </div>
     </div>
-</div>
-<!-- Image after header -->
+</div><!-- Image after header -->
+<?php } ?>
 
 <!-- Page content -->
 <div class="container--wide">
@@ -171,7 +172,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
                           <?php } ?>
                         </div>
                     <?php } ?>
-                <?php if(in_array($node->nid, $socixs_form_list)) {
+                <?php if( !in_array($node->nid, $excluded_header_list) && in_array($node->nid, $socixs_form_list) ) {
                   print '</div><!-- Box FORM_ES -->'; ?>
                    <div class="box-es-right col-xs-12 col-sm-12 col-md-3 col-lg-3 margin-top-20px-element"> <!-- box-es-right -->
                      <?php if( $node->nid == $area_privada) { ?>
