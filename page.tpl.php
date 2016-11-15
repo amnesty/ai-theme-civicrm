@@ -185,10 +185,18 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
                       <div class="three-column ventajas bloques-x4 col-xs-12 col-sm-12 col-md-4 col-lg-4">
                            <img src="<?php print $images_path; ?>pig.png" alt="pig"/>
                            <?php if($cat){ ?>
-                             <h3>Coneixes els avantatges fiscals de ser soci/a?</h3>
+                             <?php if( in_array($node->nid, $donativos_form_list) ){ ?>
+                                <h3>Coneixes els avantatges fiscals de fer un donatiu?</h3>
+                             <?php } else { ?>
+                                <h3>Coneixes els avantatges fiscals de ser soci/a?</h3>
+                              <?php } ?>
                              <p>Totes les teves aportacions desgraven un 75% els primers 150€. A partir d'aquesta xifra, el 30%. Si els últims 3 anys has mantingut o augmentat l'aportació a l'organització, la desgravació puja fins un 35% per a premiar la teva fidelitat. Aquestes deduccions no s'apliquen al País Basc ni a Navarra.
                            <?php }else{ ?>
-                             <h3>¿Conoces las ventajas fiscales de ser socio/a?</h3>
+                             <?php if( in_array($node->nid, $donativos_form_list) ){ ?>
+                                <h3>¿Conoces las ventajas fiscales de hacer una donación?</h3>
+                             <?php } else { ?>
+                                <h3>¿Conoces las ventajas fiscales de ser socio/a?</h3>
+                              <?php } ?>
                              <p>Todas tus aportaciones desgravan un 75% los primeros 150€. A partir de esa cifra, el 30%. Si en los últimos tres años se han mantenido o aumentado las aportaciones a la organización, la desgravación sube a un 35% para premiar tu fidelidad. Estas deducciones no aplican en País Vasco y Navarra.
                            <?php } ?>
                            </p>
