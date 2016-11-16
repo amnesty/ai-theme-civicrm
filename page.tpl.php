@@ -29,6 +29,11 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
   header('Location: http://localhost:8080/civicrm/mobile');
 }*/
 
+// Patch para cagada de email
+if( $node->nid == $socixs_form && preg_match('/20161116_CDonaldTrump/',$url) ){
+  header('Location: https://crm.es.amnesty.org/haz-un-donativo?pk_campaign=mailint&pk_kwd=20161116_CDonaldTrump');
+}
+
 // ****************************************************** CSS y JS *******************************************************************
 ?>
   <!-- WEB -->
