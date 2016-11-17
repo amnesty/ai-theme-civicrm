@@ -9,7 +9,8 @@ if (preg_match('/\/cat/',$url)){
 }
 
 // Globals
-include_once('config.php');
+include_once('config.php'); // variables dependientes del entorno
+include_once('globals.php'); // textos, estructura, etc comun
 
 // AB Testing
 $splitter_url = 'sites/all/themes/ai-theme-civicrm/splitter/ab.php';
