@@ -23,10 +23,10 @@ if ($antevenio_form_B == $node->nid || $node->nid == $antevenio_gracias_B || $no
         $img_header = "headerE.jpg";
 } else if( in_array($node->nid,$navidad_list) ){
         $img_header = "header-navidad.jpg";
+        $extra_class="responsive--bg-nav";
 } else if ( in_array($node->nid, $donativos_form_list) || $node->nid == $donativos_gracias || $node->nid == $donativos_gracias_cat){
         $extra_class="responsive--bg-don";
         $img_header = "header_donativo.jpg";
 }
-
 
 ?>

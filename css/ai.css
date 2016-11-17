@@ -3181,27 +3181,7 @@ time {
 }
 .responsive--bg {
     background-position: center 10%; /* H */
-    background-size: cover
-}
-
-.responsive--bg-b {
-    background-position: center 59%; /* H */
-    background-size: cover
-}
-
-.responsive--bg-c {
-    background-position: center 50%; /* H */
-    background-size: cover
-}
-
-.responsive--bg-d {
-    background-position: center 36%; /* H */
-    background-size: cover
-}
-
-.responsive--bg-don {
-    background-position: center 33%; /* H */
-    background-size: cover
+    background-size: cover;
 }
 
 .responsive__img {

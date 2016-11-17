@@ -34,88 +34,20 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 if( $node->nid == $socixs_form && preg_match('/20161116_CDonaldTrump/',$url) ){
   header('Location: https://crm.es.amnesty.org/haz-un-donativo?pk_campaign=mailint&pk_kwd=20161116_CDonaldTrump');
 }
-
-// ****************************************************** CSS y JS *******************************************************************
 ?>
-  <!-- WEB -->
-  <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/ai.css">
-  <!-- Cargamos los CSS que necesitamos para el contenido genérico -->
-  <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/style-form.css">
-  <!-- Añadimos la hoja CSS para el formulario de Socixs en concreto -->
-  <?php if ( in_array($node->nid, $socixs_form_list) || in_array($node->nid, $socixs_gracias_list) ){ ?>
-    <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/socixs-form.css">
-    <script type="text/javascript" src="<?php print $form_path; ?>/js/socixs-form.js"></script>
-    <?php if ( in_array($node->nid, $donativos_form_list) ) { ?>
-      <script type="text/javascript" src="<?php print $form_path; ?>/js/donativos.js"></script>
-      <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/donativos-form.css">
-  <?php }
-    } ?>
 
-<!-- ************************************************** CONTENIDO *****************************************************************-->
+<?php
+  // Estilos y scripts
+  include_once('styles_scripts.php');
 
-<!-- Header -->
-<?php if( !in_array($node->nid, $excluded_header_list) ){ ?>
-<nav class="navbar navbar-fixed-top">
-<header class="header" data-header="" role="banner">
-    <div class="header__container" data-header-container="">
-        <div class="header__slogan-container">
-        <?php if($cat){ ?>
-            <div class="header__slogan"> Actuem pels drets humans arreu del món. </div>
-        <?php }else{ ?>
-              <div class="header__slogan"> Actuamos por los derechos humanos en todo el mundo </div>
-        <?php } ?>
-        </div>
-        <?php if($cat){ ?>
-          <h1 class="logo" data-logo=""><a class="logo__link" href="https://www.amnistiacatalunya.org">Amnistia Internacional Catalunya</a></h1>
-        <?php }else{ ?>
-          <h1 class="logo" data-logo=""><a class="logo__link" href="https://www.es.amnesty.org">Amnistía Internacional España</a></h1>
-        <?php } ?>
-    </div>
-</header>
-</nav>
-<!-- Image after header-->
-<div class="image-header image-header--has-credits-sm image-header--actua">
-    <div id="pixel"></div>
-    <?php if ( ( $node->nid==$socixs_form || $node->nid==$socixs_form_cat || $node->nid==$socixs_gracias || $node->nid==$socixs_gracies) && $mobile ) { // MOBILE  ?>
-      <div style="background-image: url('<?php print $form_path; ?>/images/headerB.jpg?anchor=topcenter');" class="responsive--bg responsive--bg-b lazyloaded"
-          data-bgset="<?php print $form_path; ?>/images/headerB.jpg?anchor=topcenter">
-      </div>
-      <noscript>
-          <img src="<?php print $form_path; ?>/images/headerB.jpg?anchor=topcenter" class=responsive__img>
-      </noscript>
-    <?php } elseif ( in_array($node->nid, $antevenio_list) ) { // ANTEVENIO FORMS ?>
-      <div style="background-image: url('<?php print $form_path; ?>/images/<?php print $img_header; ?>?anchor=topcenter');" class="responsive--bg <?php print $extra_class; ?> lazyloaded"
-          data-bgset="<?php print $form_path; ?>/images/<?php print $img_header; ?>?anchor=topcenter">
-      </div>
-      <noscript>
-          <img src="<?php print $form_path; ?>/images/<?php print $img_header; ?>?anchor=topcenter" class=responsive__img>
-      </noscript>
-    <?php } else { // Resto de formularios ?>
-      <div style="background-image: url('<?php print $form_path; ?>/images/<?php print $img_header; ?>?anchor=topcenter');" class="responsive--bg <?php print $extra_class; ?> lazyloaded"
-          data-bgset="<?php print $form_path; ?>/images/<?php print $img_header; ?>?anchor=topcenter">
-      </div>
-      <noscript>
-          <img src="<?php print $form_path; ?>/images/<?php print $img_header; ?>?anchor=topcenter" class=responsive__img>
-      </noscript>
-    <?php } ?>
-    <div class="image-header__content--medium">
-        <div class="image-headline--full">
-            <h2 class="image-headline__actua-title">
-                <span class="heading--tape--dark"><?php  $title = explode('#',$node->title); echo $title[0];  ?></span>
-            </h2>
-        </div>
-    </div>
-</div><!-- Image after header -->
-<?php } ?>
+  // Header
+  include_once('header.php');
+?>
 
-<!-- Page content -->
-<div class="container--wide">
-    <!-- Bootstrap Grid -->
-    <div class="grid">
+<div class="container--wide"><!-- Page content -->
+    <div class="grid"><!-- Bootstrap Grid -->
    	 <div id="content-area">
-            <!-- Formulario -->
-         	<div class="content-form clearfix">
+         	<div class="content-form clearfix"><!-- Formulario -->
             <?php
             // ********* Sólo mostramos el texto de intro en el formulario de socixs
             if (in_array($node->nid, $socixs_form_list)){ ?>
@@ -233,52 +165,14 @@ if( $node->nid == $socixs_form && preg_match('/20161116_CDonaldTrump/',$url) ){
                 ?>
                       </div><!-- Box FORM_ES -->
                 <?php } ?>
-			  </div>
-		  </div>
+			      </div>
+		      </div>
+        </div>
+      </div>
+      <?php include_once('footer.php'); ?>
     </div>
+  </div>
 </div>
 
-<!-- Footer -->
-<?php if( !in_array($node->nid, $excluded_header_list) ){ ?>
-<footer class="footer print-hidden">
-    <div class="footer__container">
-        <div class="grid footer__bottom">
-            <div class="footer__col--right">
-                <ul class="social-list print-hidden">
-                  <?php if($cat){ ?>
-                    <li class="social-list__item"><a href="http://www.facebook.com/amnistia.internacional.catalunya" class="social-list__link--facebook" data-ga="event,Social,click,facebook">Haznos Me Gusta en Facebook</a></li>
-                    <li class="social-list__item"><a href="http://twitter.com/amnistiaCAT" class="social-list__link--twitter" data-ga="event,Social,click,amnestytwitter">Síguenos en Twitter</a></li>
-                    <li class="social-list__item"><a href="http://www.youtube.com/amnistiaespana" class="social-list__link--youtube" data-ga="event,Social,click,youtube">Suscríbete a nuestro canal de YouTube</a></li>
-                    <li class="social-list__item"><a href="http://instagram.com/amnistiacat/" class="social-list__link--instagram" data-ga="event,Social,click,instagram">Síguenos en Instagram</a></li>
-                  <?php }else{ ?>
-                    <li class="social-list__item"><a href="http://www.facebook.com/amnistia.internacional.espana" class="social-list__link--facebook" data-ga="event,Social,click,facebook">Haznos Me Gusta en Facebook</a></li>
-                    <li class="social-list__item"><a href="http://twitter.com/amnistiaespana" class="social-list__link--twitter" data-ga="event,Social,click,amnestytwitter">Síguenos en Twitter</a></li>
-                    <li class="social-list__item"><a href="http://www.youtube.com/amnistiaespana" class="social-list__link--youtube" data-ga="event,Social,click,youtube">Suscríbete a nuestro canal de YouTube</a></li>
-                    <li class="social-list__item"><a href="http://instagram.com/amnistiaespana/" class="social-list__link--instagram" data-ga="event,Social,click,instagram">Síguenos en Instagram</a></li>
-                  <?php } ?>
-                </ul>
-            </div>
-            <div class="footer__col--left">
-                <p class="footer-legal">
-                  <?php if($cat){ ?>
-                    <a href="https://www.es.amnesty.org/contacto/" class="footer-legal__link">Contacte</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-                    <a href="https://www.es.amnesty.org/politica-de-privacidad/" class="footer-legal__link">Política de privacitat</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-                    <a href="https://www.es.amnesty.org/mapa-del-sitio/" class="footer-legal__link">Mapa del lloc</a>
-                  <?php }else{ ?>
-                    <a href="https://www.es.amnesty.org/contacto/" class="footer-legal__link">Contacto</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-                    <a href="https://www.es.amnesty.org/politica-de-privacidad/" class="footer-legal__link">Política de privacidad</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-                    <a href="https://www.es.amnesty.org/mapa-del-sitio/" class="footer-legal__link">Mapa del sitio</a>
-                  <?php } ?>
-                </p>
-                <p class="footer-copyright">©<?php echo date("Y"); ?> Amnistía Internacional España</p>
-            </div>
-        </div>
-    </div>
-</footer>
-<?php } ?>
-</div></div></div>
-
-<?php
-  // ************** Estadísticas en Piwik (si aplica, sino debe estar vacío) *********
-  include_once('piwik.php');
-?>
+<!-- Estadísticas en Piwik (si aplica, sino debe estar vacío) -->
+<?php include_once('piwik.php'); ?>

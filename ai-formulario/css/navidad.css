@@ -1,0 +1,81 @@
+/************ CSS especifico campaña navidad ***************/
+
+.content-form .text-intro,
+.content-form .webform-conditional-processed .input-generic,
+.content-form .webform-conditional-processed .caja-content label,
+.content-form .webform-conditional-processed .caja-content .capa-fechas div select,
+.box-form-es p,
+.webform-conditional-processed .content-datos .info-nif,
+.webform-conditional-processed .content-datos a {
+  font-family: "Times New Roman", Georgia, Serif;
+  font-weight: bold;
+}
+
+.content-form .webform-conditional-processed .border-radius-form,
+.content-form .webform-conditional-processed .input-generic,
+.content-form .webform-conditional-processed .caja-content .capa-fechas div div {
+	background-color: #eee;
+}
+
+.content-form h2 {
+  /*font-family: "Times New Roman", Georgia, Serif;*/
+  color: #111010;
+}
+
+.box-form-es img {
+  visibility: hidden;
+}
+
+.content-form .caja-content {
+  background-color: #fff;
+}
+
+.content-form .active {
+  background-color: #cfa153;
+}
+
+.image-header__content--medium {
+  padding-top: 30%;
+}
+
+.content-form .webform-conditional-processed .caja-content label {
+	font-size: 17px;
+}
+
+.content-form .webform-conditional-processed .border-radius-form,
+.content-form .webform-conditional-processed .caja-content .capa-fechas div div
+{
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+  border-color: #bfbfbf;
+  font-size: 19px;
+}
+
+.webform-conditional-processed .content-datos .document {
+	border-radius: 0px 0 0 0px;
+  border-color: #bfbfbf;
+}
+
+.box-es-right .three-column {
+  /*background-color: #f9ebc1;*/
+}
+
+.box-es-right .three-column p {
+  font-family: "Times New Roman", Georgia, Serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.form-submit, .webform-submit,
+.form-actions input[type="submit"] {
+  background-color: #cfa153;
+  color: #111010;
+  font-family: "Times New Roman", Georgia, Serif;
+  font-weight: bold;
+  font-style: italic;
+}
+.bola-navidad {
+  /*bottom: -3.3571428571rem;
+  padding-left: 1.3571428571rem;*/
+}
