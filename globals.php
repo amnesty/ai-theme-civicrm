@@ -10,7 +10,7 @@ $images_path = $form_path . "/images/"; // directorio donde se encuentran las im
 //Seleccionamos la imagen de cabecera
 $img_header = "header.jpg"; //Por defecto
 $extra_class="";
-if ($antevenio_form_B == $node->nid || $node->nid == $antevenio_gracias_B || $node->nid==$socixs_form_B || $node->nid==$socixs_gracias_B ){
+if ($node->nid == $antevenio_form_B || $node->nid == $antevenio_gracias_B || $node->nid==$socixs_form_B || $node->nid==$socixs_gracias_B ){
         $img_header = "headerB.jpg";
         $extra_class="responsive--bg-b";
 } else if ($antevenio_form_C == $node->nid || $antevenio_gracias_C == $node->nid ){

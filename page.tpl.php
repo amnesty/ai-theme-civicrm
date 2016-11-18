@@ -81,34 +81,36 @@ if( $node->nid == $socixs_form && preg_match('/20161116_CDonaldTrump/',$url) ){
                     <?php print $messages; ?> <!-- Errors -->
                     <?php print render($page['content']); ?>
 
-                    <?php // ****************  Sólo mostramos los botones de compartir en la página de gracias ******************
-                        if( in_array($node->nid, $donativos_gracias_list) ){ ?>
+                    <?php // Boton de únete en páginas de gracias de donativo
+                      if( in_array($node->nid, $donativos_gracias_list) ){ ?>
                           <div style="width:500px; margin-left: 40px;">
                             <a class="ai-cta-2col__banner-btn" href="https://crm.es.amnesty.org/unete-a-amnistia/?origen=donativo">
                                 <?php if($cat == 0) { ?>Únete a Amnistía Internacional
                                 <?php } else { ?>Uneix-te a Amnistia Internacional
                                 <?php } ?>
                             </a>
-                          <div>
-                        <?php } else if (in_array($node->nid, $socixs_gracias_list) || (in_array($node->nid, $donativos_gracias_list) && in_array($node->nid, $navidad_list)) ){ ?>
-                        <div id="share-buttons" class="ai-accion-firma-compartir">
-                            <!--h4 class="ai-accion-firma-compartir__header">¿Nos ayudas a conseguir más apoyo?</h4-->
-                            <?php if($cat){ ?>
-                              <a class="ai-accion-firma-compartir__facebook" href="javascript:" data-ai-share-title="Fes-te soci/a d'Amnistia Internacional i recolza la nostra feina">
-                                  Compartir a <span class="ai-accion-firma-compartir__facebook-icon"></span><span class="sr-only">Facebook</span>
+                          </div>
+                      <?php } ?>
+                      <?php //Botones de compartir en la página de gracias de socixs y navidad
+                       if (in_array($node->nid, $socixs_gracias_list) || (in_array($node->nid, $donativos_gracias_list) && in_array($node->nid, $navidad_list)) ){ ?>
+                          <div id="share-buttons" class="ai-accion-firma-compartir">
+                              <h4 class="ai-accion-firma-compartir__header">Comparte esta campaña entre tus contactos:</h4>
+                              <?php if($cat){ ?>
+                                <a class="ai-accion-firma-compartir__facebook" href="javascript:" data-ai-share-title="Fes-te soci/a d'Amnistia Internacional i recolza la nostra feina">
+                                    Compartir a <span class="ai-accion-firma-compartir__facebook-icon"></span><span class="sr-only">Facebook</span>
+                                </a>
+                                <a class="ai-accion-firma-compartir__twitter" href="javascript:" data-ai-share-summary-html="Fes-te soci/a d'Amnistia Internacional i recolza la nostra feina" data-ai-share-via="amnistiaCAT">
+                                    Compartir a <span class="ai-accion-firma-compartir__twitter-icon"></span>
+                                </a>
+                            <?php }else{ ?>
+                              <a class="ai-accion-firma-compartir__facebook" href="javascript:" data-ai-share-title="Hazte socio/a de Amnistía Internacional y apoya nuestro trabajo">
+                                  Compartir en <span class="ai-accion-firma-compartir__facebook-icon"></span><span class="sr-only">Facebook</span>
                               </a>
-                              <a class="ai-accion-firma-compartir__twitter" href="javascript:" data-ai-share-summary-html="Fes-te soci/a d'Amnistia Internacional i recolza la nostra feina" data-ai-share-via="amnistiaCAT">
-                                  Compartir a <span class="ai-accion-firma-compartir__twitter-icon"></span>
+                              <a class="ai-accion-firma-compartir__twitter" href="javascript:" data-ai-share-summary-html="Hazte socio/a de Amnistía Internacional y apoya nuestro trabajo" data-ai-share-via="amnistiaespana">
+                                  Compartir en <span class="ai-accion-firma-compartir__twitter-icon"></span>
                               </a>
-                          <?php }else{ ?>
-                            <a class="ai-accion-firma-compartir__facebook" href="javascript:" data-ai-share-title="Hazte socio/a de Amnistía Internacional y apoya nuestro trabajo">
-                                Compartir en <span class="ai-accion-firma-compartir__facebook-icon"></span><span class="sr-only">Facebook</span>
-                            </a>
-                            <a class="ai-accion-firma-compartir__twitter" href="javascript:" data-ai-share-summary-html="Hazte socio/a de Amnistía Internacional y apoya nuestro trabajo" data-ai-share-via="amnistiaespana">
-                                Compartir en <span class="ai-accion-firma-compartir__twitter-icon"></span>
-                            </a>
-                          <?php } ?>
-                        </div>
+                            <?php } ?>
+                          </div>
                     <?php } ?>
                 <?php if( !in_array($node->nid, $excluded_header_list) && in_array($node->nid, $socixs_form_list) ) {
                   print '</div><!-- Box FORM_ES -->'; ?>
