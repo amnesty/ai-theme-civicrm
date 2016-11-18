@@ -12,7 +12,7 @@
     <script type="text/javascript" src="<?php print $form_path; ?>/js/donativos.js"></script>
     <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/donativos-form.css">
   <?php } ?>
-  <?php if ( in_array($node->nid, $navidad_list) ) { ?>
+  <?php if ( in_array($node->nid, $navidad_list) && !in_array($node->nid, $socixs_gracias_list) && !in_array($node->nid, $donativos_gracias_list) ) { ?>
     <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/navidad.css">
   <?php } ?>
 <?php } ?>
