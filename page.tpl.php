@@ -116,7 +116,8 @@ if( $node->nid == $socixs_form && preg_match('/20161116_CDonaldTrump/',$url) ){
                             <?php } ?>
                           </div>
                     <?php } ?>
-                <?php if( !in_array($node->nid, $excluded_header_list) && in_array($node->nid, $socixs_form_list) ) {
+                <!-- ********************************** CAJAS LATERALES ******************** -->
+                <?php if( !in_array($node->nid, $excluded_header_list) && ( in_array($node->nid, $socixs_form_list) || in_array($node->nid, $donativos_form_list) ) ) {
                   print '</div><!-- Box FORM_ES -->'; ?>
                    <div class="box-es-right col-xs-12 col-sm-12 col-md-3 col-lg-3 margin-top-20px-element"> <!-- box-es-right -->
                      <?php if( $node->nid == $area_privada) { ?>
