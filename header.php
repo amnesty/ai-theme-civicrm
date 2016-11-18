@@ -50,7 +50,7 @@
             <h2 class="image-headline__actua-title">
                 <span class="heading--tape--dark"><?php  $title = explode('#',$node->title); echo $title[0];  ?></span>
             </h2>
-            <?php if( in_array($node->nid, $navidad_list) ){ ?>
+            <?php if( in_array($node->nid, $navidad_list) && in_array($node->nid, $donativos_form_list) ){ ?>
               <img src="<?php print $form_path; ?>/images/icon-good-news.png" class="bola-navidad" />
             <?php } ?>
         </div>

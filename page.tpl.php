@@ -51,9 +51,12 @@ if( $node->nid == $socixs_form && preg_match('/20161116_CDonaldTrump/',$url) ){
          	<div class="content-form clearfix"><!-- Formulario -->
             <?php
             // ********* Sólo mostramos el texto de intro en el formulario de socixs
-            if (in_array($node->nid, $socixs_form_list)){ ?>
+            if ( in_array($node->nid, $socixs_form_list) || in_array($node->nid, $donativos_form_list) ){ ?>
 			      <p class="text-intro">
-              <?php if (($node->nid == $antevenio_form_B) || ($node->nid == $antevenio_form_E)){ ?>
+              <?php if( in_array($node->nid, $navidad_list) && in_array($node->nid, $donativos_form_list) ){ ?>
+                      <span>Has llegado hasta aquí porque algo dentro de ti te dice que hay millones de razones para colaborar. Decora tu casa y a la vez colabora con el trabajo que hacemos por el derecho a la verdad, justicia y reparación de todas las personas.</span><br/>
+                      <span>Haz un donativo y recibirás en tu casa esta bola para que la cuelgues en el árbol, en tu puerta o en el lugar de tu casa que prefieras. Así ayudarás a mantener vivos los deseos que llevan años sin cumplirse.</span>
+              <?php } elseif (($node->nid == $antevenio_form_B) || ($node->nid == $antevenio_form_E)){ ?>
                        <span>Miles de personas huyen del infierno de las bombas y buscan un hogar seguro. Personas ancianas, mujeres embarazadas y bebés; niños y niñas separados de sus familias. En Amnistía Internacional levantamos nuestra voz en defensa de todas las personas refugiadas para garantizarles un lugar seguro donde vivir, y devolver a cada niño y niña la infancia que se merece.</span><br>
                        <span>Renunciamos a cualquier subvención porque nuestra independencia está por encima de todo y, gracias a personas como tú, podemos denunciar sin presiones cualquier violación de los derechos humanos.</span><br>
                        <span><b>Gracias por creer en un mundo más justo.</b></span>

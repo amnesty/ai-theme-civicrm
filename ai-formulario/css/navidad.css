@@ -13,7 +13,7 @@
 
 .content-form .webform-conditional-processed .border-radius-form,
 .content-form .webform-conditional-processed .input-generic,
-.content-form .webform-conditional-processed .caja-content .capa-fechas div div {
+.content-form .webform-conditional-processed .caja-content .capa-fechas div select {
 	background-color: #eee;
 }
 
@@ -65,6 +65,10 @@
   font-family: "Times New Roman", Georgia, Serif;
   font-weight: bold;
   font-size: 16px;
+}
+
+.webform-conditional-processed .content-end-form .check {
+	background: #f9ebc1;
 }
 
 .form-submit, .webform-submit,
