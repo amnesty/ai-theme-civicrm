@@ -11,6 +11,7 @@ if (preg_match('/\/cat/',$url)){
 // Globals
 include_once('config.php'); // variables dependientes del entorno
 include_once('globals.php'); // textos, estructura, etc comun
+include_once('meta-tags.php'); // meta tags para redes sociales
 
 // AB Testing
 $splitter_url = 'sites/all/themes/ai-theme-civicrm/splitter/ab.php';
