@@ -90,7 +90,7 @@ if( $node->nid == $socixs_form && preg_match('/20161116_CDonaldTrump/',$url) ){
                                 <?php } ?>
                             </a>
                           <div>
-                        <?php } else if (in_array($node->nid, $socixs_gracias_list)){ ?>
+                        <?php } else if (in_array($node->nid, $socixs_gracias_list) || (in_array($node->nid, $donativos_gracias_list) && in_array($node->nid, $navidad_list)) ){ ?>
                         <div id="share-buttons" class="ai-accion-firma-compartir">
                             <!--h4 class="ai-accion-firma-compartir__header">¿Nos ayudas a conseguir más apoyo?</h4-->
                             <?php if($cat){ ?>
