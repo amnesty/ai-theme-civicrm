@@ -698,7 +698,6 @@
     width: 45%;
     margin: 0px;
     font-size: 20px;
-    color: #333;
 }
 
 #share-buttons .ai-accion-firma-compartir__facebook{
@@ -717,6 +716,7 @@
 #share-buttons .ai-accion-firma-compartir__header {
     font-size: 20px;
     padding-bottom: 0px;
+    color: #333;
 }
 
 .field-name-body {
