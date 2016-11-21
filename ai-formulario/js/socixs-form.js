@@ -267,10 +267,10 @@ jQuery(function($) {
     }
     $(".ai-accion-firma-compartir__facebook").each(function() {
         var n = $(this),
-            i = urlActualFB, //n.data("ai-share-url")
-            a = n.data("ai-share-title") || tituloActualFB,
-            s = n.data("ai-share-summary-html"),
-            l = n.data("ai-share-image") || "";
+            i = n.data("ai-share-url") || urlActualFB,
+            a = n.data("ai-share-title") || tituloActual,
+            s = n.data("ai-share-summary-html") || resumen,
+            l = n.data("ai-share-image") || imagen;
         n.click(function() {
             return share(a, s, i, l), !1
         });
@@ -282,8 +282,8 @@ jQuery(function($) {
     $(".ai-accion-firma-compartir__twitter").each(function() {
         var n = $(this),
             r = n.data("ai-share-url") || urlActualTW,
-            o = n.data("ai-share-summary-html"),
-            v = n.data("ai-share-via");
+            o = n.data("ai-share-summary-html") || tituloActual,
+            v = n.data("ai-share-via") || compartirViaTW;
             n.click(function() {
                 return tw(o, r, v), !1
             });

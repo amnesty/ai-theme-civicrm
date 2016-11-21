@@ -100,18 +100,18 @@ if( $node->nid == $socixs_form && preg_match('/20161116_CDonaldTrump/',$url) ){
                           <div id="share-buttons" class="ai-accion-firma-compartir">
                               <h4 class="ai-accion-firma-compartir__header">Comparte esta campaña entre tus contactos:</h4>
                               <?php if($cat){ ?>
-                                <a class="ai-accion-firma-compartir__facebook" href="javascript:" data-ai-share-title="Fes-te soci/a d'Amnistia Internacional i recolza la nostra feina">
+                                <a class="ai-accion-firma-compartir__facebook" href="javascript:">
                                     Compartir a <span class="ai-accion-firma-compartir__facebook-icon"></span><span class="sr-only">Facebook</span>
                                 </a>
-                                <a class="ai-accion-firma-compartir__twitter" href="javascript:" data-ai-share-summary-html="Fes-te soci/a d'Amnistia Internacional i recolza la nostra feina" data-ai-share-via="amnistiaCAT">
-                                    Compartir a <span class="ai-accion-firma-compartir__twitter-icon"></span>
+                                <a class="ai-accion-firma-compartir__twitter" href="javascript:">
+                                    Compartir a <span class="ai-accion-firma-compartir__twitter-icon"></span><span class="sr-only">Twitter</span>
                                 </a>
                             <?php }else{ ?>
-                              <a class="ai-accion-firma-compartir__facebook" href="javascript:" data-ai-share-title="Hazte socio/a de Amnistía Internacional y apoya nuestro trabajo">
+                              <a class="ai-accion-firma-compartir__facebook" href="javascript:">
                                   Compartir en <span class="ai-accion-firma-compartir__facebook-icon"></span><span class="sr-only">Facebook</span>
                               </a>
-                              <a class="ai-accion-firma-compartir__twitter" href="javascript:" data-ai-share-summary-html="Hazte socio/a de Amnistía Internacional y apoya nuestro trabajo" data-ai-share-via="amnistiaespana">
-                                  Compartir en <span class="ai-accion-firma-compartir__twitter-icon"></span>
+                              <a class="ai-accion-firma-compartir__twitter" href="javascript:">
+                                  Compartir en <span class="ai-accion-firma-compartir__twitter-icon"></span><span class="sr-only">Twitter</span>
                               </a>
                             <?php } ?>
                           </div>

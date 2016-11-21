@@ -24,25 +24,25 @@
 <div class="image-header image-header--has-credits-sm image-header--actua">
     <div id="pixel"></div>
     <?php if ( ( $node->nid==$socixs_form || $node->nid==$socixs_form_cat || $node->nid==$socixs_gracias || $node->nid==$socixs_gracies) && $mobile ) { // MOBILE  ?>
-      <div style="background-image: url('<?php print $form_path; ?>/images/headerB.jpg?anchor=topcenter');" class="responsive--bg responsive--bg-b lazyloaded"
-          data-bgset="<?php print $form_path; ?>/images/headerB.jpg?anchor=topcenter">
+      <div style="background-image: url('<?php print $images_path; ?>headerB.jpg?anchor=topcenter');" class="responsive--bg responsive--bg-b lazyloaded"
+          data-bgset="<?php print $images_path; ?>headerB.jpg?anchor=topcenter">
       </div>
       <noscript>
-          <img src="<?php print $form_path; ?>/images/headerB.jpg?anchor=topcenter" class=responsive__img>
+          <img src="<?php print $images_path; ?>headerB.jpg?anchor=topcenter" class=responsive__img>
       </noscript>
     <?php } elseif ( in_array($node->nid, $antevenio_list) ) { // ANTEVENIO FORMS ?>
-      <div style="background-image: url('<?php print $form_path; ?>/images/<?php print $img_header; ?>?anchor=topcenter');" class="responsive--bg <?php print $extra_class; ?> lazyloaded"
-          data-bgset="<?php print $form_path; ?>/images/<?php print $img_header; ?>?anchor=topcenter">
+      <div style="background-image: url('<?php print $images_path.$img_header; ?>?anchor=topcenter');" class="responsive--bg <?php print $extra_class; ?> lazyloaded"
+          data-bgset="<?php print $images_path.$img_header; ?>?anchor=topcenter">
       </div>
       <noscript>
-          <img src="<?php print $form_path; ?>/images/<?php print $img_header; ?>?anchor=topcenter" class=responsive__img>
+          <img src="<?php print $images_path.$img_header; ?>?anchor=topcenter" class=responsive__img>
       </noscript>
     <?php } else { // Resto de formularios ?>
-      <div style="background-image: url('<?php print $form_path; ?>/images/<?php print $img_header; ?>?anchor=topcenter');" class="responsive--bg <?php print $extra_class; ?> lazyloaded"
-          data-bgset="<?php print $form_path; ?>/images/<?php print $img_header; ?>?anchor=topcenter">
+      <div style="background-image: url('<?php print $images_path.$img_header; ?>?anchor=topcenter');" class="responsive--bg <?php print $extra_class; ?> lazyloaded"
+          data-bgset="<?php print $images_path.$img_header; ?>?anchor=topcenter">
       </div>
       <noscript>
-          <img src="<?php print $form_path; ?>/images/<?php print $img_header; ?>?anchor=topcenter" class=responsive__img>
+          <img src="<?php print $images_path.$img_header; ?>?anchor=topcenter" class=responsive__img>
       </noscript>
     <?php } ?>
     <div class="image-header__content--medium">
@@ -51,7 +51,7 @@
                 <span class="heading--tape--dark"><?php  $title = explode('#',$node->title); echo $title[0];  ?></span>
             </h2>
             <?php if( in_array($node->nid, $navidad_list) && in_array($node->nid, $donativos_form_list) ){ ?>
-              <img src="<?php print $form_path; ?>/images/icon-good-news.png" class="bola-navidad" />
+              <img src="<?php print $images_path; ?>icon-good-news.png" class="bola-navidad" />
             <?php } ?>
         </div>
     </div>
