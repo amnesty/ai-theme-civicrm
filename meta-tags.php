@@ -1,33 +1,51 @@
-<?php if( in_array($node->nid, $navidad_list) ) { ?>
-    <meta property="og:url" content="https://crm.es.amnesty.org/unete-a-amnistia-por-navidad/" />
+<?php if( in_array($node->nid, $navidad_list) &&  in_array($node->nid,$socixs_form_list) ) { ?>
+
+    <meta property="og:url" content="https://crm.es.amnesty.org/unete-a-amnistia-por-navidad" />
     <meta property="og:type" content="website" />
     <meta name="title" property="og:title" content="Hazte socio/a de Amnistía Internacional y apoya nuestro trabajo" />
     <meta name="description" property="og:description" content="Amnistía Internacional es una organización democrática e independiente que no acepta fondos que puedan comprometer su trabajo. Se financia exclusivamente gracias a las aportaciones de personas comprometidas con la idea de conseguir un mundo más justo. Tu colaboración, por pequeña que sea, es lo único que nos permite seguir defendiendo los derechos humanos, así como investigando y denunciando abusos que se cometen en todo el mundo. Hazte socio/a y apoya nuestro trabajo. Cuantos más seamos, más fuerza tendremos." />
     <meta property="og:image" content="https://crm.es.amnesty.org/sites/all/themes/ai-theme-civicrm/ai-formulario/images/header-navidad.jpg" />
+
+<?php } else if( in_array($node->nid, $navidad_list) &&  in_array($node->nid,$donativos_form_list) ) { ?>
+
+    <meta property="og:url" content="https://crm.es.amnesty.org/haz-un-donativo-por-navidad" />
+    <meta property="og:type" content="website" />
+    <meta name="title" property="og:title" content="Haz un donativo a Amnistía Internacional y apoya nuestro trabajo" />
+    <meta name="description" property="og:description" content="Amnistía Internacional es una organización democrática e independiente que no acepta fondos que puedan comprometer su trabajo. Se financia exclusivamente gracias a las aportaciones de personas comprometidas con la idea de conseguir un mundo más justo. Tu colaboración, por pequeña que sea, es lo único que nos permite seguir defendiendo los derechos humanos, así como investigando y denunciando abusos que se cometen en todo el mundo. Hazte socio/a y apoya nuestro trabajo. Cuantos más seamos, más fuerza tendremos." />
+    <meta property="og:image" content="https://crm.es.amnesty.org/sites/all/themes/ai-theme-civicrm/ai-formulario/images/header-navidad.jpg" />
+
 <?php } else if( in_array($node->nid,$socixs_form_list) && $cat) { ?>
+
     <meta property="og:url" content="https://crm.es.amnesty.org/unete-a-amnistia/cat" />
     <meta property="og:type" content="website" />
     <meta name="title" property="og:title" content="Hazte socio/a de Amnistía Internacional y apoya nuestro trabajo" />
     <meta name="description" property="og:description" content="Amnistía Internacional es una organización democrática e independiente que no acepta fondos que puedan comprometer su trabajo. Se financia exclusivamente gracias a las aportaciones de personas comprometidas con la idea de conseguir un mundo más justo. Tu colaboración, por pequeña que sea, es lo único que nos permite seguir defendiendo los derechos humanos, así como investigando y denunciando abusos que se cometen en todo el mundo. Hazte socio/a y apoya nuestro trabajo. Cuantos más seamos, más fuerza tendremos." />
     <meta property="og:image" content="https://crm.es.amnesty.org/sites/all/themes/ai-theme-civicrm/ai-formulario/images/<?php print $img_header; ?>" />
+
 <?php } else if( in_array($node->nid,$socixs_form_list) && !$cat ) { ?>
+
     <meta property="og:url" content="https://crm.es.amnesty.org/unete-a-amnistia/" />
     <meta property="og:type" content="website" />
     <meta name="title" property="og:title" content="Fes-te soci/a d'Amnistia Internacional i recolza la nostra feina" />
     <meta name="description" property="og:description" content="Amnistia Internacional és una organizació democràtica i independent que no accepta fons que puguin compromtre la seva feina. Es finança exclusivament gràcies a les aportacions de persones compromeses amb la idea d'aconseguir un món més just. La teva col·laboració, per petita que sigui, és l'única cosa que ens permet seguir defensant els drets humans, així com investigar i denunciar abusos que es duen a terme a tot el món. Fes-te soci/a i recolza la nostra feina. Quants més siguem, més força tindrem." />
     <meta property="og:image" content="https://crm.es.amnesty.org/sites/all/themes/ai-theme-civicrm/ai-formulario/images/<?php print $img_header; ?>" />
+
 <?php } else if( in_array($node->nid,$donativos_form_list) && $cat ) { ?>
+
     <meta property="og:url" content="https://crm.es.amnesty.org/haz-un-donativo/cat" />
     <meta property="og:type" content="website" />
     <meta name="title" property="og:title" content="Fes un donatiu a Amnistia Internacional i recolza la nostra feina" />
     <meta name="description" property="og:description" content="Amnistia Internacional és una organizació democràtica i independent que no accepta fons que puguin compromtre la seva feina. Es finança exclusivament gràcies a les aportacions de persones compromeses amb la idea d'aconseguir un món més just. La teva col·laboració, per petita que sigui, és l'única cosa que ens permet seguir defensant els drets humans, així com investigar i denunciar abusos que es duen a terme a tot el món. Fes-te soci/a i recolza la nostra feina. Quants més siguem, més força tindrem." />
     <meta property="og:image" content="https://crm.es.amnesty.org/sites/all/themes/ai-theme-civicrm/ai-formulario/images/<?php print $img_header; ?>" />
+
 <?php } else if( in_array($node->nid,$donativos_form_list) && !$cat ) { ?>
+
     <meta property="og:url" content="https://crm.es.amnesty.org/haz-un-donativo" />
     <meta property="og:type" content="website" />
     <meta name="title" property="og:title" content="Haz un donativo a Amnistía Internacional y apoya nuestro trabajo" />
     <meta name="description" property="og:description" content="Amnistía Internacional es una organización democrática e independiente que no acepta fondos que puedan comprometer su trabajo. Se financia exclusivamente gracias a las aportaciones de personas comprometidas con la idea de conseguir un mundo más justo. Tu colaboración, por pequeña que sea, es lo único que nos permite seguir defendiendo los derechos humanos, así como investigando y denunciando abusos que se cometen en todo el mundo. Hazte socio/a y apoya nuestro trabajo. Cuantos más seamos, más fuerza tendremos." />
     <meta property="og:image" content="https://crm.es.amnesty.org/sites/all/themes/ai-theme-civicrm/ai-formulario/images/<?php print $img_header; ?>" />
+
 <?php } ?>
 
 <!-- Botones de redes sociales -->
