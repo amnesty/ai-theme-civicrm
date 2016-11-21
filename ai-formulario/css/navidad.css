@@ -1,5 +1,12 @@
 /************ CSS especifico campaña navidad ***************/
 
+@font-face {
+      font-family: 'ChronicleDisp';
+      src: url('../font/ChronicleDisp-Black') format('embedded-opentype');
+      font-weight: normal;
+      font-style: normal;
+}
+
 .content-form .text-intro,
 .content-form .webform-conditional-processed .input-generic,
 .content-form .webform-conditional-processed .caja-content label,
