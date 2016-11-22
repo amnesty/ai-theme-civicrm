@@ -97,8 +97,10 @@
 
 /* Imagen bola de navidad */
 .bola-navidad {
-  /*bottom: -3.3571428571rem;
-  padding-left: 1.3571428571rem;*/
+	margin-top: -27.357rem;
+	margin-left: 64.357rem;
+	position: relative;
+	float: left;
 }
 
 /* MEDIA QUERIES */
@@ -107,11 +109,23 @@
   .box-es-right .three-column {
   	min-height: 464px;
   }
+
+  .bola-navidad {
+	  margin-top: -28.357rem;
+	  margin-left: 51.357rem;
+	  position: relative;
+	  float: left;
+  }
 }
 
 @media only screen and (max-width: 986px) {
   .box-es-right .three-column {
   	min-height: 100%;
+  }
+
+  .bola-navidad {
+    visibility: hidden;
+    float: none;
   }
 }
 
