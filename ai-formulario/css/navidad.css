@@ -21,7 +21,8 @@
 /* Tipografías */
 .webform-conditional-processed .content-end-form .politica,
 .content-form .text-intro,
-.box-form-es p {
+.box-form-es p,
+.preview, .preview label {
   font-family: 'Maven Pro', sans-serif;
 }
 
@@ -86,13 +87,23 @@
 
 /* Boton enviar */
 .form-submit, .webform-submit,
-.form-actions input[type="submit"] {
+.form-actions input[type="submit"],
+.preview .form-actions .form-submit {
   background-color: #cfa153;
   color: #111010;
   /*font-family: "ChronicleDisp-Black";*/
   font-family: "Times New Roman";
   font-weight: bold;
   font-style: italic;
+}
+
+.preview .form-actions .webform-previous {
+  font-family: "Times New Roman";
+	margin-left: 0%;
+	max-width: 350px;
+	background: #fff;
+	border: 2px solid #000;
+	font-size: 23px;
 }
 
 /* Imagen bola de navidad */
