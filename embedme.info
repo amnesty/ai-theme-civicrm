@@ -5,16 +5,13 @@ core = 7.x
 engine = phptemplate
 
 ; Remove these core stylesheets to avoid conflicts
+stylesheets[all][] = webform.css
 stylesheets[all][] = system.theme.css
 stylesheets[all][] = layout_box.css
-stylesheets[all][] = webform.css
 
 ;Colorbox
 stylesheets[all][] = ai-formulario/css/colorbox.css
 scripts[] = ai-formulario/js/jquery.colorbox-min.js
-
-; JS Scripts
-;scripts[] = ai-formulario/js/socixs-form.js
 
 version = "7.x-1.x-dev"
 core = "7.x"
