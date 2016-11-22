@@ -37,20 +37,6 @@ if( $node->nid == $socixs_form && preg_match('/20161116_CDonaldTrump/',$url) ){
 ?>
 
 <?php
-// PRUEBA API
-$result = civicrm_api3('Contact', 'create', array(
-  'sequential' => 1,
-  'contact_type' => "Individual",
-  'first_name' => "Patata",
-  'last_name' => "Patata",
-  'api.Email.create' => array('email' => "test@test.com"),
-  'api.Phone.create' => array('phone' => "666778899"),
-  'api.Address.create' => array('country_id' => "1198", 'location_type_id' => "1"),
-));
-print($result['is_error']);
-?>
-
-<?php
   // Estilos y scripts
   include_once('styles_scripts.php');
 ?>
