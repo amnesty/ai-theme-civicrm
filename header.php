@@ -51,7 +51,7 @@
                 <span class="heading--tape--dark"><?php  $title = explode('#',$node->title); echo $title[0];  ?></span>
             </h2>
             <?php if( in_array($node->nid, $navidad_list) && in_array($node->nid, $donativos_form_list) ){ ?>
-              <img src="<?php print $images_path; ?>icon-good-news.png" class="bola-navidad" />
+              <!--img src="<?php print $images_path; ?>icon-good-news.png" class="bola-navidad" /-->
             <?php } ?>
         </div>
     </div>
