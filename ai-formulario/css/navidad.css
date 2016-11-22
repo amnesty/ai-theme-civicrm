@@ -40,10 +40,15 @@
   color: #111010;
 }
 
+/* 3 cajas */
 .box-es-right .three-column p {
   font-family: 'Maven Pro', sans-serif;
   /*font-weight: bold;*/
   font-size: 16px;
+}
+
+.box-es-right .three-column { /*media query!!!*/
+	min-height: 464px;
 }
 
 /* Esconder iconos */

@@ -48,18 +48,30 @@
 
 <?php } ?>
 
+<!--Twitter Cards-->
+<meta name="twitter:url" content="http://testing.estresarte.com/amnistia/navidad/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@amnistiaespana">
+<meta name="twitter:creator" content="@amnistiaespana">
+<meta name="twitter:title" content="#JusticiaPorNavidad – Amnistía Internacional">
+<meta name="twitter:description" content="Miles de personas 'desaparecidas' durante la guerra civil y el franquismo no volvieron a casa. Firma para pedir al gobierno que este año no se olvide de ellas.">
+<meta name="twitter:image" content="http://testing.estresarte.com/amnistia/navidad/images/compartir-tw.png">
+<meta name="twitter:image:width" content="1024">
+<meta name="twitter:image:height" content="512">
+<meta name="twitter:image:alt" content="#JusticiaPorNavidad – Amnistía Internacional">
+
 <!-- Botones de redes sociales -->
 
 <?php if( in_array($node->nid, $navidad_list) ) { ?>
-  <script>
-    var urlActual = 'https://crm.es.amnesty.org/unete-a-amnistia-por-navidad';
-    var tituloActual = 'Haz-te socio/a de Amnistía Internacional y apoya nuestro trabajo.';
-    var urlActualFB = 'https://www.es.amnesty.org/justiciapornavidad/?utm_source=facebook&utm_campaign=comp&utm_medium=social_com&utm_term=Killings_disappearances&utm_content=Web_petition-justiciapornavidad-facebook';
-    var urlActualTW = 'https://www.es.amnesty.org/justiciapornavidad/?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=Killings_disappearances&utm_content=Web_petition-justiciapornavidad-twitter';
-    var resumen = 'Amnistía Internacional es una organización democrática e independiente que no acepta fondos que puedan comprometer su trabajo. Se financia exclusivamente gracias a las aportaciones de personas comprometidas con la idea de conseguir un mundo más justo. Tu colaboración, por pequeña que sea, es lo único que nos permite seguir defendiendo los derechos humanos, así como investigando y denunciando abusos que se cometen en todo el mundo. Hazte socio/a y apoya nuestro trabajo. Cuantos más seamos, más fuerza tendremos.';
-    var imagen = 'https://crm.es.amnesty.org/sites/all/themes/ai-theme-civicrm/ai-formulario/images/<?php print $img_header; ?>';
-    var compartirViaTW = 'amnistiaespana';
-  </script>
+    <script>
+      var urlActual = 'https://www.es.amnesty.org/justiciapornavidad';
+      var tituloActual = 'Haz-te socio/a de Amnistía Internacional y apoya nuestro trabajo.';
+      var urlActualFB = 'https://www.es.amnesty.org/justiciapornavidad/?utm_source=facebook&utm_campaign=comp&utm_medium=social_com&utm_term=Killings_disappearances&utm_content=Web_petition-justiciapornavidad-facebook';
+      var urlActualTW = 'https://www.es.amnesty.org/justiciapornavidad/?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=Killings_disappearances&utm_content=Web_petition-justiciapornavidad-twitter';
+      var resumen = 'Amnistía Internacional es una organización democrática e independiente que no acepta fondos que puedan comprometer su trabajo. Se financia exclusivamente gracias a las aportaciones de personas comprometidas con la idea de conseguir un mundo más justo. Tu colaboración, por pequeña que sea, es lo único que nos permite seguir defendiendo los derechos humanos, así como investigando y denunciando abusos que se cometen en todo el mundo. Hazte socio/a y apoya nuestro trabajo. Cuantos más seamos, más fuerza tendremos.';
+      var imagen = 'https://crm.es.amnesty.org/sites/all/themes/ai-theme-civicrm/ai-formulario/images/<?php print $img_header; ?>';
+      var compartirViaTW = 'amnistiaespana';
+    </script>
 <?php } else if( in_array($node->nid,$socixs_gracias_list) && $cat ){ ?>
     <script>
       var urlActual = 'https://crm.es.amnesty.org/unete-a-amnistia/cat/';
