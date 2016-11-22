@@ -106,6 +106,15 @@
 /* MEDIA QUERIES */
 
 @media only screen and (max-width: 1370px) {
+
+  .content-form .webform-conditional-processed .input-generic,
+  .content-form .webform-conditional-processed .caja-content label,
+  .content-form .webform-conditional-processed .caja-content .capa-fechas div select,
+  .webform-conditional-processed .content-datos .info-nif,
+  .webform-conditional-processed .content-datos a {
+	   font-size: 16px;
+  }
+
   .box-es-right .three-column {
   	min-height: 464px;
   }
