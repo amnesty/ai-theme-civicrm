@@ -47,12 +47,6 @@
   font-size: 16px;
 }
 
-@media only screen and (max-width: 1370px) {
-  .box-es-right .three-column {
-  	min-height: 464px;
-  }
-}
-
 /* Esconder iconos */
 .box-form-es .caja-content h2 img {
   visibility: hidden;
@@ -105,4 +99,51 @@
 .bola-navidad {
   /*bottom: -3.3571428571rem;
   padding-left: 1.3571428571rem;*/
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1370px) {
+  .box-es-right .three-column {
+  	min-height: 464px;
+  }
+}
+
+/* max-width: 769px */
+@media only screen and (max-width: 769px) {
+
+  /* colaborar */
+  .webform-conditional-processed .caja-checkbox {
+    margin-left: 0px;
+  }
+
+  .webform-conditional-processed .content-colaborar .cuotas div {
+      float: none;
+      margin: 0;
+  }
+
+  .webform-conditional-processed .content-colaborar .capa-other-quant {
+      float: none;
+      margin: auto;
+  }
+
+  .webform-conditional-processed .content-colaborar .cuotas {
+      float: none;
+      text-align: center;
+      margin-top: 0;
+  }
+
+  .webform-conditional-processed .content-colaborar .capa-selecttime {
+      width: 100%;
+      float: none;
+      margin-right: 0;
+  }
+
+  .webform-conditional-processed .content-colaborar select.selecttime {
+      background-position: 79% center;
+  }
+
+  .webform-conditional-processed .content-colaborar .cuotas label {
+      margin-right: 4px;
+  }
 }
