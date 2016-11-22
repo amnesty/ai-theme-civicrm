@@ -166,4 +166,9 @@
   .webform-conditional-processed .content-colaborar .cuotas label {
       margin-right: 4px;
   }
+
+  /* Header */
+  .image-header__content--medium {
+    padding-top: 50%;
+  }
 }
