@@ -2,6 +2,7 @@
 
 <!-- Estilos genéricos de la WEB -->
 <?php if($node->nid != $firma_navidad ){ // PROVISIONAL ?>
+  <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/webform.css">
   <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/ai.css">
   <!-- Estilos genéricos de formularios -->
