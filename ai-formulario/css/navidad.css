@@ -47,12 +47,14 @@
   font-size: 16px;
 }
 
-.box-es-right .three-column { /*media query!!!*/
-	min-height: 464px;
+@media only screen and (max-width: 1370px) {
+  .box-es-right .three-column {
+  	min-height: 464px;
+  }
 }
 
 /* Esconder iconos */
-.box-form-es img {
+.box-form-es .caja-content h2 img {
   visibility: hidden;
 }
 

@@ -7,8 +7,8 @@
               if ( in_array($node->nid, $socixs_form_list) || in_array($node->nid, $donativos_form_list) ){ ?>
   			      <p class="text-intro">
                 <?php if( in_array($node->nid, $navidad_list) && in_array($node->nid, $donativos_form_list) ){ ?>
-                        <span>Has llegado hasta aquí porque algo dentro de ti te dice que hay millones de razones para colaborar. Decora tu casa y a la vez colabora con el trabajo que hacemos por el derecho a la verdad, justicia y reparación de todas las personas.</span><br/>
-                        <span>Haz un donativo y recibirás en tu casa esta bola para que la cuelgues en el árbol, en tu puerta o en el lugar de tu casa que prefieras. Así ayudarás a mantener vivos los deseos que llevan años sin cumplirse.</span>
+                        <span>Has llegado hasta aquí porque algo dentro de ti te dice que hay millones de razones para colaborar. <b>Decora tu casa y a la vez colabora</b> con el trabajo que hacemos por el derecho a la verdad, justicia y reparación de todas las personas.</span><br/>
+                        <span><b>Haz un donativo y recibirás en tu casa esta bola</b> para que la cuelgues en el árbol, en tu puerta o en el lugar de tu casa que prefieras. Así ayudarás a mantener vivos los deseos que llevan años sin cumplirse.</span>
                 <?php } elseif (($node->nid == $antevenio_form_B) || ($node->nid == $antevenio_form_E)){ ?>
                          <span>Miles de personas huyen del infierno de las bombas y buscan un hogar seguro. Personas ancianas, mujeres embarazadas y bebés; niños y niñas separados de sus familias. En Amnistía Internacional levantamos nuestra voz en defensa de todas las personas refugiadas para garantizarles un lugar seguro donde vivir, y devolver a cada niño y niña la infancia que se merece.</span><br>
                          <span>Renunciamos a cualquier subvención porque nuestra independencia está por encima de todo y, gracias a personas como tú, podemos denunciar sin presiones cualquier violación de los derechos humanos.</span><br>
@@ -41,7 +41,7 @@
                       <?php // Boton de únete en páginas de gracias de donativo
                         if( in_array($node->nid, $donativos_gracias_list) ){ ?>
                             <div style="width:500px; margin-left: 40px;">
-                              <a class="ai-cta-2col__banner-btn" href="https://crm.es.amnesty.org/unete-a-amnistia/?origen=donativo">
+                              <a class="ai-cta-2col__banner-btn" href="https://crm.es.amnesty.org/unete-a-amnistia/?origen=<?php if(in_array($node->nid, $navidad_list)){ print "justiciapornavidad";}else{ print "donativo"; }?>">
                                   <?php if($cat == 0) { ?>Únete a Amnistía Internacional
                                   <?php } else { ?>Uneix-te a Amnistia Internacional
                                   <?php } ?>
