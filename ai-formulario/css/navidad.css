@@ -109,6 +109,12 @@
   }
 }
 
+@media only screen and (max-width: 986px) {
+  .box-es-right .three-column {
+  	min-height: 100%;
+  }
+}
+
 /* max-width: 769px */
 @media only screen and (max-width: 769px) {
 
