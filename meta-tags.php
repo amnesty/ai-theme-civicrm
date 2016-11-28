@@ -69,7 +69,7 @@
     <meta name="twitter:site" content="@amnistiaespana">
     <meta name="twitter:creator" content="@amnistiaespana">
     <meta name="twitter:title" content="Únete a Amnistía Internacional">
-    <meta name="twitter:text:description" content="">
+    <meta name="twitter:text:description" content="Hazte socio de Amnistía Internacional y apoya nuestro trabajo.">
     <meta name="twitter:image" content="https://crm.es.amnesty.org/sites/all/themes/ai-theme-civicrm/ai-formulario/images/<?php print $img_header; ?>">
     <meta name="twitter:image:width" content="1024">
     <meta name="twitter:image:height" content="512">
