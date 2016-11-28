@@ -11,7 +11,7 @@
     <meta name="twitter:site" content="@amnistiaespana">
     <meta name="twitter:creator" content="@amnistiaespana">
     <meta name="twitter:title" content="#JusticiaPorNavidad – Amnistía Internacional">
-    <meta name="twitter:description" content="Miles de personas 'desaparecidas' durante la guerra civil y el franquismo no volvieron a casa. Firma para pedir al gobierno que este año no se olvide de ellas.">
+    <meta name="twitter:text:description" content="Miles de personas 'desaparecidas' durante la guerra civil y el franquismo no volvieron a casa. Firma para pedir al gobierno que este año no se olvide de ellas.">
     <meta name="twitter:image" content="https://crm.es.amnesty.org/sites/all/themes/ai-theme-civicrm/ai-formulario/images/header-navidad.jpg">
     <meta name="twitter:image:width" content="1024">
     <meta name="twitter:image:height" content="512">
@@ -31,7 +31,7 @@
     <meta name="twitter:site" content="@amnistiaespana">
     <meta name="twitter:creator" content="@amnistiaespana">
     <meta name="twitter:title" content="#JusticiaPorNavidad – Amnistía Internacional">
-    <meta name="twitter:description" content="Miles de personas 'desaparecidas' durante la guerra civil y el franquismo no volvieron a casa. Firma para pedir al gobierno que este año no se olvide de ellas.">
+    <meta name="twitter:text:description" content="Miles de personas 'desaparecidas' durante la guerra civil y el franquismo no volvieron a casa. Firma para pedir al gobierno que este año no se olvide de ellas.">
     <meta name="twitter:image" content="https://crm.es.amnesty.org/sites/all/themes/ai-theme-civicrm/ai-formulario/images/header-navidad.jpg">
     <meta name="twitter:image:width" content="1024">
     <meta name="twitter:image:height" content="512">
@@ -50,7 +50,7 @@
     <meta name="twitter:site" content="@AmnistiaCAT">
     <meta name="twitter:creator" content="@AmnistiaCAT">
     <meta name="twitter:title" content="Uneix-te a Amnistia Internacional">
-    <meta name="twitter:description" content="Fes-te soci/a d\'Amnistia Internacional i recolza la nostra feina.">
+    <meta name="twitter:text:description" content="Fes-te soci/a d\'Amnistia Internacional i recolza la nostra feina.">
     <meta name="twitter:image" content="https://crm.es.amnesty.org/sites/all/themes/ai-theme-civicrm/ai-formulario/images/<?php print $img_header; ?>">
     <meta name="twitter:image:width" content="1024">
     <meta name="twitter:image:height" content="512">
@@ -69,7 +69,7 @@
     <meta name="twitter:site" content="@amnistiaespana">
     <meta name="twitter:creator" content="@amnistiaespana">
     <meta name="twitter:title" content="Únete a Amnistía Internacional">
-    <meta name="twitter:description" content="">
+    <meta name="twitter:text:description" content="">
     <meta name="twitter:image" content="https://crm.es.amnesty.org/sites/all/themes/ai-theme-civicrm/ai-formulario/images/<?php print $img_header; ?>">
     <meta name="twitter:image:width" content="1024">
     <meta name="twitter:image:height" content="512">
@@ -88,7 +88,7 @@
     <meta name="twitter:site" content="@AmnistiaCAT">
     <meta name="twitter:creator" content="@AmnistiaCAT">
     <meta name="twitter:title" content="Fes un donatiu a Amnistia Internacional">
-    <meta name="twitter:description" content="Fes un donatiu a Amnistia Internacional i recolza la nostra feina.">
+    <meta name="twitter:text:description" content="Fes un donatiu a Amnistia Internacional i recolza la nostra feina.">
     <meta name="twitter:image" content="https://crm.es.amnesty.org/sites/all/themes/ai-theme-civicrm/ai-formulario/images/<?php print $img_header; ?>">
     <meta name="twitter:image:width" content="1024">
     <meta name="twitter:image:height" content="512">
@@ -107,7 +107,7 @@
     <meta name="twitter:site" content="@amnistiaespana">
     <meta name="twitter:creator" content="@amnistiaespana">
     <meta name="twitter:title" content="Haz un donativo a Amnistía Internacional">
-    <meta name="twitter:description" content="Haz un donativo a Amnistía Internacional y apoya nuestro trabajo.">
+    <meta name="twitter:text:description" content="Haz un donativo a Amnistía Internacional y apoya nuestro trabajo.">
     <meta name="twitter:image" content="https://crm.es.amnesty.org/sites/all/themes/ai-theme-civicrm/ai-formulario/images/<?php print $img_header; ?>">
     <meta name="twitter:image:width" content="1024">
     <meta name="twitter:image:height" content="512">
