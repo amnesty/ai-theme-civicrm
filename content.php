@@ -44,7 +44,9 @@
                       <?php // Boton de únete en páginas de gracias de donativo
                         if( in_array($node->nid, $donativos_gracias_list) ){ ?>
                             <div style="width:500px; margin-left: 40px;">
-                              <a class="ai-cta-2col__banner-btn" href="https://crm.es.amnesty.org/unete-a-amnistia/?origen=<?php if(in_array($node->nid, $navidad_list)){ print "justiciapornavidad";}else{ print "donativo"; }?>">
+                              <a class="ai-cta-2col__banner-btn" href="=
+                                <?php if ( in_array($node->nid, $navidad_list) ){ print "https://crm.es.amnesty.org/unete-a-amnistia-por-navidad/?origen=justiciapornavidad"; }
+                                      else { print "https://crm.es.amnesty.org/unete-a-amnistia/?origen=donativo"; } ?>">
                                   <?php if($cat == 0) { ?>Únete a Amnistía Internacional
                                   <?php } else { ?>Uneix-te a Amnistia Internacional
                                   <?php } ?>
