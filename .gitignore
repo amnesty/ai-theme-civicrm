@@ -1,2 +1,6 @@
 config.php
 piwik.php
+ai-formulario/*.html
+ai-formulario/.gitignore
+ai-formulario/README*
+splitter/*.sql
