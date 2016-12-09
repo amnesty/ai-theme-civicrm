@@ -82,12 +82,12 @@ jQuery(function($) {
     }*/
 
     // Foto de cabecera
-    var header = $("[name='submitted[foto]']").val();
+    var header = ($("[name='submitted[foto]']").val() || cabecera );
     if(header){
       $(".responsive--bg").css("background-image","url("+header+"?anchor=topcentre)");
     }
-    // Añadir títulos a la página de preview
 
+    // Añadir títulos a la página de preview
     if( $(".webform-client-form").first().hasClass("preview") ){
         // título confirma tus datos
         if(url.indexOf("/cat") > -1){
