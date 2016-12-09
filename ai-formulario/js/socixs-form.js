@@ -81,6 +81,11 @@ jQuery(function($) {
       return message;
     }*/
 
+    // Foto de cabecera
+    var header = $("[name='submitted[foto]']").val();
+    if(header){
+      $(".responsive--bg").css("background-image","url("+header+"?anchor=topcentre)");
+    }
     // Añadir títulos a la página de preview
 
     if( $(".webform-client-form").first().hasClass("preview") ){
