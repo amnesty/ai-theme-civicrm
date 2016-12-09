@@ -224,7 +224,7 @@ header, hgroup, nav, section {
 /* Labels ----- */
 .content-form .webform-conditional-processed .caja-content label {
     font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
-    /* float: left; */
+    float: left;
     font-size: 20px;
     color: #000;
     height: 44px;
@@ -234,9 +234,9 @@ header, hgroup, nav, section {
 
 /* Bordes y sombras ------------------- */
 .content-form .webform-conditional-processed .border-radius-form{
-	-webkit-border-radius: 10px;
-	-moz-border-radius: 10px;
-	border-radius: 10px;
+	  -webkit-border-radius: 10px;
+	  -moz-border-radius: 10px;
+	  border-radius: 10px;
 }
 
 .content-form .webform-conditional-processed .shadow{
@@ -246,20 +246,34 @@ header, hgroup, nav, section {
 }
 
 /* Boton enviar -------------- */
-.form-submit, .webform-submit,
-.form-actions input[type="submit"]{
-  font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
-  max-width: 315px;
-  width: 100%;
-  height: 100px;
-  font-size: 46px;
-  background: #f1e60d;
-  border: 0;
-  /*color: #000;*/
+.form-submit,
+.webform-submit {
+    font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
+    max-width: 315px;
+    width: 100%;
+    height: 100px;
+    font-size: 46px;
+    background: #f1e60d;
+    border: 0;
+    /*color: #000;*/
+}
+.form-submit:hover,
+.webform-submit:hover {
+  background: #ffd500;
 }
 
-.form-submit:hover{
-  background: #f1e60d;
+.webform-previous {
+    font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
+    max-width: 315px;
+    width: 100%;
+    height: 100px;
+    font-size: 38px;
+    text-align: center;
+    background: #fff;
+    border: 2px #000 solid;
+}
+.webform-previous:hover{
+    background: -moz-linear-gradient( center top, #ddd 5%, #eee 100% );
 }
 
 /* Errores ---------------------- */

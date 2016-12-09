@@ -65,6 +65,22 @@ jQuery(function($) {
         source_input.val(get_utm_term);
     }
 
+    // Dos pasos
+    if($(".content-colaborar").hasClass("primer-paso")){
+      $(".webform-next").addClass("webform-next-dos-pasos");
+    }
+
+    if($(".content-direccion").hasClass("segundo-paso")){
+      $(".webform-next").addClass("webform-next-dos-pasos-2");
+      $(".webform-previous").addClass("webform-previous-dos-pasos-2");
+    }
+
+    // Pop-up antes de cerrar
+    /*window.onbeforeunload = function(e) {
+      var message = '¿Estás segura de que quieres cerrar la página?';
+      return message;
+    }*/
+
     // Añadir títulos a la página de preview
 
     if( $(".webform-client-form").first().hasClass("preview") ){

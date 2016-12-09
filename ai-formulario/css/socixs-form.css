@@ -465,59 +465,46 @@
     /* boton enviar y siguiente */
     .box-form-es .button-primary,
     .box-form-es .webform-next {
-        font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
-        max-width: 315px;
-        width: 100%;
-        height: 100px;
-        font-size: 46px;
-        text-align: center;
-        clear: both;
-        background: #f1e60d;
-        border: 0;
         /** IMPORTANT == COMMENT PARA APLICAR GRID DE BOOTSTRAP == FELIPEGILESTUDIO **/
-
         float: left;
         margin-top: -130px;
-        margin-left: 71%;
-
+        margin-left: 70%;
+        clear: both;
     }
 
     /* boton previo */
     .box-form-es .webform-previous {
-        font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
-        max-width: 315px;
-        width: 100%;
-        height: 100px;
-        font-size: 46px;
-        text-align: center;
         float: left;
         clear: both;
-        background: #fff;
-        border: 2px #000 solid;
         margin-top: -130px;
         margin-left: 21%;
-        /*line-height: 100px;*/
+        width: 315px;
     }
 
-    /* caja botones y politica */
-    .box-form-es  .webform-conditional-processed .form-actions {
-        margin: -30px 0px 0px -55px;
+    /* 2 pasos*/
+    .box-form-es .webform-next-dos-pasos {
+        margin-top: 20px;
     }
-
-    .content-end-form  .webform-conditional-processed .botons-form{
-        margin-top: 0px;
+    .box-form-es .webform-previous-dos-pasos-2 {
+        margin-left: 2%;
+        max-width: 350px;
+        background: #fff;
+        border: 2px solid #000;
+        font-size: 38px;
+        margin-top: -35px;
+    }
+    .box-form-es .webform-previous-dos-pasos-2:hover{
+        background: -moz-linear-gradient( center top, #ddd 5%, #eee 100% );
+    }
+    .box-form-es .webform-next-dos-pasos-2 {
+        margin-top: -100px;
     }
 
     /* Comodo Secure */
      .webform-conditional-processed .secure-img {
-        float: left;
-        margin-left: 50px;
-        margin-top: 20px;
-    }
-
-    .box-form-es  .webform-conditional-processed .secure-img img{
-        max-width: 158px;
-        display: block;
+        float: none;
+        margin: 0px;
+        top: 0px;
     }
 
 /* Box Right ----------------------------------------------------- */
@@ -826,6 +813,18 @@
         max-width: 300px;
     }
 
+    .box-form-es .webform-conditional-processed .webform-next-dos-pasos {
+	      float: left;
+	      margin-top: 20px;
+	      margin-left: 68%;
+	      margin-bottom: 20px;
+    }
+
+    .box-form-es .webform-conditional-processed .webform-next-dos-pasos-2 {
+        margin-top: -100px;
+        margin-bottom: 20px;
+    }
+
     /* 3 cajas laterales */
 
     /** CUSTOMS == FELIPEGILESTUDIO - 15/SEPTEMBER 2016 **/
@@ -843,7 +842,7 @@
 	  /** end CUSTOMS == FELIPEGILESTUDIO - 15/SEPTEMBER 2016 **/
 
     .box-es-right .three-column {
-        max-width: 304px;
+        max-width: 309px;
         min-height: 451px;
         float: left;
         margin-left: 20px;
@@ -1050,7 +1049,18 @@
         float: left;
         margin-top: -130px;
         margin-left: 59%;
-        margin-bottom: 40px;
+        margin-bottom: 0px;
+    }
+
+    .box-form-es .webform-conditional-processed .webform-next-dos-pasos {
+    	float: left;
+    	margin-top: 20px;
+    	margin-left: 59%;
+    	margin-bottom: 0px;
+    }
+
+    .box-form-es .webform-conditional-processed .webform-next-dos-pasos-2 {
+      margin-top: -100px;
     }
 
     /* página de confirmacion */
@@ -1257,8 +1267,31 @@
         margin-bottom: 40px;
     }
 
-    .webform-conditional-processed .content-end-form .botons-form img {
+    .box-form-es .webform-conditional-processed  .webform-next-dos-pasos{
         float: left;
+        margin-top: -10px;
+        margin-left: 50%;
+        margin-bottom: 0px;
+    }
+
+    .box-form-es .webform-conditional-processed  .webform-previous-dos-pasos-2 {
+        width: 200px;
+        margin-left: 5%;
+        float: none;
+        clear: none;
+        font-size: 37px;
+    }
+
+    .box-form-es .webform-conditional-processed  .webform-next-dos-pasos-2 {
+        /*float: left;
+        margin-bottom: 0px;*/
+        margin-left: 60%;
+        margin-top: -100px;
+        width: 200px;
+    }
+
+    .webform-conditional-processed .content-end-form .botons-form img {
+        /*float: left;*/
         margin: 0px auto auto;
         display: block;
         top: 0px;
@@ -1390,6 +1423,7 @@
 
     .webform-conditional-processed .content-colaborar .cuotas label {
         margin-right: 4px;
+        float: none;
     }
 
     /* content datos */
@@ -1482,6 +1516,23 @@
         margin: 0px;
         margin-top: -30px;
         margin-left: 10px;
+    }
+
+    .box-form-es .webform-conditional-processed .webform-next-dos-pasos {
+        float: none;
+        margin: 0px;
+        margin-top: -10px;
+        margin-left: 3px;
+        width: 100%;
+    }
+    .box-form-es .webform-conditional-processed .webform-previous-dos-pasos-2 {
+      width: 98%;
+      margin-left: 10px;
+    }
+
+    .box-form-es .webform-conditional-processed .webform-next-dos-pasos-2 {
+    	margin-top: 10px;
+      width: 100%;
     }
 
     /* header */
