@@ -83,6 +83,7 @@ jQuery(function($) {
 
     // Foto de cabecera
     var header = ($("[name='submitted[foto]']").val() || cabecera );
+    //alert(header);
     if(header){
       $(".responsive--bg").css("background-image","url("+header+"?anchor=topcentre)");
     }
