@@ -1535,10 +1535,12 @@
       width: 100%;
     }
 
-    /* header */
-    /*.responsive--bg {
-      visibility: hidden;
-    }*/
+    /* Header */
+
+    .image-header__content--medium {
+	     /*padding-top: 100.5%;*/
+    }
+
     .image-header__content--medium{
         margin-top: 72px;
     }
