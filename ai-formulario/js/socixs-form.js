@@ -82,11 +82,11 @@ jQuery(function($) {
     }*/
 
     // Foto de cabecera
-    var header = ($("[name='submitted[foto]']").val() || cabecera );
+    //var header = ($("[name='submitted[foto]']").val() || cabecera );
     //alert(header);
-    if(header && header != ""){
+    /*if(header && header != ""){
       $(".responsive--bg").css("background-image","url("+header+"?anchor=topcentre)");
-    }
+    }*/
 
     // Añadir títulos a la página de preview
     if( $(".webform-client-form").first().hasClass("preview") ){
@@ -311,4 +311,45 @@ jQuery(function($) {
             });
     });
 
+    // Rellena a partir de parámetros GET
+    /*var urlVars = getUrlVars();
+    $(".cuota").val(urlVars['cuota']);
+    $(".apellido1").val(urlVars['frec']);
+    $(".apellido2").val(urlVars['otra']);*/ /*rellenar solo si cuota es dif de 9,12,25*/
+
+    /*$(".nombre").val(urlVars['nombre']);
+    $(".primer-apellido").val(urlVars['apellido1']);
+    $(".segundo-apellido").val(urlVars['apellido2']);
+    $(".nombre").val(urlVars['tipo-doc']);
+    $(".nombre").val(urlVars['num-doc']);
+    $(".nombre").val(urlVars['genero']);
+    $(".nombre").val(urlVars['email']);
+    $(".nombre").val(urlVars['telefono']);
+    $(".nombre").val(urlVars['idioma']);
+
+    $(".nombre").val(urlVars['tipo-via']);
+    $(".nombre").val(urlVars['nombre-via']);
+    $(".nombre").val(urlVars['dir-add']);
+    $(".nombre").val(urlVars['cp']);
+    $(".nombre").val(urlVars['poblacion']);
+    $(".nombre").val(urlVars['provincia']);
+    $(".nombre").val(urlVars['pais']);
+
+    $(".nombre").val(urlVars['iban-letras']);
+    $(".nombre").val(urlVars['iban-numero']);
+    $(".nombre").val(urlVars['entidad']);
+    $(".nombre").val(urlVars['oficina']);
+    $(".nombre").val(urlVars['dc']);
+    $(".nombre").val(urlVars['cuenta']);*/
+
+    /*
+      https://pruebacrm.es.amnesty.org/unete-a-amnistia/?origen=taskphone&cuota=X&frec=X&otra=X&nombre=X&apellido1=X&apellido2=X&tipo-doc=X&num-doc=X&genero=X&email=X&telefono=X&idioma=X&tipo-via=X&nombre-via=X&dir-add=X&cp=X&poblacion=X&provincia=X&pais=X&iban-letras=X&iban-numero=X&entidad=X&oficina=X&dc=X&cuenta=X
+      frec => 12:mensual; 6:bimestral; 4:trimestral; 3:cuatrimestral; 2:semestral; 1:anual
+      tipo-doc => nif; nie; pasaporte
+      genero => 1:Mujer; 2:Hombre; 3:No declara
+      idioma => es_ES:castellano; ca_ES:catalan; eu_ES:euskera; gl_ES:galego
+      tipo-via => calle=341;avenida=27;urbanizacion=319;travesía=311;paseo=239;plaza=271;carretera=93;ronda=283;otra=160;
+      provicia => listado adjunto (si el país no es españa, se deja vacío)
+      pais => listado adjunto
+    */
 })
