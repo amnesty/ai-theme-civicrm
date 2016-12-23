@@ -224,7 +224,7 @@ header, hgroup, nav, section {
 /* Labels ----- */
 .content-form .webform-conditional-processed .caja-content label {
     font-family: TradeGothicLT-BoldCondTwenty, HelveticaNeue-CondensedBold, "Franklin Gothic Medium", sans-serif;
-    float: left;
+    float: none;
     font-size: 20px;
     color: #000;
     height: 44px;
