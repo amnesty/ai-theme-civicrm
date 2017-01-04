@@ -76,17 +76,4 @@ jQuery(function($) {
         }
     });
 
-    // Añadir parametro a URL para tracking a preview
-    var form = $('.webform-client-form');
-    if( !form.hasClass('preview') ){
-        form.submit( function() {
-          form.attr("action",  window.location.pathname + '?preview=1');
-        });
-    }
-    else {
-      form.submit( function() {
-        form.attr("action",  window.location.pathname);
-      });
-    }
-
 })

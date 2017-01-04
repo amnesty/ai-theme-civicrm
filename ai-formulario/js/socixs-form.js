@@ -65,6 +65,20 @@ jQuery(function($) {
         source_input.val(get_utm_term);
     }
 
+    // Añadir parametro a URL para tracking a preview
+    var form = $('.webform-client-form');
+    if( !form.hasClass('preview') ){
+        form.submit( function() {
+          form.attr("action",  window.location.pathname + '?preview=1');
+        });
+    }
+    else {
+      form.submit( function() {
+        form.attr("action",  window.location.pathname);
+      });
+    }
+    
+
     // Dos pasos
     if($(".content-colaborar").hasClass("primer-paso")){
       $(".webform-next").addClass("webform-next-dos-pasos");
