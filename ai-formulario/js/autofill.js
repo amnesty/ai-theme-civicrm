@@ -47,25 +47,21 @@ jQuery(function($) {
   $(".dc").val(urlVars['dc']);
   $(".ncuenta").val(urlVars['cuenta']);
 
-  /*
-    https://pruebacrm.es.amnesty.org/unete-a-amnistia/?origen=taskphone&cuota=X&frec=X&otra=X&nombre=X&apellido1=X&apellido2=X
-      &tipo-doc=X&num-doc=X&genero=X
-      &email=X&telefono=X&idioma=X
-      &tipo-via=X&nombre-via=X&dir-add=X&cp=X&poblacion=X&provincia=X&pais=X
-      &iban-letras=X&iban-numero=X&entidad=X&oficina=X&dc=X&cuenta=X
+  $(".check-politica").attr("checked", false);
 
+  /*
     https://pruebacrm.es.amnesty.org/unete-a-amnistia/fundraising/
         ?cuota=6&frec=12
         &nombre=carlos&apellido1=gomez&apellido2=sanchez
         &tipo-doc=nif&num-doc=12345678P&genero=2&email=emaildeprueba@prueba.com&telefono=666778899&idioma=es_ES
-        &tipo-via=341&nombre-via=delicias&dir-add=1,2&cp=28004&poblacion=madrid&provincia=1&pais=1198
+        &tipo-via=341&nombre-via=delicias&dir-add=1,2&cp=28004&poblacion=madrid&provincia=AR&pais=1198
         &iban-letras=ES&iban-numero=11&entidad=2222&oficina=3333&dc=44&cuenta=55555555
 
     frec => 12:mensual; 6:bimestral; 4:trimestral; 3:cuatrimestral; 2:semestral; 1:anual
     tipo-doc => nif; nie; pasaporte
     genero => 1:Mujer; 2:Hombre; 3:No declara
     idioma => es_ES:castellano; ca_ES:catalan; eu_ES:euskera; gl_ES:galego
-    tipo-via => calle=341;avenida=27;urbanizacion=319;travesía=311;paseo=239;plaza=271;carretera=93;ronda=283;otra=160;
+    tipo-via => 341:calle; 27:avenida; 319:urbanizacion; 311:travesía; 239:paseo; 271:plaza; 93:carretera; 283:ronda; 160:otra;
     provicia => listado adjunto (si el país no es españa, se deja vacío)
     pais => listado adjunto
   */
