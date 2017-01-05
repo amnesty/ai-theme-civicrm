@@ -52,8 +52,8 @@ if( $node->nid == $donativos_gracias && !isset($_GET['m']) ){ ?>
 <?php
 }
 
-// Excluimos a Attel del tracking
-if ( !in_array($node->nid, $attel_form_list) &&
+// Excluimos a empresas de Telemarketing del tracking
+if ( !in_array($node->nid, $telemkg_form_list) &&
    ( in_array($node->nid, $socixs_form_list) || in_array($node->nid, $socixs_gracias_list)
    || in_array($node->nid, $donativos_form_list) || in_array($node->nid, $donativos_gracias_list) )
 ) {
@@ -98,7 +98,7 @@ if ( !in_array($node->nid, $attel_form_list) &&
 
 /***************** Mapas de calor ***************/
 
-if( ( $node->nid == $socixs_form || $node->nid == $socixs_form_A ) && !in_array($node->nid, $attel_form_list) ) { ?>
+if( ( $node->nid == $socixs_form || $node->nid == $socixs_form_A ) && !in_array($node->nid, $telemkg_form_list) ) { ?>
 	<script type="text/javascript" src="//estadisticas.es.amnesty.org/piwik/plugins/ClickHeat/libs/js/clickheat.js"></script>
 	<script type="text/javascript">
 		clickHeatSite = 1;
@@ -106,7 +106,7 @@ if( ( $node->nid == $socixs_form || $node->nid == $socixs_form_A ) && !in_array(
 		clickHeatServer = 'http://estadisticas.es.amnesty.org/piwik/plugins/ClickHeat/libs/click.php';
 		initClickHeat();
 	</script>
-<?php } else if( ( $node->nid == $socixs_form_B ) && !in_array($node->nid, $attel_form_list) ) { ?>
+<?php } else if( ( $node->nid == $socixs_form_B ) && !in_array($node->nid, $telemkg_form_list) ) { ?>
 	<script type="text/javascript" src="//estadisticas.es.amnesty.org/piwik/plugins/ClickHeat/libs/js/clickheat.js"></script>
 	<script type="text/javascript">
         	clickHeatSite = 1;
@@ -114,7 +114,7 @@ if( ( $node->nid == $socixs_form || $node->nid == $socixs_form_A ) && !in_array(
         	clickHeatServer = 'http://estadisticas.es.amnesty.org/piwik/plugins/ClickHeat/libs/click.php';
         	initClickHeat();
 	</script>
-<?php } else if( ( $node->nid == $donativos_form ) && !in_array($node->nid, $attel_form_list) ) { ?>
+<?php } else if( ( $node->nid == $donativos_form ) && !in_array($node->nid, $telemkg_form_list) ) { ?>
         <script type="text/javascript" src="//estadisticas.es.amnesty.org/piwik/plugins/ClickHeat/libs/js/clickheat.js"></script>
         <script type="text/javascript"><!--
                 clickHeatSite = 1;

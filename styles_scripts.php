@@ -25,6 +25,10 @@
 
 <?php } ?>
 
+<?php if( in_array($node->nid, $telemkg_form_list) ){ ?>
+      <script type="text/javascript" src="<?php print $form_path; ?>/js/autofill.js"></script>
+<?php } ?>
+
 <!-- Campaña Navidad -->
 <?php if($node->nid == $firma_navidad ){ ?>
       <script type="text/javascript" src="<?php print $form_path; ?>/js/navidad.js"></script>
