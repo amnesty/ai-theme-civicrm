@@ -18,6 +18,7 @@ jQuery(function($) {
   $("#edit-submitted-caja-colaborar-fieldset-fila-1-0-civicrm-1-contact-1-cg15-custom-48-4").attr("checked", true);
   $(".otra_cuota").attr("disabled", false);
   $(".otra_cuota").attr("enabled", true);
+  $(".capa-other.quant").css("display", "block");
   $(".otra_cuota").css("display", "block");
   $(".otra_cuota").val(urlVars['cuota']);
   // frecuencia
