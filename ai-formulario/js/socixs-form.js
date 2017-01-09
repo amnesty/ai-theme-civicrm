@@ -70,7 +70,7 @@ jQuery(function($) {
     var form = $('.webform-client-form');
     if( !form.hasClass('preview') ){
         form.submit( function() {
-          form.attr("action",  window.location.pathname + '/?preview=1&' + get_params);
+          form.attr("action",  window.location.pathname + '?preview=1&' + get_params);
         });
     }
     else {
