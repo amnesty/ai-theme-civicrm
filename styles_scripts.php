@@ -1,7 +1,7 @@
 <!-- *************** CSS y JS ****************** -->
-<script>
+<!--script>
   var cabecera = "<?php if(isset($_POST["submitted"])){ echo $_POST['submitted']['foto']; } ?>";
-</script>
+</script-->
 
 <!-- Estilos genéricos de la WEB -->
 <?php if($node->nid != $firma_navidad ){ // PROVISIONAL ?>

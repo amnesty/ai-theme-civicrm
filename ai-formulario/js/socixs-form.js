@@ -66,7 +66,13 @@ jQuery(function($) {
     }
 
     // Añadir parametro a URL para tracking a preview
-    get_params = window.location.href.split("?")[1];
+    url = window.location.href;
+    if(url.includes("?")){
+      get_params = window.location.href.split("?")[1];
+      if(get_params.includes("preview")){
+        get_params.replace("?preview=1", "");
+      }
+    }
     var form = $('.webform-client-form');
     if( !form.hasClass('preview') ){
         form.submit( function() {
