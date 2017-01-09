@@ -75,7 +75,7 @@ jQuery(function($) {
     }
     else {
       form.submit( function() {
-        form.attr("action",  window.location.pathname);
+        form.attr("action",  window.location.pathname + '?' + get_params);
       });
     }
 
