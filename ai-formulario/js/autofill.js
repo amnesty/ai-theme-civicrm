@@ -52,12 +52,12 @@ jQuery(function($) {
   $(".check-politica").attr("checked", false);
 
   /*
-    https://pruebacrm.es.amnesty.org/unete-a-amnistia/fundraising/
-        ?cuota=6&frec=12
-        &nombre=carlos&apellido1=gomez&apellido2=sanchez
-        &tipo-doc=nif&num-doc=12345678P&genero=2&email=emaildeprueba@prueba.com&telefono=666778899&idioma=es_ES
-        &tipo-via=341&nombre-via=delicias&dir-add=1,2&cp=28004&poblacion=madrid&provincia=AR&pais=1198
-        &iban-letras=ES&iban-numero=11&entidad=2222&oficina=3333&dc=44&cuenta=55555555
+  https://pruebacrm.es.amnesty.org/unete-a-amnistia/fundraising/
+      ?cuota=6&frec=12
+      &nombre=carlos&apellido1=gomez&apellido2=sanchez
+      &tipo-doc=nif&num-doc=47963690L&genero=2&email=emaildeprueba@prueba.com&telefono=666778899&idioma=es_ES
+      &tipo-via=341&nombre-via=delicias&dir-add=1,2&cp=28004&poblacion=madrid&provincia=AL&pais=1198
+      &iban-letras=ES&iban-numero=48&entidad=1491&oficina=0001&dc=29&cuenta=2071583229
 
     frec => 12:mensual; 6:bimestral; 4:trimestral; 3:cuatrimestral; 2:semestral; 1:anual
     tipo-doc => nif; nie; pasaporte

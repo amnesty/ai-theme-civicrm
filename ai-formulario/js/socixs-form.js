@@ -65,12 +65,14 @@ jQuery(function($) {
         source_input.val(get_utm_term);
     }
 
-    // Añadir parametro a URL para tracking a preview
-    url = window.location.href;
+    // Añadir parametro a URL para tracking a PREVIEW
+    var url = window.location.href;
+    var get_params = "";
+    // conservar los parámetros GET menos el de preview
     if(url.includes("?")){
       get_params = window.location.href.split("?")[1];
       if(get_params.includes("preview")){
-        get_params.replace("?preview=1", "");
+        get_params = get_params.replace(/[&]?preview=1[&]?/g, "");
       }
     }
     var form = $('.webform-client-form');
