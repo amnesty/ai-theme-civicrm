@@ -11,8 +11,7 @@ if( in_array($node->nid, $donativos_gracias_list) ){
   $importe_donativo = ($result[$donativo_idx][0] == "0" ? $result[$donativo_idx2][0] : $result[$donativo_idx][0]);
 
   // Consltamos método de pago
-  $metodo_pago = $result[$metodo_pago_idx][0];
-
+  $metodo_pago = ($result[$metodo_pago_idx][0]==""?$result[$metodo_pago_idx2][0]:$result[$metodo_pago_idx][0]);
 } // Consultamos cuota anual introducida
 else if(in_array($node->nid, $socixs_gracias_list)){
   module_load_include('inc','webform','includes/webform.submissions');
@@ -24,9 +23,8 @@ else if(in_array($node->nid, $socixs_gracias_list)){
   $otra = $result[$cuota_idx+1][0];
   $importe_anual = ($cuota > 0 ? $cuota*$frec : $otra*$frec);
 }
-
 // Si es donativo todavía no tiene el parámetro m (de método de pago)
-if( $node->nid == $donativos_gracias && !isset($_GET['m']) ){ ?>
+if( in_array($node->nid, $donativos_gracias_list) && !isset($_GET['m']) ){ ?>
      <!--parametro metodo pago -->
      <script type="text/javascript">
         var metodo = "<?php echo $metodo_pago; ?>";
@@ -52,7 +50,7 @@ if( $node->nid == $donativos_gracias && !isset($_GET['m']) ){ ?>
 <?php
 }
 
-// Excluimos a empresas de Telemarketing del tracking
+// Excluimos a Attel del tracking
 if ( !in_array($node->nid, $telemkg_form_list) &&
    ( in_array($node->nid, $socixs_form_list) || in_array($node->nid, $socixs_gracias_list)
    || in_array($node->nid, $donativos_form_list) || in_array($node->nid, $donativos_gracias_list) )
