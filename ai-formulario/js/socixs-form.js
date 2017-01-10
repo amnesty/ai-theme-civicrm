@@ -8,9 +8,8 @@ function getUrlVars() {
 }
 
 jQuery(function($) {
-    // url
-    var url = window.location.pathname;
 
+    var url = window.location.pathname;
     // Origenes
     var cat_source = "ut01";
     var get_source = getUrlVars()["origen"];
@@ -76,19 +75,19 @@ jQuery(function($) {
       }
     }
     var form = $('.webform-client-form');
+    alert(get_params);
     if( !form.hasClass('preview') ){
         form.submit( function() {
-          form.attr("action",  window.location.pathname + '?preview=1&' + get_params);
+          form.attr("action",  window.location.pathname + '?preview=1' + (get_params != "" ? ('&' + get_params) : '') );
         });
     }
     else {
       form.submit( function() {
-        form.attr("action",  window.location.pathname + '?' + get_params);
+        form.attr("action",  window.location.pathname + (get_params != "" ? ('?' + get_params) : '') );
       });
     }
 
-
-    // Dos pasos
+    // ************* Formulario en dos pasos ************
     if($(".content-colaborar").hasClass("primer-paso")){
       $(".webform-next").addClass("webform-next-dos-pasos");
     }
@@ -99,8 +98,15 @@ jQuery(function($) {
     }
 
     // Pop-up antes de cerrar
-    /*window.onbeforeunload = function(e) {
-      var message = '¿Estás segura de que quieres cerrar la página?';
+    /*window.onbeforeunload = function(evt) {
+      var message = '¿Seguro que quieres abandonar esta página? Si has encontrado algún problema al rellenar el formulario, llámanos al 913101277.';
+      if (typeof evt == 'undefined') {
+          evt = window.event;
+      }
+      if (evt) {
+          evt.returnValue = message;
+      }
+      alert(evt.target);
       return message;
     }*/
 
