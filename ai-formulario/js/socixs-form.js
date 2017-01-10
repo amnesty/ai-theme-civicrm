@@ -75,7 +75,6 @@ jQuery(function($) {
       }
     }
     var form = $('.webform-client-form');
-    alert(get_params);
     if( !form.hasClass('preview') ){
         form.submit( function() {
           form.attr("action",  window.location.pathname + '?preview=1' + (get_params != "" ? ('&' + get_params) : '') );
