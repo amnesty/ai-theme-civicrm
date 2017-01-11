@@ -59,10 +59,10 @@ jQuery(function($) {
     $(".profesion").val(urlVars['profesion']);
   }
   if((urlVars['nacimiento'])){
-    $nacimiento = urlVars['nacimiento'].split("/");
-    $(".dia").val($nacimiento[0]);
-    $(".mes").val($nacimiento[1]);
-    $(".anyo").val($nacimiento[2]);
+    $nacimiento = urlVars['nacimiento'].split("-");
+    $(".day").val($nacimiento[0]);
+    $(".month").val($nacimiento[1]);
+    $(".year").val($nacimiento[2]);
   }
 
 
@@ -111,24 +111,4 @@ jQuery(function($) {
 
   $(".check-politica").attr("checked", false);
 
-  /*
-
-  Ejemplo:
-  https://pruebacrm.es.amnesty.org/unete-a-amnistia/fundraising/
-      ?cuota=6&frec=12
-      &nombre=carlos&apellido1=gomez&apellido2=sanchez
-      &tipo-doc=nif&num-doc=47963690L&genero=2&email=emaildeprueba@prueba.com&telefono=666778899&idioma=es_ES&profesion=10
-      &tipo-via=341&nombre-via=delicias&dir-add=1,2&cp=28004&poblacion=madrid&provincia=AL&pais=1198
-      &iban-letras=ES&iban-numero=48&entidad=1491&oficina=0001&dc=29&cuenta=2071583229
-
-  Valores selects:
-    frec => 12:mensual; 6:bimestral; 4:trimestral; 3:cuatrimestral; 2:semestral; 1:anual
-    tipo-doc => nif; nie; pasaporte
-    genero => 1:Mujer; 2:Hombre; 3:No declara
-    idioma => es_ES:castellano; ca_ES:catalan; eu_ES:euskera; gl_ES:galego
-    tipo-via => 341:calle; 27:avenida; 319:urbanizacion; 311:travesía; 239:paseo; 271:plaza; 93:carretera; 283:ronda; 160:otra;
-    provicia => listado adjunto (si el país no es españa, se deja vacío)
-    pais => listado adjunto
-
-  */
 });
