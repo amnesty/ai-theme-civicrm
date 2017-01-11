@@ -97,17 +97,23 @@ jQuery(function($) {
     }
 
     // Pop-up antes de cerrar
-    /*window.onbeforeunload = function(evt) {
-      var message = '¿Seguro que quieres abandonar esta página? Si has encontrado algún problema al rellenar el formulario, llámanos al 913101277.';
-      if (typeof evt == 'undefined') {
-          evt = window.event;
-      }
-      if (evt) {
-          evt.returnValue = message;
-      }
-      alert(evt.target);
-      return message;
-    }*/
+    $(document).ready(function () {
+      $(window).on('beforeunload', function(evt){
+        var message = '¿Seguro que quieres abandonar esta página? Si has encontrado algún problema al rellenar el formulario, llámanos al 913101277.';
+        if (typeof evt == 'undefined') {
+            evt = window.event;
+        }
+        if (evt) {
+            evt.returnValue = message;
+        }
+        //evt.stopPropagation();
+        return message;
+      });
+      $(document).on("submit", "form", function(event){
+          $(window).off('beforeunload');
+      });
+    });
+
 
     // Foto de cabecera
     //var header = ($("[name='submitted[foto]']").val() || cabecera );
