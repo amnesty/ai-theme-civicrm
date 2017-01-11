@@ -7,7 +7,6 @@
     <title><?php $title = explode('#',$head_title); print $title[0]; ?></title>
     <?php print $styles; ?>
     <?php print $scripts; ?>
-    <script>jQuery.noConflict();</script>
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
   </head>
 
