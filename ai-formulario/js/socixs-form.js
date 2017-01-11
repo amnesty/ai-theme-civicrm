@@ -9,6 +9,20 @@ function getUrlVars() {
 
 jQuery(function($) {
 
+    // Pop-up antes de cerrar
+    $(document).ready(function () {
+      $(window).on('beforeunload', function(evt){
+        var message = '¿Seguro que quieres abandonar esta página? Si has encontrado algún problema al rellenar el formulario, llámanos al 913 101 277.';
+        var e = (evt || window.event);
+        e.returnValue = message;
+        //e.stopPropagation();
+        return message;
+      });
+      $(document).on("submit", "form", function(evt){
+          $(window).off('beforeunload');
+      });
+    });
+
     var url = window.location.pathname;
     // Origenes
     var cat_source = "ut01";
@@ -95,21 +109,6 @@ jQuery(function($) {
       $(".webform-next").addClass("webform-next-dos-pasos-2");
       $(".webform-previous").addClass("webform-previous-dos-pasos-2");
     }
-
-    // Pop-up antes de cerrar
-    $(document).ready(function () {
-      $(window).on('beforeunload', function(evt){
-        var message = '¿Seguro que quieres abandonar esta página? Si has encontrado algún problema al rellenar el formulario, llámanos al 913101277.';
-        var e = (evt || window.event);
-        e.returnValue = message;
-        //e.stopPropagation();
-        return message;
-      });
-      $(document).on("submit", "form", function(evt){
-          $(window).off('beforeunload');
-      });
-    });
-
 
     // Foto de cabecera
     //var header = ($("[name='submitted[foto]']").val() || cabecera );

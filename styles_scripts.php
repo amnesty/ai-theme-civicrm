@@ -1,6 +1,6 @@
 <!-- *************** CSS y JS ****************** -->
 <!--script>
-  //var cabecera = "<?php if(isset($_POST["submitted"])){ echo $_POST['submitted']['foto']; } ?>";
+  //var cabecera = "<?php if(isset($_POST["submitted"]["foto"])){ echo $_POST['submitted']['foto']; } ?>";
 </script-->
 
 <!-- Estilos genéricos de la WEB -->
