@@ -100,16 +100,12 @@ jQuery(function($) {
     $(document).ready(function () {
       $(window).on('beforeunload', function(evt){
         var message = '¿Seguro que quieres abandonar esta página? Si has encontrado algún problema al rellenar el formulario, llámanos al 913101277.';
-        if (typeof evt == 'undefined') {
-            evt = window.event;
-        }
-        if (evt) {
-            evt.returnValue = message;
-        }
-        //evt.stopPropagation();
+        var e = (evt || window.event);
+        e.returnValue = message;
+        //e.stopPropagation();
         return message;
       });
-      $(document).on("submit", "form", function(event){
+      $(document).on("submit", "form", function(evt){
           $(window).off('beforeunload');
       });
     });
