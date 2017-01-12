@@ -22,6 +22,17 @@ jQuery(function($) {
           $(window).off('beforeunload');
       });
     });
+    // Pop-up pasado X tiempo
+    var remindTimer;
+    function callPopUp(){
+        popup = alert('Hola, hace mucho rato que no blablabla');
+        //setTimeout(waitPopUp, 8000);
+    }
+    function restartRemindTimer() {
+        clearTimeout(remindTimer);
+        remindTimer = setTimeout(callPopUp, 10000);
+    }
+    $(document).on('mousemove keypress', restartRemindTimer);
 
     var url = window.location.pathname;
     // Origenes
