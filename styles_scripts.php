@@ -3,6 +3,10 @@
   //var cabecera = "<?php if(isset($_POST["submitted"]["foto"])){ echo $_POST['submitted']['foto']; } ?>";
 </script-->
 
+<?php if($email_saver){ ?>
+  <script type="text/javascript" src="<?php print $form_path; ?>/js/saver.js"></script>
+<?php } ?>
+
 <!-- Estilos genéricos de la WEB -->
 <?php if($node->nid != $firma_navidad ){ // PROVISIONAL ?>
   <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/bootstrap.min.css">
@@ -24,7 +28,7 @@
   <?php } ?>
 
 <?php } ?>
-
+<script type="text/javascript" src="<?php print $form_path; ?>/js/membership-validator.js"></script>
 <?php if( in_array($node->nid, $telemkg_form_list) ){ ?>
       <script type="text/javascript" src="<?php print $form_path; ?>/js/autofill.js"></script>
 <?php } ?>
