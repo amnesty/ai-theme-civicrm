@@ -10,6 +10,7 @@ function getUrlVars() {
 jQuery(function($) {
 
     // ************** Origenes ****************
+
     var url = window.location.pathname;
     var cat_source = "ut01";
     var get_source = getUrlVars()["origen"];
@@ -64,6 +65,8 @@ jQuery(function($) {
         source_input.val(get_utm_term);
     }
 
+    /*********** Página de confirmación ***********/
+
     // Añadir parametro a URL para tracking a PREVIEW
     var url = window.location.href;
     var get_params = "";
@@ -85,23 +88,6 @@ jQuery(function($) {
         form.attr("action",  window.location.pathname + (get_params != "" ? ('?' + get_params) : '') );
       });
     }
-
-    // ************* Formulario en dos pasos ************
-    if($(".content-colaborar").hasClass("primer-paso")){
-      $(".webform-next").addClass("webform-next-dos-pasos");
-    }
-
-    if($(".content-direccion").hasClass("segundo-paso")){
-      $(".webform-next").addClass("webform-next-dos-pasos-2");
-      $(".webform-previous").addClass("webform-previous-dos-pasos-2");
-    }
-
-    // Foto de cabecera
-    //var header = ($("[name='submitted[foto]']").val() || cabecera );
-    //alert(header);
-    /*if(header && header != ""){
-      $(".responsive--bg").css("background-image","url("+header+"?anchor=topcentre)");
-    }*/
 
     // Añadir títulos a la página de preview
     if( $(".webform-client-form").first().hasClass("preview") ){
