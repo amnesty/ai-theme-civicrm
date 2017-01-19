@@ -13,9 +13,12 @@ jQuery(function($) {
 
     $cuota_anual = $cuota*$frecuencia;
     if($cuota_anual >= 24 && $cuota_anual < 48){
-      alert("Recuerda que estás seleccionando una cuota entre 24€ y 48€ anuales. Esta cuota reducida se aplica en el caso de personas jubiladas, en paro o estudiantes. Si no es tu caso, la cuota mínima es de 4€ mensuales o de 48€ anuales. Muchas gracias.");
+      alert(" La cuota mínima para asociarte a Amnistía Internacional es de 48€ anuales. En caso de ser una persona jubilada, desempleada o estudiante, puedes acogerte a la cuota reducida de 24€ al año. Gracias.");
     }
   }
+  
+  // on-load
+  calculate_fee();
 
   $(".cuota").click(function() {
     if( $(this).attr("id") != "edit-submitted-caja-colaborar-fieldset-fila-1-0-civicrm-1-contact-1-cg15-custom-48-4"
