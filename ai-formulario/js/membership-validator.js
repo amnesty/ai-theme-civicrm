@@ -13,10 +13,10 @@ jQuery(function($) {
 
     $cuota_anual = $cuota*$frecuencia;
     if($cuota_anual >= 24 && $cuota_anual < 48){
-      alert(" La cuota mínima para asociarte a Amnistía Internacional es de 48€ anuales. En caso de ser una persona jubilada, desempleada o estudiante, puedes acogerte a la cuota reducida de 24€ al año. Gracias.");
+      alert("La cuota mínima para asociarte a Amnistía Internacional es de 48€ anuales. En caso de ser una persona jubilada, desempleada o estudiante, puedes acogerte a la cuota reducida de 24€ al año. Gracias.");
     }
   }
-  
+
   // on-load
   calculate_fee();
 
