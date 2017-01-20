@@ -730,13 +730,6 @@
     }
 
     /* content cuota */
-    .webform-conditional-processed .content-colaborar .capa-selecttime {
-        width: 275px;
-    }
-
-    .webform-conditional-processed .content-colaborar select.selecttime {
-        background-position: 240px center;
-    }
 
     /* content-datos */
 
@@ -886,6 +879,14 @@
 
     .webform-conditional-processed .content-colaborar .capa-other-quant {
         margin-left: -16px;
+    }
+
+    .webform-conditional-processed .content-colaborar .capa-selecttime {
+        width: 275px;
+    }
+
+    .webform-conditional-processed .content-colaborar select.selecttime {
+        background-position: 240px center;
     }
 
     /* datos */
