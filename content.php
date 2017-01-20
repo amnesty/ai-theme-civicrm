@@ -1,9 +1,9 @@
 <?php include_once("strings.php"); ?>
 
 <div class="container--wide"><!-- Page content -->
-    <div class="grid"><!-- Bootstrap Grid -->
-   	    <div id="content-area">
-         	<div class="content-form clearfix"><!-- Formulario -->
+  <div class="grid"><!-- Bootstrap Grid -->
+   	  <div id="content-area">
+         <div class="content-form clearfix"><!-- Formulario -->
               <?php
               // ********* Sólo mostramos el texto de intro en el formulario de socixs
               if ( in_array($node->nid, $socixs_form_list) || in_array($node->nid, $donativos_form_list) ) { ?>
@@ -77,70 +77,69 @@
                             </div>
                       <?php } ?>
 
-                  <!-- ********************************** CAJAS LATERALES ******************** -->
-                  <?php if( !in_array($node->nid, $excluded_header_list) && ( in_array($node->nid, $socixs_form_list) || in_array($node->nid, $donativos_form_list) ) ) {
-                    print '</div><!-- Box FORM_ES -->'; ?>
-                     <div class="box-es-right col-xs-12 col-sm-12 col-md-3 col-lg-3 margin-top-20px-element"> <!-- box-es-right -->
-                       <?php if( $node->nid == $area_privada) { ?>
-                         <div class="three-column buenas-noticias bloques-x4 col-xs-12 col-sm-12 col-md-4 col-lg-4"> <!-- NUEVA CAJA - "BUENAS NOTICIAS" -->
-                             <img src="<?php print $images_path; ?>icon-good-news.png" alt="imagen cara sonriente" />
-                             <?php
-                                echo $titulo_caja_buenas_noticias;
-                                echo $texto_caja_buenas_noticias;
-                              ?>
-                         </div>
-                        <?php } ?>
-                        <div class="three-column ventajas bloques-x4 col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                             <img src="<?php print $images_path; ?>pig.png" alt="pig"/>
-                             <?php
-                             if($cat){
-                               if( in_array($node->nid, $donativos_form_list) ){
-                                  echo $titulo_caja_ventajas_donativo_cat;
-                                } else {
-                                  echo $titulo_caja_ventajas_cat;
-                                }
-                               echo $texto_caja_ventajas_cat;
-                             } else {
-                               if( in_array($node->nid, $donativos_form_list) ){
-                                  echo $titulo_caja_ventajas_donativo;
-                               } else {
-                                  echo $titulo_caja_ventajas;
-                               }
-                               echo $texto_caja_ventajas;
-                             }
-                             ?>
-                             </p>
-                        </div>
-                        <div class="three-column formas-pago bloques-x4 col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                             <img src="<?php print $images_path; ?>cartera.png" alt="cartera"/>
-                             <?php
-                              if($cat){
-                                echo $titulo_caja_formas_pago_cat;
-                                echo $texto_caja_formas_pago_cat;
-                              } else {
-                                echo $titulo_caja_formas_pago;
-                                echo $texto_caja_formas_pago;
-                              }
-                             ?>
-                        </div>
-                        <div class="three-column compromiso bloques-x4 col-xs-12 col-sm-12 col-md-4 col-lg-4">
-                            <img src="<?php print $images_path; ?>ventana.png" alt="ventana"/>
-                            <?php
-                              if($cat){
-                                  echo $titulo_caja_transparencia_cat;
-                                  echo $texto_caja_transparencia_cat;
-                              } else {
-                                  echo $titulo_caja_transparencia;
-                                  echo $texto_caja_transparencia;
-                              }
-                            ?>
-                        </div>
-                    </div><!-- /box-es-right -->
-                  <?php }
-                      else {
-                  ?>
-                  </div><!-- Box FORM_ES -->
-              <?php } ?>
+                      <!-- ********************************** CAJAS LATERALES ******************** -->
+                      <?php if( !in_array($node->nid, $excluded_header_list) &&
+                        ( in_array($node->nid, $socixs_form_list) || in_array($node->nid, $donativos_form_list) ) ) { ?>
+                        </div><!-- Box FORM_ES -->
+                           <div class="box-es-right col-xs-12 col-sm-12 col-md-3 col-lg-3 margin-top-20px-element"> <!-- box-es-right -->
+                             <?php if( $node->nid == $area_privada) { ?>
+                               <div class="three-column buenas-noticias bloques-x4 col-xs-12 col-sm-12 col-md-4 col-lg-4"> <!-- NUEVA CAJA - "BUENAS NOTICIAS" -->
+                                   <img src="<?php print $images_path; ?>icon-good-news.png" alt="imagen cara sonriente" />
+                                   <?php
+                                      echo $titulo_caja_buenas_noticias;
+                                      echo $texto_caja_buenas_noticias;
+                                    ?>
+                               </div>
+                              <?php } ?>
+                              <div class="three-column ventajas bloques-x4 col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                   <img src="<?php print $images_path; ?>pig.png" alt="pig"/>
+                                   <?php
+                                   if($cat){
+                                     if( in_array($node->nid, $donativos_form_list) ){
+                                        echo $titulo_caja_ventajas_donativo_cat;
+                                      } else {
+                                        echo $titulo_caja_ventajas_cat;
+                                      }
+                                     echo $texto_caja_ventajas_cat;
+                                   } else {
+                                     if( in_array($node->nid, $donativos_form_list) ){
+                                        echo $titulo_caja_ventajas_donativo;
+                                     } else {
+                                        echo $titulo_caja_ventajas;
+                                     }
+                                     echo $texto_caja_ventajas;
+                                   }
+                                   ?>
+                                   </p>
+                              </div>
+                              <div class="three-column formas-pago bloques-x4 col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                   <img src="<?php print $images_path; ?>cartera.png" alt="cartera"/>
+                                   <?php
+                                    if($cat){
+                                      echo $titulo_caja_formas_pago_cat;
+                                      echo $texto_caja_formas_pago_cat;
+                                    } else {
+                                      echo $titulo_caja_formas_pago;
+                                      echo $texto_caja_formas_pago;
+                                    }
+                                   ?>
+                              </div>
+                              <div class="three-column compromiso bloques-x4 col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                  <img src="<?php print $images_path; ?>ventana.png" alt="ventana"/>
+                                  <?php
+                                    if($cat){
+                                        echo $titulo_caja_transparencia_cat;
+                                        echo $texto_caja_transparencia_cat;
+                                    } else {
+                                        echo $titulo_caja_transparencia;
+                                        echo $texto_caja_transparencia;
+                                    }
+                                  ?>
+                              </div>
+                          </div><!-- /box-es-right -->
+                    <?php } else { ?>
+                      </div><!-- Box FORM_ES -->
+                    <?php } ?>
             </div>
 	      </div>
     </div>

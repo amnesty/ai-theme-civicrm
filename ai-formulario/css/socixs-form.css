@@ -1292,7 +1292,7 @@
 
     .webform-conditional-processed .content-end-form .botons-form img {
         /*float: left;*/
-        margin: 0px auto auto;
+        /*margin: 0px auto auto;*/
         display: block;
         top: 0px;
     }
