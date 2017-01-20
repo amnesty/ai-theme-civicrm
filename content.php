@@ -29,7 +29,7 @@
                 ?>
                 </p>
                 <?php if( in_array($node->nid, $navidad_list) && in_array($node->nid, $donativos_form_list) ) { ?>
-                    <img src="<?php print $images_path; ?>bola-gracias.png" class="bola-navidad" />
+                    <!--img src="<?php print $images_path; ?>bola-gracias.png" class="bola-navidad" /-->
                 <?php } ?>
               <?php } ?>
   		        <div class="box-form-es" <?php if( in_array($node->nid, $excluded_header_list) ){ ?>style="width: 100%;" <?php } ?> >
