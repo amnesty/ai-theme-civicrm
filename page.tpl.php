@@ -12,6 +12,15 @@ include_once('config.php'); // variables dependientes del entorno
 include_once('globals.php'); // textos, estructura, etc comun
 include_once('meta-tags.php'); // meta tags para redes sociales
 
+// Patch para justicia por navidad
+$url = $_SERVER['REQUEST_URI'];
+if (preg_match('/haz-un-donativo-por-navidad/', $url)) {
+  header('Location: ' . $base_url . '/haz-un-donativo-justicia');
+}
+else if (preg_match('/unete-a-amnistia-por-navidad/', $url)) {
+  header('Location: ' . $base_url . '/unete-a-amnistia-justicia');
+}
+
 // AB Testing
 $splitter_url = 'sites/all/themes/ai-theme-civicrm/splitter/ab.php';
 if (file_exists($splitter_url)) {
@@ -34,6 +43,7 @@ $mobile = (preg_match('/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|
 if( $node->nid == $socixs_form && preg_match('/20161116_CDonaldTrump/',$url) ){
   header('Location: https://crm.es.amnesty.org/haz-un-donativo?pk_campaign=mailint&pk_kwd=20161116_CDonaldTrump');
 }
+
 ?>
 
 <?php
