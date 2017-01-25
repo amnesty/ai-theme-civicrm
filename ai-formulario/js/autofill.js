@@ -8,10 +8,11 @@ function getUrlVars() {
 }
 
 jQuery(function($) {
+
   // Rellena a partir de parámetros GET
   var urlVars = getUrlVars();
 
-  // cuota
+  // Cuota
   if((urlVars['cuota'])){
     $("#edit-submitted-caja-colaborar-fieldset-fila-1-0-civicrm-1-contact-1-cg15-custom-48-1").attr("checked", false);
     $("#edit-submitted-caja-colaborar-fieldset-fila-1-0-civicrm-1-contact-1-cg15-custom-48-2").attr("checked", false);
@@ -27,15 +28,15 @@ jQuery(function($) {
     $(".frecuencia").val(urlVars['frec']);
   }
 
-
+  // Datos Personales
   if((urlVars['nombre'])){
-    $(".nombre").val(urlVars['nombre']);
+    $(".nombre").val(decodeURIComponent(urlVars['nombre']));
   }
   if((urlVars['apellido1'])){
-    $(".primer-apellido").val(urlVars['apellido1']);
+    $(".primer-apellido").val(decodeURIComponent(urlVars['apellido1']));
   }
   if((urlVars['apellido2'])){
-    $(".segundo-apellido").val(urlVars['apellido2']);
+    $(".segundo-apellido").val(decodeURIComponent(urlVars['apellido2']));
   }
   if((urlVars['tipo-doc'])){
     $(".tipo_documento").val(urlVars['tipo-doc']);
@@ -47,7 +48,7 @@ jQuery(function($) {
     $(".genero").val(urlVars['genero']);
   }
   if((urlVars['email'])){
-    $(".email").val(urlVars['email']);
+    $(".email").val(decodeURIComponent(urlVars['email']));
   }
   if((urlVars['telefono'])){
     $(".mobile").val(urlVars['telefono']);
@@ -65,21 +66,21 @@ jQuery(function($) {
     $(".year").val($nacimiento[2]);
   }
 
-
+  // Dirección
   if((urlVars['tipo-via'])){
     $(".tipo-via").val(urlVars['tipo-via']);
   }
   if((urlVars['nombre-via'])){
-    $(".nombre-via").val(urlVars['nombre-via']);
+    $(".nombre-via").val(decodeURIComponent(urlVars['nombre-via']));
   }
   if((urlVars['dir-add'])){
-    $(".numero-bloque").val(urlVars['dir-add']);
+    $(".numero-bloque").val(decodeURIComponent(urlVars['dir-add']));
   }
   if((urlVars['cp'])){
     $(".postal").val(urlVars['cp']);
   }
   if((urlVars['poblacion'])){
-    $(".poblacion").val(urlVars['poblacion']);
+    $(".poblacion").val(decodeURIComponent(urlVars['poblacion']));
   }
   if((urlVars['provincia'])){
     $(".provincia").val(urlVars['provincia']);
@@ -88,7 +89,7 @@ jQuery(function($) {
     $(".pais").val(urlVars['pais']);
   }
 
-
+  // Cuenta corriente
   if((urlVars['iban-letras'])){
     $(".iban-letras").val(urlVars['iban-letras']);
   }
@@ -108,7 +109,7 @@ jQuery(function($) {
     $(".ncuenta").val(urlVars['cuenta']);
   }
 
-
+  // Política desactivada por defecto
   $(".check-politica").attr("checked", false);
 
 });
