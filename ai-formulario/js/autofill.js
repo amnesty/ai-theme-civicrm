@@ -110,6 +110,6 @@ jQuery(function($) {
   }
 
   // Política desactivada por defecto
-  $(".check-politica").attr("checked", false);
+  //$(".check-politica").attr("checked", false);
 
 });
