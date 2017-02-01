@@ -1,0 +1,3 @@
+[submodule "AI-Formulario"]
+	path = ai-formulario
+	url = https://github.com/amnesty/ai-formulario
