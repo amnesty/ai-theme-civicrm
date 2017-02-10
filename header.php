@@ -1,6 +1,7 @@
 <!-- Header -->
 <?php if( !in_array($node->nid, $excluded_header_list) ){ ?>
 
+<?php if( !in_array('administrator', $user->roles) ){ ?>
 <nav class="navbar navbar-fixed-top">
 <header class="header" data-header="" role="banner">
     <div class="header__container" data-header-container="">
@@ -19,6 +20,7 @@
     </div>
 </header>
 </nav>
+<?php } ?>
 
 <!-- Image after header-->
 <div class="image-header image-header--has-credits-sm image-header--actua">

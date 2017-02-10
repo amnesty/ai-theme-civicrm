@@ -4,11 +4,12 @@
   <div class="grid"><!-- Bootstrap Grid -->
    	  <div id="content-area">
          <div class="content-form clearfix"><!-- Formulario -->
+              <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
               <?php
               // ********* Sólo mostramos el texto de intro en el formulario de socixs
               if ( in_array($node->nid, $socixs_form_list) || in_array($node->nid, $donativos_form_list) ) { ?>
   			      <p class="text-intro">
-                <?php
+              <?php
                   if( in_array($node->nid, $navidad_list) && in_array($node->nid, $donativos_form_list) ) {
                         echo $texto_intro_donativo_navidad;
                   } elseif( ($node->nid == $antevenio_form_B) || ($node->nid == $antevenio_form_E) ) {
