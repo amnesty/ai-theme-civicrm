@@ -37,7 +37,7 @@
       <script type="text/javascript" src="<?php print $form_path; ?>/js/autofill.js"></script>
 <?php } ?>
 
-<!-- Campaña Navidad -->
+<!-- Campañas específicas -->
 <?php if($node->nid == $firma_navidad ){ ?>
       <script type="text/javascript" src="<?php print $form_path; ?>/js/navidad.js"></script>
       <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
@@ -49,5 +49,6 @@
       <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/navidad.css">
 <?php  } else if ( in_array($node->nid, $nosevende_list) && !in_array($node->nid, $socixs_gracias_list) && !in_array($node->nid, $donativos_gracias_list) ) { ?>
       <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,900" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/nosevende.css">
 <?php } ?>
