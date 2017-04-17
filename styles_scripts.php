@@ -48,3 +48,7 @@
       <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/navidad.css">
 <?php } ?>
+<?php  } else if ( in_array($node->nid, $nosevende_list) && !in_array($node->nid, $socixs_gracias_list) && !in_array($node->nid, $donativos_gracias_list) ) { ?>
+      <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/nosevende.css">
+<?php } ?>
