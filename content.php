@@ -12,6 +12,8 @@
               <?php
                   if( in_array($node->nid, $navidad_list) && in_array($node->nid, $donativos_form_list) ) {
                         echo $texto_intro_donativo_navidad;
+                  } elseif( in_array($node->nid, $nosevende_list) && in_array($node->nid, $donativos_form_list) ) {
+                        echo $texto_intro_donativo_nosevende;
                   } elseif( ($node->nid == $antevenio_form_B) || ($node->nid == $antevenio_form_E) ) {
                         echo $texto_intro_antevenio_BE;
                   } elseif( ($node->nid  == $antevenio_form_C) || ($node->nid == $antevenio_form_D) ) {

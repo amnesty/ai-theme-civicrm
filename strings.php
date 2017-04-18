@@ -2,6 +2,8 @@
 
   /* Textos intro formulario */
 
+  $texto_intro_donativo_nosevende = '<p>¡Usa tu casa para defender nuestro derecho a la vivienda! Haz un donativo y recibirás un cartel o pegatina como los de la imagen para que los coloques donde quieras. Elige el formato y el idioma. Gracias por defender el derecho a una vivienda digna.</p>';
+
   $texto_intro_donativo_navidad = '<span>Has llegado hasta aquí porque algo dentro de ti te dice que hay millones de razones para colaborar. Colabora con el trabajo que hacemos por el derecho a la verdad, justicia y reparación de todas las personas.</span>
     <span>Haz un donativo y ayúdanos a seguir trabajando para mantener viva la lucha de miles de personas que siguen pidiendo justicia.</span>';
   //$texto_intro_donativo_navidad = '<span>Has llegado hasta aquí porque algo dentro de ti te dice que hay millones de razones para colaborar. <b>Decora tu casa y a la vez colabora</b> con el trabajo que hacemos por el derecho a la verdad, justicia y reparación de todas las personas.</span><br/>
