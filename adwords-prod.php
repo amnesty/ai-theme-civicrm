@@ -2,7 +2,6 @@
 // Píxeles Adwords para páginas de gracias
 if( in_array(socixs_gracias_list) ){
   if(isset($_COOKIE['cookieAlert3']) && $_COOKIE['cookieAlert3'] == 1){ // si ha aceptado las cookies
-
     if( isset($_GET["pk_campaign"]) && $_GET["pk_campaign"] == 'anunggl_visual' || $_SESSION['pk_campaign'] == 'anunggl_visual' || $_SESSION['utm_campaign'] == 'anunggl_visual') { // display
   ?>
       <!-- Google Code for pixel_socios Conversion Page -->
@@ -25,6 +24,7 @@ if( in_array(socixs_gracias_list) ){
       <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/966452768/?value=9.00&amp;currency_code=EUR&amp;label=2_6jCLezgGwQoMzrzAM&amp;guid=ON&amp;script=0"/>
       </div>
       </noscript>
+      <!-- End Adwords Code -->
   <?php  }
     else if (isset($_GET["pk_campaign"]) && $_GET["pk_campaign"] == 'anunggl' || $_SESSION['pk_campaign'] == 'anunggl' || $_SESSION['utm_campaign'] == 'anunggl'){ // grants
    ?>
@@ -46,6 +46,7 @@ if( in_array(socixs_gracias_list) ){
       <img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/973137582/?label=xArOCN2-xXAQrs2D0AM&amp;guid=ON&amp;script=0"/>
       </div>
       </noscript>
+      <!-- End Adwords Code -->
 <?php  }
   }
 }
