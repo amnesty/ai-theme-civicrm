@@ -78,3 +78,6 @@ if( $node->nid == $socixs_form && preg_match('/20161116_CDonaldTrump/',$url) ){
 
 <!-- Estadísticas en Piwik (si aplica, sino debe estar vacío) -->
 <?php include_once('piwik.php'); ?>
+
+<!-- Pixel de Adwords (si aplica) -->
+<?php include_once('adwords.php'); ?>
