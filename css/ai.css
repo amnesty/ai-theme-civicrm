@@ -13627,3 +13627,79 @@ x:-o-prefocus {
     font-size: 3em;
     float: right
 }
+
+/* Cookie */
+#cookie-law-info-bar {
+	border: 0;
+	font-size: 10pt;
+	margin: 0 auto;
+	padding: 20px 0;
+	position: absolute;
+	top:70px!important;
+	text-align: center;
+	width: 100%;
+	z-index: 9999;
+    background-color: rgba(0,0,0,0.7)!important;
+    color: #ffffff!important;
+    border: 0!important;
+}
+#cookie-law-info-again {
+	font-size: 10pt;
+	margin: 0;
+	padding: 2px 10px;
+	text-align: center;
+	z-index: 9999;
+	cursor: pointer;
+}
+#cookie-law-info-bar span {
+	vertical-align: middle;
+}
+
+#cookie-law-info-bar {
+    padding: 5px 10px 5px!important;
+    background: #232323!important;
+    top: 60px!important;
+}
+#close_cookie,
+#cookie_action_close_header{
+    background: #eb6400!important;
+}
+/** Buttons (http://papermashup.com/demos/css-buttons) */
+.cli-plugin-button, .cli-plugin-button:visited {
+	/*background: #222 url('../images/overlay.png') repeat-x;*/
+	display: inline-block;
+	padding: 5px 10px 6px;
+	color: #fff;
+	text-decoration: none;
+	/*-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+	border-bottom: 1px solid rgba(0,0,0,0.25);*/
+	position: relative;
+	cursor: pointer;
+	margin: auto 10px;
+	border-radius: 0;
+}
+.cli-plugin-button:hover {
+	background-color: #111;
+	color: #fff;
+}
+.cli-plugin-button:active {
+	top: 1px;
+}
+.small.cli-plugin-button, .small.cli-plugin-button:visited {
+	font-size: 11px;
+}
+.cli-plugin-button, .cli-plugin-button:visited,
+	.medium.cli-plugin-button, .medium.cli-plugin-button:visited {
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 1;
+	text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+}
+.cli-plugin-main-link{
+    color: #eb6400!important;
+    text-decoration: underline;
+}
