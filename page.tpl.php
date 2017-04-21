@@ -44,6 +44,14 @@ if( $node->nid == $socixs_form && preg_match('/20161116_CDonaldTrump/',$url) ){
   header('Location: https://crm.es.amnesty.org/haz-un-donativo?pk_campaign=mailint&pk_kwd=20161116_CDonaldTrump');
 }
 
+//RECIBE PARAMETROS DE CAMPAÑAS GOOGLE Y FACEBOOK. LOS ASIGNAMOS A LA SESSION RESPECTIVAMENTE PARA NO PERDERLOS
+if(isset($_GET['pk_campaign'])) {
+	$_SESSION['pk_campaign'] = $_GET['pk_campaign'];
+}
+if(isset($_GET['utm_campaign'])) {
+	$_SESSION['utm_campaign'] = $_GET['utm_campaign'];
+}
+
 ?>
 
 <?php
