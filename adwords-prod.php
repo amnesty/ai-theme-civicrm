@@ -1,6 +1,6 @@
 <?php
 // Píxeles Adwords para páginas de gracias
-if( in_array(socixs_gracias_list) ){
+if( in_array($node->nid, $socixs_gracias_list) ){
   if(isset($_COOKIE['cookieAlert3']) && $_COOKIE['cookieAlert3'] == 1){ // si ha aceptado las cookies
     if( isset($_GET["pk_campaign"]) && $_GET["pk_campaign"] == 'anunggl_visual' || $_SESSION['pk_campaign'] == 'anunggl_visual' || $_SESSION['utm_campaign'] == 'anunggl_visual') { // display
   ?>
