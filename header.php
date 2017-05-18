@@ -26,7 +26,7 @@
 <div class="image-header image-header--has-credits-sm image-header--actua">
     <div id="pixel"></div>
     <?php if ( ( $node->nid==$socixs_form || $node->nid==$socixs_form_cat || $node->nid==$socixs_gracias || $node->nid==$socixs_gracies) && $mobile ) { // MOBILE  ?>
-      <div style="background-image: url('<?php print $images_path; ?>headerB.jpg?anchor=topcenter');" class="responsive--bg responsive--bg-b lazyloaded"
+      <div style="background-image: url('<?php print $images_path; ?>headerB.jpg?anchor=topcenter');" class="responsive--bg responsive--bg-mobile lazyloaded"
           data-bgset="<?php print $images_path; ?>headerB.jpg?anchor=topcenter">
       </div>
       <noscript>
