@@ -13,6 +13,9 @@ $extra_class="";
 if ($node->nid == $antevenio_form_B || $node->nid == $antevenio_gracias_B || $node->nid==$socixs_form_B || $node->nid==$socixs_gracias_B ){ // socixs B
         $img_header = "headerB.jpg";
         $extra_class="responsive--bg-b";
+} else if ( $node->nid == $donativos_regalo ){ // formulario turquia regalo
+        $extra_class="responsive--bg-regalo";
+        $img_header = "header-turquia.jpg";
 } else if ($antevenio_form_C == $node->nid || $antevenio_gracias_C == $node->nid ){ // socixs C
         $extra_class="responsive--bg-c";
         $img_header = "headerC.jpg";
