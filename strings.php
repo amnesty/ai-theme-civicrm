@@ -30,6 +30,8 @@
       <span>És gràcies a persones com tu que ens doneu suport econòmic que podem denunciar sense pressions de cap mena qualsevol violació dels drets humans. </span>
       <span><b>Gràcies per creure en un món més just.</b></span>';
 
+   $texto_intro_donativo_islamofobia = '<span>Has llegado hasta aquí porque algo dentro de ti te dice que hay millones de razones para colaborar. Consigue tus pulseras y apoya a quienes lo han perdido todo. <b>Gracias por ser refugio y creer en un mundo más justo..</b></span>';
+
   /* Botones */
 
     $boton_unete = 'Únete a Amnistía Internacional';

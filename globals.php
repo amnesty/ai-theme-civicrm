@@ -16,6 +16,9 @@ if ($node->nid == $antevenio_form_B || $node->nid == $antevenio_gracias_B || $no
 } else if ( $node->nid == $donativos_regalo ){ // formulario turquia regalo
         $extra_class="responsive--bg-regalo";
         $img_header = "header-turquia.jpg";
+} else if ( $node->nid == $donativos_islamofobia ){ // formulario islamofobia
+        $extra_class="responsive--bg-regalo";
+        $img_header = "header-islamofobia.png";
 } else if ($antevenio_form_C == $node->nid || $antevenio_gracias_C == $node->nid ){ // socixs C
         $extra_class="responsive--bg-c";
         $img_header = "headerC.jpg";

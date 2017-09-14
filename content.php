@@ -18,6 +18,8 @@
                         echo $texto_intro_antevenio_BE;
                   } elseif( ($node->nid  == $antevenio_form_C) || ($node->nid == $antevenio_form_D) ) {
                         echo $texto_intro_antevenio_CD;
+                  } elseif($node->nid  == $donativos_islamofobia) {
+                        echo $texto_intro_donativo_islamofobia;
                   } elseif( in_array($node->nid, $donativos_form_list) ) {
                         if( $cat == 0 ) {
                             echo $texto_intro_donativo;
