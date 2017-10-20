@@ -36,7 +36,7 @@ if ($node->nid == $antevenio_form_B || $node->nid == $antevenio_gracias_B || $no
 } else if( in_array($node->nid,$nosevende_list) ){ // socios campaña nosevende
         $img_header = "header-nosevende-2.jpg";
         $extra_class="responsive--bg-nav";
-} else if( $node->nid == $socios_mordaza ){ // socios campaña nosevende
+} else if( $node->nid == $socixs_mordaza ){ // socios campaña nosevende
         $img_header = "header-mordaza.jpg";
         $extra_class="responsive--bg-mordaza";
 } else if ( in_array($node->nid, $donativos_form_list) || $node->nid == $donativos_gracias || $node->nid == $donativos_gracias_cat){ // resto de donativos
