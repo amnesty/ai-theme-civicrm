@@ -14,6 +14,8 @@
                         echo $texto_intro_donativo_navidad;
                   } elseif( in_array($node->nid, $nosevende_list) && in_array($node->nid, $donativos_form_list) ) {
                         echo $texto_intro_donativo_nosevende;
+                  } elseif( in_array($node->nid, $loteria_navidad_list) && in_array($node->nid, $donativos_form_list) ) {
+                            echo $texto_intro_donativo_navidad;
                   } elseif( ($node->nid == $antevenio_form_B) || ($node->nid == $antevenio_form_E) ) {
                         echo $texto_intro_antevenio_BE;
                   } elseif( ($node->nid  == $antevenio_form_C) || ($node->nid == $antevenio_form_D) ) {
@@ -35,6 +37,8 @@
                 </p>
                 <?php if( in_array($node->nid, $navidad_list) && in_array($node->nid, $donativos_form_list) ) { ?>
                     <!--img src="<?php print $images_path; ?>bola-gracias.png" class="bola-navidad" /-->
+                <?php} elseif( in_array($node->nid, $loteria_navidad_list) && in_array($node->nid, $donativos_form_list) ) { ?>
+                        <!--img src="<?php print $images_path; ?>bola-gracias.png" class="bola-navidad" /-->
                 <?php } ?>
               <?php } ?>
   		        <div class="box-form-es" <?php if( $excluded_header_list != null || in_array($node->nid, $excluded_header_list) ){ ?>style="width: 100%;" <?php } ?> >
@@ -46,9 +50,12 @@
                             <div style="width:500px; margin-left: 40px;">
                               <a class="ai-cta-2col__banner-btn" href="
                                   <?php if ( in_array($node->nid, $navidad_list) ){
-                                          print "https://crm.es.amnesty.org/unete-a-amnistia-por-navidad/?origen=justiciapornavidad"; }
-                                        else {
-                                          print "https://crm.es.amnesty.org/unete-a-amnistia/?origen=donativo"; }
+                                          print "https://crm.es.amnesty.org/unete-a-amnistia-por-navidad/?origen=justiciapornavidad";
+                                        } else if ( in_array($node->nid, $loteria_navidad_list) ){
+                                          print "https://crm.es.amnesty.org/unete-a-amnistia-por-navidad/?origen=justiciapornavidad";
+                                        } else {
+                                          print "https://crm.es.amnesty.org/unete-a-amnistia/?origen=donativo";
+                                        }
                                   ?>">
                                   <?php
                                     if($cat == 0) {
@@ -81,7 +88,6 @@
                               <?php } ?>
                             </div>
                       <?php } ?>
-
                       <!-- ********************************** CAJAS LATERALES ******************** -->
                       <?php if( !in_array($excluded_header_list != null || $node->nid, $excluded_header_list) &&
                         ( in_array($node->nid, $socixs_form_list) || in_array($node->nid, $donativos_form_list) ) ) { ?>

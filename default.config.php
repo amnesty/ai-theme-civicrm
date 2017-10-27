@@ -15,6 +15,7 @@ $donativos_form_list = array(99);
 $donativos_gracias_list = array(99);
 $navidad_list = array(99);
 $nosevende_list = array(99);
+$loteria_navidad_list = array(99);
 
 $socixs_form = 99; // id de la página que contiene el forumulario de socixs en este contexto
 $socixs_gracias = 99; // id de la página de gracias del formulario de socixs
