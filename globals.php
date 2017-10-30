@@ -30,6 +30,9 @@ if ($node->nid == $antevenio_form_B || $node->nid == $antevenio_gracias_B || $no
 } else if( in_array($node->nid,$navidad_list) ){ // campaña navidad
         $img_header = "header-navidad.jpg";
         $extra_class="responsive--bg-nav";
+} else if( in_array($node->nid,$loteria_navidad_list) ){ // campaña loteria de navidad 2017
+        $img_header = "header-navidad.jpg";
+        $extra_class="responsive--bg-nav";
 } else if( in_array($node->nid,$nosevende_list) && ( in_array($node->nid,$donativos_form_list) || in_array($node->nid,$donativos_gracias_list) ) ) { // donativos campaña nosevende
         $img_header = "header-nosevende.jpg";
         $extra_class="responsive--bg-nosevende";
@@ -42,9 +45,5 @@ if ($node->nid == $antevenio_form_B || $node->nid == $antevenio_gracias_B || $no
 } else if ( in_array($node->nid, $donativos_form_list) || $node->nid == $donativos_gracias || $node->nid == $donativos_gracias_cat){ // resto de donativos
         $extra_class="responsive--bg-don";
         $img_header = "header_donativo.jpg";
-} else if( in_array($node->nid,$loteria_navidad_list) ){ // campaña loteria de navidad 2017
-        $img_header = "header-navidad.jpg";
-        $extra_class="responsive--bg-nav";
 }
-
 ?>
