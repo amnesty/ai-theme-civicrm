@@ -37,9 +37,9 @@
                 </p>
                 <?php if( in_array($node->nid, $navidad_list) && in_array($node->nid, $donativos_form_list) ) { ?>
                     <!--img src="<?php print $images_path; ?>bola-gracias.png" class="bola-navidad" /-->
-                <?php} elseif( in_array($node->nid, $loteria_navidad_list) && in_array($node->nid, $donativos_form_list) ) { ?>
+                <?php }/* elseif( in_array($node->nid, $loteria_navidad_list) && in_array($node->nid, $donativos_form_list) ) { ?>
                         <!--img src="<?php print $images_path; ?>bola-gracias.png" class="bola-navidad" /-->
-                <?php } ?>
+                <?php } */ ?>
               <?php } ?>
   		        <div class="box-form-es" <?php if( $excluded_header_list != null || in_array($node->nid, $excluded_header_list) ){ ?>style="width: 100%;" <?php } ?> >
                       <?php print $messages; ?> <!-- Errors -->
