@@ -69,7 +69,7 @@
                             </div>
                         <?php } ?>
                         <?php //Botones de compartir en la página de gracias de socixs y navidad
-                         if (in_array($node->nid, $socixs_gracias_list) || (in_array($node->nid, $donativos_gracias_list) && (in_array($node->nid, $navidad_list) || in_array($node->nid, $loteria_navidad_list)) ){ ?>
+                         if (in_array($node->nid, $socixs_gracias_list) || (in_array($node->nid, $donativos_gracias_list) && (in_array($node->nid, $navidad_list) || in_array($node->nid, $loteria_navidad_list)))){ ?>
                             <div id="share-buttons" class="ai-accion-firma-compartir">
                                 <h4 class="ai-accion-firma-compartir__header">Comparte esta campaña entre tus contactos:</h4>
                                 <?php if($cat){ ?>
