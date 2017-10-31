@@ -9,13 +9,14 @@
               // ********* Sólo mostramos el texto de intro en el formulario de socixs
               if ( $node->nid < $socixs_mordaza && (in_array($node->nid, $socixs_form_list) || in_array($node->nid, $donativos_form_list)) ) { ?>
   			      <p class="text-intro">
+              <!--<span> ¡Usa tu ventana para defender nuestro derecho! </span>-->
               <?php
                   if( in_array($node->nid, $navidad_list) && in_array($node->nid, $donativos_form_list) ) {
                         echo $texto_intro_donativo_navidad;
                   } elseif( in_array($node->nid, $nosevende_list) && in_array($node->nid, $donativos_form_list) ) {
                         echo $texto_intro_donativo_nosevende;
                   } elseif( in_array($node->nid, $loteria_navidad_list) && in_array($node->nid, $donativos_form_list) ) {
-                            echo $texto_intro_donativo_navidad;
+                            echo $texto_intro_donativo_loteria;
                   } elseif( ($node->nid == $antevenio_form_B) || ($node->nid == $antevenio_form_E) ) {
                         echo $texto_intro_antevenio_BE;
                   } elseif( ($node->nid  == $antevenio_form_C) || ($node->nid == $antevenio_form_D) ) {
