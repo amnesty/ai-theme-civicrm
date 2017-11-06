@@ -53,7 +53,7 @@
                                   <?php if ( in_array($node->nid, $navidad_list) ){
                                           print "https://crm.es.amnesty.org/unete-a-amnistia-por-navidad/?origen=justiciapornavidad";
                                         } else if ( in_array($node->nid, $loteria_navidad_list) ){
-                                          print "https://crm.es.amnesty.org/unete-a-amnistia-por-navidad/?origen=justiciapornavidad";
+                                          print "https://crm.es.amnesty.org/unete-a-amnistia-loteria/?origen=justiciapornavidad";
                                         } else {
                                           print "https://crm.es.amnesty.org/unete-a-amnistia/?origen=donativo";
                                         }
