@@ -37,6 +37,44 @@
     <meta name="twitter:image:height" content="512">
     <meta name="twitter:image:alt" content="#JusticiaPorNavidad – Amnistía Internacional">
 
+<?php } else if( in_array($node->nid, $loteria_navidad_list) &&  in_array($node->nid,$donativos_form_list) ) { ?>
+
+    <meta property="og:url" content="https://crm.es.amnesty.org/haz-un-donativo-por-navidad" />
+    <meta property="og:type" content="website" />
+    <meta name="title" property="og:title" content="Haz un donativo a Amnistía Internacional y apoya nuestro trabajo" />
+    <meta name="description" property="og:description" content="Amnistía Internacional es una organización democrática e independiente que no acepta fondos que puedan comprometer su trabajo. Se financia exclusivamente gracias a las aportaciones de personas comprometidas con la idea de conseguir un mundo más justo. Tu colaboración, por pequeña que sea, es lo único que nos permite seguir defendiendo los derechos humanos, así como investigando y denunciando abusos que se cometen en todo el mundo. Hazte socio/a y apoya nuestro trabajo. Cuantos más seamos, más fuerza tendremos." />
+    <meta property="og:image" content="https://crm.es.amnesty.org/sites/all/themes/ai-theme-civicrm/ai-formulario/images/header-loteria.jpg" />
+    <!--Twitter Cards-->
+    <meta name="twitter:url" content="https://www.es.amnesty.org/justicia/?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=Killings_disappearances&utm_content=Web_petition-justicia2017-twitter">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@amnistiaespana">
+    <meta name="twitter:creator" content="@amnistiaespana">
+    <meta name="twitter:title" content="#EstaNavidadToca – Amnistía Internacional">
+    <meta name="twitter:text:description" content="Miles de personas 'desaparecidas' durante la guerra civil y el franquismo no volvieron a casa. Firma para pedir al gobierno que este año no se olvide de ellas.">
+    <meta name="twitter:image" content="https://crm.es.amnesty.org/sites/all/themes/ai-theme-civicrm/ai-formulario/images/header-loteria.jpg">
+    <meta name="twitter:image:width" content="1024">
+    <meta name="twitter:image:height" content="512">
+    <meta name="twitter:image:alt" content="#JusticiaPorNavidad – Amnistía Internacional">
+
+<?php } else if( in_array($node->nid, $loteria_navidad_list) &&  in_array($node->nid,$socixs_form_list) ) { ?>
+
+    <meta property="og:url" content="https://crm.es.amnesty.org/unete-a-amnistia-loteria" />
+    <meta property="og:type" content="website" />
+    <meta name="title" property="og:title" content="Haz un donativo a Amnistía Internacional y apoya nuestro trabajo" />
+    <meta name="description" property="og:description" content="Amnistía Internacional es una organización democrática e independiente que no acepta fondos que puedan comprometer su trabajo. Se financia exclusivamente gracias a las aportaciones de personas comprometidas con la idea de conseguir un mundo más justo. Tu colaboración, por pequeña que sea, es lo único que nos permite seguir defendiendo los derechos humanos, así como investigando y denunciando abusos que se cometen en todo el mundo. Hazte socio/a y apoya nuestro trabajo. Cuantos más seamos, más fuerza tendremos." />
+    <meta property="og:image" content="https://crm.es.amnesty.org/sites/all/themes/ai-theme-civicrm/ai-formulario/images/header-loteria.jpg" />
+    <!--Twitter Cards-->
+    <meta name="twitter:url" content="https://www.es.amnesty.org/justicia/?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=Killings_disappearances&utm_content=Web_petition-justicia2017-twitter">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@amnistiaespana">
+    <meta name="twitter:creator" content="@amnistiaespana">
+    <meta name="twitter:title" content="#EstaNavidadToca – Amnistía Internacional">
+    <meta name="twitter:text:description" content="Miles de personas 'desaparecidas' durante la guerra civil y el franquismo no volvieron a casa. Firma para pedir al gobierno que este año no se olvide de ellas.">
+    <meta name="twitter:image" content="https://crm.es.amnesty.org/sites/all/themes/ai-theme-civicrm/ai-formulario/images/header-loteria.jpg">
+    <meta name="twitter:image:width" content="1024">
+    <meta name="twitter:image:height" content="512">
+    <meta name="twitter:image:alt" content="#EstaNavidadToca – Amnistía Internacional">
+
 <?php } else if( in_array($node->nid,$socixs_form_list) && $cat) { ?>
 
     <meta property="og:url" content="https://crm.es.amnesty.org/unete-a-amnistia/cat" />
@@ -123,6 +161,16 @@
       var tituloActual = 'Miles de familias tienen un deseo que lleva años sin cumplirse: firma y ayúdales a conseguirlo:';
       var urlActualFB = 'https://www.es.amnesty.org/justiciapornavidad/?utm_source=facebook&utm_campaign=comp&utm_medium=social_com&utm_term=Killings_disappearances&utm_content=Web_petition-justiciapornavidad-facebook';
       var urlActualTW = 'https://www.es.amnesty.org/justiciapornavidad/?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=Killings_disappearances&utm_content=Web_petition-justiciapornavidad-twitter';
+      var resumen = 'Miles de familias tienen un deseo que lleva demasiados años sin cumplirse: firma y ayúdales a conseguirlo.';
+      var imagen = 'https://crm.es.amnesty.org/sites/all/themes/ai-theme-civicrm/ai-formulario/images/<?php print $img_header; ?>';
+      var compartirViaTW = 'amnistiaespana';
+    </script>
+<?php } elseif( in_array($node->nid, $loteria_navidad_list) ) { ?>
+    <script>
+      var urlActual = 'https://www.es.amnesty.org/justicia';
+      var tituloActual = 'Miles de familias tienen un deseo que lleva años sin cumplirse: firma y ayúdales a conseguirlo:';
+      var urlActualFB = 'https://www.es.amnesty.org/justicia/?utm_source=facebook&utm_campaign=comp&utm_medium=social_com&utm_term=Killings_disappearances&utm_content=Web_petition-justicia2017-facebook';
+      var urlActualTW = 'https://www.es.amnesty.org/justicia/?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=Killings_disappearances&utm_content=Web_petition-justicia2017-twitter';
       var resumen = 'Miles de familias tienen un deseo que lleva demasiados años sin cumplirse: firma y ayúdales a conseguirlo.';
       var imagen = 'https://crm.es.amnesty.org/sites/all/themes/ai-theme-civicrm/ai-formulario/images/<?php print $img_header; ?>';
       var compartirViaTW = 'amnistiaespana';
