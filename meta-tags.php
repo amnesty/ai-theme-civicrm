@@ -50,11 +50,11 @@
     <meta name="twitter:site" content="@amnistiaespana">
     <meta name="twitter:creator" content="@amnistiaespana">
     <meta name="twitter:title" content="#EstaNavidadToca – Amnistía Internacional">
-    <meta name="twitter:text:description" content="Miles de personas 'desaparecidas' durante la guerra civil y el franquismo no volvieron a casa. Firma para pedir al gobierno que este año no se olvide de ellas.">
+    <meta name="twitter:text:description" content="Me ha encantado este anuncio de Navidad de @amnistiaespana, ¡emocionante!.">
     <meta name="twitter:image" content="https://crm.es.amnesty.org/sites/all/themes/ai-theme-civicrm/ai-formulario/images/header-loteria.jpg">
     <meta name="twitter:image:width" content="1024">
     <meta name="twitter:image:height" content="512">
-    <meta name="twitter:image:alt" content="#JusticiaPorNavidad – Amnistía Internacional">
+    <meta name="twitter:image:alt" content="#EstaNavidadToca – Amnistía Internacional">
 
 <?php } else if( in_array($node->nid, $loteria_navidad_list) &&  in_array($node->nid,$socixs_form_list) ) { ?>
 
@@ -69,7 +69,7 @@
     <meta name="twitter:site" content="@amnistiaespana">
     <meta name="twitter:creator" content="@amnistiaespana">
     <meta name="twitter:title" content="#EstaNavidadToca – Amnistía Internacional">
-    <meta name="twitter:text:description" content="Miles de personas 'desaparecidas' durante la guerra civil y el franquismo no volvieron a casa. Firma para pedir al gobierno que este año no se olvide de ellas.">
+    <meta name="twitter:text:description" content="Me ha encantado este anuncio de Navidad de @amnistiaespana, ¡emocionante!.">
     <meta name="twitter:image" content="https://crm.es.amnesty.org/sites/all/themes/ai-theme-civicrm/ai-formulario/images/header-loteria.jpg">
     <meta name="twitter:image:width" content="1024">
     <meta name="twitter:image:height" content="512">
@@ -168,10 +168,10 @@
 <?php } elseif( in_array($node->nid, $loteria_navidad_list) ) { ?>
     <script>
       var urlActual = 'https://www.es.amnesty.org/justicia';
-      var tituloActual = 'Miles de familias tienen un deseo que lleva años sin cumplirse: firma y ayúdales a conseguirlo:';
+      :Qvar tituloActual = 'Miles de personas mantienen viva la ilusión de conseguir justicia. Firma y ayúdales a conseguirlo #EstaNavidadToca.';
       var urlActualFB = 'https://www.es.amnesty.org/justicia/?utm_source=facebook&utm_campaign=comp&utm_medium=social_com&utm_term=Killings_disappearances&utm_content=Web_petition-justicia2017-facebook';
       var urlActualTW = 'https://www.es.amnesty.org/justicia/?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=Killings_disappearances&utm_content=Web_petition-justicia2017-twitter';
-      var resumen = 'Miles de familias tienen un deseo que lleva demasiados años sin cumplirse: firma y ayúdales a conseguirlo.';
+      var resumen = 'Me ha encantado este anuncio de Navidad de @amnistiaespana, ¡emocionante! enlace.';
       var imagen = 'https://crm.es.amnesty.org/sites/all/themes/ai-theme-civicrm/ai-formulario/images/<?php print $img_header; ?>';
       var compartirViaTW = 'amnistiaespana';
     </script>
