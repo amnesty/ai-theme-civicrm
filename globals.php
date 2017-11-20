@@ -39,7 +39,7 @@ if ($node->nid == $antevenio_form_B || $node->nid == $antevenio_gracias_B || $no
 } else if( in_array($node->nid,$nosevende_list) ){ // socios campaña nosevende
         $img_header = "header-nosevende-2.jpg";
         $extra_class="responsive--bg-nav";
-} else if( $node->nid == $socixs_mordaza ){ // socios campaña mordaza
+} else if( $node->nid == $socixs_mordaza || $node->nid == $gracias_socixs_mordaza ){ // socios campaña mordaza
         $img_header = "header-mordaza.jpg";
         $extra_class="responsive--bg-mordaza";
 } else if( $node->nid == $socixs_google_1 || $node->nid == $gracias_socixs_google_1 ){ // socios campaña adowrds 1
