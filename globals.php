@@ -45,6 +45,12 @@ if ($node->nid == $antevenio_form_B || $node->nid == $antevenio_gracias_B || $no
 } else if( $node->nid == $socixs_mordaza ){ // socios campaña nosevende
         $img_header = "header-mordaza.jpg";
         $extra_class="responsive--bg-mordaza";
+} else if( $node->nid == $socixs_google_1 ){ // socios campaña nosevende
+        $img_header = "header-google1.jpg";
+        $extra_class="responsive--bg-mordaza";
+} else if( $node->nid == $socixs_google_2 ){ // socios campaña nosevende
+        $img_header = "header-google2.jpg";
+        $extra_class="responsive--bg-mordaza";
 } else if ( in_array($node->nid, $donativos_form_list) || $node->nid == $donativos_gracias || $node->nid == $donativos_gracias_cat){ // resto de donativos
         $extra_class="responsive--bg-don";
         $img_header = "header_donativo.jpg";
