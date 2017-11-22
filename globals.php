@@ -46,8 +46,8 @@ if ($node->nid == $antevenio_form_B || $node->nid == $antevenio_gracias_B || $no
         $img_header = "header-google1.jpg";
         $extra_class="responsive--bg-mordaza";
 } else if( $node->nid == $socixs_google_2 || $node->nid == $gracias_socixs_google_2 ){ // socios campaña adwords 2
-        $img_header = "header-google2.jpg";
-        $extra_class="responsive--bg-mordaza";
+        $img_header = "header-google22.jpg";
+        $extra_class="responsive--bg-adwords";
 } else if ( in_array($node->nid, $donativos_form_list) || $node->nid == $donativos_gracias || $node->nid == $donativos_gracias_cat){ // resto de donativos
         $extra_class="responsive--bg-don";
         $img_header = "header_donativo.jpg";
