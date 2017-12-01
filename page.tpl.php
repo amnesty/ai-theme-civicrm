@@ -90,5 +90,9 @@ if(isset($_GET['utm_campaign'])) {
 <!-- Estadísticas en Piwik (si aplica, sino debe estar vacío) -->
 <?php include_once('piwik.php'); ?>
 
+<!-- Pixel de Facebook (si aplica) -->
+<?php include_once('pixel-fb.php'); ?>
+<!-- Pixel de Twitter (si aplica) -->
+<?php include_once('pixel-twitter.php'); ?>
 <!-- Pixel de Adwords (si aplica) -->
 <?php include_once('adwords.php'); ?>
