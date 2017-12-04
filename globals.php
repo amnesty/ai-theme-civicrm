@@ -48,6 +48,9 @@ if ($node->nid == $antevenio_form_B || $node->nid == $antevenio_gracias_B || $no
 } else if( $node->nid == $socixs_google_2 || $node->nid == $gracias_socixs_google_2 ){ // socios campaña adwords 2
         $img_header = "header-google22.jpg";
         $extra_class="responsive--bg-adwords";
+} else if( $node->nid == $hijos_badawi || $node->nid == $gracias_hijos_badawi ){ // campaña hijos badawi
+              $img_header = "header-badawi.jpg";
+              $extra_class="responsive--bg-badawi";
 } else if ( in_array($node->nid, $donativos_form_list) || $node->nid == $donativos_gracias || $node->nid == $donativos_gracias_cat){ // resto de donativos
         $extra_class="responsive--bg-don";
         $img_header = "header_donativo.jpg";
