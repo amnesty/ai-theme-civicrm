@@ -9498,6 +9498,20 @@ x:-o-prefocus {
         padding-top: 25%; /* H */
     }
 }
+
+/* max-width: 480px */
+@media only screen and (max-width: 480px) {
+    /* Header */
+
+    .image-header__content--medium {
+	     /*padding-top: 100.5%;*/
+    }
+
+    .image-header__content--medium{
+        margin-top: 72px;
+    }
+}
+
 .image-header__content--thin {
     padding-top: 52.5%
 }

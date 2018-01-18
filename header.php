@@ -13,9 +13,9 @@
         <?php } ?>
         </div>
         <?php if($cat){ ?>
-          <h1 class="logo" data-logo=""><a class="logo__link" href="https://www.amnistiacatalunya.org">Amnistia Internacional Catalunya</a></h1>
+          <h1 class="logo" data-logo=""><a class="logo__link">Amnistia Internacional Catalunya</a></h1>
         <?php }else{ ?>
-          <h1 class="logo" data-logo=""><a class="logo__link" href="https://www.es.amnesty.org">Amnistía Internacional España</a></h1>
+          <h1 class="logo" data-logo=""><a class="logo__link" >Amnistía Internacional España</a></h1>
         <?php } ?>
     </div>
 </header>
