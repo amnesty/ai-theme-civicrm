@@ -34,13 +34,15 @@ if (!isset($_GET["origen"]) ){
 }
 
 // Device
-if (isset($_GET["test"]) ){
+/*if (isset($_GET["test"]) ){
      $detect = new Mobile_Detect; 
-     $deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') : 'computer'); 
-     echo $url;
+     $deviceType = ($detect->isMobile() ? ($detect->isTablet() ? 'tablet' : 'phone') : 'computer');
+     $aryUrl = implode(", ",explode("/", $url)); 
+     echo explode("/", $url)[1]."<br>";
+     echo $url."<br>";
      echo 'Dispositivo: '.$deviceType.'  '.$detect->isMobile().' '.$detect->isTablet();
      exit;     
-}  
+}*/  
 
 $detect = new Mobile_Detect;
 $mobile = 0;
@@ -48,10 +50,12 @@ if ($detect->isMobile() || $detect->isTablet()){
     $mobile = 1;
 }
 
-if ($url == '/haz-un-donativo') {
-  if ($mobile == 1){
-    	header('Location: ' . $base_url . '/haz-un-donativo-m');
-  }
+if (preg_match('/haz-un-donativo/', $url)) {		
+	if (explode("/", $url)[1] == 'haz-un-donativo') {
+	  if ($mobile == 1){
+    		header('Location: ' . $base_url . '/haz-un-donativo-m'.explode("/", $url)[2]);
+	  }
+	}
 }
 
 /*$useragent=$_SERVER['HTTP_USER_AGENT'];
