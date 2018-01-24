@@ -53,7 +53,8 @@ if( in_array($node->nid, $donativos_gracias_list) && !isset($_GET['m']) ){ ?>
 // Excluimos a formualrios de telemarketing del tracking
 if ( !in_array($node->nid, $telemkg_form_list) &&
    ( in_array($node->nid, $socixs_form_list) || in_array($node->nid, $socixs_gracias_list)
-   || in_array($node->nid, $donativos_form_list) || in_array($node->nid, $donativos_gracias_list) )
+   || in_array($node->nid, $donativos_form_list) || in_array($node->nid, $donativos_gracias_list))
+   || $mobile == 1
 ) {
 ?>
   <!-- Piwik -->
@@ -68,7 +69,7 @@ if ( !in_array($node->nid, $telemkg_form_list) &&
 	  _paq.push(['setCustomDimension', customDimensionId = 1, customDimensionValue = 'versionB']);
       <?php } ?>
     _paq.push(['trackPageView']);
-    <?php if( in_array($node->nid ,$donativos_form_list) ){ ?>
+    <?php if( in_array($node->nid ,$donativos_form_list) || $mobile ){ ?>
        _paq.push(['trackEvent', 'Formulario', 'Donativos']);
     <?php } ?>
     _paq.push(['enableLinkTracking']);
@@ -79,6 +80,9 @@ if ( !in_array($node->nid, $telemkg_form_list) &&
           _paq.push(['trackGoal', 2, <?php echo $importe_donativo; ?>]);
       <?php } else if ( in_array($node->nid, $socixs_gracias_list) ) { ?>
     	  _paq.push(['trackGoal', 1, <?php echo $importe_anual; ?>]);
+      <?php } else if ( $mobile == 1 &&  in_array($node->nid, $mobile_gracias )) { ?>
+          _paq.push(['trackGoal', 2, <?php echo $importe_anual; ?>]);
+          _paq.push(['trackGoal', 63, <?php echo $importe_anual; ?>]);
       <?php } ?>
       _paq.push(['setTrackerUrl', u+'piwik.php']);
       _paq.push(['setSiteId', 1]);
