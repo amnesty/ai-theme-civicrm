@@ -51,9 +51,9 @@ if ($detect->isMobile() || $detect->isTablet()){
 }
 
 if (preg_match('/haz-un-donativo/', $url)) {		
-	if (explode("/", $url)[1] == 'haz-un-donativo') {
+	if (explode("/", $url)[1] == 'haz-un-donativo' && explode("/", $url)[2] != 'm' && explode("/", $url)[2] != 'gracias') {
 	  if ($mobile == 1){
-    		header('Location: ' . $base_url . '/haz-un-donativo-m'.explode("/", $url)[2]);
+    		header('Location: ' . $base_url . '/haz-un-donativo/m/'.explode("/", $url)[2]);
 	  }
 	}
 }
