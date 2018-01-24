@@ -3,7 +3,7 @@
 include_once("config.php");
 
 // Consultamos donativo
-if( in_array($node->nid, $donativos_gracias_list) ){
+if( in_array($node->nid, $donativos_gracias_list) || in_array($node->nid, $mobile_gracias)){
   module_load_include('inc','webform','includes/webform.submissions');
   $sid = $_GET['sid'];
   $submission = webform_get_submissions(array('sid' => $sid));
@@ -24,7 +24,7 @@ else if(in_array($node->nid, $socixs_gracias_list)){
   $importe_anual = ($cuota > 0 ? $cuota*$frec : $otra*$frec);
 }
 // Si es donativo todavía no tiene el parámetro m (de método de pago)
-if( in_array($node->nid, $donativos_gracias_list) && !isset($_GET['m']) ){ ?>
+if( (in_array($node->nid, $donativos_gracias_list) || in_array($node->nid, $mobile_gracias)) && !isset($_GET['m'])){ ?>
      <!--parametro metodo pago -->
      <script type="text/javascript">
         var metodo = "<?php echo $metodo_pago; ?>";
