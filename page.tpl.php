@@ -40,10 +40,20 @@ if ($detect->isMobile() || $detect->isTablet()){
     $mobile = 1;
 }
 
+/*Formulario Móvil de Donativo */
 if (preg_match('/haz-un-donativo/', $url)) {
 	if (explode("/", $url)[1] == 'haz-un-donativo' && explode("/", $url)[2] != 'm' && explode("/", $url)[2] != 'gracias') {
 	  if ($mobile == 1){
     		header('Location: ' . $base_url . '/haz-un-donativo/m/'.explode("/", $url)[2]);
+	  }
+	}
+}
+
+/*Formulario Móvil de Asociación */
+if (preg_match('/unete-a-amnistia/', $url)) {
+	if (explode("/", $url)[1] == 'unete-a-amnistia' && explode("/", $url)[2] != 'm' && explode("/", $url)[2] != 'gracias') {
+	  if ($mobile == 1){
+    		header('Location: ' . $base_url . '/unete-a-amnistia/m/'.explode("/", $url)[2]);
 	  }
 	}
 }
