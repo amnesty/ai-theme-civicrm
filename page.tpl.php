@@ -40,12 +40,25 @@ if ($detect->isMobile() || $detect->isTablet()){
     $mobile = 1;
 }
 
+/*Formulario Móvil de Donativo */
 if (preg_match('/haz-un-donativo/', $url)) {
 	if (explode("/", $url)[1] == 'haz-un-donativo' && explode("/", $url)[2] != 'm' && explode("/", $url)[2] != 'gracias') {
 	  if ($mobile == 1){
     		header('Location: ' . $base_url . '/haz-un-donativo/m/'.explode("/", $url)[2]);
 	  }
 	}
+}
+
+/*Formulario Móvil de Asociación*/
+if (preg_match('/unete-a-amnistia/', $url)) {
+  if ($mobile == 1 && explode("/", $url)[1] == 'unete-a-amnistia'){
+    if (explode("/", $url)[2] != 'cat' && explode("/", $url)[2] != 'm' && explode("/", $url)[2] != 'gracias') {
+      header('Location: ' . $base_url . '/unete-a-amnistia/m/'.explode("/", $url)[2]);
+    }elseif (explode("/", $url)[2] == 'cat' && explode("/", $url)[3] != 'm' && explode("/", $url)[3] != 'gracias' ){
+      /*Formulario Móvil de Asociación Catalán*/
+      header('Location: ' . $base_url . '/unete-a-amnistia/cat/m/'.explode("/", $url)[3]);
+    }
+  }
 }
 
 //RECIBE PARAMETROS DE CAMPAÑAS GOOGLE Y FACEBOOK. LOS ASIGNAMOS A LA SESSION RESPECTIVAMENTE PARA NO PERDERLOS

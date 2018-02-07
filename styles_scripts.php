@@ -36,7 +36,7 @@
     <script type="text/javascript" src="<?php print $form_path; ?>/js/membership-validator.js"></script>
 <?php } ?>
 <!-- Si es dipositivo móvil -->
-<?php if($mobile){ ?>
+<?php if( in_array($node->nid, $mobile_socixs_form_list) && $mobile){ ?>
   <script type="text/javascript" src="<?php print $form_path; ?>/js/socixs-form-m.js"></script>
   <!--<link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/donativos-form.css">-->
 <?php } ?>
