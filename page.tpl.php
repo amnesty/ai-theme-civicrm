@@ -51,10 +51,10 @@ if (preg_match('/haz-un-donativo/', $url)) {
 
 /*Formulario Móvil de Asociación*/
 if (preg_match('/unete-a-amnistia/', $url)) {
-  if ($mobile == 1 && explode("/", $url)[1] == 'unete-a-amnistia' && explode("/", $url)[2] != 'm' && explode("/", $url)[2] != 'gracias'){
-  	if (explode("/", $url)[2] != 'cat') {
-      		header('Location: ' . $base_url . '/unete-a-amnistia/m/'.explode("/", $url)[2]);
-  	}elseif (explode("/", $url)[2] == 'cat'){
+  if ($mobile == 1 && explode("/", $url)[1] == 'unete-a-amnistia'){
+    if (explode("/", $url)[2] != 'cat' && explode("/", $url)[2] != 'm' && explode("/", $url)[2] != 'gracias') {
+      header('Location: ' . $base_url . '/unete-a-amnistia/m/'.explode("/", $url)[2]);
+    }elseif (explode("/", $url)[2] == 'cat' && explode("/", $url)[3] != 'm' && explode("/", $url)[3] != 'gracias' ){
       /*Formulario Móvil de Asociación Catalán*/
       header('Location: ' . $base_url . '/unete-a-amnistia/cat/m/'.explode("/", $url)[3]);
     }
