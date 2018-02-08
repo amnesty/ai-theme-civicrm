@@ -60,7 +60,7 @@
 
     $titulo_caja_transparencia_cat = "<h3>Transparència, el nostre compromís</h3>";
     $titulo_caja_transparencia = "<h3>Transparencia, nuestro compromiso</h3>";
-    $texto_caja_transparencia = "<p>El 100% de nuestros recursos los destinamos a luchar por los derechos humanos en todo el mundo. Nuestras cuentas son públicas y puedes verlas en nuestra web.</p>";
-    $texto_caja_transparencia_cat = "<p>El 100% dels nostres recursos els destinem a lluitar pels drets humans arreu del món. Els nostres comptes són públics i pots veure'ls a la nostra web.</p>";
+    $texto_caja_transparencia = "<p>Nuestras cuentas son públicas y puedes verlas en nuestra web.</p>";
+    $texto_caja_transparencia_cat = "<p>Els nostres comptes són públics i pots veure'ls a la nostra web.</p>";
 
 ?>
