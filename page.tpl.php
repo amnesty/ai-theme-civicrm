@@ -52,13 +52,20 @@ if (preg_match('/haz-un-donativo/', $url)) {
 /*Formulario Móvil de Asociación*/
 if (preg_match('/unete-a-amnistia/', $url)) {
   if ($mobile == 1 && explode("/", $url)[1] == 'unete-a-amnistia'){
-    if (explode("/", $url)[2] != 'cat' && explode("/", $url)[2] != 'm' && explode("/", $url)[2] != 'gracias') {
+    if (explode("/", $url)[2] != 'cat' && substr(explode("/", $url)[2],0,1) != 'm' && explode("/", $url)[2] != 'gracias') {
       header('Location: ' . $base_url . '/unete-a-amnistia/m/'.explode("/", $url)[2]);
-    }elseif (explode("/", $url)[2] == 'cat' && explode("/", $url)[3] != 'm' && explode("/", $url)[3] != 'gracias' ){
+    }elseif (explode("/", $url)[2] == 'cat' && substr(explode("/", $url)[3],0,1) != 'm' && explode("/", $url)[3] != 'gracias' ){
       /*Formulario Móvil de Asociación Catalán*/
       header('Location: ' . $base_url . '/unete-a-amnistia/cat/m/'.explode("/", $url)[3]);
     }
-  }
+   }elseif ($mobile != 1 && explode("/", $url)[1] == 'unete-a-amnistia'){
+      if (explode("/", $url)[2] != 'cat' && substr(explode("/", $url)[2],0,1) == 'm') {
+        header('Location: ' . $base_url . '/unete-a-amnistia');
+      } elseif (explode("/", $url)[2] == 'cat' && substr(explode("/", $url)[3],0,1) == 'm'){
+        /*Formulario Móvil de Asociación Catalán*/
+        header('Location: ' . $base_url . '/unete-a-amnistia/cat/');
+      }
+    }
 }
 
 //RECIBE PARAMETROS DE CAMPAÑAS GOOGLE Y FACEBOOK. LOS ASIGNAMOS A LA SESSION RESPECTIVAMENTE PARA NO PERDERLOS
