@@ -36,37 +36,42 @@ if (!isset($_GET["origen"]) ){
 // Comprobamos si es dispositivo móvil
 $detect = new Mobile_Detect;
 $mobile = 0;
+$m = '';
 if ($detect->isMobile() || $detect->isTablet()){
     $mobile = 1;
+    $explode = explode('?',$url);
+    //Componemos el parametro móvil en función de como venga la url
+    $m = (substr($explode[0], -1) == '/' ? 'm/' : '/m/'); //
 }
 
 /*Formulario Móvil de Donativo */
 if (preg_match('/haz-un-donativo/', $url)) {
-	if (explode("/", $url)[1] == 'haz-un-donativo' && explode("/", $url)[2] != 'm' && explode("/", $url)[2] != 'gracias') {
-	  if ($mobile == 1){
-    		header('Location: ' . $base_url . '/haz-un-donativo/m/'.explode("/", $url)[2]);
-	  }
-	}
+        if (explode('/',$explode[0])[1] == 'haz-un-donativo') {
+          if ($mobile == 1 && !strpos($url,$m)){
+                header('Location: ' . $base_url . explode("?",$url)[0] . $m . '?' . explode("?",$url)[1]);
+          }
+        }
 }
 
+
 /*Formulario Móvil de Asociación*/
-if (preg_match('/unete-a-amnistia/', $url)) {
+/*if (preg_match('/unete-a-amnistia/', $url)) {
   if ($mobile == 1 && explode("/", $url)[1] == 'unete-a-amnistia'){
     if (explode("/", $url)[2] != 'cat' && substr(explode("/", $url)[2],0,1) != 'm' && explode("/", $url)[2] != 'gracias') {
       header('Location: ' . $base_url . '/unete-a-amnistia/m/'.explode("/", $url)[2]);
     }elseif (explode("/", $url)[2] == 'cat' && substr(explode("/", $url)[3],0,1) != 'm' && explode("/", $url)[3] != 'gracias' ){
       /*Formulario Móvil de Asociación Catalán*/
-      header('Location: ' . $base_url . '/unete-a-amnistia/cat/m/'.explode("/", $url)[3]);
+  /*    header('Location: ' . $base_url . '/unete-a-amnistia/cat/m/'.explode("/", $url)[3]);
     }
    }elseif ($mobile != 1 && explode("/", $url)[1] == 'unete-a-amnistia'){
       if (explode("/", $url)[2] != 'cat' && substr(explode("/", $url)[2],0,1) == 'm') {
         header('Location: ' . $base_url . '/unete-a-amnistia');
       } elseif (explode("/", $url)[2] == 'cat' && substr(explode("/", $url)[3],0,1) == 'm'){
         /*Formulario Móvil de Asociación Catalán*/
-        header('Location: ' . $base_url . '/unete-a-amnistia/cat/');
+    /*    header('Location: ' . $base_url . '/unete-a-amnistia/cat/');
       }
     }
-}
+}*/
 
 //RECIBE PARAMETROS DE CAMPAÑAS GOOGLE Y FACEBOOK. LOS ASIGNAMOS A LA SESSION RESPECTIVAMENTE PARA NO PERDERLOS
 if(isset($_GET['pk_campaign'])) {
