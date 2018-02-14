@@ -39,28 +39,34 @@ $mobile = 0;
 $m = '';
 if ($detect->isMobile() || $detect->isTablet()){
     $mobile = 1;
+    //Componemos la url para móvil
     $explode = explode('?',$url);
-    //Componemos el parametro móvil en función de como venga la url
-    $m = (substr($explode[0], -1) == '/' ? 'm/' : '/m/'); //
+    $array_url = explode('/',$explode[0]);
+    $url_mobile = '';
+    foreach ($array_url as $key => $value) {
+      if (!empty($value)){
+        $url_mobile = $url_final.'/'.$value;
+      }
+    }
+    $url_mobile = $url_final.'/m'.($explode[1] != '' ? '?'.$explode[1]);
 }
 
 /*Formulario Móvil de Donativo */
 if (preg_match('/haz-un-donativo/', $url)) {
   if (explode('/',$explode[0])[1] == 'haz-un-donativo') {
     if ($mobile == 1 && !strpos($url,$m)){
-          header('Location: ' . $base_url . explode("?",$url)[0] . $m . '?' . explode("?",$url)[1]);
+          header('Location: ' . $base_url . $url_mobile);
     }
   }
 }
-
 
 /*Formulario Móvil de Asociación*/
 if (preg_match('/unete-a-amnistia/', $url)) {
   if (explode('/',$explode[0])[1] == 'unete-a-amnistia' && $mobile == 1 && !strpos($url,$m)) {
     if (!strpos($url,'cat')) {
-      header('Location: ' . $base_url . explode("?",$url)[0] . $m . '?' . explode("?",$url)[1]);
+      header('Location: ' . $base_url . $url_mobile);
     }elseif (strpos($url,'cat')) {
-      header('Location: ' . $base_url . explode("?",$url)[0] . '/' . explode("?",$url)[1] . $m . '?' . explode("?",$url)[2]);
+      header('Location: ' . $base_url . $url_mobile);
     }
   }
 }
