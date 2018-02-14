@@ -168,7 +168,7 @@
 <?php } elseif( in_array($node->nid, $loteria_navidad_list) ) { ?>
     <script>
       var urlActual = 'https://www.es.amnesty.org/justicia';
-      :Qvar tituloActual = 'Miles de personas mantienen viva la ilusión de conseguir justicia. Firma y ayúdales a conseguirlo #EstaNavidadToca.';
+      var tituloActual = 'Miles de personas mantienen viva la ilusión de conseguir justicia. Firma y ayúdales a conseguirlo #EstaNavidadToca.';
       var urlActualFB = 'https://www.es.amnesty.org/justicia/?utm_source=facebook&utm_campaign=comp&utm_medium=social_com&utm_term=Killings_disappearances&utm_content=Web_petition-justicia2017-facebook';
       var urlActualTW = 'https://www.es.amnesty.org/justicia/?utm_source=twitter&utm_campaign=comp&utm_medium=social_com&utm_term=Killings_disappearances&utm_content=Web_petition-justicia2017-twitter';
       var resumen = 'Me ha encantado este anuncio de Navidad de @amnistiaespana, ¡emocionante! enlace.';

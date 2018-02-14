@@ -32,6 +32,12 @@
   <?php } ?>
 
 <?php } ?>
+
+<!-- AUTO COMPLETE PARA FORMULARIOS DE TELEMARKETING -->
+<?php if( in_array($node->nid, $telemkg_form_list) ){ ?>
+    <script type="text/javascript" src="<?php print $form_path; ?>/js/autofill.js"></script>
+<?php } ?>
+
 <?php if ( in_array($node->nid, $socixs_form_list) && !in_array($node->nid, $telemkg_form_list) ) { ?>
     <script type="text/javascript" src="<?php print $form_path; ?>/js/membership-validator.js"></script>
 <?php } ?>
