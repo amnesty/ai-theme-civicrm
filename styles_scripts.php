@@ -46,6 +46,12 @@
   <script type="text/javascript" src="<?php print $form_path; ?>/js/socixs-form-m.js"></script>
   <!--<link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/donativos-form.css">-->
 <?php } ?>
+<?php if( in_array($node->nid, $mobile_donativos_form_list)  && $mobile){ ?>
+  <script type="text/javascript" src="<?php print $form_path; ?>/js/donativos-m.js"></script>
+<?php } ?>
+<?php if( in_array($node->nid, $mobile_gracias)  && $mobile){ ?>
+  <script type="text/javascript" src="<?php print $form_path; ?>/js/gracias-m.js"></script>
+<?php } ?>
 
 <!-- Campañas específicas -->
 <?php if($node->nid == $firma_navidad ){ ?>
