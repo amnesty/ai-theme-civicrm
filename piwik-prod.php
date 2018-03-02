@@ -3,7 +3,7 @@
 include_once("config.php");
 
 // Consultamos donativo
-if( in_array($node->nid, $donativos_gracias_list) || in_array($node->nid, $mobile_gracias)){
+if( in_array($node->nid, $donativos_gracias_list) || (in_array($node->nid, $donativos_gracias_list_mobile)){
   module_load_include('inc','webform','includes/webform.submissions');
   $sid = $_GET['sid'];
   $submission = webform_get_submissions(array('sid' => $sid));
@@ -13,7 +13,7 @@ if( in_array($node->nid, $donativos_gracias_list) || in_array($node->nid, $mobil
   // Consltamos método de pago
   $metodo_pago = ($result[$metodo_pago_idx][0]==""?$result[$metodo_pago_idx2][0]:$result[$metodo_pago_idx][0]);
 } // Consultamos cuota anual introducida
-else if(in_array($node->nid, $socixs_gracias_list)){
+else if(in_array($node->nid, $socixs_gracias_list) || (in_array($node->nid, $socixs_gracias_list_mobile)){
   module_load_include('inc','webform','includes/webform.submissions');
   $sid = $_GET['sid'];
   $submission = webform_get_submissions(array('sid' => $sid));
@@ -24,7 +24,7 @@ else if(in_array($node->nid, $socixs_gracias_list)){
   $importe_anual = ($cuota > 0 ? $cuota*$frec : $otra*$frec);
 }
 // Si es donativo todavía no tiene el parámetro m (de método de pago)
-if( (in_array($node->nid, $donativos_gracias_list) || in_array($node->nid, $mobile_gracias)) && !isset($_GET['m'])){ ?>
+if( (in_array($node->nid, $donativos_gracias_list) || in_array($node->nid, $donativos_gracias_list_mobile)) && !isset($_GET['m'])){ ?>
      <!--parametro metodo pago -->
      <script type="text/javascript">
         var metodo = "<?php echo $metodo_pago; ?>";
@@ -64,9 +64,9 @@ if ( !in_array($node->nid, $telemkg_form_list) &&
     _paq.push(["setCookieDomain", "*.es.amnesty.org"]);
     _paq.push(["setDomains", ["*.es.amnesty.org"]]);
       <?php if ($node->nid==$socixs_form_A) { ?>
-  	  _paq.push(['setCustomDimension', customDimensionId = 1, customDimensionValue = 'original']);
+          _paq.push(['setCustomDimension', customDimensionId = 1, customDimensionValue = 'original']);
       <?php } else if ($node->nid==$socixs_form_B){ ?>
-	  _paq.push(['setCustomDimension', customDimensionId = 1, customDimensionValue = 'versionB']);
+          _paq.push(['setCustomDimension', customDimensionId = 1, customDimensionValue = 'versionB']);
       <?php } ?>
     _paq.push(['trackPageView']);
     <?php if( in_array($node->nid ,$donativos_form_list) || $mobile ){ ?>
@@ -76,13 +76,14 @@ if ( !in_array($node->nid, $telemkg_form_list) &&
 
     (function() {
       var u="//estadisticas.es.amnesty.org/piwik/";
-      <?php if( in_array($node->nid,$donativos_gracias_list) ) { ?>
+      <?php if( in_array($node->nid,$donativos_gracias_list) || in_array($node->nid, $donativos_gracias_list_mobile)) { ?>
           _paq.push(['trackGoal', 2, <?php echo $importe_donativo; ?>]);
-      <?php } else if ( in_array($node->nid, $socixs_gracias_list) ) { ?>
-    	  _paq.push(['trackGoal', 1, <?php echo $importe_anual; ?>]);
-      <?php } else if ( $mobile == 1 &&  in_array($node->nid, $mobile_gracias )) { ?>
-          _paq.push(['trackGoal', 2, <?php echo $importe_anual; ?>]);
-          _paq.push(['trackGoal', 63, <?php echo $importe_anual; ?>]);
+      <?php } else if ( in_array($node->nid, $socixs_gracias_list) || in_array($node->nid, $socixs_gracias_list_mobile)) { ?>
+          _paq.push(['trackGoal', 1, <?php echo $importe_anual; ?>]);
+      <?php } else if ( $mobile == 1 &&  in_array($node->nid, $donativos_gracias_list_mobile )) { ?>
+          _paq.push(['trackGoal', 63, <?php echo $importe_donativo; ?>]);
+      <?php } else if ( $mobile == 1 &&  in_array($node->nid, $socixs_gracias_list_mobile )) { ?>
+          _paq.push(['trackGoal', 65, <?php echo $importe_anual; ?>]);
       <?php } ?>
       _paq.push(['setTrackerUrl', u+'piwik.php']);
       _paq.push(['setSiteId', 1]);
@@ -91,9 +92,9 @@ if ( !in_array($node->nid, $telemkg_form_list) &&
     })();
   </script>
   <noscript>
-	   <p>
-	      <img src="//estadisticas.es.amnesty.org/piwik/piwik.php?idsite=1" style="border:0;" alt="" />
-	  </p>
+           <p>
+              <img src="//estadisticas.es.amnesty.org/piwik/piwik.php?idsite=1" style="border:0;" alt="" />
+          </p>
   </noscript>
   <!-- End Piwik Code -->
 <?php }
@@ -101,21 +102,21 @@ if ( !in_array($node->nid, $telemkg_form_list) &&
 /***************** Mapas de calor ***************/
 
 /*if( ( $node->nid == $socixs_form || $node->nid == $socixs_form_A ) && !in_array($node->nid, $telemkg_form_list) ) { ?>
-	<script type="text/javascript" src="//estadisticas.es.amnesty.org/piwik/plugins/ClickHeat/libs/js/clickheat.js"></script>
-	<script type="text/javascript">
-		clickHeatSite = 1;
-		clickHeatGroup = 'socios';
-		clickHeatServer = 'http://estadisticas.es.amnesty.org/piwik/plugins/ClickHeat/libs/click.php';
-		initClickHeat();
-	</script>
+        <script type="text/javascript" src="//estadisticas.es.amnesty.org/piwik/plugins/ClickHeat/libs/js/clickheat.js"></script>
+        <script type="text/javascript">
+                clickHeatSite = 1;
+                clickHeatGroup = 'socios';
+                clickHeatServer = 'http://estadisticas.es.amnesty.org/piwik/plugins/ClickHeat/libs/click.php';
+                initClickHeat();
+        </script>
 <?php } else if( ( $node->nid == $socixs_form_B ) && !in_array($node->nid, $telemkg_form_list) ) { ?>
-	<script type="text/javascript" src="//estadisticas.es.amnesty.org/piwik/plugins/ClickHeat/libs/js/clickheat.js"></script>
-	<script type="text/javascript">
-        	clickHeatSite = 1;
-        	clickHeatGroup = 'sociosB';
-        	clickHeatServer = 'http://estadisticas.es.amnesty.org/piwik/plugins/ClickHeat/libs/click.php';
-        	initClickHeat();
-	</script>
+        <script type="text/javascript" src="//estadisticas.es.amnesty.org/piwik/plugins/ClickHeat/libs/js/clickheat.js"></script>
+        <script type="text/javascript">
+                clickHeatSite = 1;
+                clickHeatGroup = 'sociosB';
+                clickHeatServer = 'http://estadisticas.es.amnesty.org/piwik/plugins/ClickHeat/libs/click.php';
+                initClickHeat();
+        </script>
 <?php } else if( ( $node->nid == $donativos_form ) && !in_array($node->nid, $telemkg_form_list) ) { ?>
         <script type="text/javascript" src="//estadisticas.es.amnesty.org/piwik/plugins/ClickHeat/libs/js/clickheat.js"></script>
         <script type="text/javascript"><!--
