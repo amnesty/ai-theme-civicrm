@@ -3,7 +3,7 @@
 include_once("config.php");
 
 // Consultamos donativo
-if( in_array($node->nid, $donativos_gracias_list) || (in_array($node->nid, $donativos_gracias_list_mobile)){
+if (in_array($node->nid, $donativos_gracias_list) || (in_array($node->nid, $donativos_gracias_list_mobile))){
   module_load_include('inc','webform','includes/webform.submissions');
   $sid = $_GET['sid'];
   $submission = webform_get_submissions(array('sid' => $sid));
@@ -13,7 +13,7 @@ if( in_array($node->nid, $donativos_gracias_list) || (in_array($node->nid, $dona
   // Consltamos método de pago
   $metodo_pago = ($result[$metodo_pago_idx][0]==""?$result[$metodo_pago_idx2][0]:$result[$metodo_pago_idx][0]);
 } // Consultamos cuota anual introducida
-else if(in_array($node->nid, $socixs_gracias_list) || (in_array($node->nid, $socixs_gracias_list_mobile)){
+elseif ( in_array($node->nid, $socixs_gracias_list) || (in_array($node->nid, $socixs_gracias_list_mobile))){
   module_load_include('inc','webform','includes/webform.submissions');
   $sid = $_GET['sid'];
   $submission = webform_get_submissions(array('sid' => $sid));
@@ -24,7 +24,7 @@ else if(in_array($node->nid, $socixs_gracias_list) || (in_array($node->nid, $soc
   $importe_anual = ($cuota > 0 ? $cuota*$frec : $otra*$frec);
 }
 // Si es donativo todavía no tiene el parámetro m (de método de pago)
-if( (in_array($node->nid, $donativos_gracias_list) || in_array($node->nid, $donativos_gracias_list_mobile)) && !isset($_GET['m'])){ ?>
+if ((in_array($node->nid, $donativos_gracias_list) || in_array($node->nid, $donativos_gracias_list_mobile)) && !isset($_GET['m'])){ ?>
      <!--parametro metodo pago -->
      <script type="text/javascript">
         var metodo = "<?php echo $metodo_pago; ?>";
@@ -53,8 +53,8 @@ if( (in_array($node->nid, $donativos_gracias_list) || in_array($node->nid, $dona
 // Excluimos a formualrios de telemarketing del tracking
 if ( !in_array($node->nid, $telemkg_form_list) &&
    ( in_array($node->nid, $socixs_form_list) || in_array($node->nid, $socixs_gracias_list)
-   || in_array($node->nid, $donativos_form_list) || in_array($node->nid, $donativos_gracias_list))
-   || $mobile == 1
+   || in_array($node->nid, $donativos_form_list) || in_array($node->nid, $donativos_gracias_list)
+   || $mobile == 1)
 ) {
 ?>
   <!-- Piwik -->
