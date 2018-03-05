@@ -80,7 +80,7 @@ if ( !in_array($node->nid, $telemkg_form_list) &&
           _paq.push(['trackGoal', 2, <?php echo $importe_donativo; ?>]);
       <?php } else if ( in_array($node->nid, $socixs_gracias_list) || in_array($node->nid, $socixs_gracias_list_mobile)) { ?>
           _paq.push(['trackGoal', 1, <?php echo $importe_anual; ?>]);
-      <?php } else if ( $mobile == 1 &&  in_array($node->nid, $donativos_gracias_list_mobile )) { ?>
+      <?php } if ( $mobile == 1 &&  in_array($node->nid, $donativos_gracias_list_mobile )) { ?>
           _paq.push(['trackGoal', 63, <?php echo $importe_donativo; ?>]);
       <?php } else if ( $mobile == 1 &&  in_array($node->nid, $socixs_gracias_list_mobile )) { ?>
           _paq.push(['trackGoal', 65, <?php echo $importe_anual; ?>]);
