@@ -69,7 +69,7 @@ if ( !in_array($node->nid, $telemkg_form_list) &&
           _paq.push(['setCustomDimension', customDimensionId = 1, customDimensionValue = 'versionB']);
       <?php } ?>
     _paq.push(['trackPageView']);
-    <?php if( in_array($node->nid ,$donativos_form_list) || $mobile ){ ?>
+    <?php if( in_array($node->nid ,$donativos_form_list) || in_array($node->nid, $donativos_form_list_mobile)){ ?>
        _paq.push(['trackEvent', 'Formulario', 'Donativos']);
     <?php } ?>
     _paq.push(['enableLinkTracking']);
