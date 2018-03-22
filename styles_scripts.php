@@ -19,7 +19,7 @@
 
 <!-- Estilos especificos de formularios de Socixs, Donativos, Área privada, etc -->
 <?php if ( in_array($node->nid, $socixs_form_list) || in_array($node->nid, $socixs_gracias_list)
-      || in_array($node->nid, $donativos_form_list) || in_array($node->nid, $donativos_gracias_list) ){ ?>
+      || in_array($node->nid, $donativos_form_list) || in_array($node->nid, $donativos_gracias_list) && !$mobile){ ?>
   <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/socixs-form.css">
   <script type="text/javascript" src="<?php print $form_path; ?>/js/socixs-form.js"></script>
   <?php if ( in_array($node->nid, $donativos_form_list) ) { ?>
@@ -69,6 +69,10 @@
       <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/nosevende.css">
 <?php  } else if ( in_array($node->nid, $loteria_navidad_list) && !in_array($node->nid, $socixs_gracias_list) && !in_array($node->nid, $donativos_gracias_list) ) { ?>
       <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+<?php if(!$mobile){?>
       <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/loteria.css">
-<?php }
+<?php }else{ ?>
+      <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/loteria-m.css">
+<?php } 
+} 
 ?>

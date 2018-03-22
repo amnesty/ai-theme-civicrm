@@ -9508,7 +9508,7 @@ x:-o-prefocus {
     }
 
     .image-header__content--medium{
-        margin-top: 72px;
+       // margin-top: 72px;
     }
 }
 
