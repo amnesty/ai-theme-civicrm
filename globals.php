@@ -12,7 +12,7 @@ $img_header = "header.jpg"; // Por defecto, A
 $extra_class="";
 
 if (isset($exite_img_cabecera_form) &&  $exite_img_cabecera_form){
-        $img_header = getArrayTipoFormulario($node->webform['components'], IMG_CABECERA)['value'];
+        $img_header = $img_cabecera;
         $extra_class="responsive--bg-b";
 } else if ($node->nid == $antevenio_form_B || $node->nid == $antevenio_gracias_B || $node->nid==$socixs_form_B || $node->nid==$socixs_gracias_B ){ // socixs antevenio B
         $img_header = "headerB.jpg";

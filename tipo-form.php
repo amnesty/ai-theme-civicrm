@@ -49,6 +49,7 @@ $aComponentTipoForm = getArrayComponentByType($node->webform['components'], IMG_
 
 if ($aComponentTipoForm[form_key] == IMG_CABECERA){
     $exite_img_cabecera_form = 1;
+    $img_cabecera = $aComponentTipoForm[value];
 }
 
 //Función que busca un componenete del formulario dentro del array que contiente todos los componentes.
