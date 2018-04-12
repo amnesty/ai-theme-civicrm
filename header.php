@@ -26,7 +26,7 @@
 <div class="image-header image-header--has-credits-sm image-header--actua">
     <div id="pixel"></div>
     <?php if (isset($exite_img_cabecera_form) && $exite_img_cabecera_form) { ?>
-      <div style="background-image: url('<?php print $img_header; ?>?anchor=topcenter');" class="responsive--bg <?php print $extra_class; ?> responsive--bg-mobile lazyloaded"
+      <div style="background-image: url('<?php print $img_header; ?>?anchor=topcenter');" class="responsive--bg <?php print $extra_class; ?> lazyloaded"
           data-bgset="<?php print $img_header; ?>?anchor=topcenter">
       </div>
       <noscript>
