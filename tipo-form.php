@@ -15,7 +15,7 @@ DEFINE("FORMULARIO_DONACION_MOVIL_GRACIAS",8);
 //Si el tipo de formulario está configurado en la pantalla de Civi se categorita aqui
 $aComponentTipoForm = getArrayComponentByType($node->webform['components'], TIPO_FORMULARIO);
 
-if ($aComponentTipoForm[form_key] == TIPO_FORMULARIO && $aComponentTipoForm[form_key] == 'select'){
+if ($aComponentTipoForm[form_key] == TIPO_FORMULARIO && $aComponentTipoForm[type] == 'select'){
   switch ($aComponentTipoForm[value]) {
     case FORMULARIO_ASOCIACION:
       array_push($socixs_form_list,$node->nid);
