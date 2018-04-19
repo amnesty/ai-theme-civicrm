@@ -23,6 +23,11 @@ else if (preg_match('/unete-a-amnistia-por-navidad/', $url)) {
   header('Location: ' . $base_url . '/unete-a-amnistia-justicia');
 }
 
+//Redireccion para la Campaña de Sanidad
+if ($_GET["origen"] == 'larecetaequivocada'){
+  header('Location: ' . $base_url . '/unete-a-amnistia/larecetaequivocada');
+}
+
 // AB Testing
 $splitter_url = 'sites/all/themes/ai-theme-civicrm/splitter/ab.php';
 if (file_exists($splitter_url)) {
