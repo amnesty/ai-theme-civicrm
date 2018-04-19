@@ -24,14 +24,14 @@ else if (preg_match('/unete-a-amnistia-por-navidad/', $url)) {
 }
 
 //Redireccion para la Campaña de Sanidad
-if (preg_match('/unete-a-amnistia/?origen=larecetaequivocada', $url)) {
-    header('Location: ' . $base_url . '/unete-a-amnistia/larecetaequivocada');
+if ($_GET['origen'] == 'larecetaequivocada'){ 
+        $getParams = explode('?',$url)[1];
+	if (explode('/',$url)[1] == 'unete-a-amnistia' && explode('/',$url)[2] != 'larecetaequivocada'){
+	    header('Location: ' . $base_url . '/unete-a-amnistia/larecetaequivocada/?'.$getParams);
+	} else if (explode('/',$url)[1] == 'haz-un-donativo' && explode('/',$url)[2] != 'larecetaequivocada'){
+            header('Location: ' . $base_url . '/haz-un-donativo/larecetaequivocada/?'.$getParams);
+	}
 }
-else if (preg_match('/haz-un-donativo/?origen=larecetaequivocada', $url)) {
-    header('Location: ' . $base_url . '/haz-un-donativo/larecetaequivocada');
-}
-
-
 
 // AB Testing
 $splitter_url = 'sites/all/themes/ai-theme-civicrm/splitter/ab.php';
