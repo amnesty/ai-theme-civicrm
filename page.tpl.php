@@ -9,7 +9,7 @@ if (preg_match('/\/cat/',$url)){
 
 // Globals
 include_once('config.php'); // variables dependientes del entorno
-include_once('tipo-form.php) // generalizacion de formularios por tipo
+include_once('tipo-form.php'); // generalizacion de formularios por tipo
 include_once('globals.php'); // textos, estructura, etc comun
 include_once('meta-tags.php'); // meta tags para redes sociales
 include_once ($lib_path.'/Mobile_Detect/Mobile_Detect.php'); // Class Mobile Detect
