@@ -24,11 +24,11 @@ else if (preg_match('/unete-a-amnistia-por-navidad/', $url)) {
 }
 
 //Redireccion para la Campaña de Sanidad
-if ($_GET['origen'] == 'larecetaequivocada'){
+if (strpos(explode('/',$_GET['origen'],'larecetaequivocada')) !== false){
   $getParams = explode('?',$url)[1];
-	if (explode('/',$url)[1] == 'unete-a-amnistia' && strpos(explode('/',$url)[2],'larecetaequivocada') !== false){
+	if (explode('/',$url)[1] == 'unete-a-amnistia' && explode('/',$url)[2] != 'larecetaequivocada'){
 	    header('Location: ' . $base_url . '/unete-a-amnistia/larecetaequivocada/?'.$getParams);
-	} else if (explode('/',$url)[1] == 'haz-un-donativo' && strpos(explode('/',$url)[2],'larecetaequivocada') !== false){
+	} else if (explode('/',$url)[1] == 'haz-un-donativo' && explode('/',$url)[2] != 'larecetaequivocada'){
             header('Location: ' . $base_url . '/haz-un-donativo/larecetaequivocada/?'.$getParams);
 	}
 }
