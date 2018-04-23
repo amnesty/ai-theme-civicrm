@@ -24,7 +24,7 @@ else if (preg_match('/unete-a-amnistia-por-navidad/', $url)) {
 }
 
 //Redireccion para la Campaña de Sanidad
-if (strpos(explode('/',$_GET['origen'],'larecetaequivocada')) !== false){
+if (strpos($_GET['origen'],'larecetaequivocada') !== false){
   $getParams = explode('?',$url)[1];
 	if (explode('/',$url)[1] == 'unete-a-amnistia' && explode('/',$url)[2] != 'larecetaequivocada'){
 	    header('Location: ' . $base_url . '/unete-a-amnistia/larecetaequivocada/?'.$getParams);
