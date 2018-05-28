@@ -60,7 +60,7 @@
 
     $titulo_caja_transparencia_cat = "<h3>Transparència, el nostre compromís</h3>";
     $titulo_caja_transparencia = "<h3>Transparencia, nuestro compromiso</h3>";
-    $texto_caja_transparencia = "<p>Nuestras cuentas son públicas y puedes verlas en nuestra web.</p>";
-    $texto_caja_transparencia_cat = "<p>Els nostres comptes són públics i pots veure'ls a la nostra web.</p>";
+    $texto_caja_transparencia = "<p>Nuestras cuentas son públicas y puedes verlas en nuestra web. Constamos en el registro de asociaciones con el n.º 22.729 y CIF: G28667152</p>";
+    $texto_caja_transparencia_cat = "<p>Els nostres comptes són públics i pots veure'ls a la nostra web. Constem al registre d'associacions amb el núm. 22.729 i el CIF G28667152</p>";
 
 ?>
