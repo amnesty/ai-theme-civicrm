@@ -45,6 +45,10 @@
                     <!--img src="<?php print $images_path; ?>estrella-regalo.png" class="estrella-navidad" -->
               <?php } ?>
 
+              <!-- Botón de CLICK TO CALL -->
+              <!--script type="text/javascript" src="http://app.webphone.net/script/script.js"></script>
+              <object id="2973" type="button/webphone" classid="webphone"></object-->
+
   		        <div class="box-form-es" <?php if( $excluded_header_list != null || in_array($node->nid, $excluded_header_list) ){ ?>style="width: 100%;" <?php } ?> >
                       <?php print $messages; ?> <!-- Errors -->
                       <?php print render($page['content']); ?>
@@ -92,20 +96,26 @@
                               <?php } ?>
                             </div>
                       <?php } ?>
-                      <!-- ********************************** CAJAS LATERALES ******************** -->
-                      <?php if( !in_array($excluded_header_list != null || $node->nid, $excluded_header_list) &&
+
+                    <!-- ********************************** CAJAS LATERALES ******************** -->
+
+                    <?php if( !in_array($node->nid, $excluded_header_list) &&
                         ( in_array($node->nid, $socixs_form_list) || in_array($node->nid, $donativos_form_list) ) && !$mobile) { ?>
-                        </div><!-- Box FORM_ES -->
-                           <div class="box-es-right col-xs-12 col-sm-12 col-md-3 col-lg-3 margin-top-20px-element"> <!-- box-es-right -->
-                             <?php if( $node->nid == $area_privada) { ?>
-                               <div class="three-column buenas-noticias bloques-x4 col-xs-12 col-sm-12 col-md-4 col-lg-4"> <!-- NUEVA CAJA - "BUENAS NOTICIAS" -->
+
+                      </div><!-- Box FORM_ES -->
+
+                        <div class="box-es-right col-xs-12 col-sm-12 col-md-3 col-lg-3 margin-top-20px-element"> <!-- box-es-right -->
+
+                            <?php if( $node->nid == $area_privada) { ?>
+                              <div class="three-column buenas-noticias bloques-x4 col-xs-12 col-sm-12 col-md-4 col-lg-4"> <!-- NUEVA CAJA - "BUENAS NOTICIAS" -->
                                    <img src="<?php print $images_path; ?>icon-good-news.png" alt="imagen cara sonriente" />
                                    <?php
                                       echo $titulo_caja_buenas_noticias;
                                       echo $texto_caja_buenas_noticias;
                                     ?>
-                               </div>
+                              </div>
                               <?php } ?>
+
                               <div class="three-column ventajas bloques-x4 col-xs-12 col-sm-12 col-md-4 col-lg-4">
                                    <img src="<?php print $images_path; ?>pig.png" alt="pig"/>
                                    <?php
@@ -127,6 +137,7 @@
                                    ?>
                                    </p>
                               </div>
+
                               <div class="three-column formas-pago bloques-x4 col-xs-12 col-sm-12 col-md-4 col-lg-4">
                                    <img src="<?php print $images_path; ?>cartera.png" alt="cartera"/>
                                    <?php
@@ -139,6 +150,7 @@
                                     }
                                    ?>
                               </div>
+
                               <div class="three-column compromiso bloques-x4 col-xs-12 col-sm-12 col-md-4 col-lg-4">
                                   <img src="<?php print $images_path; ?>ventana.png" alt="ventana"/>
                                   <?php
@@ -151,9 +163,13 @@
                                     }
                                   ?>
                               </div>
+
                           </div><!-- /box-es-right -->
+
                     <?php } else { ?>
+
                       </div><!-- Box FORM_ES -->
+
                     <?php } ?>
             </div>
 	      </div>

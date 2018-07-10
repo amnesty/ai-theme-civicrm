@@ -23,7 +23,7 @@ if (isset($exite_img_cabecera_form) &&  $exite_img_cabecera_form){
 } else if ( $node->nid == $donativos_islamofobia ){ // formulario islamofobia
         $extra_class="responsive--bg-regalo";
         $img_header = "header-islamofobia.png";
-} else if ( in_array($node->nid, $donativos_planetaJ)){ // formulario Planeta J
+} else if ( !empty($donativos_planetaJ) && in_array($node->nid, $donativos_planetaJ) ){ // formulario Planeta J
         //$extra_class="responsive--bg-regalo";
         $img_header="header_planetaJ.jpg";
 } else if ($antevenio_form_C == $node->nid || $antevenio_gracias_C == $node->nid ){ // socixs antevenio C
