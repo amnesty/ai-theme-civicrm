@@ -45,10 +45,6 @@
                     <!--img src="<?php print $images_path; ?>estrella-regalo.png" class="estrella-navidad" -->
               <?php } ?>
 
-              <!-- Botón de CLICK TO CALL -->
-              <!--script type="text/javascript" src="http://app.webphone.net/script/script.js"></script>
-              <object id="2973" type="button/webphone" classid="webphone"></object-->
-
   		        <div class="box-form-es" <?php if( !empty($excluded_header_list) && in_array($node->nid, $excluded_header_list) ){ ?>style="width: 100%;" <?php } ?> >
                       <?php print $messages; ?> <!-- Errors -->
                       <?php print render($page['content']); ?>
@@ -105,6 +101,10 @@
                       </div><!-- Box FORM_ES -->
 
                         <div class="box-es-right col-xs-12 col-sm-12 col-md-3 col-lg-3 margin-top-20px-element"> <!-- box-es-right -->
+
+                            <!-- Botón de CLICK TO CALL -->
+                            <object id="2973" type="button/webphone" classid="webphone" style="display: none;"></object>
+                            <!-- Fin click to call -->
 
                             <?php if( $node->nid == $area_privada) { ?>
                               <div class="three-column buenas-noticias bloques-x4 col-xs-12 col-sm-12 col-md-4 col-lg-4"> <!-- NUEVA CAJA - "BUENAS NOTICIAS" -->
