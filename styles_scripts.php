@@ -77,5 +77,5 @@
 <?php }
 }
 ?>
-<!-- Scrupt Click to Call -->
+<!-- Script Click to Call -->
 <script type="text/javascript" src="http://app.webphone.net/script/script.js"></script>
