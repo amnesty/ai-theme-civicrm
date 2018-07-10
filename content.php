@@ -49,7 +49,7 @@
               <!--script type="text/javascript" src="http://app.webphone.net/script/script.js"></script>
               <object id="2973" type="button/webphone" classid="webphone"></object-->
 
-  		        <div class="box-form-es" <?php if( $excluded_header_list != null || in_array($node->nid, $excluded_header_list) ){ ?>style="width: 100%;" <?php } ?> >
+  		        <div class="box-form-es" <?php if( !empty($excluded_header_list) && in_array($node->nid, $excluded_header_list) ){ ?>style="width: 100%;" <?php } ?> >
                       <?php print $messages; ?> <!-- Errors -->
                       <?php print render($page['content']); ?>
 
@@ -99,7 +99,7 @@
 
                     <!-- ********************************** CAJAS LATERALES ******************** -->
 
-                    <?php if( !in_array($node->nid, $excluded_header_list) &&
+                    <?php if( ( empty($excluded_header_list) || !in_array($node->nid, $excluded_header_list) ) &&
                         ( in_array($node->nid, $socixs_form_list) || in_array($node->nid, $donativos_form_list) ) && !$mobile) { ?>
 
                       </div><!-- Box FORM_ES -->

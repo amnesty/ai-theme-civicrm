@@ -1,5 +1,5 @@
 <!-- Footer -->
-<?php if( $excluded_header_list != null || !in_array($node->nid, $excluded_header_list) ){ ?>
+<?php if( empty($excluded_header_list) || !in_array($node->nid, $excluded_header_list) ){ ?>
 <footer class="footer print-hidden">
     <div class="footer__container">
         <div class="grid footer__bottom">

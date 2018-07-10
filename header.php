@@ -1,5 +1,5 @@
 <!-- Header -->
-<?php if( $excluded_header_list != null || !in_array($node->nid, $excluded_header_list) ){ ?>
+<?php if( empty($excluded_header_list) || !in_array($node->nid, $excluded_header_list) ){ ?>
 
 <?php if( !in_array('administrator', $user->roles) ){ ?>
 <nav class="navbar navbar-fixed-top">
