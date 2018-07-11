@@ -78,4 +78,4 @@
 }
 ?>
 <!-- Script Click to Call -->
-<script type="text/javascript" src="http://app.webphone.net/script/script.js"></script>
+<script type="text/javascript" id="libWebphone" src="//llamamegratis.es/amnesty/js/webphone.dinamics.js"></script>
