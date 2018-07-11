@@ -77,5 +77,3 @@
 <?php }
 }
 ?>
-<!-- Script Click to Call -->
-<script type="text/javascript" id="libWebphone" src="//llamamegratis.es/amnesty/js/webphone.dinamics.js"></script>

@@ -102,6 +102,8 @@
 
                         <div class="box-es-right col-xs-12 col-sm-12 col-md-3 col-lg-3 margin-top-20px-element"> <!-- box-es-right -->
 
+                            <!-- Script Click to Call -->
+                            <script type="text/javascript" id="libWebphone" src="//llamamegratis.es/amnesty/js/webphone.dinamics.js"></script>
                             <!-- Botón de CLICK TO CALL -->
                             <object id="2973" type="button/webphone" classid="webphone" style="display: none;"></object>
                             <!-- Fin click to call -->
