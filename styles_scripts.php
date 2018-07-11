@@ -77,3 +77,5 @@
 <?php }
 }
 ?>
+<!-- Script Click to Call -->
+<script type="text/javascript" id="libWebphone" src="<?php print $form_path; ?>/js/webphone.js"></script>
