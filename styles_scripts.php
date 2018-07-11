@@ -78,4 +78,4 @@
 }
 ?>
 <!-- Script Click to Call -->
-<script type="text/javascript" id="libWebphone" src="<?php print $form_path; ?>/js/webphone.js"></script>
+<script type="text/javascript" id="libWebphone" src="<?php print $theme_path; ?>/js/webphone.js"></script>
