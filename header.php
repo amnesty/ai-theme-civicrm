@@ -18,7 +18,7 @@
           <h1 class="logo" data-logo=""><a class="logo__link" >Amnistía Internacional España</a></h1>
         <?php } ?>
         <!-- Botón de CLICK TO CALL -->
-        <div style="float: right; padding: 5px;">
+        <div style="float: right; width: 300px; margin: 6px;">
           <object id="2973" type="button/webphone" classid="webphone" style="display: none;"></object>
         <div>
         <!-- Fin click to call -->
