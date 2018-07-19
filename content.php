@@ -102,10 +102,6 @@
 
                         <div class="box-es-right col-xs-12 col-sm-12 col-md-3 col-lg-3 margin-top-20px-element"> <!-- box-es-right -->
 
-                            <!-- Botón de CLICK TO CALL -->
-                            <object id="2973" type="button/webphone" classid="webphone" style="display: none;"></object>
-                            <!-- Fin click to call -->
-
                             <?php if( $node->nid == $area_privada) { ?>
                               <div class="three-column buenas-noticias bloques-x4 col-xs-12 col-sm-12 col-md-4 col-lg-4"> <!-- NUEVA CAJA - "BUENAS NOTICIAS" -->
                                    <img src="<?php print $images_path; ?>icon-good-news.png" alt="imagen cara sonriente" />

@@ -6,17 +6,22 @@
 <header class="header" data-header="" role="banner">
     <div class="header__container" data-header-container="">
         <div class="header__slogan-container">
-        <?php if($cat){ ?>
-            <div class="header__slogan"> Actuem pels drets humans arreu del món. </div>
-        <?php }else{ ?>
-              <div class="header__slogan"> Actuamos por los derechos humanos en todo el mundo </div>
-        <?php } ?>
+          <?php if($cat){ ?>
+              <div class="header__slogan"> Actuem pels drets humans arreu del món. </div>
+          <?php }else{ ?>
+                <div class="header__slogan"> Actuamos por los derechos humanos en todo el mundo </div>
+          <?php } ?>
         </div>
         <?php if($cat){ ?>
           <h1 class="logo" data-logo=""><a class="logo__link">Amnistia Internacional Catalunya</a></h1>
         <?php }else{ ?>
           <h1 class="logo" data-logo=""><a class="logo__link" >Amnistía Internacional España</a></h1>
         <?php } ?>
+        <!-- Botón de CLICK TO CALL -->
+        <div style="float: right; padding: 5px;">
+          <object id="2973" type="button/webphone" classid="webphone" style="display: none;"></object>
+        <div>
+        <!-- Fin click to call -->
     </div>
 </header>
 </nav>
