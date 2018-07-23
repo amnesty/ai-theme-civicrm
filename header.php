@@ -18,9 +18,15 @@
           <h1 class="logo" data-logo=""><a class="logo__link" >Amnistía Internacional España</a></h1>
         <?php } ?>
         <!-- Botón de CLICK TO CALL -->
+        <?php if ($detect->isMobile() || $detect->isTablet()){ ?>
+          <div style="float: right; width: 300px; margin: 6px;">
+            <object id="2996" type="button/webphone" classid="webphone" style="display: none;"></object>
+          <div>
+        <?php } else { ?>
         <div style="float: right; width: 300px; margin: 6px;">
           <object id="2973" type="button/webphone" classid="webphone" style="display: none;"></object>
         <div>
+        <?php } ?>
         <!-- Fin click to call -->
     </div>
 </header>
