@@ -20,7 +20,7 @@
         <!-- Botón de CLICK TO CALL -->
         <?php if( $detect->isMobile() || $detect->isTablet() ){ ?>
           <div style="float: right; width: 70px; margin: 4px;">
-            <object id="2996" type="button/webphone" classid="webphone" style="display: none;"></object>
+            <object id="3003" type="button/webphone" classid="webphone" style="display: none;"></object>
           <div>
         <?php } else { ?>
         <div style="float: right; width: 300px; margin: 6px;">
