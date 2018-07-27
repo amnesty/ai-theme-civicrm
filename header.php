@@ -6,10 +6,12 @@
 <header class="header" data-header="" role="banner">
     <div class="header__container" data-header-container="">
         <div class="header__slogan-container">
-          <?php if($cat){ ?>
-              <div class="header__slogan"> Actuem pels drets humans arreu del món. </div>
-          <?php }else{ ?>
-                <div class="header__slogan"> Actuamos por los derechos humanos en todo el mundo </div>
+          <?php if( !$detect->isMobile() && !$detect->isTablet() ){ ?>
+            <?php if($cat){ ?>
+                <div class="header__slogan"> Actuem pels drets humans arreu del món. </div>
+            <?php } else { ?>
+                  <div class="header__slogan"> Actuamos por los derechos humanos en todo el mundo </div>
+            <?php } ?>
           <?php } ?>
         </div>
         <?php if( $detect->isMobile() || $detect->isTablet() ){ ?>
