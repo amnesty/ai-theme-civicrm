@@ -12,22 +12,27 @@
                 <div class="header__slogan"> Actuamos por los derechos humanos en todo el mundo </div>
           <?php } ?>
         </div>
-        <?php if($cat){ ?>
-          <h1 class="logo" data-logo=""><a class="logo__link">Amnistia Internacional Catalunya</a></h1>
-        <?php }else{ ?>
-          <h1 class="logo" data-logo=""><a class="logo__link" >Amnistía Internacional España</a></h1>
-        <?php } ?>
-        <!-- Botón de CLICK TO CALL -->
         <?php if( $detect->isMobile() || $detect->isTablet() ){ ?>
-          <div style="float: right; width: 70px; margin: 4px;">
-            <object id="3003" type="button/webphone" classid="webphone" style="display: none;"></object>
-          <div>
+            <!-- logo mobile -->
+            <h1 class="logo logo_mobile" data-logo=""><a class="logo__link logo__link_mobile">Amnistia Internacional</a></h1>
         <?php } else { ?>
-        <div style="float: right; width: 300px; margin: 6px;">
-          <object id="2973" type="button/webphone" classid="webphone" style="display: none;"></object>
-        <div>
+            <!-- logo escritorio -->
+            <?php if($cat){ ?>
+              <h1 class="logo" data-logo=""><a class="logo__link">Amnistia Internacional Catalunya</a></h1>
+            <?php } else { ?>
+              <h1 class="logo" data-logo=""><a class="logo__link" >Amnistía Internacional España</a></h1>
+            <?php } ?>
         <?php } ?>
-        <!-- Fin click to call -->
+
+        <!--- Botón de CLICK TO CALL ----------->
+        <?php if( $detect->isMobile() || $detect->isTablet() ){ ?>
+        <div class="clicktocall_btn">
+        <?php } else { ?>
+        <div class="clicktocall_btn">
+        <?php } ?>
+          <object id="2973" type="button/webphone" classid="webphone" style="display: none;"></object>
+        </div>
+        <!--- Fin click to call ------------------->
     </div>
 </header>
 </nav>

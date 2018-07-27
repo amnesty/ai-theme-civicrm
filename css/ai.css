@@ -7522,6 +7522,9 @@ x:-o-prefocus {
     top: 0;
     z-index: 2
 }
+.logo_mobile {
+    width: 5rem;
+}
 .logo-print {
     display: none;
     width: 12.0714285714rem;
@@ -7564,6 +7567,17 @@ x:-o-prefocus {
     display: block;
     left: 0
 }
+/* mobile - helena */
+.logo__link_mobile:after {
+    display: inline-block;
+    background-position: -8.35714em -5.85714em;
+    width: 4em;
+}
+.logo__link_mobile:before {
+    background-position: -8.29em -.35714em;
+    width: 2em;
+}
+/***/
 @media print {
     .logo__link:after {
         right: 0;
