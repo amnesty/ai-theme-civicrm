@@ -7,6 +7,7 @@
     <div class="header__container" data-header-container="">
         <div class="header__slogan-container">
           <?php if( !$detect->isMobile() && !$detect->isTablet() ){ ?>
+            <!-- Solo mostramos el texto si no es mobile -->
             <?php if($cat){ ?>
                 <div class="header__slogan"> Actuem pels drets humans arreu del món. </div>
             <?php } else { ?>
@@ -17,6 +18,7 @@
         <?php if( $detect->isMobile() || $detect->isTablet() ){ ?>
             <!-- logo mobile -->
             <h1 class="logo logo_mobile" data-logo=""><a class="logo__link logo__link_mobile">Amnistia Internacional</a></h1>
+            <div class="clicktocall_btn_mobile">
         <?php } else { ?>
             <!-- logo escritorio -->
             <?php if($cat){ ?>
@@ -24,15 +26,24 @@
             <?php } else { ?>
               <h1 class="logo" data-logo=""><a class="logo__link" >Amnistía Internacional España</a></h1>
             <?php } ?>
+            <div class="clicktocall_btn">
         <?php } ?>
 
         <!--- Botón de CLICK TO CALL ----------->
-        <?php if( $detect->isMobile() || $detect->isTablet() ){ ?>
-        <div class="clicktocall_btn">
-        <?php } else { ?>
-        <div class="clicktocall_btn">
-        <?php } ?>
-          <object id="2973" type="button/webphone" classid="webphone" style="display: none;"></object>
+        <?php if( in_array($node->nid, $loteria_navidad_list) && in_array($node->nid, $socixs_form_list) ){ ?>
+          <!-- Navidad asociacion -->
+          <?php if($cat) { ?>
+            <object id="2974" type="button/webphone" classid="webphone" style="display: none;"></object>
+          <?php } else { ?>
+            <object id="3005" type="button/webphone" classid="webphone" style="display: none;"></object>
+          <?php } ?>
+        <?php } else if( in_array($node->nid, $socixs_form_list) ) { ?>
+          <!-- Resto de asociacion -->
+          <?php if($cat) { ?>
+            <object id="3007" type="button/webphone" classid="webphone" style="display: none;"></object>
+          <?php } else { ?>
+            <object id="2973" type="button/webphone" classid="webphone" style="display: none;"></object>
+          <?php } ?>        <?php } ?>
         </div>
         <!--- Fin click to call ------------------->
     </div>
