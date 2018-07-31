@@ -1051,13 +1051,11 @@ function appendButtonWphByObj(idWidgetWphObj) {
  * Append Webphone button by object
  */
 function appendWphButtonByObject() {
-    jQuery(function($) {
-      $('object[classid="webphone"]').each(function(i){
-       if (typeof $(this).attr('id') != 'undefined' && $(this).attr('id') != '') {
-         appendButtonWphByObj($(this).attr('id'));
+    jQuery('object[classid="webphone"]').each(function(i){
+       if (typeof jQuery(this).attr('id') != 'undefined' && jQuery(this).attr('id') != '') {
+         appendButtonWphByObj(jQuery(this).attr('id'));
        }
     });
-  });
 }
 
 function weNeedAppendFixedButton(){
