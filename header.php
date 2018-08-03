@@ -30,17 +30,16 @@
         <?php } ?>
 
         <!--- Botón de CLICK TO CALL ----------->
-        <?php if($node->nid == $socixs_form || /* formulario socixs */
-            in_array($node->nid, $loteria_navidad_list) && in_array($node->nid, $socixs_form_list) || /* formulario socixs navidad loteria */
-            in_array($node->nid, $socixs_form_list_mobile) /* formularios moviles */
-          ){ ?>
+        <?php in_array($node->nid, $loteria_navidad_list)
+              && in_array($node->nid, $socixs_form_list) /* formulario socixs navidad loteria */ ){ ?>
           <!-- Navidad asociacion -->
           <?php if($cat) { ?>
             <object id="2974" type="button/webphone" data-lang="ca" classid="webphone" style="display: none;"></object>
           <?php } else { ?>
             <object id="3005" type="button/webphone" classid="webphone" style="display: none;"></object>
           <?php } ?>
-        <?php } else if( in_array($node->nid, $socixs_form_list) || in_array($node->nid, $socixs_form_list_mobile) ) { ?>
+        <?php } else if( $node->nid == $socixs_form || /* formulario socixs */
+                in_array($node->nid, $socixs_form_list_mobile) /* formularios moviles de asociacion */ ) { ?>
           <!-- Resto de asociacion -->
           <?php if($cat) { ?>
             <object id="3007" type="button/webphone" data-lang="ca" classid="webphone" style="display: none;"></object>
