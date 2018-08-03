@@ -31,7 +31,7 @@
 
         <!--- Botón de CLICK TO CALL ----------->
         <?php if( in_array($node->nid, $loteria_navidad_list) &&
-              in_array($node->nid, $socixs_form_list) ) { /* formulario socixs navidad loteria */  ?>
+              ( in_array($node->nid, $socixs_form_list) || in_array($node->nid, $socixs_form_list_mobile) ) ) { /* formulario socixs navidad loteria */  ?>
           <!-- Navidad asociacion -->
           <?php if($cat) { ?>
             <object id="2974" type="button/webphone" data-lang="ca" classid="webphone" style="display: none;"></object>
