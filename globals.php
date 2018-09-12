@@ -2,8 +2,9 @@
 
 // Global vars and parameters for the theme
 global $base_url;
+$code_path = getcwd();
 $theme_path = $base_url . "/sites/all/themes/ai-theme-civicrm";
-$lib_path = $base_url . "/sites/all/libraries";
+$lib_path = $code_path . "/sites/all/libraries";
 $form_path = $theme_path . "/ai-formulario";
 $images_path = $form_path . "/images/"; // directorio donde se encuentran las imágenes dentro del tema del formulario
 
