@@ -1,9 +1,11 @@
 <?php
+
 // Píxeles Adwords para páginas de gracias
+
 if( in_array($node->nid, $socixs_gracias_list) ){
   if(isset($_COOKIE['cookieAlert3']) && $_COOKIE['cookieAlert3'] == 1){ // si ha aceptado las cookies
     if( isset($_GET["pk_campaign"]) && $_GET["pk_campaign"] == 'anunggl_visual' || $_SESSION['pk_campaign'] == 'anunggl_visual' || $_SESSION['utm_campaign'] == 'anunggl_visual') { // display
-  ?>
+?>
       <!-- Google Code for pixel_socios Conversion Page -->
       <script type="text/javascript">
       /* <![CDATA[ */
@@ -25,9 +27,9 @@ if( in_array($node->nid, $socixs_gracias_list) ){
       </div>
       </noscript>
       <!-- End Adwords Code -->
-  <?php  }
+<?php  }
     else if (isset($_GET["pk_campaign"]) && $_GET["pk_campaign"] == 'anunggl' || $_SESSION['pk_campaign'] == 'anunggl' || $_SESSION['utm_campaign'] == 'anunggl'){ // grants
-   ?>
+?>
       <!-- Google Code for pixel_socios_grant Conversion Page -->
       <script type="text/javascript">
       /* <![CDATA[ */
@@ -48,6 +50,61 @@ if( in_array($node->nid, $socixs_gracias_list) ){
       </noscript>
       <!-- End Adwords Code -->
 <?php  }
+  }
+}
+
+// Píxeles de AdWords para página de asociación
+
+if( in_array($node->nid, $socixs_form_list) ){
+  if(isset($_COOKIE['cookieAlert3']) && $_COOKIE['cookieAlert3'] == 1){ // si ha aceptado las cookies
+    if (isset($_GET["pk_campaign"]) && $_GET["pk_campaign"] == 'anunggl' || $_SESSION['pk_campaign'] == 'anunggl' || $_SESSION['utm_campaign'] == 'anunggl'){ // grants
+?>
+      <!-- Event snippet for S_Conversión_Socios conversion page
+      In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+      <script>
+        function gtag_report_conversion(url) {
+          var callback = function () {
+            if (typeof(url) != 'undefined') {
+              window.location = url;
+            }
+          };
+          gtag('event', 'conversion', {
+            'send_to': 'AW-973137582/fzb2CI7CmIgBEK7Ng9AD',
+            'transaction_id': '',
+            'event_callback': callback
+          });
+          return false;
+        }
+      </script>
+<?php
+    }
+  }
+}
+
+// Píxeles de AdWords para página de donacion
+
+if( in_array($node->nid, $donativos_form_list) ){
+  if(isset($_COOKIE['cookieAlert3']) && $_COOKIE['cookieAlert3'] == 1){ // si ha aceptado las cookies
+    if (isset($_GET["pk_campaign"]) && $_GET["pk_campaign"] == 'anunggl' || $_SESSION['pk_campaign'] == 'anunggl' || $_SESSION['utm_campaign'] == 'anunggl'){ // grants
+?>
+      <!-- Event snippet for pixel_conversion_donativo conversion page
+      In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+      <script>
+        function gtag_report_conversion(url) {
+          var callback = function () {
+            if (typeof(url) != 'undefined') {
+              window.location = url;
+            }
+          };
+          gtag('event', 'conversion', {
+            'send_to': 'AW-973137582/hvfuCOrw64YBEK7Ng9AD',
+            'event_callback': callback
+          });
+          return false;
+        }
+      </script>
+<?php
+    }
   }
 }
 ?>

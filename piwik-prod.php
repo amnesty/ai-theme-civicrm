@@ -52,9 +52,11 @@ if ((in_array($node->nid, $donativos_gracias_list) || in_array($node->nid, $dona
 
 // Excluimos a formualrios de telemarketing del tracking
 if ( !in_array($node->nid, $telemkg_form_list) &&
-   ( in_array($node->nid, $socixs_form_list) || in_array($node->nid, $socixs_gracias_list)
-   || in_array($node->nid, $donativos_form_list) || in_array($node->nid, $donativos_gracias_list)
-   || $mobile == 1)
+   (  in_array($node->nid, $socixs_form_list) ||
+      in_array($node->nid, $socixs_gracias_list) ||
+      in_array($node->nid, $donativos_form_list) ||
+      in_array($node->nid, $donativos_gracias_list) ||
+      $mobile == 1 )
 ) {
 ?>
   <!-- Piwik -->
