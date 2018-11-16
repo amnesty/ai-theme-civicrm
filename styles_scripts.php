@@ -22,6 +22,7 @@
       || in_array($node->nid, $donativos_form_list) || in_array($node->nid, $donativos_gracias_list) && !$mobile){ ?>
   <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/socixs-form.css">
   <script type="text/javascript" src="<?php print $form_path; ?>/js/socixs-form.js"></script>
+  <script type="text/javascript" src="<?php print $form_path; ?>/js/cuotas.js"></script>
   <?php if ( in_array($node->nid, $donativos_form_list) ) { ?>
       <script type="text/javascript" src="<?php print $form_path; ?>/js/donativos.js"></script>
       <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/donativos-form.css">
@@ -44,6 +45,7 @@
 <!-- Si es dipositivo móvil -->
 <?php if( !empty($socixs_form_list_mobile) && in_array($node->nid, $socixs_form_list_mobile) && $mobile){ ?>
   <script type="text/javascript" src="<?php print $form_path; ?>/js/socixs-form-m.js"></script>
+  <script type="text/javascript" src="<?php print $form_path; ?>/js/cuotas-m.js"></script>
   <!--<link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/donativos-form.css">-->
 <?php } ?>
 <?php if( !empty($donativos_form_list_mobile) && in_array($node->nid, $donativos_form_list_mobile)  && $mobile){ ?>
