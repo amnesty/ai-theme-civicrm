@@ -35,6 +35,7 @@
 <!-- Cuotas distintas segun periodicidad -->
 <?php if( $node->nid == $socixs_form ) { ?>
   <script type="text/javascript" src="<?php print $form_path; ?>/js/cuotas.js"></script>
+  <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/cuotas.css">
 <?php } else if ( $node->nid == $socixs_form_m ) { ?>
   <script type="text/javascript" src="<?php print $form_path; ?>/js/cuotas-m.js"></script>
 <?php } ?>
