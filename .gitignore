@@ -7,3 +7,4 @@ splitter/*.sql
 adwords.php
 pixel-fb.php
 pixel-twitter.php
+ganalytics*.php
