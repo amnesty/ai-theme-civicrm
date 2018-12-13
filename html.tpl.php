@@ -3,6 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php print $language->language; ?>" version="XHTML+RDFa 1.0" dir="<?php print $language->dir; ?>"<?php print $rdf_namespaces; ?>>
 
   <head profile="<?php print $grddl_profile; ?>">
+    <?php include_once("ganalytics.php"); ?>
     <?php print $head; ?>
     <title><?php $title = explode('#',$head_title); print $title[0]; ?></title>
     <?php print $styles; ?>
@@ -11,6 +12,7 @@
   </head>
 
   <body class="<?php print $classes; ?>" <?php print $attributes;?>>
+    <?php include_once("ganalytics2.php"); ?>
     <div id="skip-link">
       <a href="#main-content" class="element-invisible element-focusable"><?php print t('Skip to main content'); ?></a>
     </div>
