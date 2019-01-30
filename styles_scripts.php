@@ -33,10 +33,10 @@
 <?php } ?>
 
 <!-- Cuotas distintas segun periodicidad -->
-<?php if( $node->nid == $socixs_form ) { ?>
+<?php if( ($node->nid == $socixs_form || $node->nid == $socixs_form_cat || in_array($node->nid, $loteria_navidad_list)) && !$mobile){ ?>
   <script type="text/javascript" src="<?php print $form_path; ?>/js/cuotas.js"></script>
   <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/cuotas.css">
-<?php } else if ( $node->nid == $socixs_form_m ) { ?>
+<?php } else if ( $node->nid == $socixs_form_m || in_array($node>nid, $socixs_form_list_mobile)) { ?>
   <script type="text/javascript" src="<?php print $form_path; ?>/js/cuotas-m.js"></script>
 <?php } ?>
 
