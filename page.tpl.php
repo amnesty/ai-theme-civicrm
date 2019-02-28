@@ -1,8 +1,35 @@
 <?php
 
+// URL
+$url = $_SERVER['REQUEST_URI'];
+
+/* Funcion que decodifica caracteres de la URL */
+function decode_url($url){
+  $url = str_replace('%D1','Ñ',$url);
+  $url = str_replace('%F1','ñ',$url);
+  $url = str_replace('%BA','º',$url);
+  $url = str_replace('%AA','ª',$url);
+  $url = str_replace('%C1','Á',$url);
+  $url = str_replace('%E1','á',$url);
+  $url = str_replace('%C9','É',$url);
+  $url = str_replace('%E9','é',$url);
+  $url = str_replace('%CD','Í',$url);
+  $url = str_replace('%ED','í',$url);
+  $url = str_replace('%D3','Ó',$url);
+  $url = str_replace('%F3','ó',$url);
+  $url = str_replace('%DA','Ú',$url);
+  $url = str_replace('%FA','ú',$url);
+  $url = str_replace('%D2','Ò',$url);
+  $url = str_replace('%F2','ò',$url);
+  $url = str_replace('%C8','È',$url);
+  $url = str_replace('%E8','è',$url);
+  $url = str_replace('%C0','À',$url);
+  $url = str_replace('%E0','à',$url);
+  return $url;
+}
+
 //Idioma
 $cat = 0;
-$url = $_SERVER['REQUEST_URI'];
 if (preg_match('/\/cat/',$url)){
   $cat = 1;
 }
@@ -15,7 +42,6 @@ include_once('meta-tags.php'); // meta tags para redes sociales
 include_once ($lib_path.'/Mobile_Detect/Mobile_Detect.php'); // Class Mobile Detect
 
 // Patch para justicia por navidad
-$url = $_SERVER['REQUEST_URI'];
 if (preg_match('/haz-un-donativo-por-navidad/', $url)) {
   header('Location: ' . $base_url . '/haz-un-donativo-justicia');
 }
@@ -88,6 +114,11 @@ if(isset($_GET['pk_campaign'])) {
 }
 if(isset($_GET['utm_campaign'])) {
   $_SESSION['utm_campaign'] = $_GET['utm_campaign'];
+}
+
+// Para telemarketing
+if( in_array($node->nid, $telemkg_form_list) ){
+  $url = decode_url($url);
 }
 
 ?>
