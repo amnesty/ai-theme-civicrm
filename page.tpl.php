@@ -1,8 +1,10 @@
 <?php
 
+// URL
+$url = $_SERVER['REQUEST_URI'];
+
 //Idioma
 $cat = 0;
-$url = $_SERVER['REQUEST_URI'];
 if (preg_match('/\/cat/',$url)){
   $cat = 1;
 }
@@ -15,7 +17,6 @@ include_once('meta-tags.php'); // meta tags para redes sociales
 include_once ($lib_path.'/Mobile_Detect/Mobile_Detect.php'); // Class Mobile Detect
 
 // Patch para justicia por navidad
-$url = $_SERVER['REQUEST_URI'];
 if (preg_match('/haz-un-donativo-por-navidad/', $url)) {
   header('Location: ' . $base_url . '/haz-un-donativo-justicia');
 }
