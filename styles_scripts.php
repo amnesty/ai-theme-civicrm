@@ -75,7 +75,13 @@
       <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
       <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/nosevende.css">
-<?php  } else if ( in_array($node->nid, $loteria_navidad_list) && !in_array($node->nid, $socixs_gracias_list) && !in_array($node->nid, $donativos_gracias_list) ) { ?>
+<?php  } else if ( in_array($node->nid, $acoso_escolar_list) && !in_array($node->nid, $socixs_gracias_list) && !in_array($node->nid, $donativos_gracias_list) ) { ?>
+      <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+      <?php if(!$mobile){?>
+            <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/acoso.css">
+      <?php }else{ ?>
+            <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/acoso-m.css">
+<?php }} else if ( in_array($node->nid, $loteria_navidad_list) && !in_array($node->nid, $socixs_gracias_list) && !in_array($node->nid, $donativos_gracias_list) ) { ?>
       <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
 <?php if(!$mobile){?>
       <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/loteria.css">
