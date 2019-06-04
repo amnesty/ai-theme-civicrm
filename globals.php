@@ -11,7 +11,6 @@ $images_path = $form_path . "/images/"; // directorio donde se encuentran las im
 // Seleccionamos la imagen de cabecera
 $img_header = "header.jpg"; // Por defecto, A
 $extra_class="";
-
 if (isset($exite_img_cabecera_form) &&  $exite_img_cabecera_form){
         $img_header = $img_cabecera;
         $extra_class="";
@@ -44,6 +43,13 @@ if (isset($exite_img_cabecera_form) &&  $exite_img_cabecera_form){
 } else if(in_array($node->nid,$loteria_navidad_list) && (in_array($node->nid, $donativos_form_list) || in_array($node->nid, $donativos_form_list_mobile))){ // campaña loteria de navidad 2017 - donativos estrella
         $img_header = "header-estrella.jpg";
         $extra_class="responsive--bg-nav";
+} else if(in_array($node->nid,$acoso_escolar_list) && (in_array($node->nid, $donativos_form_list) || in_array($node->nid, $donativos_gracias_list) || in_array($node->nid, $socixs_gracias_list))){ // campaña de acoso
+        $img_header = "header-acoso.jpg";
+        $extra_class="responsive--bg-nav";
+        if (in_array($node->nid, $donativos_gracias_list)){
+                $img_header = "header-acoso-donativos.jpg";
+                $extra_class="responsive--bg-nosevende";
+        }
 } else if( in_array($node->nid,$nosevende_list) && ( in_array($node->nid,$donativos_form_list) || in_array($node->nid,$donativos_gracias_list) ) ) { // donativos campaña nosevende
         $img_header = "header-nosevende.jpg";
         $extra_class="responsive--bg-nosevende";
