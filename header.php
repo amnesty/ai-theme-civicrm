@@ -39,6 +39,7 @@
             <object id="3005" type="button/webphone" classid="webphone" style="display: none;"></object>
           <?php } ?>
         <?php } else if( $node->nid == $socixs_form || $node->nid == $socixs_form_cat || /* formulario socixs */
+                $node->nid == $socixs_acoso || /* formulario acoso socixs */
                 in_array($node->nid, $socixs_form_list_mobile) ) {/* formularios moviles de asociacion */ ?>
           <!-- Resto de asociacion -->
           <?php if($cat) { ?>
