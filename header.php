@@ -38,8 +38,9 @@
           <?php } else { ?>
             <object id="3005" type="button/webphone" classid="webphone" style="display: none;"></object>
           <?php } ?>
-        <?php } else if( $node->nid == $socixs_form || $node->nid == $socixs_form_cat || /* formulario socixs */
-                in_array($node->nid, $socixs_form_list_mobile) ) {/* formularios moviles de asociacion */ ?>
+        <?php } else if( (in_array($node->nid, $socixs_form_list) || /* formulario socixs */
+                in_array($node->nid, $socixs_form_list_mobile)) && /* formularios moviles de asociacion */
+              !in_array($node->nid, $telemkg_form_list) ) /* no en formularios tmk */ { ?>
           <!-- Resto de asociacion -->
           <?php if($cat) { ?>
             <object id="3007" type="button/webphone" data-lang="ca" classid="webphone" style="display: none;"></object>
