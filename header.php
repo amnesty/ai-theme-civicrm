@@ -38,6 +38,9 @@
           <?php } else { ?>
             <object id="3005" type="button/webphone" classid="webphone" style="display: none;"></object>
           <?php } ?>
+        <?php } else if( in_array($node->nid, $acoso_escolar_list) &&
+              ( in_array($node->nid, $socixs_form_list) || in_array($node->nid, $socixs_form_list_mobile) ) ) { /* formularios acoso */ ?>
+            <object id="3211" type="button/webphone" classid="webphone" style="display: none;"></object>
         <?php } else if( (in_array($node->nid, $socixs_form_list) || /* formulario socixs */
                 in_array($node->nid, $socixs_form_list_mobile)) && /* formularios moviles de asociacion */
               !in_array($node->nid, $telemkg_form_list) ) /* no en formularios tmk */ { ?>
