@@ -98,8 +98,8 @@
 <script type="text/javascript" src="<?php print $theme_path; ?>/js/indigitall/sdk.min.js"></script>
 <script type="text/javascript">
   window.indigitall.init({
-  appKey:" 35b0484b-8bc1-430a-98fd-c7107d6f3dff",
-  workerPath: "<?php print $theme_path; ?>/js/indigitall/worker.min.js",
+  appKey:"<?php print $appkey_indigitall; ?>",
+  workerPath:"<?php print $theme_path; ?>/js/indigitall/worker.min.js",
   requestLocation: true
   });
 </script>
