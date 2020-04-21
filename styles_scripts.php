@@ -93,3 +93,21 @@
 <!-- Script Click to Call -->
 <script type="text/javascript" id="libWebphone" src="//llamamegratis.es/amnesty/js/webphone.dinamics.js"></script>
 <!--script type="text/javascript" id="libWebphone" src="<?php print $theme_path; ?>/js/webphone.js"></script-->
+
+<!-- Script Indigitall -->
+<script type="text/javascript" src="<?php print $theme_path; ?>/js/indigitall/sdk.min.js"></script>
+<script type="text/javascript">
+  window.indigitall.init({
+  appKey:" 35b0484b-8bc1-430a-98fd-c7107d6f3dff",
+  workerPath: "<?php print $theme_path; ?>/js/indigitall/worker.min.js",
+  requestLocation: true
+  });
+</script>
+<!-- Script Indigitall Retargeting -->
+<!--script>
+setTimeout(
+indigitall.sendCustomEvent({
+    eventType: "abandonoSocio",
+    async: false
+}), 5000);
+</script-->
