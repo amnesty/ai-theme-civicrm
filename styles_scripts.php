@@ -123,10 +123,10 @@
 
   // Script Indigitall Retargeting al cabo de 5s (5000ms)
   setTimeout(
-  indigitall.sendCustomEvent({
-  eventType: "abandonoSocio",
-  days: 5,
-  async: true
+    sendCustomEvent({
+    eventType: "abandonoSocio",
+    days: 5,
+    async: true
   }, console.log, console.error), 5000);
 
 </script>
