@@ -22,6 +22,7 @@
       || in_array($node->nid, $donativos_form_list) || in_array($node->nid, $donativos_gracias_list) && !$mobile){ ?>
   <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/socixs-form.css">
   <script type="text/javascript" src="<?php print $form_path; ?>/js/socixs-form.js"></script>
+  <script type="text/javascript" src="<?php print $form_path; ?>/js/iban.js"></script>
   <?php if ( in_array($node->nid, $donativos_form_list) ) { ?>
       <script type="text/javascript" src="<?php print $form_path; ?>/js/donativos.js"></script>
       <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/donativos-form.css">
