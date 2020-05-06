@@ -22,6 +22,7 @@
       || in_array($node->nid, $donativos_form_list) || in_array($node->nid, $donativos_gracias_list) && !$mobile){ ?>
   <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/socixs-form.css">
   <script type="text/javascript" src="<?php print $form_path; ?>/js/socixs-form.js"></script>
+  <script type="text/javascript" src="<?php print $form_path; ?>/js/iban.js"></script>
   <?php if ( in_array($node->nid, $donativos_form_list) ) { ?>
       <script type="text/javascript" src="<?php print $form_path; ?>/js/donativos.js"></script>
       <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/donativos-form.css">
@@ -93,3 +94,40 @@
 <!-- Script Click to Call -->
 <script type="text/javascript" id="libWebphone" src="//llamamegratis.es/amnesty/js/webphone.dinamics.js"></script>
 <!--script type="text/javascript" id="libWebphone" src="<?php print $theme_path; ?>/js/webphone.js"></script-->
+
+<!-- Scripts Indigitall -->
+<script type="text/javascript" src="<?php print $theme_path; ?>/js/indigitall/sdk.min.js"></script>
+<script type="text/javascript">
+
+  // Inicialización
+  window.indigitall.init({
+  appKey:"<?php print $appkey_indigitall; ?>",
+  workerPath:"<?php print $theme_path; ?>/js/indigitall/worker.min.js",
+  requestLocation: true
+  });
+
+  // Indigitall Function definition
+  function sendCustomEvent(params, successCallback, errorCallback){
+    if(Notification.permission != "granted"){ return; }
+    var _successCallback = (typeof successCallback === "function") ? successCallback : function(){};
+    var key = "event_" + params.eventType + "_sentAt";
+    var lastSentDate = parseInt(localStorage.getItem(key) || "0", 10);
+    var now = (new Date()).getTime();
+    var daysInMillis = params.days * 24 * 3600 * 1000;
+    if(now - lastSentDate > daysInMillis){
+      indigitall.sendCustomEvent(params, function(response){
+        localStorage.setItem(key, now);
+        _successCallback(response);
+      }, errorCallback);
+    }
+  }
+
+  // Script Indigitall Retargeting al cabo de 5s (5000ms)
+  setTimeout(
+    sendCustomEvent({
+    eventType: "abandonoSocio",
+    days: 5,
+    async: true
+  }, console.log, console.error), 5000);
+
+</script>
