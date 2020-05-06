@@ -54,7 +54,7 @@
     $texto_caja_ventajas_cat = "<p>Totes les teves aportacions desgraven un 75% els primers 150€. A partir d'aquesta xifra, el 30%. Si els últims 3 anys has mantingut o augmentat l'aportació a l'organització, la desgravació puja fins un 35% per a premiar la teva fidelitat. Aquestes deduccions no s'apliquen al País Basc ni a Navarra.";
 
     $titulo_caja_formas_pago_cat = "<h3>Altres mètodes de pagament</h3>";
-    $texto_caja_formas_pago_cat = "<p>Si tens algún problema en realitzar la teva donació o vols informació sobre altres mètodes de pagament o sobre quotes reduïdes, truca'ns al <b>913103272</b> o escriu-nos a <a href=\"mailto:socios@es.amnesty.org\" title=\"socios@es.amnesty.org\">socios@es.amnesty.org</a></p>";
+    $texto_caja_formas_pago_cat = "<p>Si tens algún problema en realitzar la teva donació o vols informació sobre altres mètodes de pagament o sobre quotes reduïdes, truca'ns al <b>913103272</b> o escriu-nos a <a href=\"mailto:sociosysocias@es.amnesty.org\" title=\"sociosysocias@es.amnesty.org\">sociosysocias@es.amnesty.org</a></p>";
     $titulo_caja_formas_pago = "<h3>Otras formas de pago</h3>";
     $texto_caja_formas_pago = "<p>Si tienes algún problema al realizar tu donación o quieres información sobre otras formas de pago o sobre cuotas reducidas, llámanos a <b>913103272</b> o escribe a <a href=\"mailto:socios@es.amnesty.org\" title=\"socios@es.amnesty.org\">socios@es.amnesty.org</a></p>";
 
