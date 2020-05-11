@@ -13,6 +13,8 @@
   <link rel="stylesheet" type="text/css" href="<?php print $theme_path; ?>/css/ai.css">
   <!-- Estilos genéricos de formularios -->
   <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/style-form.css">
+  <!-- Cuenta IBAN -->
+  <script type="text/javascript" src="<?php print $form_path; ?>/js/iban.js"></script>
   <!-- Script Cookies -->
     <script type="text/javascript" src="<?php print $form_path; ?>/js/cookielawinfo.js"></script>
 <?php } ?>
@@ -52,7 +54,6 @@
 <!-- Si es dipositivo móvil -->
 <?php if( !empty($socixs_form_list_mobile) && in_array($node->nid, $socixs_form_list_mobile) && $mobile){ ?>
   <script type="text/javascript" src="<?php print $form_path; ?>/js/socixs-form-m.js"></script>
-  <script type="text/javascript" src="<?php print $form_path; ?>/js/iban.js"></script>
   <!--<link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/donativos-form.css">-->
 <?php } ?>
 <?php if( !empty($donativos_form_list_mobile) && in_array($node->nid, $donativos_form_list_mobile)  && $mobile){ ?>
