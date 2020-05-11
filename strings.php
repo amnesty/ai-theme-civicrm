@@ -50,8 +50,8 @@
     $titulo_caja_ventajas_donativo = "<h3>¿Conoces las ventajas fiscales de hacer una donación?</h3>";
     $titulo_caja_ventajas_cat = '<h3>Coneixes els avantatges fiscals de ser soci/a?</h3>';
     $titulo_caja_ventajas_donativo_cat = '<h3>Coneixes els avantatges fiscals de fer un donatiu?</h3>';
-    $texto_caja_ventajas = "<p>Todas tus aportaciones desgravan un 75% los primeros 150€. A partir de esa cifra, el 30%. Si en los últimos tres años se han mantenido o aumentado las aportaciones a la organización, la desgravación sube a un 35% para premiar tu fidelidad. Estas deducciones no aplican en País Vasco y Navarra.";
-    $texto_caja_ventajas_cat = "<p>Totes les teves aportacions desgraven un 75% els primers 150€. A partir d'aquesta xifra, el 30%. Si els últims 3 anys has mantingut o augmentat l'aportació a l'organització, la desgravació puja fins un 35% per a premiar la teva fidelitat. Aquestes deduccions no s'apliquen al País Basc ni a Navarra.";
+    $texto_caja_ventajas = "<p>Todas tus aportaciones desgravan un 80% los primeros 150€. A partir de esa cifra, el 35%. Si en los últimos tres años se han mantenido o aumentado las aportaciones a la organización, la desgravación sube a un 40% para premiar tu fidelidad. Estas deducciones no aplican en País Vasco y Navarra.</p>";
+    $texto_caja_ventajas_cat = "<p>Totes les teves aportacions desgraven un 80% els primers 150€. A partir d'aquesta xifra, el 35%. Si els últims 3 anys has mantingut o augmentat l'aportació a l'organització, la desgravació puja fins un 35% per a premiar la teva fidelitat. Aquestes deduccions no s'apliquen al País Basc ni a Navarra.</p>";
 
     $titulo_caja_formas_pago_cat = "<h3>Altres mètodes de pagament</h3>";
     $texto_caja_formas_pago_cat = "<p>Si tens algún problema en realitzar la teva donació o vols informació sobre altres mètodes de pagament o sobre quotes reduïdes, truca'ns al <b>913103272</b> o escriu-nos a <a href=\"mailto:sociosysocias@es.amnesty.org\" title=\"sociosysocias@es.amnesty.org\">sociosysocias@es.amnesty.org</a></p>";
