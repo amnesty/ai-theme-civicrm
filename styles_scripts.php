@@ -98,14 +98,13 @@
 <!--script type="text/javascript" id="libWebphone" src="<?php print $theme_path; ?>/js/webphone.js"></script-->
 
 <!-- Scripts Indigitall -->
-<script type="text/javascript" src="<?php print $theme_path; ?>/js/indigitall/sdk.min.js"></script>
+<!--script type="text/javascript" src="<?php print $theme_path; ?>/js/indigitall/sdk.min.js"></script-->
 <script type="text/javascript">
 
   // Inicialización
   window.indigitall.init({
-  appKey:"<?php print $appkey_indigitall; ?>",
-  workerPath:"<?php print $theme_path; ?>/js/indigitall/worker.min.js",
-  requestLocation: true
+    appKey:"<?php print $appkey_indigitall; ?>",
+    workerPath:"<?php print $theme_path; ?>/js/indigitall/worker.min.js"
   });
 
   // Indigitall Function definition
