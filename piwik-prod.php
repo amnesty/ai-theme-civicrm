@@ -73,6 +73,7 @@ if ( !in_array($node->nid, $telemkg_form_list) &&
       /*cookie consent*/
       _paq.push(['requireCookieConsent']);
       _paq.push(["trackPageView"]);
+      var stats_allowed = document.cookie.search(/omCookieConsent=[^;]+group-1.1/) > -1? 1: 0;
       if(stats_allowed === 1){
       _paq.push(['setCookieConsentGiven']);
       //console.log('setCookieConsentGiven');
