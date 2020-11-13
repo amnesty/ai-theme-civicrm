@@ -70,7 +70,16 @@ if ( !in_array($node->nid, $telemkg_form_list) &&
       <?php } else if ($node->nid==$socixs_form_B){ ?>
           _paq.push(['setCustomDimension', customDimensionId = 1, customDimensionValue = 'versionB']);
       <?php } ?>
-    _paq.push(['trackPageView']);
+      /*cookie consent*/
+      _paq.push(['requireCookieConsent']);
+      _paq.push(["trackPageView"]);
+      if(stats_allowed === 1){
+      _paq.push(['setCookieConsentGiven']);
+      //console.log('setCookieConsentGiven');
+      } else {
+      _paq.push(['forgetCookieConsentGiven']);
+      //console.log('forgetCookieConsentGiven');
+      }
     <?php if( in_array($node->nid ,$donativos_form_list) || in_array($node->nid, $donativos_form_list_mobile)){ ?>
        _paq.push(['trackEvent', 'Formulario', 'Donativos']);
     <?php } ?>
@@ -88,11 +97,15 @@ if ( !in_array($node->nid, $telemkg_form_list) &&
           _paq.push(['trackGoal', 65, <?php echo $importe_anual; ?>]);
       <?php } ?>
       _paq.push(['setTrackerUrl', u+'piwik.php']);
-      _paq.push(['setSiteId', 1]);
+      /*_paq.push(['setSiteId', 1]);*/
+      _paq.push(['setSiteId', 47]); /*pruebas*/
       var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
       g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+
     })();
   </script>
+
+
   <noscript>
            <p>
               <img src="//estadisticas.es.amnesty.org/piwik/piwik.php?idsite=1" style="border:0;" alt="" />
