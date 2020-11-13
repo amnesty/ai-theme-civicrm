@@ -443,7 +443,7 @@
 
   .cookie-consent__modal {
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
   }
 
   .cookie-consent__modal-header {
@@ -628,7 +628,7 @@
       var openCookiePanel = true;
 
       //Migrate previous system to new one
-      var obsoleteCookie = omCookieUtility.getCookie('CookieAlert3');
+      var obsoleteCookie = omCookieUtility.getCookie('cookieAlert3');
       if (obsoleteCookie){
         if (obsoleteCookie == "1") {
           omCookieUtility.setCookie('omCookieConsent', 'group-4.1,group-1.1,group-2.1,dismiss', 364);
@@ -636,7 +636,7 @@
         if (obsoleteCookie == "2") {
           omCookieUtility.setCookie('omCookieConsent', 'group-4.1,group-1.0,group-2.0,dismiss', 364);
         }
-        omCookieUtility.deleteCookie('CookieAlert3');
+        omCookieUtility.deleteCookie('cookieAlert3');
       }
 
       //Enable stuff by Cookie
