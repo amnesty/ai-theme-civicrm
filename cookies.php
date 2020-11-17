@@ -623,7 +623,6 @@ catch(err) {
     if (obsoleteCookie){
       if (obsoleteCookie == "1") {
         omCookieUtility.setCookie('omCookieConsent', 'group-4.1,group-1.1,group-2.1,dismiss', 364);
-        document.write(' <?php include_once('piwik.php'); ?> ');
       }
       if (obsoleteCookie == "2") {
         omCookieUtility.setCookie('omCookieConsent', 'group-4.1,group-1.0,group-2.0,dismiss', 364);
@@ -672,11 +671,14 @@ catch(err) {
       omTriggerPanelEvent(['cookieconsentscriptsloaded']);
     }
     if(openCookiePanel === true){
-      //timeout, so the user can see the page before he get the nice cookie panel
-      setTimeout(function () {
-        omCookiePanel.classList.toggle('cookie-consent__modal--is-visible');
-      },1000);
-    }
+          document.dispatchEvent(new CustomEvent("trackPageWithoutCookieConsent"));
+          //timeout, so the user can see the page before he get the nice cookie panel
+          setTimeout(function () {
+            omCookiePanel.classList.toggle('cookie-consent__modal--is-visible');
+          },1000);
+        } else {
+          document.dispatchEvent(new CustomEvent("trackPage"));
+        }
 
     //check for button click
     for (i = 0; i < panelButtons.length; i++) {
@@ -727,7 +729,15 @@ catch(err) {
   // ** UTILITY FUNCTION ** //
   function Util () {};
   // ** UTILITY FUNCTION ** //
-
+  if(openCookiePanel === true){
+      document.dispatchEvent(new CustomEvent("trackPageWithoutCookieConsent"));
+      //timeout, so the user can see the page before he get the nice cookie panel
+      setTimeout(function () {
+        omCookiePanel.classList.toggle('cookie-consent__modal--is-visible');
+      },1000);
+    } else {
+      document.dispatchEvent(new CustomEvent("trackPage"));
+    }
   // ** CLASS MANIPULATIONS FUNCTIONS ** //
 
   Util.hasClass = function(el, className) {
@@ -1040,6 +1050,8 @@ catch(err) {
     //push stored events to gtm. We push this last so we are sure that gtm is loaded
     pushGtmEvents(omGtmEvents);
     omTriggerPanelEvent(['cookieconsentsave','cookieconsentscriptsloaded']);
+
+    document.dispatchEvent(new CustomEvent("trackPage"));
 
     setTimeout(function () {
       document.querySelectorAll('[data-omcookie-panel]')[0].classList.toggle('cookie-consent__modal--is-visible');
