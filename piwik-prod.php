@@ -59,108 +59,78 @@ if ( !in_array($node->nid, $telemkg_form_list) &&
       $mobile == 1 )
 ) {
 ?>
-  <!-- Piwik -->
-<!-- PRODUCCIÓN
-    <script type="text/javascript">
+<!-- Piwik -->
+<script type="text/javascript">
     var _paq = _paq || [];
     _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
     _paq.push(["setCookieDomain", "*.es.amnesty.org"]);
     _paq.push(["setDomains", ["*.es.amnesty.org"]]);
+
       <?php if ($node->nid==$socixs_form_A) { ?>
           _paq.push(['setCustomDimension', customDimensionId = 1, customDimensionValue = 'original']);
       <?php } else if ($node->nid==$socixs_form_B){ ?>
           _paq.push(['setCustomDimension', customDimensionId = 1, customDimensionValue = 'versionB']);
       <?php } ?>
+
       /*cookie consent*/
       _paq.push(['requireCookieConsent']);
+
+
+    document.addEventListener('trackPageWithoutCookieConsent', function(){
+      //console.log("trackPageWithoutCookieConsent");
       _paq.push(["trackPageView"]);
-      var stats_allowed = document.cookie.search(/omCookieConsent=[^;]+group-1.1/) > -1? 1: 0;
-      if(stats_allowed === 1){
-      _paq.push(['setCookieConsentGiven']);
-      //console.log('setCookieConsentGiven');
-      } else {
-      _paq.push(['forgetCookieConsentGiven']);
-      //console.log('forgetCookieConsentGiven');
-      }
+      (function() {
+        var u="//estadisticas.es.amnesty.org/piwik/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        /*_paq.push(['setSiteId', 1]);*/
+        _paq.push(['setSiteId', 47]); /*pruebas*/
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+
+      })();
+    });
+
+    document.addEventListener('trackPage', function(){
+      //console.log("trackPageConsent");
+
     <?php if( in_array($node->nid ,$donativos_form_list) || in_array($node->nid, $donativos_form_list_mobile)){ ?>
        _paq.push(['trackEvent', 'Formulario', 'Donativos']);
     <?php } ?>
-    _paq.push(['enableLinkTracking']);
 
-    (function() {
-      var u="//estadisticas.es.amnesty.org/piwik/";
-      <?php if( in_array($node->nid,$donativos_gracias_list) || in_array($node->nid, $donativos_gracias_list_mobile)) { ?>
-          _paq.push(['trackGoal', 2, <?php echo $importe_donativo; ?>]);
-      <?php } else if ( in_array($node->nid, $socixs_gracias_list) || in_array($node->nid, $socixs_gracias_list_mobile)) { ?>
-          _paq.push(['trackGoal', 1, <?php echo $importe_anual; ?>]);
-      <?php } if ( $mobile == 1 &&  in_array($node->nid, $donativos_gracias_list_mobile )) { ?>
-          _paq.push(['trackGoal', 63, <?php echo $importe_donativo; ?>]);
-      <?php } else if ( $mobile == 1 &&  in_array($node->nid, $socixs_gracias_list_mobile )) { ?>
-          _paq.push(['trackGoal', 65, <?php echo $importe_anual; ?>]);
-      <?php } ?>
-      _paq.push(['setTrackerUrl', u+'piwik.php']);
-      /*_paq.push(['setSiteId', 1]);*/
-      _paq.push(['setSiteId', 47]); /*pruebas*/
-      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      _paq.push(["trackPageView"]);
 
-    })();
-  </script>
--->
-<script type="text/javascript">
-var _paq = _paq || [];
-        _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-        _paq.push(["setCookieDomain", "*.amnistia.dev01.icti.es"]);
-        _paq.push(["setDomains", "*.amnistia.dev01.icti.es"]);
-        if ( (typeof firmaFormCookieName !== "undefined") && (firmaFormCookieName) ) {
-            _paq.push(["setCustomDimension", customDimensionId = 2, customDimensionValue = firmaFormCookieName]);
-        }
-        _paq.push(['requireCookieConsent']);
+      stats_allowed = document.cookie.search(/omCookieConsent=[^;]+group-1.1/) > -1? 1: 0;
+      /*cookie consent*/
+      if(stats_allowed === 1){
+          _paq.push(['setCookieConsentGiven']);
 
+      } else {
+          _paq.push(['forgetCookieConsentGiven']);
 
-        document.addEventListener('trackPageWithoutCookieConsent', function(){
-          //console.log("trackPageWithoutCookieConsent");
-          _paq.push(["trackPageView"]);
+      }
 
-          (function() {
-              var u="//estadisticas.es.amnesty.org/piwik/";
-              _paq.push(["setTrackerUrl", u+"piwik.php"]);
-              _paq.push(["setSiteId", '47']);
-              var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0];
-              g.type="text/javascript"; g.async=true; g.defer=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
-          })();
-        });
+      _paq.push(["trackVisibleContentImpressions"]);
+      _paq.push(["enableLinkTracking"]);
+      (function() {
+        <?php if( in_array($node->nid,$donativos_gracias_list) || in_array($node->nid, $donativos_gracias_list_mobile)) { ?>
+            _paq.push(['trackGoal', 2, <?php echo $importe_donativo; ?>]);
+        <?php } else if ( in_array($node->nid, $socixs_gracias_list) || in_array($node->nid, $socixs_gracias_list_mobile)) { ?>
+            _paq.push(['trackGoal', 1, <?php echo $importe_anual; ?>]);
+        <?php } if ( $mobile == 1 &&  in_array($node->nid, $donativos_gracias_list_mobile )) { ?>
+            _paq.push(['trackGoal', 63, <?php echo $importe_donativo; ?>]);
+        <?php } else if ( $mobile == 1 &&  in_array($node->nid, $socixs_gracias_list_mobile )) { ?>
+            _paq.push(['trackGoal', 65, <?php echo $importe_anual; ?>]);
+        <?php } ?>
+          var u="//estadisticas.es.amnesty.org/piwik/";
+          _paq.push(["setTrackerUrl", u+"piwik-prod.php"]);
+        /*_paq.push(['setSiteId', 1]);*/
+        _paq.push(['setSiteId', 47]); /*pruebas*/
+          var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0];
+          g.type="text/javascript"; g.async=true; g.defer=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+      })();
+    });
 
-        document.addEventListener('trackPage', function(){
-          //console.log("trackPageConsent");
-          _paq.push(["trackPageView"]);
-          stats_allowed = document.cookie.search(/omCookieConsent=[^;]+group-1.1/) > -1? 1: 0;
-          /*cookie consent*/
-          if(stats_allowed === 1){
-              _paq.push(['setCookieConsentGiven']);
-
-          } else {
-              _paq.push(['forgetCookieConsentGiven']);
-
-          }
-          _paq.push(["trackVisibleContentImpressions"]);
-          _paq.push(["enableLinkTracking"]);
-          if ( typeof aiAccionesLoginPiwikOnLoad !== "undefined" && typeof aiAccionesLoginPiwikOnLoad === "function" ) {
-              aiAccionesLoginPiwikOnLoad();
-          }
-          if ( typeof isFirmaRapida !== "undefined" && isFirmaRapida ) {
-              _paq.push(["trackEvent", "FormCompleto", "forzado"]);
-          }
-          (function() {
-              var u="//estadisticas.es.amnesty.org/piwik/";
-              _paq.push(["setTrackerUrl", u+"piwik.php"]);
-              _paq.push(["setSiteId", '47']);
-              var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0];
-              g.type="text/javascript"; g.async=true; g.defer=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
-          })();
-        });
 </script>
-
 <noscript>
          <p>
             <img src="//estadisticas.es.amnesty.org/piwik/piwik.php?idsite=1" style="border:0;" alt="" />
