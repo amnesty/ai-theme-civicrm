@@ -729,15 +729,7 @@ catch(err) {
   // ** UTILITY FUNCTION ** //
   function Util () {};
   // ** UTILITY FUNCTION ** //
-  if(openCookiePanel === true){
-      document.dispatchEvent(new CustomEvent("trackPageWithoutCookieConsent"));
-      //timeout, so the user can see the page before he get the nice cookie panel
-      setTimeout(function () {
-        omCookiePanel.classList.toggle('cookie-consent__modal--is-visible');
-      },1000);
-    } else {
-      document.dispatchEvent(new CustomEvent("trackPage"));
-    }
+
   // ** CLASS MANIPULATIONS FUNCTIONS ** //
 
   Util.hasClass = function(el, className) {
