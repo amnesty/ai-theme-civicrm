@@ -670,14 +670,14 @@ catch(err) {
       omTriggerPanelEvent(['cookieconsentscriptsloaded']);
     }
     if(openCookiePanel === true){
-          document.dispatchEvent(new CustomEvent("trackPageWithoutCookieConsent"));
-          //timeout, so the user can see the page before he get the nice cookie panel
-          setTimeout(function () {
-            omCookiePanel.classList.toggle('cookie-consent__modal--is-visible');
-          },1000);
-        } else {
-          document.dispatchEvent(new CustomEvent("trackPage"));
-        }
+      document.dispatchEvent(new CustomEvent("trackPageWithoutCookieConsent"));
+      //timeout, so the user can see the page before he get the nice cookie panel
+      setTimeout(function () {
+        omCookiePanel.classList.toggle('cookie-consent__modal--is-visible');
+      },1000);
+    } else {
+      document.dispatchEvent(new CustomEvent("trackPage"));
+    }
 
     //check for button click
     for (i = 0; i < panelButtons.length; i++) {
@@ -1120,7 +1120,6 @@ catch(err) {
     },
     deleteCookie: function(name){ omCookieUtility.setCookie(name, '', -1); }
   };
-
 
   (function () {
 

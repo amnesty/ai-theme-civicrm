@@ -75,21 +75,6 @@ if ( !in_array($node->nid, $telemkg_form_list) &&
       /*cookie consent*/
       _paq.push(['requireCookieConsent']);
 
-
-    document.addEventListener('trackPageWithoutCookieConsent', function(){
-      //console.log("trackPageWithoutCookieConsent");
-      _paq.push(["trackPageView"]);
-      (function() {
-        var u="//estadisticas.es.amnesty.org/piwik/";
-        _paq.push(['setTrackerUrl', u+'piwik.php']);
-        /*_paq.push(['setSiteId', 1]);*/
-        _paq.push(['setSiteId', 47]); /*pruebas*/
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
-
-      })();
-    });
-
     document.addEventListener('trackPage', function(){
       //console.log("trackPageConsent");
 
@@ -111,7 +96,6 @@ if ( !in_array($node->nid, $telemkg_form_list) &&
 
       _paq.push(["trackVisibleContentImpressions"]);
       _paq.push(["enableLinkTracking"]);
-      (function() {
         <?php if( in_array($node->nid,$donativos_gracias_list) || in_array($node->nid, $donativos_gracias_list_mobile)) { ?>
             _paq.push(['trackGoal', 2, <?php echo $importe_donativo; ?>]);
         <?php } else if ( in_array($node->nid, $socixs_gracias_list) || in_array($node->nid, $socixs_gracias_list_mobile)) { ?>
@@ -121,6 +105,7 @@ if ( !in_array($node->nid, $telemkg_form_list) &&
         <?php } else if ( $mobile == 1 &&  in_array($node->nid, $socixs_gracias_list_mobile )) { ?>
             _paq.push(['trackGoal', 65, <?php echo $importe_anual; ?>]);
         <?php } ?>
+      (function() {
           var u="//estadisticas.es.amnesty.org/piwik/";
           _paq.push(["setTrackerUrl", u+"piwik-prod.php"]);
         /*_paq.push(['setSiteId', 1]);*/
@@ -135,8 +120,7 @@ if ( !in_array($node->nid, $telemkg_form_list) &&
          <p>
             <img src="//estadisticas.es.amnesty.org/piwik/piwik.php?idsite=1" style="border:0;" alt="" />
         </p>
-</noscript>
-  <!-- End Piwik Code -->
+</noscript>  <!-- End Piwik Code -->
 <?php }
 
 /***************** Mapas de calor ***************/
