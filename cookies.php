@@ -592,8 +592,6 @@ label.cookie-consent__radio-label {
   </div>
 </aside>
 
-<button class="cookie-consent__button" data-omcookie-panel-delete='1'>Borrar cookie de consentimiento</button>
-
 <script id="om-cookie-consent" type="application/json">{"group-1":{"gtm":"cookie_analitica"},"group-2":{"gtm":"cookie_comportamental"},"group-4":{"gtm":""}}</script>
 <script>
 try {
