@@ -107,7 +107,7 @@ if ( !in_array($node->nid, $telemkg_form_list) &&
         <?php } ?>
       (function() {
           var u="//estadisticas.es.amnesty.org/piwik/";
-          _paq.push(["setTrackerUrl", u+"piwik-prod.php"]);
+          _paq.push(["setTrackerUrl", u+"matomo.php"]);
         /*_paq.push(['setSiteId', 1]);*/
         _paq.push(['setSiteId', 47]); /*pruebas*/
           var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0];
