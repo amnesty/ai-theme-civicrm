@@ -435,7 +435,7 @@ label.cookie-consent__radio-label {
 .cookie-consent__modal {
   width: 100vw;
   height: 100vh;
-  padding-bottom: 4em;
+  padding-bottom: 5em;
 }
 
 .cookie-consent__modal-header {
