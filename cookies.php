@@ -603,6 +603,8 @@ catch(err) {
 }
 
 (function() {
+   var cookieDomain = ".es.amnesty.org";
+
   // ** ONLOAD FUNCTION ** //
   document.addEventListener('DOMContentLoaded', function(){
     var panelButtons = document.querySelectorAll('[data-omcookie-panel-save]');
@@ -619,18 +621,21 @@ catch(err) {
 
     //Migrate previous system to new one
     var obsoleteCookie = omCookieUtility.getCookie('cookieAlert3');
-    if (obsoleteCookie){
+    var cookieConsentData = omCookieUtility.getCookie('omCookieConsent');
+
+    if (obsoleteCookie && cookieConsentData == null){
       if (obsoleteCookie == "1") {
         omCookieUtility.setCookie('omCookieConsent', 'group-4.1,group-1.1,group-2.1,dismiss', 364);
       }
       if (obsoleteCookie == "2") {
         omCookieUtility.setCookie('omCookieConsent', 'group-4.1,group-1.0,group-2.0,dismiss', 364);
       }
+      cookieDomain = '';
       omCookieUtility.deleteCookie('cookieAlert3');
+      cookieConsentData = omCookieUtility.getCookie('omCookieConsent');
     }
 
     //Enable stuff by Cookie
-    var cookieConsentData = omCookieUtility.getCookie('omCookieConsent');
     if(cookieConsentData !== null && cookieConsentData.length > 0){
       //dont open the panel if we have the cookie
       openCookiePanel = false;
@@ -752,6 +757,7 @@ catch(err) {
     }
     if (classList.length > 1) Util.removeClass(el, classList.slice(1).join(' '));
   };
+
 
   Util.toggleClass = function(el, className, bool) {
     if(bool) Util.addClass(el, className);
@@ -973,6 +979,7 @@ catch(err) {
     cookiesPreferences.classList.add('cookie-consent__modal-content--show')
 
     cookiesIntro.classList.remove('cookie-consent__modal-content--show')
+
     cookiesPreferences.classList.remove('cookie-consent__modal-content--hidden')
   });
 
@@ -1115,8 +1122,12 @@ catch(err) {
     },
     setCookie: function(name, value, days) {
       var d = new Date;
+      domain='',
+      domains = ['.es.amnesty.org', '.amnistiacatalunya.org'];
+      if (domains.includes(cookieDomain))
+          domain = ";domain=" + cookieDomain;
       d.setTime(d.getTime() + 24*60*60*1000*days);
-      document.cookie = name + "=" + value + ";path=/;domain=.es.amnesty.org;expires=" + d.toGMTString() + ";SameSite=Lax";
+      document.cookie = name + "=" + value + domain + ";path=/;expires=" + d.toGMTString() + ";SameSite=Lax";
     },
     deleteCookie: function(name){ omCookieUtility.setCookie(name, '', -1); }
   };
@@ -1139,6 +1150,7 @@ catch(err) {
 }());
 
 </script>
+
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
