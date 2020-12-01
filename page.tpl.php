@@ -129,7 +129,7 @@ include_once('styles_scripts.php');
     <?php } ?>
 
     <!-- Estadísticas en Piwik (si aplica, sino debe estar vacío) -->
-    <?php include_once('piwik-prod.php'); ?>
+    <?php include_once('piwik.php'); ?>
 
     <!-- Pixel de Facebook (si aplica) -->
     <?php include_once('pixel-fb.php'); ?>
