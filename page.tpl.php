@@ -124,7 +124,7 @@ include_once('styles_scripts.php');
     <?php } ?>
 
     <!-- Política de cookies -->
-    <?php if ( in_array($node->nid, $socixs_form_list) && !in_array($node->nid, $telemkg_form_list) ) { ?>
+    <?php if ( !in_array($node->nid, $telemkg_form_list) ) { ?>
         <?php include_once('cookies.php'); ?>
     <?php } ?>
 
