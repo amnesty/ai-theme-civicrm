@@ -4,6 +4,12 @@
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
+.cookie-consent__modal:not(.cookie-consent__modal--is-visible) {
+  z-index: 1;
+  pointer-events: none;
+  background-color: transparent;
+}
+
 .cookie-consent__body,
 .cookie-consent__preferences {
   display: flex;
