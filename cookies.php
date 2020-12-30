@@ -334,6 +334,7 @@ label.cookie-consent__radio-label {
 }
 
 .cookie-consent__modal:not(.cookie-consent__modal--is-visible) {
+  z-index: 1;
   pointer-events: none;
   background-color: transparent;
 }
