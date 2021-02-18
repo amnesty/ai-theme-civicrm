@@ -124,7 +124,9 @@ include_once('styles_scripts.php');
     <?php } ?>
 
     <!-- Política de cookies -->
-    <?php include_once('cookies.php'); ?>
+    <?php if ( !in_array($node->nid, $telemkg_form_list) ) { ?>
+        <?php include_once('cookies.php'); ?>
+    <?php } ?>
 
     <!-- Estadísticas en Piwik (si aplica, sino debe estar vacío) -->
     <?php include_once('piwik.php'); ?>
