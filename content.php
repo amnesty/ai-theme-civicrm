@@ -7,7 +7,7 @@
               <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
               <?php
               // ********* Sólo mostramos el texto de intro en el formulario de socixs
-              if ( $node->nid < $socixs_mordaza && (in_array($node->nid, $socixs_form_list) || in_array($node->nid, $donativos_form_list)) ) { ?>
+              if ( ($node->nid < $socixs_mordaza && (in_array($node->nid, $socixs_form_list)) || in_array($node->nid, $donativos_form_list)) ) { ?>
   			      <p class="text-intro">
               <!--<span> ¡Usa tu ventana para defender nuestro derecho! </span>-->
               <?php
