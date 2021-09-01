@@ -34,6 +34,8 @@
 
    $texto_intro_donativo_islamofobia = '<span>Has llegado hasta aquí porque algo dentro de ti te dice que hay millones de razones para colaborar. Consigue tus pulseras y apoya a quienes lo han perdido todo. <b>Gracias por ser refugio y creer en un mundo más justo..</b></span>';
 
+   $texto_intro_donativo_afganistan = '<span> Miles de personas afganas están en peligro de sufrir represalias por parte de los talibanes, desde personal académico hasta periodistas, activistas de la sociedad civil y defensoras de los derechos humanos. El mundo necesita más que nunca a personas comprometidas como tú y sé que contigo podemos luchar contra estos ataques a los derechos humanos. Gracias por creer en un mundo más justo.<b/></span>';
+
   /* Botones */
 
     $boton_unete = 'Únete a Amnistía Internacional';
