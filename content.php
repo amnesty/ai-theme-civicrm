@@ -23,7 +23,7 @@
                         echo $texto_intro_antevenio_CD;
                   } elseif($node->nid  == $donativos_islamofobia) {
                         echo $texto_intro_donativo_islamofobia;
-                      } elseif($node->nid  == $donativo_afganistan) {
+                  } elseif($node->nid  == $donativo_afganistan) {
                             echo $texto_intro_donativo_afganistan;
                   } elseif( in_array($node->nid, $donativos_form_list) ) {
                         if( $cat == 0 ) {
