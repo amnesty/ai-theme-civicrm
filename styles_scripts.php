@@ -52,7 +52,8 @@
     <script type="text/javascript" src="<?php print $form_path; ?>/js/membership-validator.js"></script>
 <?php } ?>
 <!-- Si es dipositivo móvil -->
-<?php if( !empty($socixs_form_list_mobile) && in_array($node->nid, $socixs_form_list_mobile) && $mobile){ ?>
+<?php if( (!empty($socixs_form_list_mobile) && in_array($node->nid, $socixs_form_list_mobile))
+        || (in_array($node->nid, $donativos_form_list_mobile) || in_array($node->nid, $donativos_gracias_list_mobile)) && $mobile){ ?>
   <script type="text/javascript" src="<?php print $form_path; ?>/js/socixs-form-m.js"></script>
   <!--<link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/donativos-form.css">-->
 <?php } ?>
