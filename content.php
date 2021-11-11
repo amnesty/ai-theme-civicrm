@@ -2,15 +2,15 @@
 
 <div class="container--wide"><!-- Page content -->
   <div class="grid"><!-- Bootstrap Grid -->
-   	  <div id="content-area">
+          <div id="content-area">
          <div class="content-form clearfix"><!-- Formulario -->
               <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
               <?php
               // ********* Sólo mostramos el texto de intro en el formulario de socixs
               #if ( ($node->nid < $socixs_mordaza && (in_array($node->nid, $socixs_form_list)) || in_array($node->nid, $donativos_form_list)) ) {
-              if ( ((in_array($node->nid, $socixs_form_list)) || in_array($node->nid, $donativos_form_list)) ) { 
+              if ( ((in_array($node->nid, $socixs_form_list)) || in_array($node->nid, $donativos_form_list)) ) {
               ?>
-  			      <p class="text-intro">
+                              <p class="text-intro">
               <!--<span> ¡Usa tu ventana para defender nuestro derecho! </span>-->
               <?php
                   if( in_array($node->nid, $navidad_list) && in_array($node->nid, $donativos_form_list) ) {
@@ -25,8 +25,10 @@
                         echo $texto_intro_antevenio_CD;
                   } elseif($node->nid  == $donativos_islamofobia) {
                         echo $texto_intro_donativo_islamofobia;
-                  } elseif(($node->nid  == $donativos_afganistan) || in_array($node->nid, $unete_exsocixs)) {
+                  } elseif($node->nid  == $donativos_afganistan) {
                             echo $texto_intro_donativo_afganistan;
+                  } elseif(in_array($node->nid, $unete_exsocixs)) {
+                            echo $texto_intro_exsocixs;
                   } elseif( in_array($node->nid, $donativos_form_list) ) {
                         if( $cat == 0 ) {
                             echo $texto_intro_donativo;
@@ -49,7 +51,7 @@
                     <!--img src="<?php print $images_path; ?>estrella-regalo.png" class="estrella-navidad" -->
               <?php } ?>
 
-  		        <div class="box-form-es" <?php if( !empty($excluded_header_list) && in_array($node->nid, $excluded_header_list) ){ ?>style="width: 100%;" <?php } ?> >
+                        <div class="box-form-es" <?php if( !empty($excluded_header_list) && in_array($node->nid, $excluded_header_list) ){ ?>style="width: 100%;" <?php } ?> >
                       <?php print $messages; ?> <!-- Errors -->
                       <?php print render($page['content']); ?>
 
@@ -172,6 +174,6 @@
 
                     <?php } ?>
             </div>
-	      </div>
+              </div>
     </div>
 </div>
