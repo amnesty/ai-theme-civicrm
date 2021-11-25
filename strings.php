@@ -36,7 +36,7 @@
 
    $texto_intro_donativo_afganistan = '<span> Miles de personas afganas están en peligro de sufrir represalias por parte de los talibanes, desde personal académico hasta periodistas, activistas de la sociedad civil y defensoras de los derechos humanos. El mundo necesita más que nunca a personas comprometidas como tú y sé que contigo podemos luchar contra estos ataques a los derechos humanos. Gracias por creer en un mundo más justo.<b/></span>';
 
-   $texto_intro_exsocixs = '<span> Ahora más que nunca necitamos todo el apoyo posible: con la toma de poder de los talibanes en Afganistán, miles de personas corren peligro, especialmente las más vulnerables como mujeres y niñas. Tan solo, compueba que los datos que nos facilitaste siguen siendo correctos para volverer a apoyar nuestro trabajo. Tu colaboración nos ayuda a proporcionar asistencia médica y legal, y reubicar a las personas afganas. Gracias por creer en un mundo más justo.<b/></span>';
+   $texto_intro_exsocixs = '<span> Ahora más que nunca necesitamos todo el apoyo posible: con la toma de poder de los talibanes en Afganistán, miles de personas corren peligro, especialmente las más vulnerables como mujeres y niñas. Tan solo, compueba que los datos que nos facilitaste siguen siendo correctos para volverer a apoyar nuestro trabajo. Tu colaboración nos ayuda a proporcionar asistencia médica y legal, y reubicar a las personas afganas. Gracias por creer en un mundo más justo.<b/></span>';
 
   /* Botones */
 
