@@ -71,5 +71,8 @@ if (isset($exite_img_cabecera_form) &&  $exite_img_cabecera_form){
 } else if ( in_array($node->nid, $donativos_form_list) || $node->nid == $donativos_gracias || $node->nid == $donativos_gracias_cat){ // resto de donativos
         $extra_class="responsive--bg-don";
         $img_header = "header_donativo.jpg";
+} else if ( $node->nid == $gracias_form_act_jovenes){ // resto de donativos
+        $extra_class="responsive--bg-don";
+        $img_header = "foto_jovenes.png";
 }
 ?>
