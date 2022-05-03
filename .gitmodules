@@ -1,3 +1,4 @@
 [submodule "ai-formulario"]
 	path = ai-formulario
 	url = https://github.com/amnesty/ai-formulario.git
+	branch = form-update
