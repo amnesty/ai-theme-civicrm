@@ -14,7 +14,7 @@
   <!-- Estilos genéricos de formularios -->
   <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/style-form.css">
   <!-- Cuenta IBAN -->
-  <script type="text/javascript" src="<?php print $form_path; ?>/js/iban.js"></script>
+  <script defer type="text/javascript" src="<?php print $form_path; ?>/js/iban.js"></script>
   <!-- Script Cookies -->
     <script type="text/javascript" src="<?php print $form_path; ?>/js/cookielawinfo.js"></script>
 <?php } ?>
@@ -23,7 +23,7 @@
 <?php if ( in_array($node->nid, $socixs_form_list) || in_array($node->nid, $socixs_gracias_list)
       || in_array($node->nid, $donativos_form_list) || in_array($node->nid, $donativos_gracias_list) && !$mobile){ ?>
   <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/socixs-form.css">
-  <script type="text/javascript" src="<?php print $form_path; ?>/js/iban.js"></script>
+  <script defer type="text/javascript" src="<?php print $form_path; ?>/js/iban.js"></script>
   <?php if ( in_array($node->nid, $donativos_form_list) ) { ?>
       <script type="text/javascript" src="<?php print $form_path; ?>/js/donativos.js"></script>
       <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/donativos-form.css">
@@ -36,10 +36,10 @@
 
 <!-- Cuotas distintas segun periodicidad -->
 <?php if( ($node->nid == $socixs_form || $node->nid == $socixs_form_cat || in_array($node->nid, $loteria_navidad_list) || in_array($node->nid, $socixs_form_list)) && !$mobile){ ?>
-  <script type="text/javascript" src="<?php print $form_path; ?>/js/cuotas.js"></script>
+  <script defer type="text/javascript" src="<?php print $form_path; ?>/js/cuotas.js"></script>
   <link rel="stylesheet" type="text/css" href="<?php print $form_path; ?>/css/cuotas.css">
 <?php } else if ( $node->nid == $socixs_form_m || in_array($node>nid, $socixs_form_list_mobile)) { ?>
-  <script type="text/javascript" src="<?php print $form_path; ?>/js/cuotas-m.js"></script>
+  <script defer type="text/javascript" src="<?php print $form_path; ?>/js/cuotas-m.js"></script>
 <?php } ?>
 
 <script type="text/javascript" src="<?php print $form_path; ?>/js/socixs-form.js"></script>
