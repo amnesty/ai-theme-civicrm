@@ -137,3 +137,10 @@ include_once('styles_scripts.php');
     <?php include_once('pixel-twitter.php'); ?>
     <!-- Pixel de Adwords (si aplica) -->
     <?php include_once('adwords.php'); ?>
+
+<?php
+// Estilos y scripts
+include_once('styles_scripts.php');
+?>
+
+
