@@ -73,15 +73,15 @@ if (preg_match('/haz-un-donativo/', $url)) {
 }
 
 /*Formulario Móvil de Asociación*/
-if (preg_match('/unete-a-amnistia/', $url)) {
-  if (explode('/',$explode[0])[1] == 'unete-a-amnistia' && $mobile == 1 && !strpos($url,'/m/')) {
-    if (!strpos($url,'cat')) {
-      header('Location: ' . $base_url . $url_mobile);
-    }elseif (strpos($url,'cat')) {
-      header('Location: ' . $base_url . $url_mobile);
-    }
-  }
-}
+//if (preg_match('/unete-a-amnistia/', $url)) {
+//  if (explode('/',$explode[0])[1] == 'unete-a-amnistia' && $mobile == 1 && !strpos($url,'/m/')) {
+//    if (!strpos($url,'cat')) {
+//      header('Location: ' . $base_url . $url_mobile);
+//    }elseif (strpos($url,'cat')) {
+//      header('Location: ' . $base_url . $url_mobile);
+//    }
+//  }
+// }
 
 //RECIBE PARAMETROS DE CAMPAÑAS GOOGLE Y FACEBOOK. LOS ASIGNAMOS A LA SESSION RESPECTIVAMENTE PARA NO PERDERLOS
 if(isset($_GET['pk_campaign'])) {
