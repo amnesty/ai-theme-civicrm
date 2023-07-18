@@ -1,4 +1,5 @@
 <!-- Header -->
+<?php  if (is_null($excluded_header_list))  $excluded_header_list = array(929,934); ?>
 <?php if( empty($excluded_header_list) || !in_array($node->nid, $excluded_header_list) ){ ?>
 
 <?php if( !in_array('administrator', $user->roles) ){ ?>
