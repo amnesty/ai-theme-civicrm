@@ -55,16 +55,16 @@
     $titulo_caja_ventajas_cat = '<h3>Coneixes els avantatges fiscals de ser soci/a?</h3>';
     $titulo_caja_ventajas_donativo_cat = '<h3>Coneixes els avantatges fiscals de fer un donatiu?</h3>';
     $texto_caja_ventajas = "<p>Todas tus aportaciones desgravan un 80% los primeros 150€. A partir de esa cifra, el 35%. Si en los últimos tres años se han mantenido o aumentado las aportaciones a la organización, la desgravación sube a un 40% para premiar tu fidelidad. Estas deducciones no aplican en País Vasco y Navarra.</p>";
-    $texto_caja_ventajas_cat = "<p>Totes les teves aportacions desgraven un 80% els primers 150€. A partir d'aquesta xifra, el 35%. Si els últims 3 anys has mantingut o augmentat l'aportació a l'organització, la desgravació puja fins un 35% per a premiar la teva fidelitat. Aquestes deduccions no s'apliquen al País Basc ni a Navarra.</p>";
+
+$texto_caja_ventajas_cat = "<p>Per als 250€ primers de l’import total de donatius (a una o més entitats) la desgravació és del 80%. A partir d'aquesta xifra, el percentatge general és del 40%. Si en els darrers 3 anys has mantingut o augmentat l'aportació a l'organització, el percentatge de desgravació puja fins el 45% per premiar la teva fidelitat.</p>";
 
     $titulo_caja_formas_pago_cat = "<h3>Altres mètodes de pagament</h3>";
-    $texto_caja_formas_pago_cat = "<p>Si tens algún problema en realitzar la teva donació o vols informació sobre altres mètodes de pagament o sobre quotes reduïdes, truca'ns al <b>913103272</b> o escriu-nos a <a href=\"mailto:sociosysocias@es.amnesty.org\" title=\"sociosysocias@es.amnesty.org\">sociosysocias@es.amnesty.org</a></p>";
+    $texto_caja_formas_pago_cat = "<p>Si tens cap problema per fer la teva donació o vols informació sobre altres mètodes de pagament, truca'ns al <b>932093536</b> o escriu-nos a <a href=\"mailto:info@amnistiacatalunya.org\" title=\"info@amnistiacatalunya.org\">info@amnistiacatalunnya.org</a></p>";
     $titulo_caja_formas_pago = "<h3>Otras formas de pago</h3>";
     $texto_caja_formas_pago = "<p>Si tienes algún problema al realizar tu donación o quieres información sobre otras formas de pago o sobre cuotas reducidas, llámanos a <b>913103272</b> o escribe a <a href=\"mailto:socios@es.amnesty.org\" title=\"socios@es.amnesty.org\">socios@es.amnesty.org</a></p>";
 
     $titulo_caja_transparencia_cat = "<h3>Transparència, el nostre compromís</h3>";
     $titulo_caja_transparencia = "<h3>Transparencia, nuestro compromiso</h3>";
     $texto_caja_transparencia = "<p>Nuestras cuentas son públicas y puedes verlas en nuestra web. Constamos en el registro de asociaciones con el n.º 22.729 y CIF: G28667152</p>";
-    $texto_caja_transparencia_cat = "<p>Els nostres comptes són públics i pots veure'ls a la nostra web. Constem al registre d'associacions amb el núm. 22.729 i el CIF G28667152</p>";
-
+$texto_caja_transparencia_cat = "<p>Els nostres comptes són públics i pots  <a href='https://www.amnistiacatalunya.org/qui-som/com-ens-financem/'>consultar-los a la nostra web.</a> Amnistia Internacional Catalunya, amb NIF G60717485, està inscrita al registre d’associacions de la Generalitat de Catalunya amb el número 15747/B. Alhora, Amnistia Internacional Secció Espanyola, amb NIF G28667152, està  inscrita al registre estatal d'associacions amb el número 22.729.</p>";
 ?>
