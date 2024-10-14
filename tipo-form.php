@@ -15,8 +15,8 @@ DEFINE("FORMULARIO_DONACION_MOVIL_GRACIAS",8);
 //Si el tipo de formulario está configurado en la pantalla de Civi se categorita aqui
 $aComponentTipoForm = getArrayComponentByType($node->webform['components'], TIPO_FORMULARIO);
 
-if ($aComponentTipoForm[form_key] == TIPO_FORMULARIO && $aComponentTipoForm[type] == 'select'){
-  switch ($aComponentTipoForm[value]) {
+if ($aComponentTipoForm['form_key'] == TIPO_FORMULARIO && $aComponentTipoForm['type'] == 'select'){
+  switch ($aComponentTipoForm['value']) {
     case FORMULARIO_ASOCIACION:
       array_push($socixs_form_list,$node->nid);
       break;
@@ -47,9 +47,9 @@ if ($aComponentTipoForm[form_key] == TIPO_FORMULARIO && $aComponentTipoForm[type
 //Comprobamos si tiene imagen de cabecera esta configurada en el formulario de civi
 $aComponentTipoForm = getArrayComponentByType($node->webform['components'], IMG_CABECERA);
 
-if ($aComponentTipoForm[form_key] == IMG_CABECERA){
+if ($aComponentTipoForm['form_key'] == IMG_CABECERA){
     $exite_img_cabecera_form = 1;
-    $img_cabecera = $aComponentTipoForm[value];
+    $img_cabecera = $aComponentTipoForm['value'];
 }
 
 //Función que busca un componenete del formulario dentro del array que contiente todos los componentes.
@@ -57,7 +57,7 @@ function getArrayComponentByType($arrayComponentes, $TipoComponente)
 {
   foreach ($arrayComponentes as $aComponents)
   {
-        if ($aComponents[form_key] == $TipoComponente){
+        if ($aComponents['form_key'] == $TipoComponente){
             return $aComponents;
         }
   }
